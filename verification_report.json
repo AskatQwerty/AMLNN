@@ -501,5 +501,18 @@
     "cuda_runtime": "12.6"
   },
   "full_experiments_trained": 0,
-  "seconds": 473.33008040000004
+  "seconds": 473.33008040000004,
+  "epoch_validation_regression": {
+    "passed": true,
+    "max_epochs": 100,
+    "patience": 3,
+    "positive_integer_validation": true,
+    "empty_comparison_preserves_existing_csv": true,
+    "plan_A_runs": 25,
+    "plan_B_runs": 25,
+    "notebook_run_all_without_training": true,
+    "model_or_training_algorithm_changed": false,
+    "full_training_started": false
+  },
+  "compatibility_note": "Model and training algorithm unchanged; original model checks remain applicable. Configuration and full-notebook checks were repeated for the 100-epoch plan."
 }

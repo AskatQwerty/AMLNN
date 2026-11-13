@@ -48,7 +48,7 @@ The first cache verification checks file hashes. Later runs reuse it while file 
 
 ## Results, timing and interruptions
 
-Results go to `experiments/all_encoders_v4_50/`, one folder per uniquely named run. Each completed run includes `best.pt`, `last.pt`, plain `best_weights.pt` / `last_weights.pt`, configuration, vocabulary, history, summary and predictions.
+Results go to `experiments/all_encoders_v5_100epochs/`, one folder per uniquely named run. Each completed run includes `best.pt`, `last.pt`, plain `best_weights.pt` / `last_weights.pt`, configuration, vocabulary, history, summary and predictions.
 
 Use the full `last.pt` checkpoint to resume training: it also contains optimizer, AMP scaler, RNG and early-stopping state. After an interruption, rerun with the same settings; completed runs are reused. Do not train the same run on both laptops at once.
 
@@ -67,3 +67,7 @@ Check free disk space before training. A 25-run half can require roughly **10 Gi
 `verification_report.json` records checks actually performed for this implementation. Section B11 also displays a local verification report when one is present. These diagnostics do not represent completion of the 50 full training runs.
 
 For the second laptop's coding assistant, use [TEAMMATE_CODEX_PROMPT.md](TEAMMATE_CODEX_PROMPT.md).
+
+## Shared epoch limit
+
+Both laptops now use `MAX_EPOCHS=100` and `PATIENCE=3`. Early stopping may finish a run much earlier. Update both copies to this commit before training. Results for this plan go to `all_encoders_v5_100epochs`; older 15-epoch runs remain separate and are not silently resumed as 100-epoch runs. The training/checkpoint compatibility ID is unchanged because this patch changes validation and display behavior, not the model or optimization algorithm. Exact configuration equality is still required.

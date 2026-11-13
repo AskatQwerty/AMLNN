@@ -34,3 +34,5 @@ Return the complete archive, not just weights. It must retain the finished run f
 Do not push caches, images, weights or archives to GitHub. Do not merge or average independent models' weights. A will import this archive through the same notebook, display all 50 results and save one notebook for submission.
 
 Your final report should state the Git commit used, GPU and environment, which 25 runs completed, any unresolved failures, measured timings, the results directory and the exact archive path to send to A. Clearly distinguish diagnostics from full training. If fewer than 25 finish, report the real count and resume state rather than claiming completion.
+
+Shared-plan update: set `MAX_EPOCHS=100` and `PATIENCE=3`, matching laptop A. Use `all_encoders_v5_100epochs`. Update to the same commit before starting; do not mix older 15-epoch checkpoints/results into this plan.
