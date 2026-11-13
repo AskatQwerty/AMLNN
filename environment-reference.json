@@ -1,0 +1,15 @@
+{
+  "python": "3.11.18",
+  "torch": "2.13.0+cu126",
+  "torchvision": "0.28.0+cu126",
+  "cuda_runtime": "12.6",
+  "numpy": "2.4.6",
+  "Pillow": "12.3.0",
+  "matplotlib": "3.11.2",
+  "ipykernel": "7.3.0",
+  "nbformat": "5.11.1",
+  "nbclient_for_automated_checks": "0.11.0",
+  "pycocoevalcap": "1.2",
+  "verified_gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "note": "Reference environment, not an instruction to replace a working GPU driver. Use a compatible CUDA build on laptop B and report its actual device and versions."
+}

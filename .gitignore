@@ -1,0 +1,17 @@
+cache/
+data/
+experiments/
+transfer/
+backups/
+captioning_checks/
+.ipynb_checkpoints/
+__pycache__/
+.env
+.env.*
+*.pt
+*.pth
+*.npy
+*.pkl
+*.zip
+*.partial
+*.tmp

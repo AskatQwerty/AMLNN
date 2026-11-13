@@ -1,0 +1,505 @@
+{
+  "passed": true,
+  "implementation": "4999171d257bc83ebef0d7c6126b51135172373308b4fd9d66985e71de661475",
+  "checks": [
+    {
+      "run": "resnet50_lstm_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 13404436,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.09515067934989929
+    },
+    {
+      "run": "resnet50_rnn_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 11828500,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.047345105558633804
+    },
+    {
+      "run": "resnet50_lstm_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 9530644,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.07567191869020462
+    },
+    {
+      "run": "resnet50_rnn_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 8939284,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.05805760994553566
+    },
+    {
+      "run": "resnet50_lstm_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 15505684,
+      "batch_size": 64,
+      "small_set_steps": 125,
+      "small_set_loss": 0.06348209828138351
+    },
+    {
+      "run": "resnet50_rnn_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 12353812,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.026809891685843468
+    },
+    {
+      "run": "resnet50_lstm_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 13404436,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.09515067934989929
+    },
+    {
+      "run": "resnet50_rnn_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 11828500,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.047345105558633804
+    },
+    {
+      "run": "resnet50_lstm_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 13405460,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.08623699843883514
+    },
+    {
+      "run": "resnet50_rnn_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 11829524,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.041665878146886826
+    },
+    {
+      "run": "resnet18_lstm_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 12618004,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.01651650480926037
+    },
+    {
+      "run": "resnet18_rnn_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 11042068,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.06412816047668457
+    },
+    {
+      "run": "resnet18_lstm_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 8744212,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.06741496175527573
+    },
+    {
+      "run": "resnet18_rnn_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 8152852,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.07669669389724731
+    },
+    {
+      "run": "resnet18_lstm_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 14719252,
+      "batch_size": 64,
+      "small_set_steps": 150,
+      "small_set_loss": 0.05594761669635773
+    },
+    {
+      "run": "resnet18_rnn_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 11567380,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.03268799930810928
+    },
+    {
+      "run": "resnet18_lstm_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 12618004,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.01651650480926037
+    },
+    {
+      "run": "resnet18_rnn_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 11042068,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.06412816047668457
+    },
+    {
+      "run": "resnet18_lstm_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 12619028,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.017124373465776443
+    },
+    {
+      "run": "resnet18_rnn_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 11043092,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.00575165543705225
+    },
+    {
+      "run": "vgg19_lstm_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 14453012,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.08359359204769135
+    },
+    {
+      "run": "vgg19_rnn_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 12877076,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.02621426060795784
+    },
+    {
+      "run": "vgg19_lstm_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 10579220,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.059114545583724976
+    },
+    {
+      "run": "vgg19_rnn_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 9987860,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.06771242618560791
+    },
+    {
+      "run": "vgg19_lstm_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 16554260,
+      "batch_size": 64,
+      "small_set_steps": 125,
+      "small_set_loss": 0.07492583990097046
+    },
+    {
+      "run": "vgg19_rnn_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 13402388,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.007487459108233452
+    },
+    {
+      "run": "vgg19_lstm_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 14453012,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.08359359204769135
+    },
+    {
+      "run": "vgg19_rnn_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 12877076,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.02621426060795784
+    },
+    {
+      "run": "vgg19_lstm_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 14454036,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.014587195590138435
+    },
+    {
+      "run": "vgg19_rnn_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 12878100,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.05417664721608162
+    },
+    {
+      "run": "mobilenet_v2_lstm_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 13011220,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.015437821857631207
+    },
+    {
+      "run": "mobilenet_v2_rnn_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 11435284,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.050276678055524826
+    },
+    {
+      "run": "mobilenet_v2_lstm_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 9137428,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.0766308382153511
+    },
+    {
+      "run": "mobilenet_v2_rnn_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 8546068,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.07025721669197083
+    },
+    {
+      "run": "mobilenet_v2_lstm_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 15112468,
+      "batch_size": 64,
+      "small_set_steps": 125,
+      "small_set_loss": 0.07734901458024979
+    },
+    {
+      "run": "mobilenet_v2_rnn_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 11960596,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.022800087928771973
+    },
+    {
+      "run": "mobilenet_v2_lstm_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 13011220,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.015437821857631207
+    },
+    {
+      "run": "mobilenet_v2_rnn_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 11435284,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.050276678055524826
+    },
+    {
+      "run": "mobilenet_v2_lstm_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 13012244,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0998469814658165
+    },
+    {
+      "run": "mobilenet_v2_rnn_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 11436308,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.04179486632347107
+    },
+    {
+      "run": "efficientnet_v2_s_lstm_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 13011220,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0950891301035881
+    },
+    {
+      "run": "efficientnet_v2_s_rnn_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 11435284,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.03798217326402664
+    },
+    {
+      "run": "efficientnet_v2_s_lstm_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 9137428,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.07217119634151459
+    },
+    {
+      "run": "efficientnet_v2_s_rnn_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 8546068,
+      "batch_size": 64,
+      "small_set_steps": 50,
+      "small_set_loss": 0.05915898457169533
+    },
+    {
+      "run": "efficientnet_v2_s_lstm_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 15112468,
+      "batch_size": 64,
+      "small_set_steps": 125,
+      "small_set_loss": 0.07357016950845718
+    },
+    {
+      "run": "efficientnet_v2_s_rnn_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 11960596,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.015322149731218815
+    },
+    {
+      "run": "efficientnet_v2_s_lstm_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 13011220,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0950891301035881
+    },
+    {
+      "run": "efficientnet_v2_s_rnn_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 11435284,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.03798217326402664
+    },
+    {
+      "run": "efficientnet_v2_s_lstm_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 13012244,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.08819608390331268
+    },
+    {
+      "run": "efficientnet_v2_s_rnn_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 11436308,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.03260708227753639
+    }
+  ],
+  "laptop_run_counts": {
+    "A": 25,
+    "B": 25
+  },
+  "notebook_run_all_A": true,
+  "portable_run_all_B_without_images": true,
+  "same_plan_on_both_laptops": true,
+  "split_counts": {
+    "train": 113287,
+    "val": 5000,
+    "test": 5000
+  },
+  "metric_checks": {
+    "exact": {
+      "bleu1": 0.9999999999130434,
+      "bleu4": 0.9999999999005891,
+      "cider_d": 10.0
+    },
+    "unrelated": {
+      "bleu1": 3.9109747962120824e-17,
+      "bleu4": 5.908261514240822e-17,
+      "cider_d": 0.0
+    },
+    "empty_predictions": {
+      "bleu1": 0.0,
+      "bleu4": 0.0,
+      "cider_d": 0.0
+    }
+  },
+  "real_tiny_data_resume_exact_weights": true,
+  "real_result_archive_roundtrip": true,
+  "estimated_checkpoint_gib": {
+    "A": 9.075477242469788,
+    "B": 8.95220148563385
+  },
+  "training_bundle": {
+    "archive": "caption_training_data.zip",
+    "files": 38,
+    "size_gib": 1.6657323529943824,
+    "seconds": 68.06134869999983
+  },
+  "device": {
+    "device": "cuda",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "torch": "2.13.0+cu126",
+    "cuda_runtime": "12.6"
+  },
+  "full_experiments_trained": 0,
+  "seconds": 473.33008040000004
+}
