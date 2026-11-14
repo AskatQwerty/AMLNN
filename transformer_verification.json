@@ -1,0 +1,486 @@
+{
+  "passed": true,
+  "implementation": "097d3721f9bfe2111d91345835f0cfab782ed5f1bd9a52d3263ab945cb00cc91",
+  "checks": [
+    {
+      "run": "resnet50_transformer_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 14474004,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.001965178642421961,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "resnet50_transformer_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 6980884,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.02474774420261383,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "resnet50_transformer_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 17626388,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.001673707622103393,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "resnet50_transformer_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 14474004,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.001965178642421961,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "resnet50_transformer_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 14475028,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0019495480228215456,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "resnet18_transformer_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 13687572,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0021036153193563223,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "resnet18_transformer_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 6587668,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.024554064497351646,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "resnet18_transformer_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 16839956,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0017305634682998061,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "resnet18_transformer_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 13687572,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0021036153193563223,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "resnet18_transformer_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 13688596,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0021012446377426386,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "vgg19_transformer_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 15522580,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0019515641033649445,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "vgg19_transformer_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 7505172,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.02433127909898758,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "vgg19_transformer_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 18674964,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0017150527564808726,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "vgg19_transformer_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 15522580,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0019515641033649445,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "vgg19_transformer_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 15523604,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.00195511756464839,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "mobilenet_v2_transformer_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 14080788,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0020993154030293226,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "mobilenet_v2_transformer_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 6784276,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.023885568603873253,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "mobilenet_v2_transformer_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 17233172,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0018563525518402457,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "mobilenet_v2_transformer_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 14080788,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0020993154030293226,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "mobilenet_v2_transformer_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 14081812,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0020970171317458153,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "efficientnet_v2_s_transformer_baseline_seed42",
+      "variant": "baseline",
+      "passed": true,
+      "parameters": 14080788,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0021031086798757315,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "efficientnet_v2_s_transformer_small_hidden_seed42",
+      "variant": "small_hidden",
+      "passed": true,
+      "parameters": 6784276,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.024111706763505936,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "efficientnet_v2_s_transformer_stacked_seed42",
+      "variant": "stacked",
+      "passed": true,
+      "parameters": 17233172,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.001758044003508985,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "efficientnet_v2_s_transformer_high_dropout_seed42",
+      "variant": "high_dropout",
+      "passed": true,
+      "parameters": 14080788,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.0021031086798757315,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    },
+    {
+      "run": "efficientnet_v2_s_transformer_image_layernorm_seed42",
+      "variant": "image_layernorm",
+      "passed": true,
+      "parameters": 14081812,
+      "batch_size": 64,
+      "small_set_steps": 25,
+      "small_set_loss": 0.002085738116875291,
+      "transformer_checks": {
+        "causal_mask": true,
+        "padding_mask": true,
+        "image_conditioning": true,
+        "independent_stacked_layers": true,
+        "passed": true
+      }
+    }
+  ],
+  "device": {
+    "device": "cuda",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "torch": "2.13.0+cu126",
+    "cuda_runtime": "12.6"
+  },
+  "amp_checks": [
+    {
+      "variant": "baseline",
+      "passed": true,
+      "batch_size": 64,
+      "loss": 9.438894271850586
+    },
+    {
+      "variant": "small_hidden",
+      "passed": true,
+      "batch_size": 64,
+      "loss": 9.380748748779297
+    },
+    {
+      "variant": "stacked",
+      "passed": true,
+      "batch_size": 64,
+      "loss": 9.453743934631348
+    },
+    {
+      "variant": "high_dropout",
+      "passed": true,
+      "batch_size": 64,
+      "loss": 9.513727188110352
+    },
+    {
+      "variant": "image_layernorm",
+      "passed": true,
+      "batch_size": 64,
+      "loss": 9.437813758850098
+    }
+  ],
+  "notebook_run_all_A_training_off": true,
+  "laptop_run_counts": {
+    "A": 50,
+    "B": 25
+  },
+  "new_transformer_owners": {
+    "A": 25,
+    "B": 0
+  },
+  "default_selected_A": 25,
+  "original_50_configs_and_owners_unchanged": true,
+  "existing_25_identities_and_files_unchanged": true,
+  "old_checkpoint_strict_load": true,
+  "same_plan_on_both_laptops": true,
+  "split_counts": {
+    "train": 113287,
+    "val": 5000,
+    "test": 5000
+  },
+  "metric_checks": {
+    "exact": {
+      "bleu1": 0.9999999999130434,
+      "bleu4": 0.9999999999005891,
+      "cider_d": 10.0
+    },
+    "unrelated": {
+      "bleu1": 3.9109747962120824e-17,
+      "bleu4": 5.908261514240822e-17,
+      "cider_d": 0.0
+    },
+    "empty_predictions": {
+      "bleu1": 0.0,
+      "bleu4": 0.0,
+      "cider_d": 0.0
+    }
+  },
+  "real_tiny_data_resume_exact_weights": true,
+  "real_result_archive_roundtrip": true,
+  "full_transformer_experiments_trained": 0,
+  "seconds": 112.92853620000005,
+  "reproducibility_note": "The tested CUDA AMP interrupt/resume case produced exactly equal weights. PyTorch also warned that memory-efficient attention can be nondeterministic with warn_only=True. This test is not a guarantee of bitwise reproducibility for all runs or other devices.",
+  "full_transformer_training_run": false
+}

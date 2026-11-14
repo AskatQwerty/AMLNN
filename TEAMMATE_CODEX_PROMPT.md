@@ -1,38 +1,53 @@
 # Prompt for Codex on laptop B
 
-Continue our PyTorch Image Captioning project on **laptop B**. The repository is `https://github.com/AskatQwerty/AMLNN.git`, branch `codex/50-experiments`. Use the same commit as laptop A. Read `README.md`, `environment-reference.json`, `requirements-captioning.txt`, `verification_report.json` and `FinalAML.ipynb` first.
+Continue our PyTorch Image Captioning project on **laptop B**. Repository: `https://github.com/AskatQwerty/AMLNN.git`, branch `codex/50-experiments`.
 
-Your task is to **train exactly the 25 experiments assigned to B**, save their complete results and prepare the return archive for A. This request authorizes that training after the environment, data and preflight checks pass. Proceed without asking again whether to start the already authorized 25 runs.
+**Your task is still to finish B's original 25 RNN/LSTM experiments and return their complete results.** Laptop A now runs 25 additional Transformer experiments itself. Do not start Transformers on B or repeat completed recurrent runs.
 
-All project code must remain in **one notebook, `FinalAML.ipynb`**. Keep the code and explanatory text in English, with simple student-readable functions and useful blank lines. Do not introduce a separate training module or redesign the experiment.
+## Preserve the current run
 
-## Inspect and prepare
+First inspect the existing notebook, result folders, configuration and running training process. If B is already training with the agreed 100-epoch notebook, let it continue. This extension does **not** require a Git update, kernel restart or retraining on B. Do not interrupt working training just to install the Transformer extension.
 
-- Check the GPU, CUDA availability, Python/PyTorch/torchvision versions and free disk space. The reference environment uses Python 3.11.18, PyTorch 2.13.0+cu126, torchvision 0.28.0+cu126, NumPy 2.4.6, Pillow 12.3.0 and Matplotlib 3.11.2. Use the repository's environment files as the reference. Keep `pycocoevalcap==1.2`. If a CUDA-compatible installation is needed, use official PyTorch instructions and a compatible torch/torchvision pair; preserve an already working environment.
-- Locate `caption_training_data.zip`, which A sends separately. If it is absent, ask for its local path and continue independent environment checks. Do not invent files, download another COCO copy or extract the CNN vectors again.
-- Extract the archive contents beside the notebook so `cache/`, `data/coco2017/annotations/` and `bundle_manifest.json` are directly inside the project folder. Start Jupyter with this folder as its working directory. Run the notebook's manifest verification before using the cache; investigate mismatches rather than bypassing assertions.
-- Allow sufficient space for expanded data, approximately 10 GiB or more of result folders for this half, predictions and an additional export archive. Use `RESULTS_ROOT` / `TRANSFER_DIR` on another drive if appropriate. Do not delete existing user data to make room.
+Existing recurrent configurations, checkpoints and result archives from `all_encoders_v5_100epochs` remain compatible with A's updated notebook. Keep exact configuration and version checks enabled; do not modify checkpoint identities to force a mismatch through. Older 15-epoch experiments belong to a different plan.
 
-## Run the assigned experiments
+If you use the updated notebook after the current run ends, read `README.md`, the environment files and the actual notebook code. Set:
 
-Set `LAPTOP_ID="B"`, `TRAINING_ONLY=True`, `RUN_TRAINING=False`, `RUN_PREFLIGHT=True` and `RUN_FINAL_TEST=False`. Run All and inspect the actual outputs. B6 must print exactly 25 B assignments. Both laptops use all 113,287 training images and all 5,000 validation images; the dataset itself is not split between workers.
+```python
+LAPTOP_ID = "B"
+TRAIN_DECODERS = ["rnn", "lstm"]
+TRAINING_ONLY = True
+MAX_EPOCHS = 100
+PATIENCE = 3
+RUN_FINAL_TEST = False
+```
 
-The shared grid has five encoders (ResNet50, ResNet18, VGG19, MobileNetV2, EfficientNetV2-S), RNN/LSTM decoders and these configurations: `baseline`, `small_hidden`, `stacked`, `high_dropout`, `image_layernorm`. Do not change their definitions, seeds, batch size, captions, vocabulary, split, metrics or assignment. If an environment or memory limitation prevents the defined protocol, report the concrete issue and coordinate a shared fix; do not quietly create incomparable runs.
+The updated notebook defaults to A and Transformer-only selection, so these B settings matter. The printed plan must select B's original **25** recurrent runs. The complete project has 75 runs: A's original 25, B's original 25 and A's 25 Transformers.
 
-After the data, metric and model checks pass, set `RUN_PREFLIGHT=False` and `RUN_TRAINING=True` and run B's 25 experiments. The notebook already provides timers, best/last weights, full checkpoints, early stopping and resume. Preserve these. A short diagnostic model is discarded before the actual experiment; do not use it as a trained result.
+## Environment and data
 
-Keep `RUN_FINAL_TEST=False`. Use validation CIDEr-D for early stopping and selection, with BLEU-1/BLEU-4 as additional metrics. Do not inspect test scores to choose configurations. Report actual failures and results; never fabricate scores, epoch counts, timings or successful checks.
+- Use the existing working CUDA environment. Check actual GPU, CUDA availability and free disk space. The reference environment and supporting packages are recorded in `environment-reference.json` and `requirements-captioning.txt`; keep `pycocoevalcap==1.2`.
+- If setup is still needed, use a compatible CUDA-enabled PyTorch/torchvision pair and the correct Jupyter kernel. Consult official PyTorch installation instructions if necessary; do not replace a working GPU installation with a CPU build.
+- The original `caption_training_data.zip` remains valid. If it is missing, ask for its local path while continuing independent environment checks. Do not download another COCO dataset or extract CNN vectors again.
+- Extract the archive beside `FinalAML.ipynb`, producing `cache/`, `data/coco2017/annotations/` and `bundle_manifest.json`. Start Jupyter in this project folder. Use the notebook's hash verification; investigate a mismatch instead of bypassing it.
+- Both laptops use all 113,287 training images and all 5,000 validation images. The separate 5,000-image labeled test remains held out. The training images are not divided between laptops.
+- Allow space for result folders, predictions and the return archive. `RESULTS_ROOT` and `TRANSFER_DIR` can point to another drive. Do not delete unrelated user data to create space.
 
-If training is interrupted, retain the latest committed checkpoint and resume using the same configuration. Do not overwrite another run or start A's assigned half. Track progress until the authorized runs finish, unless the user explicitly pauses. Record the GPU/device and actual timings; different GPUs do not give directly comparable architecture runtimes.
+## Finish B's experiments
 
-## Return complete results
+For a fresh start or an updated notebook, initially set `RUN_TRAINING=False` and `RUN_PREFLIGHT=True`, then Run All. Verify the data and the selected 25 configurations. After these checks pass, set `RUN_PREFLIGHT=False` and `RUN_TRAINING=True`. The user already authorized these 25 runs; no additional start confirmation is needed.
 
-Once all 25 B runs are finished, set `RUN_TRAINING=False`. In section C, set `EXPORT_RESULTS=True` and run it to create `caption_results_B.zip`. Verify that the printed completed count is 25/25. Use a fresh archive filename if an earlier export exists.
+Keep the original RNN/LSTM configuration names: `baseline`, `small_hidden`, `stacked`, `high_dropout`, `image_layernorm`, across ResNet50, ResNet18, VGG19, MobileNetV2 and EfficientNetV2-S. Do not change assignments, architecture definitions, seed, batch size, captions, vocabulary, split or metrics. If a real environment or memory limitation prevents the agreed setup, report it and coordinate a shared fix rather than silently changing the protocol.
 
-Return the complete archive, not just weights. It must retain the finished run folders with `best.pt`, `last.pt`, plain weights, configuration, vocabulary, history, metrics and predictions. The notebook's exporter excludes temporary files and unfinished runs and creates a checksum manifest.
+Use validation CIDEr-D for early stopping with patience 3 and a maximum of 100 epochs. BLEU-1 and BLEU-4 are additional metrics. Keep test evaluation off during training and selection. The notebook already includes timers, full checkpoints, plain weights and resume. A diagnostic small-set model must be discarded before the real experiment.
 
-Do not push caches, images, weights or archives to GitHub. Do not merge or average independent models' weights. A will import this archive through the same notebook, display all 50 results and save one notebook for submission.
+After an interruption, preserve the latest committed `last.pt` and resume with the same configuration. Completed runs are reused. Continue the authorized work until all 25 finish unless the user explicitly pauses it. Never invent metrics, timings, epoch counts or successful checks.
 
-Your final report should state the Git commit used, GPU and environment, which 25 runs completed, any unresolved failures, measured timings, the results directory and the exact archive path to send to A. Clearly distinguish diagnostics from full training. If fewer than 25 finish, report the real count and resume state rather than claiming completion.
+## Return the complete results
 
-Shared-plan update: set `MAX_EPOCHS=100` and `PATIENCE=3`, matching laptop A. Use `all_encoders_v5_100epochs`. Update to the same commit before starting; do not mix older 15-epoch checkpoints/results into this plan.
+After all B runs finish, set `RUN_TRAINING=False` and export through section C. The earlier notebook creates `caption_results_B.zip`; this archive is still valid for A. The updated notebook with `TRAIN_DECODERS=["rnn", "lstm"]` and `EXPORT_SCOPE="selected"` creates `caption_results_B_rnn_lstm.zip`. Use a new filename if one already exists and verify the printed count is **25/25**.
+
+Send the complete archive. It includes `best.pt`, `last.pt`, plain best/last weights, configuration, vocabulary, history, summary, metrics and predictions. Weights alone do not preserve enough information for the combined report. Do not push caches, checkpoint files, photographs or archives to GitHub.
+
+A will import this archive into the updated notebook, add A's Transformer results and display the full 75-run comparison. We submit one `FinalAML.ipynb`; do not combine model weights or merge notebook outputs manually.
+
+Your final report should state the actual Git commit/notebook version used, GPU and environment, which 25 runs completed, measured times, any unresolved failures, the results directory and the exact archive path to send to A. If fewer than 25 finish, report the true count and the saved resume state.
