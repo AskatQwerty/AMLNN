@@ -2,6 +2,8 @@
 
 `FinalAML.ipynb` contains the preparation, models, training, evaluation, timers, checkpoints and transfer helpers. The final submission is this one notebook with the combined results displayed.
 
+All 75 completed results have now been collected on laptop A. For review, keep `TRAINING_ONLY=True`, `RUN_TRAINING=False` and `RUN_FINAL_TEST=False`, then Run All. B8 shows the complete table, the best model in each decoder family and a 5-by-3 heatmap. B9 plots the three validation finalists. The model weights and result folders are transferred separately; they are not stored in GitHub. The training instructions below remain available for reproducing the experiment plan.
+
 The project now has **5 CNNs x 3 decoder families x 5 configurations = 75 experiments**. The encoders are ResNet50, ResNet18, VGG19, MobileNetV2 and EfficientNetV2-S. Every model uses the existing cached CNN vectors; no new image extraction is needed.
 
 ## Who runs what
@@ -11,7 +13,7 @@ The project now has **5 CNNs x 3 decoder families x 5 configurations = 75 experi
 | A | 25 | 25 | 50 |
 | B | 25 | 0 | 25 |
 
-**B should continue its original 25 runs.** The Transformer addition does not require B to update its notebook, interrupt training or start those runs again. Existing checkpoints and result archives from the shared 100-epoch plan remain compatible. Completed runs are reused.
+**B owns the original 25 recurrent runs.** Their completed archive has been imported on A. Existing checkpoints and result archives from the shared 100-epoch plan remain compatible. Completed runs are reused rather than trained again.
 
 The new notebook defaults to `LAPTOP_ID="A"`, `TRAIN_DECODERS=["transformer"]` and `RUN_TRAINING=False`. This selects only A's 25 new Transformer runs. If B later uses this version, set `LAPTOP_ID="B"` and `TRAIN_DECODERS=["rnn", "lstm"]`; the plan must select B's original 25 runs.
 
