@@ -1,0 +1,19 @@
+{
+  "stub_roundtrip": true,
+  "partial_resume_prefix_preserved": true,
+  "uncommitted_tail_rewritten": true,
+  "ids_and_array_order": true,
+  "array_sha256_verified": true,
+  "count_statistics_and_fallback_rate": true,
+  "ready_mixed_final_partial_recovery": true,
+  "completed_cache_reused_without_photos": true,
+  "incompatible_contract_batch_code_rejected": true,
+  "load_contract_checked": true,
+  "resized_preview_rejected": true,
+  "pretrained_detector_executed": false,
+  "downloaded_weights": false,
+  "gpu_used": false,
+  "real_dataset_extracted": false,
+  "project_written": false,
+  "fixture": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\stage5_handoff\\region_cache_fixture_jvm7haka"
+}

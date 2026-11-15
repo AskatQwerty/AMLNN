@@ -1,0 +1,8 @@
+{
+  "file": "caption_stage5_handoff_v1.zip",
+  "bytes": 33187161,
+  "sha256": "fab46c2d25a28e6180a5d9ef9ab2da39e31b2541952582a359d6753f947f5cb2",
+  "zip_crc_passed": true,
+  "roundtrip_all_file_hashes_passed": true,
+  "files_in_archive": 33
+}

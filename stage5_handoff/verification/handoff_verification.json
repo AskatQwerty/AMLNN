@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "scope": "Complete starter review-mode execution on CPU with CUDA hidden; no external CNN cache, JPEG input, detector download/execution, feature extraction or training.",
+  "completed_code_cells": [
+    "imports",
+    "settings",
+    "prepared_data",
+    "shared_helpers",
+    "load_data",
+    "decoder",
+    "decoder_shape",
+    "region_features",
+    "region_cache",
+    "detector_smoke",
+    "extraction",
+    "batches",
+    "metrics",
+    "check_metrics"
+  ],
+  "notebook_sha256": "8d709333df756e37a82b82470fb73eb26f3d98909e8d9b8b6a2d776c3f2baf4c",
+  "elapsed_seconds": 17.538475799998196,
+  "split_sizes": {
+    "train": 113287,
+    "val": 5000,
+    "test": 5000
+  },
+  "special_ids": {
+    "pad": 0,
+    "unk": 1,
+    "start": 2,
+    "end": 3
+  },
+  "vocab_size": 10004,
+  "trainable_parameter_count": 18132756,
+  "data_fingerprints_equal": true,
+  "metric_metadata_and_source_hashes_equal": true,
+  "metric_sanity_checks": {
+    "exact": {
+      "bleu1": 0.9999999999130434,
+      "bleu4": 0.9999999999005891,
+      "cider_d": 10.0
+    },
+    "unrelated": {
+      "bleu1": 3.9109747962120824e-17,
+      "bleu4": 5.908261514240822e-17,
+      "cider_d": 0.0
+    },
+    "empty_predictions": {
+      "bleu1": 0.0,
+      "bleu4": 0.0,
+      "cider_d": 0.0
+    }
+  },
+  "imports_all_at_start": true,
+  "full_training_driver": "Assigned to Codex B; starter is not a completed training notebook.",
+  "not_executed": [
+    "Real pretrained Faster R-CNN",
+    "real region feature extraction",
+    "full decoder training",
+    "GPU checks",
+    "test evaluation"
+  ]
+}

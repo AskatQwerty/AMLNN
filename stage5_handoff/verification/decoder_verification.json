@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "cuda_visible_devices": "",
+  "cuda_used": false,
+  "torch": "2.13.0+cu126",
+  "settings": {
+    "feature_dim": 8,
+    "vocab_size": 30,
+    "pad_id": 0,
+    "embedding_size": 16,
+    "hidden_size": 16,
+    "num_layers": 3,
+    "dropout": 0.3
+  },
+  "decoder_sha256": "9e4c16abc6425fbfb05c770ad234f730c5b1598014e690af56ce7ddaf6c0602b",
+  "original_class_ast_sha256": "b0f9c6faa5b85f4e98fa988be77fcbea0fa23b1198e4e545917424cbd901fade",
+  "verification_script_sha256": "52ca7281a10199242feb203b971d377d408468907bc6efb4852a9828f2c89cf9",
+  "checks": {
+    "parameter_names_shapes_initialization_order_exact": true,
+    "strict_original_state_dict_load": true,
+    "dense_49_eval_logits_attention_state_exact": true,
+    "dense_49_all_true_mask_exact": true,
+    "dense_49_greedy_matches_original": true,
+    "dense_49_train_dropout_same_seed_exact": true,
+    "masked_nan_garbage_has_no_effect": true,
+    "masked_attention_and_input_gradients_zero": true,
+    "compact_unpadded_and_padded_outputs_match": true,
+    "compact_unpadded_and_padded_greedy_match": true,
+    "single_valid_region_and_k1_supported": true,
+    "finite_training_loss_and_all_parameter_gradients": true,
+    "all_false_masks_and_invalid_shapes_rejected": true
+  },
+  "training_loss": 3.4436023235321045,
+  "scope": "Small synthetic CPU checks only. No detector extraction, CUDA run or full training."
+}

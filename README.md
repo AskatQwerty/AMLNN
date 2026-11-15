@@ -1,8 +1,18 @@
 # Image Captioning: 79 completed models and spatial attention
 
-**All 79 global-vector experiments are complete.** They include the original 75-model grid and four ResNet50 depth comparisons. B's 25 recurrent runs have been collected on A; no further work on B is required.
+**All 79 global-vector experiments are complete.** They include the original 75-model grid and four ResNet50 depth comparisons. B's original 25 recurrent runs have been collected on A. B now has a separate stage-5 assignment that can proceed in parallel with A's spatial-attention work.
 
 `FinalAML.ipynb` and `experiments/all_encoders_v5_100epochs/` preserve those results. The next stage is the separate, self-contained **`SpatialAttention.ipynb`**: it analyzes the saved models and adds two spatial-attention experiments. Their full training is pending. The new notebook reads the original 79 runs without changing their notebooks, checkpoints or predictions.
+
+## Stage 5 handoff to B
+
+Start with [START_HERE.txt](stage5_handoff/START_HERE.txt), give B's Codex [PROMPT_FOR_CODEX_B.txt](stage5_handoff/PROMPT_FOR_CODEX_B.txt), and open [Stage5_Starter.ipynb](stage5_handoff/Stage5_Starter.ipynb). The agreed settings and boundaries are recorded in [protocol.json](stage5_handoff/protocol.json).
+
+Use the complete `stage5_handoff/` folder and the **private bundle transferred separately**. GitHub provides a starter notebook and the exact extraction, decoder and batch components; B must still integrate the full validation/training/resume workflow and run **one experiment**. Prepared captions, split IDs and vocabulary come from the private bundle. The original **COCO `train2017` and `val2017` JPEGs are also required** to extract detector regions; annotations and old image vectors alone are insufficient.
+
+The model uses a **frozen COCO-pretrained Faster R-CNN with a ResNet50-FPN backbone**, up to 36 valid region vectors of dimension 1024, and a three-layer additive-attention LSTM with embedding/hidden size 512. Its primary control is A's **frozen stage-3 ResNet50 spatial-feature + three-layer attention-LSTM model**. Preserve that control and all A notebooks/results; use stage 5's separate cache/result paths from the protocol. Detector pretraining supplies additional COCO object supervision, so this comparison does not isolate region representation as the only changed factor.
+
+The documented detector pretraining source is `train2017`, from which the project's local test images were sampled. This is not a clean image-level holdout from detector pretraining; exact historical checkpoint membership has not been audited. **Do not compute or report a stage-5 local test score.** Use the agreed train/validation protocol, keep test evaluation disabled, and disclose this limitation in the comparison.
 
 ## Saved controls and new models
 

@@ -1,0 +1,193 @@
+{
+  "created_utc": "2026-11-15T07:09:23.007679+00:00",
+  "scope": "Read-only primary-source research and local JSON/source inspection; no model imports, GPU use, training or project mutations.",
+  "sources": {
+    "weight_enum_and_roi_head": "https://github.com/pytorch/vision/blob/main/torchvision/models/detection/faster_rcnn.py",
+    "official_detector_recipe": "https://github.com/pytorch/vision/blob/main/references/detection/README.md#faster-r-cnn-resnet-50-fpn",
+    "official_train_dataset_selection": "https://github.com/pytorch/vision/blob/main/references/detection/train.py",
+    "official_coco_split_and_filter": "https://github.com/pytorch/vision/blob/main/references/detection/coco_utils.py",
+    "original_butd_paper": "https://arxiv.org/html/1707.07998v3",
+    "original_butd_repository": "https://github.com/peteanderson80/bottom-up-attention",
+    "original_vg_coco_split_alignment": "https://github.com/peteanderson80/bottom-up-attention/blob/master/data/genome/create_splits.py",
+    "official_nms_tie_behavior": "https://docs.pytorch.org/vision/main/generated/torchvision.ops.nms.html"
+  },
+  "detector_pretraining_overlap": {
+    "proposed_weights": "FasterRCNN_ResNet50_FPN_Weights.COCO_V1",
+    "official_recipe_dataset": "COCO train2017 detection instances; validation uses val2017",
+    "local_test_images_belonging_to_train2017_source": 5000,
+    "local_test_size": 5000,
+    "exact_actual_detector_training_overlap_count": null,
+    "uncertainty": "The reference recipe removes images without valid detection annotations. It is not a per-image training manifest for the published checkpoint, so this audit establishes split overlap, not the exact number of local test images consumed during detector optimization.",
+    "recommended_disclosure": "The caption test split was held out from our caption-model training. However, its images come from COCO train2017, the source split used by the pretrained COCO detector. Therefore it is not a clean image-level holdout from detector pretraining. Detector object-label supervision may have seen these images; this is not a claim that the detector saw their caption texts.",
+    "comparability": "Comparison with the frozen ImageNet-pretrained stage-3 CNN is a practical system comparison. Detector pretraining, resolution, representation and supervision also differ; an improvement cannot be attributed only to using object regions.",
+    "action": "Proceed with the disclosed limitation and unchanged project split. Do not silently relabel this as a clean detector-held-out test or alter existing experiment IDs. A stricter claim needs audited pretraining IDs excluding evaluation images or an independently held-out evaluation corpus."
+  },
+  "butd_naming": {
+    "original": "ResNet-101 Faster R-CNN; 2048-dimensional mean-pooled regions; Visual Genome object and attribute supervision; authors align VG/COCO overlaps with Karpathy splits.",
+    "proposed": "Torchvision ResNet-50 FPN Faster R-CNN; 1024-dimensional output from roi_heads.box_head; COCO detection supervision; project three-layer additive-attention LSTM.",
+    "recommended_name": "Frozen detector ROI features with a three-layer additive-attention LSTM, inspired by bottom-up attention.",
+    "not_exact_reproduction": true,
+    "vg_overlap_note": "Visual Genome pretraining is not automatically overlap-free. The original authors protect their Karpathy split; that does not establish protection for this project's separate random train2017 holdout.",
+    "caption_decoder_difference": "Original bottom-up/top-down captioning uses specialized attention and language LSTMs; this project uses a stacked three-layer additive-attention LSTM."
+  },
+  "stage4_fine_tuning_control": {
+    "required_design": "Clone the exact same completed stage-3 checkpoint into two new experiments: continued decoder training with CNN frozen, and CNN fine-tuning plus decoder continuation. Use the same extra epoch/update budget, caption choices, image order, preprocessing, validation protocol and comparable decoder optimizer/LR handling. Record the source checkpoint hash and all changed parameter groups.",
+    "why": "Comparing fine-tuning only against the earlier stopped stage-3 score mixes the effect of extra decoder optimization with the effect of unfreezing the CNN.",
+    "early_stopping_note": "For strictly matched additional epochs, run equal extra epochs or compare equal-epoch checkpoints. If using independent early stopping, describe it as equal maximum budget and report actual updates rather than claiming equal realized training.",
+    "requires_raw_images": true,
+    "cached_vector_limitation": "Saved vectors are detached from the CNN computation graph. Updating the encoder requires raw JPEG input and a fresh differentiable forward pass; changing cached vectors cannot fine-tune the original CNN.",
+    "do_not_modify": "Keep stage-3 checkpoints, caches, live kernels and result folders intact; use separate continuation/fine-tuning groups."
+  },
+  "initial_B_scope": {
+    "runs": 1,
+    "decoder": "three-layer additive-attention LSTM",
+    "encoder": "frozen torchvision fasterrcnn_resnet50_fpn with explicit COCO_V1 weights",
+    "feature_dimension": 1024,
+    "recommended_max_regions": 36,
+    "mask_convention": "Store a boolean valid-region mask and valid count; ensure at least one valid region. Record selection/NMS/threshold/ordering and deterministic empty-detection fallback in cache metadata.",
+    "comparison_control": "The frozen stage-3 ResNet50 grid + three-layer additive-attention LSTM, once completed; do not substitute the later fine-tuned stage-4 model.",
+    "initialization": "Train the new caption model from scratch with seed 42. Its 1024-input image projection is incompatible with the stage-3 2048-input projection; do not force-load stage-3 weights.",
+    "detector_input": "Use raw RGB tensors in [0,1] with the detector's own transform. Record its resize limits and normalization. Do not blindly reuse the caption encoder's already-normalized 224-square tensors or normalize twice.",
+    "region_alignment": "Public detector predictions are not ROI features. Preserve proposal/box-feature correspondence through selection and NMS, or explicitly recompute ROI features for selected boxes in detector-resized coordinates. Save boxes/scores/counts for audit."
+  },
+  "runtime_generalization_required": {
+    "existing_hardcodes": [
+      "features.py SPATIAL_SHAPE=(49,2048) and spatial cache identity",
+      "config.py feature_dim2048, grid_size7, visual_tokens49 and build_model feature_dim2048",
+      "models.py CaptionSpatialLSTM.project_image requires grid_size**2 regions",
+      "models.py initial_state averages every visual slot; attention softmax currently includes every slot",
+      "model_checks.py smoke asserts batch x49 x2048",
+      "shared collate/train/evaluation/greedy/overfit calls pass features without a region mask"
+    ],
+    "required_B_changes": [
+      "Create B-local model/dataset/runtime copies with a separate feature namespace, result group and implementation ID; do not edit A's stage-3 files.",
+      "Allow batch xN x1024 input. Propagate valid masks through collate, teacher forcing, greedy generation, evaluation, smoke and small-set overfit.",
+      "Use a masked visual mean for the initial image step and mask attention logits before softmax. Padded projected vectors contain Linear bias, so zero input padding alone is insufficient.",
+      "Reject an all-invalid image or apply a recorded deterministic fallback. Test mixed region counts, padded-region perturbation invariance, masked probability zero, finite normalized attention, gradients, greedy stopping and resume.",
+      "Keep all 5000 validation IDs and original caption references. Save plain/full best and last weights, config, vocabulary, RNG/optimizer/scaler, history, predictions and detector metadata."
+    ]
+  },
+  "shared_caption_protocol": {
+    "seed": 42,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "max_epochs": 100,
+    "patience": 3,
+    "early_stopping_metric": "validation CIDEr-D",
+    "gradient_clip": 5.0,
+    "embedding_size": 512,
+    "hidden_size": 512,
+    "num_layers": 3,
+    "dropout": 0.3,
+    "recurrent_dropout": 0.0,
+    "max_generation_steps": 33,
+    "max_content_tokens": 32,
+    "train_caption_choice": "one random human caption per image per epoch, private RNG seeded seed+epoch",
+    "validation_loss_caption": "fixed first prepared caption",
+    "metric_references": "all original human captions; no vocabulary mapping",
+    "teacher_forcing": "input captions[:,:-1], target captions[:,1:]; ignore PAD and average by non-PAD target tokens",
+    "generation": "greedy from image and START; feed predicted token, stop END or 33, forbid PAD/START",
+    "amp": "CUDA AMP; unscale before clipping",
+    "vocab_size": 10004,
+    "special_token_ids": {
+      "<pad>": 0,
+      "<unk>": 1,
+      "<start>": 2,
+      "<end>": 3
+    },
+    "split_sizes": {
+      "train": 113287,
+      "val": 5000,
+      "test": 5000
+    }
+  },
+  "provenance_to_include_in_handoff": {
+    "data": {
+      "source_id": "ebc5c99a1d4cb77eaf6d1d46b16f3f83db1ca698d663307fd77a87a2290e0a9d",
+      "split_id": "8e2ac80c42ddee7b32a319cb01444c8b8831af2cd1a6c881e2d41cd8e5c5e1a2",
+      "prepared_sha256": "eb24d7d0c4e36a0139867cb937e86312d58cc8f642f24f74d3b7612f9e8aaf8d",
+      "vocab_sha256": "2cf42401bcd0074ab8fc431d323788de78baf0f616e66639edcdc542b15f2c55",
+      "splits_sha256": "fc60cb5fc0f55422cf3aa7d76a97ecc149c04dd286bdaa6a26a9692e8a850770",
+      "annotations_sha256": {
+        "train2017": "4b62086319480e0739ef390d04084515defb9c213ff13605a036061e33314317",
+        "val2017": "afe3b30e403dd7f228e2373023abbd60042a6e10ec6874d3652df034d289ebb9"
+      },
+      "feature_cache_keys": {
+        "resnet50": {
+          "train2017": "619a5972e8e87bccf6cccbf93b4199d24b257e429da4d5bcf8cccf5db8251f56",
+          "val2017": "619a5972e8e87bccf6cccbf93b4199d24b257e429da4d5bcf8cccf5db8251f56"
+        },
+        "resnet18": {
+          "train2017": "5e566ab62109ad6aa885b1c0afed36c57fc16ce9484993b60f7142e9e65b2251",
+          "val2017": "5e566ab62109ad6aa885b1c0afed36c57fc16ce9484993b60f7142e9e65b2251"
+        },
+        "vgg19": {
+          "train2017": "fba125b31149cc7a5bd728dbab3f6dbaceb99c0bccfbf8f0e8270207bbd92c66",
+          "val2017": "fba125b31149cc7a5bd728dbab3f6dbaceb99c0bccfbf8f0e8270207bbd92c66"
+        },
+        "mobilenet_v2": {
+          "train2017": "dd1260b5c2e832da6ed39d442f475e025f1bca83419bae3ac4cb3417fad6ebaf",
+          "val2017": "dd1260b5c2e832da6ed39d442f475e025f1bca83419bae3ac4cb3417fad6ebaf"
+        },
+        "efficientnet_v2_s": {
+          "train2017": "8c6e01f894a7b2a08288913716d766cd156a64c556253e06221ffa853805fbcf",
+          "val2017": "8c6e01f894a7b2a08288913716d766cd156a64c556253e06221ffa853805fbcf"
+        }
+      }
+    },
+    "metrics": {
+      "package": "pycocoevalcap",
+      "version": "1.2",
+      "bleu": {
+        "implementation": "Bleu(4)",
+        "aggregation": "corpus",
+        "scale": "0..1; no multiplication by 100"
+      },
+      "cider_d": {
+        "implementation": "Cider(n=4,sigma=6.0)",
+        "ngrams": 4,
+        "sigma": 6.0,
+        "scale": "native score, including the implementation's factor 10; no extra multiplication",
+        "document_frequency": "all reference sets in the evaluated split"
+      },
+      "tokenization": {
+        "name": "project_regex_v1",
+        "normalization": "NFKC,lowercase,smart quotes,whitespace",
+        "token_pattern": "[^\\W_]+(?:'[^\\W_]+)*|[^\\w\\s]",
+        "reference_vocabulary_mapping": false,
+        "note": "Same tokenizer for predictions and raw references; not COCO leaderboard PTB tokenization."
+      },
+      "source_sha256": {
+        "bleu": "05b74a92b32e071eacfb954ef34328137cfd1b82c563572648633087def23776",
+        "bleu_scorer": "413ccfef71b88c5f11d25d05fdcf08625a1559338ffbb7c2787e800116eaecdd",
+        "cider": "268b71cb096ccd10cf4a7cd49a9a72072001922f1876f4e88833e1eb4649cfcb",
+        "cider_scorer": "299037838373391c3335e066c867ba2d6dd8617d2c8fb2c4193f32620a774adc"
+      }
+    },
+    "observed_file_hashes": {
+      "cache/splits.json": "fc60cb5fc0f55422cf3aa7d76a97ecc149c04dd286bdaa6a26a9692e8a850770",
+      "cache/vocab.json": "2cf42401bcd0074ab8fc431d323788de78baf0f616e66639edcdc542b15f2c55",
+      "FinalAML.ipynb": "8b8d544de460227516c02caa69cd11bd01d48bfbe1b4206e897a5b7153dca0e4",
+      "SpatialAttention.ipynb": "408c89fe1f015631348590936e0a3b6abac1a2b444a30aa9a582de3884a71b41"
+    },
+    "delivery_note": "Recompute SHA256 for the exact packaged notebook/prompt/code/data files and archive contents. Copy split IDs, vocabulary and original references unchanged. Save detector weight enum, downloaded weight SHA256, torchvision version, ROI feature tap/dimension, preprocessing, selection rules and cache hashes. Preserve original feature-cache keys as control provenance, but give ROI features new cache keys."
+  },
+  "not_verified": [
+    "No detector weights or models were loaded",
+    "No ROI features were extracted",
+    "No training or GPU work was performed",
+    "No actual stage-3 training checkpoint was found in the inspected spatial group at this read; comparison results must be filled from the completed stage-3 artifact later"
+  ],
+  "region_primitive_read_only_review": {
+    "file": "work/stage5_handoff/region_features.py",
+    "executed": false,
+    "blocking_issue_found": false,
+    "alignment": "Direct roi_heads output boxes remain in transformed coordinates. Re-ROIAlign and box_head use selected final boxes; manual rescaling to original image coordinates happens exactly once.",
+    "fallback_mask": "The full-image fallback uses the transformed image bounds rather than batch padding. It has one valid region; padded rows have mask=False.",
+    "provenance_caveats": [
+      "The detector-attached default metadata describes max_regions=36, score_threshold=0.2, nms_iou=0.5. If extraction arguments change, the cache writer must call region_feature_contract with the actual arguments instead of copying default metadata.",
+      "Torchvision NMS does not guarantee identical CPU/GPU selection for equal-score overlapping boxes. Stable pre-sorting does not establish cross-device bitwise reproducibility; record device and versions."
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+# Use a CUDA build compatible with the recipient GPU/driver; keep the existing working environment.
+# Verify these versions before using internal torchvision detector APIs.
+torch==2.13.0
+torchvision==0.28.0
+pycocoevalcap==1.2
+numpy==2.4.6
+Pillow==12.3.0
+matplotlib==3.11.2
+nbformat==5.11.1
+ipykernel==7.3.0

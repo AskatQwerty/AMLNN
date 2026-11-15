@@ -1,0 +1,166 @@
+STAGE 5: FROZEN DETECTOR REGIONS + THE SAME THREE-LAYER ATTENTION LSTM
+
+Purpose
+-------
+CaptionRegionLSTM generalizes A's CaptionSpatialLSTM to a variable number of
+visual regions. It adds masking support, not another trainable decoder module.
+The detector is frozen and evaluated separately. Training reads cached region
+vectors; no gradient reaches the detector. Detector class names, class IDs,
+confidence scores and box coordinates are not decoder inputs.
+
+Inputs and sizes
+----------------
+B = batch size; K = number of padded region slots; D = feature dimension;
+H = embedding, attention and recurrent width; V = vocabulary size.
+
+Stage 5 uses K=36, D=1024, H=512, V=10004, and three LSTM layers.
+The stored features have shape [N,36,1024] and dtype float16. The dataset copies
+each row and converts it to float32. AMP, when enabled, controls computation.
+Each batch contains features[B,36,1024] and visual_mask[B,36] of dtype bool.
+True ALWAYS means a real, valid visual region; False means a padded slot.
+num_regions[N] has dtype uint8 and equals the number of True entries in each row.
+At least one and at most 36 regions must be valid. The decoder itself supports
+any K>=1 and rejects rows with no valid regions.
+
+The source image_ids.json is a JSON list in exact cache-row order. The dataset
+maps the existing train/validation image IDs to these rows; it never assumes that
+split order equals cache order. It accepts only train and val at this stage.
+
+Image projection and initialization
+-----------------------------------
+1. Replace invalid input vectors with zero BEFORE the learned image projection.
+   This prevents padded garbage, including NaNs, from entering the computation.
+2. v_i = W_image*f_i + b_image, where W_image has shape [512,1024].
+   Set projected invalid slots to zero as well. There is no image activation,
+   image LayerNorm or image dropout.
+3. m = number of valid regions; image_mean = sum(valid v_i)/m, shape [B,512].
+   When the mask is absent or entirely True, use visual.mean(dim=1), exactly as
+   in A's original dense-grid decoder.
+4. Initialize h and c to zeros, each with shape [3,B,512]. Feed image_mean as
+   one [B,1,512] step through nn.LSTM. Retain ALL three layers of h and c.
+   Discard the visual output: it has no word target and contributes no word loss.
+
+One word step, in exact order
+----------------------------
+At step t, use the state left by the visual step or the preceding word step.
+The query comes from the previous TOP-layer hidden state, h_previous[-1].
+
+  k_i       = W_visual*v_i + b_visual       [B,K,512]
+  q_t       = W_hidden*h_previous[-1]       [B,512]; no query bias
+  score_ti  = w_score^T*tanh(k_i + q_t)     [B,K]; no score bias
+
+The visual keys k_i are prepared once per caption. Replace scores at invalid
+positions with negative infinity, then apply softmax over K visual positions.
+
+  alpha_ti  = softmax(masked scores)        [B,K]
+  context_t = sum_i(alpha_ti*v_i)           [B,512]
+
+Invalid positions have exactly zero attention. Valid attention sums to one.
+Attention is recomputed for every word using the changing recurrent state.
+There is no context gate, spatial positional embedding or auxiliary attention loss.
+
+  word_t    = Dropout(Embedding(token_t))   [B,512], dropout p=0.3
+  fused_t   = Linear([word_t, context_t])   [B,1024] -> [B,512]
+  out_t,(h,c) = LSTM(fused_t[:,None,:], previous (h,c))
+  logits_t  = Linear(Dropout(out_t[:,0]))   [B,512] -> [B,10004], dropout p=0.3
+
+The fusion is a learned Linear(1024,512), with bias and no added activation.
+The LSTM uses input_size=512, hidden_size=512, num_layers=3, batch_first=True,
+bidirectional=False and built-in dropout=0. Only embedding and output dropout
+are used. Projection, attention, fusion, embedding, LSTM and output all train
+jointly. The output is raw logits: do not apply softmax before cross entropy.
+
+Caption inputs, targets and loss
+-------------------------------
+Use the actual saved vocabulary IDs for <start>, <end>, padding and unknown.
+Keep at most 32 content tokens, then add <start> and <end>: at most 34 tokens.
+For teacher forcing:
+
+  caption: <start> a cat <end>
+  inputs:  <start> a cat
+  targets: a cat <end>
+
+forward(features, inputs, visual_mask) returns logits[B,T,V], one output per
+input word. forward_with_attention additionally returns weights[B,T,K]. Its
+attention at index t describes the prediction of target t, the NEXT word.
+Batch lengths include <start>/<end>; shifted text lengths are lengths-1.
+
+Use CrossEntropyLoss(ignore_index=PAD_ID, reduction="sum"). Divide by the
+number of non-padding target tokens for backward. For an epoch, accumulate
+the returned summed loss and token count separately, then divide the totals.
+Do not average batch means, which would weight short and long captions equally.
+The batch helper performs optimizer.zero_grad, backward, total-norm clipping
+at 5.0 and optimizer.step. With CUDA AMP, it calls scaler.unscale_(optimizer)
+before clipping, then scaler.step and scaler.update. CUDA AMP requires an
+enabled scaler; CPU fixture checks use amp=False and scaler=None.
+
+Training chooses one human caption per image per epoch using a private
+random.Random(seed+epoch), in the existing split-ID order. Call set_epoch(epoch)
+before iterating each training epoch. Validation loss uses caption index 0.
+The loader has workers=0 and its own torch.Generator. It does not shuffle by
+itself: pass the shared shuffled training index list through its indices argument.
+Original human reference captions are retained separately for metrics, without
+unknown-token replacement. Metrics, early stopping and the full resumable
+trainer are implemented by the main notebook, not these batch helpers.
+
+Greedy generation
+-----------------
+Call greedy(features, START_ID, END_ID, max_steps=33, visual_mask=mask).
+Use only the image and <start> initially, then feed back the previous predicted
+token. Preserve all LSTM hidden/cell states and recompute attention each step.
+Do not use previous reference words. Generate in eval mode without gradients.
+Padding and a new <start> are blocked. Stop each caption at <end> or the length
+limit; returned token lists omit <end>. The method restores the prior train/eval
+mode after generation. generate_region_batch always passes the visual mask.
+
+Dense-grid equivalence and checkpoint boundary
+---------------------------------------------
+With feature_dim=2048, K=49 and all regions valid, this decoder has the same
+parameter names, shapes and construction order as A's CaptionSpatialLSTM.
+Its operations are mathematically the same. CPU tests at reduced width verified
+exact seeded initialization, strict state-dict loading, exact evaluation logits,
+attention and image states, exact same-seed dropout outputs, and matching greedy
+captions. Both an absent mask and an all-True mask preserve the original path.
+
+Stage 5 instead uses feature_dim=1024. Its image_projection.weight is [512,1024],
+while A's 2048-dimensional checkpoint contains [512,2048]. Therefore A's complete
+checkpoint is NOT directly compatible with stage 5. Train this decoder afresh;
+do not slice the projection or silently skip weights to hide the mismatch.
+This comparison changes the visual representation and its projection input
+dimension. It is not a comparison of two different recurrent decoder designs.
+
+Parameter count
+---------------
+CPU instantiation with feature_dim=1024, vocab_size=10004, embedding_size=512,
+hidden_size=512 and num_layers=3 confirmed 18,132,756 trainable parameters:
+
+  image_projection       524,800
+  embedding            5,122,048
+  attention_visual       262,656
+  attention_hidden       262,144
+  attention_score            512
+  input_fusion           524,800
+  recurrent            6,303,744
+  output               5,132,052
+
+Dropout has no parameters. Detector parameters are excluded from this count.
+
+Files and standalone imports
+----------------------------
+decoder.py imports torch and nn; it does not depend on notebook globals.
+batch_contract.py includes every required import: json, random, functools.partial,
+pathlib.Path, numpy as np, torch, nn, pad_sequence, DataLoader, Dataset and Subset.
+For one submitted notebook, move these imports to its first import cell and
+embed the helper definitions below it. Close every dataset in a finally block
+after use, so its memory-mapped files are released on Windows.
+
+cache_files[source] uses features_path, mask_path, num_regions_path and
+image_ids_path, with source=train2017 or val2017. The data object must be the
+prepared project data with integer image-ID keys, saved token IDs, original
+references, split_ids, feature_sources and source_image_ids.
+
+The reports in verification/ were produced by development scripts on laptop A.
+Those development scripts are not runtime dependencies in this transfer.
+Their fixtures used CPU only, closed their memmaps and did not modify A's
+notebooks, caches or experiment results. Laptop B must add and run the real
+cached-data/GPU preflight and resume checks specified in the Codex prompt.

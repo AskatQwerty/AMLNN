@@ -1,0 +1,19 @@
+{
+  "static_compile": true,
+  "stub_final_box_feature_alignment": true,
+  "same_fpn_reused": true,
+  "class_agnostic_nms_and_top_k": true,
+  "score_threshold_inclusive": true,
+  "empty_and_low_score_fallback": true,
+  "original_coordinates_rescaled_once": true,
+  "true_valid_mask_and_padding": true,
+  "exif_rgb_input": true,
+  "download_disabled_guard": true,
+  "pretrained_detector_executed": false,
+  "detector_downloaded": false,
+  "gpu_used": false,
+  "full_region_cache_extracted": false,
+  "project_written": false,
+  "torch": "2.13.0+cu126",
+  "torchvision": "0.28.0+cu126"
+}

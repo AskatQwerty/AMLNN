@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "cuda_used": false,
+  "torch": "2.13.0+cu126",
+  "batch_contract_sha256": "311ee49b7d6cbc717078f25c28457617d7382688bc6f051bd0c3c052532c1c76",
+  "decoder_sha256": "9e4c16abc6425fbfb05c770ad234f730c5b1598014e690af56ce7ddaf6c0602b",
+  "verification_script_sha256": "465d43eaee6117083f7c39a3fc5b4149d79a871bc192b6919f0dcfa2ad899739",
+  "cache_file_keys": [
+    "features_path",
+    "mask_path",
+    "num_regions_path",
+    "image_ids_path"
+  ],
+  "checks": {
+    "source_id_order_to_split_row_mapping": true,
+    "header_mask_count_validation": true,
+    "same_epoch_caption_selection_and_private_rng": true,
+    "validation_caption_zero": true,
+    "start_end_unknown_and_32_token_limit": true,
+    "original_references_unchanged": true,
+    "collation_shapes_padding_and_lengths": true,
+    "loader_private_rng_and_explicit_index_order": true,
+    "teacher_forcing_masked_step_returns_sum_and_token_count": true,
+    "finite_backward_and_optimizer_update": true,
+    "generation_receives_visual_mask": true,
+    "memmaps_closed_and_fixture_removed": true,
+    "test_split_rejected": true
+  },
+  "scope": "CPU fixture and one optimizer step only; no real-data training or extraction."
+}
