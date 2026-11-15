@@ -1,68 +1,67 @@
-# Image Captioning: 79 experiments in one notebook
+# Image Captioning: 79 completed models and spatial attention
 
-`FinalAML.ipynb` contains all preparation, models, training, evaluation, timers, checkpoint and transfer code. The original **75 completed experiments are preserved**, including B's 25 imported recurrent runs. The plan now adds **four ResNet50 depth experiments**: LSTM with 3 or 4 layers and the causal image-prefix Transformer with 3 or 4 layers. These four new runs require training; their scores stay blank until results are saved.
+**All 79 global-vector experiments are complete.** They include the original 75-model grid and four ResNet50 depth comparisons. B's 25 recurrent runs have been collected on A; no further work on B is required.
 
-The original grid is 5 CNNs x 3 decoder families x 5 variants. Its configurations, names, assignments and compatibility IDs are unchanged. The CNNs are ResNet50, ResNet18, VGG19, MobileNetV2 and EfficientNetV2-S. The depth study reuses the saved ResNet50 global vectors; no new image extraction is needed.
+`FinalAML.ipynb` and `experiments/all_encoders_v5_100epochs/` preserve those results. The next stage is the separate, self-contained **`SpatialAttention.ipynb`**: it analyzes the saved models and adds two spatial-attention experiments. Their full training is pending. The new notebook reads the original 79 runs without changing their notebooks, checkpoints or predictions.
 
-## Run the four new experiments
+## Saved controls and new models
 
-Open Jupyter beside `FinalAML.ipynb` using the working CUDA environment. The notebook defaults to:
+The controls are the best validation configurations in each relevant family:
+
+| Saved global-vector control | Layers | Validation CIDEr-D | BLEU-4 |
+|---|---:|---:|---:|
+| ResNet50 + LSTM | 3 | 0.8081028 | 0.2514701 |
+| ResNet50 + image-prefix Transformer | 3 | 0.8578049 | 0.2632592 |
+
+Four layers lowered CIDEr-D to 0.7670167 for LSTM and 0.8387274 for Transformer. The three-layer LSTM's improvement over two layers was only 0.0034192 CIDEr-D. These are single-seed results; small differences do not establish a reliable architectural advantage.
+
+The two new models keep three layers, width/embedding 512 and dropout 0.3:
+
+- **LSTM with additive spatial attention:** a learned projection maps 49 image locations to 512 dimensions. The model processes their mean as an initial visual step, then attends to the locations using its previous hidden state at each word.
+- **Transformer with cross-attention:** three `TransformerDecoderLayer` blocks use causal text queries and the 49 projected visual locations as memory. Text has learned positions; memory has learned row/column positions. The model keeps 8 heads, feed-forward width 2048 and pre-normalization.
+
+The new models train from scratch. They have different parameter counts and cannot load the old global-vector checkpoints. Compare them with the matched saved controls using the same validation protocol.
+
+## Open the new notebook
+
+Start Jupyter in the project folder with the working `deep-learning` CUDA kernel. All required code and imports are inside `SpatialAttention.ipynb`; it does not execute the old notebook or require separate Python helper files. Its default switches are:
 
 ```python
-LAPTOP_ID = "A"
-TRAIN_DECODERS = ["lstm", "transformer"]
-TRAIN_VARIANTS = ["depth_3", "depth_4"]
-TRAINING_ONLY = True
+EXTRACT_SPATIAL_FEATURES = False
 RUN_PREFLIGHT = False
-RUN_TRAINING = False
-RUN_FINAL_TEST = False
+RUN_SPATIAL_TRAINING = False
 ```
 
-Run All and confirm that B6 selects **exactly four new ResNet50 runs**. Then change the existing `RUN_TRAINING` flag to `True` and Run All when ready to train. Keep the separate `TRAINING_ONLY=True` line: it loads prepared data and cached CNN vectors. The default filters exclude all 75 completed configurations from training.
+Run All in this review mode to analyze the 79 saved runs and inspect cache status. If the spatial cache is missing or incomplete, set the existing `EXTRACT_SPATIAL_FEATURES` flag to `True` and run the extraction cell. Extraction resumes saved progress and reuses completed sources. Once both source caches are complete, return that flag to `False`, set `RUN_SPATIAL_TRAINING=True`, and run the training section or Run All. This starts or resumes only the two new models.
 
-Every new run performs a batch/backward/greedy check and fixed tiny-set memorization with dropout disabled, then creates a fresh main model. Transformer also checks its masks and image conditioning. Training uses Adam 0.001, batch size 64, at most **100 epochs**, early-stopping **patience 3** on validation CIDEr-D, gradient clipping 5.0 and seed 42.
+Each new experiment must pass a batch/backward/generation check and temporary small-set memorization before full training. The diagnostic model has dropout disabled, allows up to 2,000 steps and is discarded before the main model is created. `RUN_PREFLIGHT=True` can run these checks explicitly; leaving it False does not bypass the required preflight inside a new training run.
 
-The temporary small-set check allows up to **2,000 steps for the depth variants**, stopping early when loss is at most 0.1 and greedy captions match the fixed targets exactly. The original 75 configurations retain their 200-step diagnostic limit. This separate check does not change the main experiment's training budget or initialize its model.
+## Spatial cache
 
-## Matched depth comparison
+Global average pooling removed spatial information, so the old vectors cannot recover the 49 locations. The new cache uses the **same frozen ResNet50 ImageNet V2 weights, 224 x 224 resize + padding, ImageNet normalization and CUDA AMP float16 computation** as the global cache. Features are taken after layer4 and before average pooling: `[2048,7,7]` becomes `[49,2048]` in row-major order.
 
-Both decoder families use the following ResNet50 configurations:
+The cache lives in `cache/features/resnet50_spatial_v1/`. It stores **123,287 images x 49 x 2,048 values as float16**, approximately **23.045 GiB**, plus small metadata/ID files. Sources are 118,287 `train2017` images and 5,000 `val2017` images. The source train file also supplies the separately held-out labeled test rows; extraction uses no test captions or scores. Official unlabeled `test2017` is excluded.
 
-| Variant | Layers | Width and embedding | Dropout | Status before new training |
-|---|---:|---:|---:|---|
-| `baseline` | 1 | 512 | 0.3 | Existing result |
-| `stacked` | 2 | 512 | 0.3 | Existing result |
-| `depth_3` | 3 | 512 | 0.3 | New experiment |
-| `depth_4` | 4 | 512 | 0.3 | New experiment |
+Recreating the cache requires the original COCO JPEGs; an annotations-only transfer folder is insufficient. Once the spatial cache exists, decoder training uses it directly. Each source has explicit image-ID order, metadata and durable progress; completed batches are flushed before progress advances. Spatial means are checked against the saved global vectors within floating-point tolerance. Old global feature files are not overwritten. Allow additional disk space for the new checkpoints and any transfer archives.
 
-Only layer count changes within each decoder's depth comparison. LSTM keeps built-in recurrent dropout at zero and uses separate dropout layers. Transformer keeps 8 heads, feed-forward width 2048, pre-normalization, learned positions, and its global image-prefix token. Its causal mask blocks future words; padding keys are masked. There is no separate spatial-image or cross-attention module.
+## Training protocol, saving and analysis
 
-All runs share 113,287 training images, 5,000 validation images, the saved vocabulary and human references. Training uses one random caption per image per epoch. Validation loss uses a fixed caption; metrics use all original references. Keep `pycocoevalcap==1.2` and the saved tokenizer. BLEU-1/BLEU-4 use the 0–1 scale; CIDEr-D uses the implementation's native scale, including its factor 10. The separate 5,000-image labeled test remains unused during model selection.
+Training uses Adam 0.001, batch size 64, maximum 100 epochs, patience 3 on validation CIDEr-D, gradient clipping 5.0 and seed 42. CNN weights stay frozen. Both models use the existing 113,287 training images, 5,000 validation images, training-only vocabulary and caption preprocessing. Each training image receives one random human caption per epoch. Validation loss uses a fixed caption; metrics retain all original references. The 5,000-image labeled test remains unused during model selection.
 
-## Results, timers and resume
+Keep `pycocoevalcap==1.2` and the saved project tokenizer. BLEU-1/BLEU-4 use the 0–1 scale; CIDEr-D uses the implementation's native scale, including its factor 10. These local scores use different tokenization from the official COCO leaderboard.
 
-Results stay in `experiments/all_encoders_v5_100epochs/`. New names include `resnet50_lstm_depth_3_seed42` and `resnet50_transformer_depth_4_seed42`. Each run saves `best.pt` and `last.pt` with model, optimizer, AMP scaler, RNG and early-stopping state. `best_weights.pt` and `last_weights.pt` contain plain weights. Configuration, vocabulary, history, summary and validation predictions are also retained. Resume interrupted runs with the same settings; completed runs are reused.
+All new outputs go to **`experiments/resnet50_spatial_v1/`**. Analysis tables/plots are saved in its `analysis/` subfolder. Each spatial run saves `best.pt`/`last.pt` with model, optimizer, AMP scaler, RNG and early-stopping state; `best_weights.pt`/`last_weights.pt` contain plain weights. Configuration, vocabulary, history, summary and validation predictions are retained. Resume with identical settings; an interrupted run continues from its last committed checkpoint.
 
-Timers show epoch time, validation time, active total time and session time. Active run time includes training, validation and checkpoint writing, while pauses and preflight are excluded. GPU/device details are recorded. Do not attribute timing differences across devices solely to architecture. Keep space for checkpoints and archives; `RESULTS_ROOT` and `TRANSFER_DIR` can point to another drive.
+Timers record extraction and training work separately. Active training time includes validation and checkpoint writing, while pauses and preflight are excluded. Device information is saved. Different GPUs and stopping epochs affect total times, so totals are not isolated architecture-speed measurements. If the agreed batch size does not fit, use a separately named result group for a changed protocol.
 
-B8 shows the full **79-run** table and an eight-row ResNet50 depth comparison. The family summary and heatmap use only completed runs. After the new runs finish, ResNet50 LSTM/Transformer have seven candidate variants; other CNN/decoder pairs retain five. These displayed winners are maxima, not averages across variants or seeds. A small validation difference from one seed does not establish a reliable advantage. B9 plots the best completed model in each decoder family.
+The new notebook compares saved global controls with pending or completed spatial runs and distinguishes CNN activation maps from learned decoder attention. Its verification section displays an available `spatial_verification.json` report; a development check is not a completed training experiment. Only claim the checks and runs recorded in the actual report/results.
 
-## Assignments and transfer
+Local development checks passed on the RTX 4060 Laptop GPU: both spatial models passed batch-64 forward/backward, attention/causal/PAD checks, greedy generation, AMP train/eval, four-image memorization, and exact model/optimizer/scaler/CPU+CUDA RNG checkpoint reload. A temporary Transformer run with 8 training and 4 validation images also resumed with exactly matching weights after interruption. The complete spatial cache was extracted and every row checked for finite, nonzero features; recorded active extraction time is about 12m54s. Full spatial model training has **not** been run. The LSTM has 18,657,044 trainable parameters and the Transformer has 23,940,884, compared with 17,606,932 and 20,778,772 in their saved global controls.
 
-A owns its original 50 runs plus the four depth additions: **54**. B retains its original **25** recurrent runs, already collected on A. No new B training is required. To review or reproduce B's original selection with this notebook, use:
+## Preserve and share
 
-```python
-LAPTOP_ID = "B"
-TRAIN_DECODERS = ["rnn", "lstm"]
-TRAIN_VARIANTS = None
-```
+Keep all 79 original result folders, the original notebook, prepared captions, split IDs, vocabulary and global feature caches. The spatial stage uses a separate cache and result group. B's collected results and existing archive remain valid; do not retrain or re-export them unless another transfer is needed.
 
-`TRAIN_VARIANTS=None` selects all assigned variants for the chosen decoders. Omitting that change on B would leave the default depth selection empty. Both laptops use the same full data splits; experiments, not images, are assigned between them.
+Large datasets, caches, checkpoints and archives stay out of GitHub and are transferred separately. A machine receiving only the old training-data archive still needs the new spatial cache or the original JPEGs to create it. For reproduction details, retain `requirements-captioning.txt` and `environment-reference.json`; use the existing working CUDA environment.
 
-The original data archive and `caption_results_B.zip` remain compatible. Large caches, weights and archives are transferred separately and stay out of GitHub. A new machine can extract `caption_training_data.zip` beside the notebook, producing `cache/`, `data/coco2017/annotations/` and `bundle_manifest.json`. The notebook verifies the transferred data. Raw photographs are unnecessary for cached-feature training.
-
-Section C defaults to no transfer actions. `EXPORT_SCOPE="selected"` exports completed runs selected by both decoder and variant filters; A's default archive is `caption_results_A_lstm_transformer_depth_3_depth_4.zip`. B's selection above produces `caption_results_B_rnn_lstm_all_variants.zip`. `EXPORT_SCOPE="all_assigned"` uses all 54 A configurations or all 25 B configurations, exporting only completed runs. Check the printed count and use a new filename for a later export. Set `RECEIVED_RESULTS_ARCHIVE` to the actual incoming path; the importer checks identities and refuses conflicting folders.
-
-The branch remains [codex/50-experiments](https://github.com/AskatQwerty/AMLNN/tree/codex/50-experiments). Environment references are in `requirements-captioning.txt` and `environment-reference.json`. B11 displays available verification reports; these diagnostics are separate from completed experiments, and a report covers only its recorded configurations.
-
-Submit one `FinalAML.ipynb` with the combined outputs. Retain the result folders for later analysis; no weight averaging or notebook merging is needed. Select finalists using validation, then use the labeled test after that choice is fixed. See [TEAMMATE_CODEX_PROMPT.md](TEAMMATE_CODEX_PROMPT.md) for B's preservation and reproduction instructions.
+The branch remains [codex/50-experiments](https://github.com/AskatQwerty/AMLNN/tree/codex/50-experiments). After the spatial stage, the two self-contained notebooks can be combined into the single final submission, preserving distinct model names and output groups. Select finalists on validation and reserve the labeled test until that choice is fixed.

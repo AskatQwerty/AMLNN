@@ -1,0 +1,63 @@
+{
+  "cpu_and_fixture_checks": {
+    "cpu_spatial_shape": [
+      2,
+      49,
+      2048
+    ],
+    "cpu_same_forward_mean": true,
+    "cpu_quantization_mean": true,
+    "cpu_vs_old_amp_difference": {
+      "max_abs": 0.005940437316894531,
+      "relative_l2": 0.002712768502533436
+    },
+    "synthetic_resume_prefix_preserved": true,
+    "synthetic_uncommitted_tail_overwritten": true,
+    "synthetic_ready_recovery": true,
+    "mismatch_rejected": true,
+    "gpu_used": false,
+    "project_written": false
+  },
+  "space_planner_checks": {
+    "ordinary_windows_partial_not_double_counted": true,
+    "sparse_file_remaining_rows_reserved": true,
+    "new_file_full_size_reserved": true,
+    "exact_free_space_boundary_passed": true,
+    "gpu_used": false,
+    "project_written": false
+  },
+  "actual_cuda_cache_complete": true,
+  "all_rows_checked_finite": {
+    "train2017": 118287,
+    "val2017": 5000
+  },
+  "actual_cuda_spatial_mean_checks": {
+    "train2017": {
+      "rows": [
+        0,
+        59143,
+        118286
+      ],
+      "images": 3,
+      "max_absolute_error": 0.0017137527465820312,
+      "relative_l2_error": 0.00021147754159756005,
+      "rtol": 0.005,
+      "atol": 0.005,
+      "passed": true
+    },
+    "val2017": {
+      "rows": [
+        0,
+        2500,
+        4999
+      ],
+      "images": 3,
+      "max_absolute_error": 0.00194549560546875,
+      "relative_l2_error": 0.0002039232203969732,
+      "rtol": 0.005,
+      "atol": 0.005,
+      "passed": true
+    }
+  },
+  "real_extraction_resumed_from_row": 25664
+}
