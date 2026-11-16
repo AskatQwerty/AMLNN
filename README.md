@@ -59,7 +59,7 @@ To rerun the report cells, restore the full result archive into the project dire
 
 The notebooks are the main experimental record. For a new image, use [inference/caption_image.py](inference/caption_image.py), which resolves model and encoder paths from command-line arguments. A CUDA smoke check on COCO validation image 119911 reproduced its saved final caption without reading or writing feature arrays; CPU execution is implemented but was not tested in that check. See [verification](inference/verification.json).
 
-After the planned inference release archive is available, extract it under `local_artifacts/final_model/` and run from the repository root:
+Download the inference release archive and extract it under `local_artifacts/final_model/` and run from the repository root:
 
 ```powershell
 python inference/caption_image.py --image "photo.jpg" --model-dir "local_artifacts/final_model/selected_model" --torch-cache "local_artifacts/final_model/encoder_cache" --device auto --output "caption.json"
@@ -69,13 +69,15 @@ python inference/caption_image.py --image "photo.jpg" --model-dir "local_artifac
 
 ## Final weights and full result archive
 
-Publication of GitHub Release **`final-model-2026-11-16` is pending verification**. The planned [release destination](https://github.com/AskatQwerty/AMLNN/releases/tag/final-model-2026-11-16) will contain:
+Download the model and complete results from the [final release](https://github.com/AskatQwerty/AMLNN/releases/tag/final-model-2026-11-16):
 
 - `final_model_inference.zip`: selected epoch 11 weights/config/vocabulary, portable CLI and both frozen CNN weight files for offline inference.
 - `final_model_resume.zip`: retained training checkpoints, warm-start compatibility dependency and run metadata. Re-extract the numeric features before resuming cached-feature training.
-- `full_results_without_weights.zip`: all retained results, including per-epoch predictions, without obsolete weights, original COCO JPEGs or numeric feature arrays.
+- `full_results_without_weights.tar.xz`: all retained results, including per-epoch predictions, without obsolete weights, original COCO JPEGs or numeric feature arrays.
 
-These uploads have not yet been verified; this README does not claim that the release assets are already available. Large weight files, datasets and transfer archives stay outside normal Git history.
+Archive sizes and SHA-256 checksums are recorded in [metadata/release/](metadata/release/). GitHub's uploaded-asset digests were checked against the local files. Large weight files, datasets and transfer archives stay outside normal Git history.
+
+Extract the results with `tar -xf full_results_without_weights.tar.xz` or 7-Zip. Copy the contents of `project_results/` into the project root to restore `experiments/`, `saved_results/` and `submission_assets/`. `recovered_archives/` preserves the original teammate evidence separately. The resume package README uses the earlier ZIP name for these same results; the release distributes them as TAR.XZ to reduce download size.
 
 The selected decoder metadata is in [metadata/final_model/](metadata/final_model/). The selected trained weight file has SHA-256 `f97a57d7adbbbe6b3a6d77589ab2a785520e9a2c7b8a99c573dd9d13c44f7b6f`. A full training checkpoint and an inference-only weight file have different hashes and contents; do not interchange their loaders.
 

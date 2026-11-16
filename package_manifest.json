@@ -1,13 +1,13 @@
 {
-  "created_utc": "2026-11-16T02:45:36.005414+00:00",
+  "created_utc": "2026-11-16T03:18:42.742053+00:00",
   "purpose": "Lightweight final project Git archive",
   "excludes": [
     "package_manifest.json",
     ".git/",
     "Git-ignored datasets, numeric features, weights and archives"
   ],
-  "file_count": 515,
-  "bytes": 45000157,
+  "file_count": 517,
+  "bytes": 45002088,
   "files": [
     {
       "path": ".gitattributes",
@@ -36,8 +36,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10777,
-      "sha256": "db8be85faa3a06c34d9e12d48ebf448f8ab6e09298e56d9b058cf04895c08eb8"
+      "bytes": 11174,
+      "sha256": "83dfc04da079b8f072b334596317547867958d20087dab4d58619fde584105f7"
     },
     {
       "path": "SpatialAttention.ipynb",
@@ -188,6 +188,16 @@
       "path": "metadata/preparation/vocab.json",
       "bytes": 370870,
       "sha256": "2cf42401bcd0074ab8fc431d323788de78baf0f616e66639edcdc542b15f2c55"
+    },
+    {
+      "path": "metadata/release/SHA256SUMS.txt",
+      "bytes": 283,
+      "sha256": "12bed3a9775fb7b82b1c9aa9589d84b612bf546045bf0de51ca335aa7da96e90"
+    },
+    {
+      "path": "metadata/release/assets.json",
+      "bytes": 1251,
+      "sha256": "84a9b390af17c720f9e99e3cbed91a58b3090ac48c6dca4a220afe716ad20108"
     },
     {
       "path": "requirements-captioning.txt",

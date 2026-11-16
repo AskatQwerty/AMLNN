@@ -1,0 +1,30 @@
+{
+  "tag": "final-model-2026-11-16",
+  "remote_asset_digests_verified": true,
+  "assets": [
+    {
+      "name": "final_model_inference.zip",
+      "bytes": 347284392,
+      "sha256": "dc6bbc4d30c9dfd37ae25c6e3b84e158de8c9a5e833fd48e9968fb36de3f8ffd",
+      "url": "https://github.com/AskatQwerty/AMLNN/releases/download/final-model-2026-11-16/final_model_inference.zip"
+    },
+    {
+      "name": "final_model_resume.zip",
+      "bytes": 644304025,
+      "sha256": "02c2d02584c9691666ac89e69eab3a04eb8ec91573aa3419b31c2805cc949711",
+      "url": "https://github.com/AskatQwerty/AMLNN/releases/download/final-model-2026-11-16/final_model_resume.zip"
+    },
+    {
+      "name": "full_results_without_weights.tar.xz",
+      "bytes": 253085688,
+      "sha256": "34e72cf17ba2f95898d2bbc225f7623990841614e7b39904f77a2500bb4e070b",
+      "url": "https://github.com/AskatQwerty/AMLNN/releases/download/final-model-2026-11-16/full_results_without_weights.tar.xz"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 283,
+      "sha256": "12bed3a9775fb7b82b1c9aa9589d84b612bf546045bf0de51ca335aa7da96e90",
+      "url": "https://github.com/AskatQwerty/AMLNN/releases/download/final-model-2026-11-16/SHA256SUMS.txt"
+    }
+  ]
+}
