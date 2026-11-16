@@ -1,0 +1,32 @@
+{
+  "compile_passed": [
+    "beam_search.py",
+    "caption_image.py",
+    "image_features.py",
+    "models.py",
+    "region_features.py"
+  ],
+  "unchanged_source_modules": {
+    "models.py": {
+      "sha256": "727f7ac7e9659a5ce4be3dc66a30f55e6714b87a3a95162f4d0a2ee72cd6e559",
+      "source": "work\\final_fusion\\models.py"
+    },
+    "region_features.py": {
+      "sha256": "880a6dbb01e34ec883cc763585f644709e651884e2f8cd24087ef647ec584929",
+      "source": "work\\stage5_handoff\\region_features.py"
+    },
+    "beam_search.py": {
+      "sha256": "0c9300b08eb999935992e6ed5909b9ed4d37a4da720df9eccc9ce1c99aa71b88",
+      "source": "work\\fusion_decoding_search_20261115\\beam_search.py"
+    }
+  },
+  "image_features_change": "Only added explicit imports for the original region extractor helpers.",
+  "source_config_sha256": "750b424c874f606850460837a3f3dbe5f5e06ff44e26407691619ecd3334be4b",
+  "real_image_smoke_passed": true,
+  "matches_saved_caption_for_image_119911": true,
+  "model_sha256": "f97a57d7adbbbe6b3a6d77589ab2a785520e9a2c7b8a99c573dd9d13c44f7b6f",
+  "feature_arrays_read_or_written": false,
+  "training_performed": false,
+  "cuda_tested": true,
+  "cpu_inference_tested": false
+}

@@ -1,0 +1,133 @@
+{
+  "kind": "stage5_results_B",
+  "run_name": "fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42",
+  "implementation": "9af96b8dbaf46699003b9a4a817f68440fc813564a970c3ad16807230f68ba9e",
+  "created_utc": "2026-11-15T13:45:56.125335+00:00",
+  "files": {
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/best.pt": {
+      "bytes": 217637223,
+      "sha256": "e3eba0078dcf97b40e4176e9b1e3821669968f551703da3a290572440a0562c2"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/best_weights.pt": {
+      "bytes": 72537231,
+      "sha256": "ad73dafd4697434e580c2f4ec92f22187e5035a3531dc80671f14d21e6309a5a"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/config.json": {
+      "bytes": 4114,
+      "sha256": "6c3d8e936fb3d3da4c609ee48f3f70ccf077bbfd796271530ad283f6eec622e4"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/history.csv": {
+      "bytes": 656,
+      "sha256": "56f42ad759613473417ab7769a1ccb206a1f06e3d996926ff60cdb1bcabb566b"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/history.json": {
+      "bytes": 1234,
+      "sha256": "7323ef6d2d331c6bf930fbc6621f8563deee7a6d3bb8ed2865392af0574cc316"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/last.pt": {
+      "bytes": 217637543,
+      "sha256": "03034f83971521ac07fd4289e38932c290e06500678e9e51307f5ee1d9edaa53"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/last_weights.pt": {
+      "bytes": 72537231,
+      "sha256": "7168d2aaddf2b8199207c0e29fb2be0bb00819a4577fa16b74fc1f0f7aaba385"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/predictions/val_epoch_01.json": {
+      "bytes": 2070626,
+      "sha256": "6cb0f832df41da881122f70f01e961a395e05bd5cb6900ffa3d2d0a791a32bc5"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/predictions/val_epoch_02.json": {
+      "bytes": 2070626,
+      "sha256": "6cb0f832df41da881122f70f01e961a395e05bd5cb6900ffa3d2d0a791a32bc5"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/predictions/val_epoch_03.json": {
+      "bytes": 2070626,
+      "sha256": "6cb0f832df41da881122f70f01e961a395e05bd5cb6900ffa3d2d0a791a32bc5"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/predictions/val_epoch_04.json": {
+      "bytes": 2060626,
+      "sha256": "7cc6cdc07c56129026c2ca4d9ad612549a49aeef2a158ee9968502d23895e802"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/status.json": {
+      "bytes": 40,
+      "sha256": "b0ac70c6b19a905c960967d3b4dc217be238aa2905d1dcbcac170806fbd819fb"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/summary.json": {
+      "bytes": 1113,
+      "sha256": "0b83782afd220985c4c9f0a5286bc856232836513a6a603c80de901a775408f4"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/validation_best.json": {
+      "bytes": 2180858,
+      "sha256": "b63c11fece10119c9ca61955608e11d91075698e7db5a539c1d3b16bc5618f95"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/validation_last.json": {
+      "bytes": 2170861,
+      "sha256": "b3cc8500ea419274d72424e2e7b3354ebe0bea58e22c6ba6017abd27b4f22cd5"
+    },
+    "experiments/fasterrcnn_regions_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42/vocabulary.json": {
+      "bytes": 350518,
+      "sha256": "a70e37b0a58c54880fd8a659f4b077633deca15afe925e6203e8f338224796ba"
+    },
+    "experiments/fasterrcnn_regions_v1/checks/preflight_fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42_9464823380b9.json": {
+      "bytes": 7760,
+      "sha256": "cf4f154b33f556acccbc5f148adcced3127decbd88eadd3f0a419c4798dd7b89"
+    },
+    "experiments/fasterrcnn_regions_v1/checks/preflight_summary.json": {
+      "bytes": 1100,
+      "sha256": "f6e713a76668c05032ef9fd5fa86d941a22b0f18ccc4f947c5c27a919a6e1a47"
+    },
+    "stage5_reports/detector_smoke_boxes.png": {
+      "bytes": 969832,
+      "sha256": "6460c6cad4323be9da7b98b2d5d1692539f6cf101daf6bce2fd9ab77407c93d0"
+    },
+    "stage5_reports/environment_report.json": {
+      "bytes": 781,
+      "sha256": "9990462bfff24023d52c40b1ac0db7572b54b04dc8f99e281228b8166ea19e3b"
+    },
+    "stage5_reports/learning_curves.png": {
+      "bytes": 27915,
+      "sha256": "657dded645d8886df740fadfae625619fc9152cad467ce2ef6d02b3be34ae93b"
+    },
+    "stage5_reports/region_count_histogram.png": {
+      "bytes": 13242,
+      "sha256": "3aa03009ad38f4d46e632c831e2ff0ea8b95442a46fcb2c7e4115d41f25e7d1f"
+    },
+    "stage5_reports/verification_report.json": {
+      "bytes": 18126,
+      "sha256": "2a4b07f506a0ecc94905c2b2fb1cd8e3d6ffa1cc885406ef131627d81a06699a"
+    },
+    "cache/features/fasterrcnn_regions_v1/region_cache_report.json": {
+      "bytes": 18840,
+      "sha256": "f20f187d19299fc993314dc52a53e8d5cdd96d1461c03d00bca76875c3a3bf8f"
+    },
+    "cache/features/fasterrcnn_regions_v1/train2017_image_ids.json": {
+      "bytes": 1160306,
+      "sha256": "25d2034e612a6f45c2d3c9bd66f3390e074472a8e6fd72c2e7c8a83bc62d1c52"
+    },
+    "cache/features/fasterrcnn_regions_v1/train2017_meta.json": {
+      "bytes": 6593,
+      "sha256": "e039d56c5e5fdaf7b0c1a2be70af96da57462b4d1c7443c1b168a6be8107253e"
+    },
+    "cache/features/fasterrcnn_regions_v1/train2017_progress.json": {
+      "bytes": 4696,
+      "sha256": "40d6b00bf196e5582e4796d46140e012865cade92e3bd4bb99354b346bcbfa6a"
+    },
+    "cache/features/fasterrcnn_regions_v1/val2017_image_ids.json": {
+      "bytes": 49039,
+      "sha256": "e07c71fd3cad1e967f7f907d359315d38101adaf59f9658e4e8c2c0670f7741b"
+    },
+    "cache/features/fasterrcnn_regions_v1/val2017_meta.json": {
+      "bytes": 6522,
+      "sha256": "7eaee0d37de52b56e59b6cd6b744e69fa0a0a64625aa3081044f5223eeaf3b42"
+    },
+    "cache/features/fasterrcnn_regions_v1/val2017_progress.json": {
+      "bytes": 4682,
+      "sha256": "26117c350b891d60f6ea0707c1a1f9cb224f160f704f141f057e3ff880b1d111"
+    },
+    "FasterRCNN_Stage5.source.ipynb": {
+      "bytes": 176020,
+      "sha256": "d8a24dbbd9cdfc9339eccd8dbd0b6e9fe2f431ce596fbff5c2427d7402667b34"
+    }
+  },
+  "not_included": "Region arrays (*.npy, ~8.5 GiB) and raw JPEGs. The executed notebook is downloaded from Kaggle."
+}

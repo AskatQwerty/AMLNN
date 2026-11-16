@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "count": 10,
+  "checks": [
+    "The fixed widths and alphas create exactly16 unique modes",
+    "One grouped chunk commits all five alpha outputs together and partial progress creates no metrics",
+    "The first width3 batch is exactly equal to the original alpha0.6 helper",
+    "Resume rejects a chunk missing any configured alpha",
+    "Resume processes only missing image batches, once perwidth; each alpha names the same shared timer without inventing per-alpha generation time",
+    "A completed group reuses verified full-corpus outputs/metrics without generation or rescoring",
+    "Actual grouped helper dispatches widths3/5/7 and all16 variants retain identical full IDs/raw references",
+    "Interrupted grouped output resumes exactly for every alpha",
+    "Grouped resume rejects a changed snapshot/search identity",
+    "Invalid search settings fail before loading any model or data"
+  ],
+  "gpu_used": false,
+  "project_written": false,
+  "main_training_performed": false,
+  "real_metrics_scored": false,
+  "synthetic_only": true,
+  "runner_sha256": "db2c2fcf7556da881a3d209f8321c379e1d85b202aa006ce5424eb5286d5a7c6",
+  "grouped_helper_sha256": "f10575e9aa3b6481c2821ee71d31c73a658e14643cca65d2fe57de8732a00c7b"
+}

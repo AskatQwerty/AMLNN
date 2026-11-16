@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "no_gpu_no_scoring_no_project_writes": true,
+  "primary_unchanged": "epoch11_beam5_alpha0",
+  "exact5000_disjoint_test_ids": true,
+  "all25008_raw_references_preserved": true,
+  "all_prediction_chunk_hashes_and_csv_verified": true,
+  "manifest_exact_predeclared_validation_top3": true,
+  "results": [
+    {
+      "candidate": "epoch11_beam5_alpha0",
+      "role": "primary_validation_selected",
+      "scores": {
+        "bleu1": 0.7491571932575314,
+        "bleu4": 0.32615082120016037,
+        "cider_d": 0.9983915922664485
+      },
+      "validation_scores": {
+        "bleu1": 0.7413195222103705,
+        "bleu4": 0.31620121416779773,
+        "cider_d": 0.9801341231384657
+      },
+      "verified_chunks": 79,
+      "predictions_sha256": "9b06459b19576ec6b6ade4fcbc268adba7829daa4c49de853870adabe3efd2a7"
+    },
+    {
+      "candidate": "epoch11_beam7_alpha0",
+      "role": "exploratory_comparator",
+      "scores": {
+        "bleu1": 0.7472250649452739,
+        "bleu4": 0.32504591473553823,
+        "cider_d": 0.9942752531493309
+      },
+      "validation_scores": {
+        "bleu1": 0.7383572670467942,
+        "bleu4": 0.3154757043367164,
+        "cider_d": 0.9798129101550891
+      },
+      "verified_chunks": 79,
+      "predictions_sha256": "81a95a7bbcfcc25ca53efad70df4237b4704ada5720c7218cf6dda18a9b0388f"
+    },
+    {
+      "candidate": "epoch11_beam5_alpha0p3",
+      "role": "exploratory_comparator",
+      "scores": {
+        "bleu1": 0.7447070598198333,
+        "bleu4": 0.32214318128812913,
+        "cider_d": 0.9976276342548055
+      },
+      "validation_scores": {
+        "bleu1": 0.7375525473408011,
+        "bleu4": 0.3121989820368696,
+        "cider_d": 0.9791545106102075
+      },
+      "verified_chunks": 79,
+      "predictions_sha256": "f96b0f6ca11f6a83102ac03ad25bc24e678dbe336d52d547ebf98cd7624147a9"
+    }
+  ],
+  "test_comparison_sha256": "39208898e7905d5fb2f04661d145fed6ad7ba95281fa72299f9df145264e1168",
+  "elapsed_seconds": 2.7938224999998056
+}

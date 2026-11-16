@@ -1,0 +1,156 @@
+{
+  "status": "deployed",
+  "backup": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42\\recovery_before_amp_fix_20261115_203002",
+  "changed_files": [
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42\\config.json",
+      "sha256": "9fe25f978ff5315e10221453a4e04e67c0e66084f93de2101e1b56e8bdfdeeba"
+    },
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42\\last.pt",
+      "sha256": "baf01dea2671f35a5aaf26cb0d236764519d1e5cd8dd2bd9c6a1b89c2145abb4"
+    },
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42\\best.pt",
+      "sha256": "eb7b2f6177e0f4c2815ce994ec8daa70f5a1384c6a41c4daa6305ec4e8bd0d78"
+    },
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\checks\\gpu_preflight_verification.json",
+      "sha256": "385a1ae1ea901a52ed8373f1f7f66e36f0afa0f015d181264d6c1a7ed4f56a5c"
+    },
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\FinalFusion.ipynb",
+      "sha256": "6c1aa8ba1b99a50cb9e5a4c0b7527727b3e88df15e0cc4613d3d6ed1286bb2dc"
+    }
+  ],
+  "migration": {
+    "passed": true,
+    "status": "staged_not_deployed",
+    "project_written": false,
+    "gpu_used": false,
+    "run_name": "resnet50_fasterrcnn_transformer_fusion_depth3_seed42",
+    "reason": "Runtime-only AMP nonfinite-gradient recovery fix; architecture, optimizer settings, data and scorer unchanged.",
+    "started_utc": "2026-11-15T14:45:24.659712+00:00",
+    "allowed_changed_identity_leaves": [
+      "config.code.runtime_sha256",
+      "config.code.runtime_cell_ast_sha256",
+      "config.code.model_runtime_implementation_id",
+      "config.implementation_id"
+    ],
+    "original_files": {
+      "config.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42\\config.json",
+        "sha256": "bb1763c4e4690e60a00b110efeade02c9c6255a8046dacb259305658ede78741",
+        "bytes": 1524295
+      },
+      "last.pt": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42\\last.pt",
+        "sha256": "a5b1eaa433502f2bad4a2d432bf7c3312acf5aabb14a4231905f6bf9efa5b5e8",
+        "bytes": 306927179
+      },
+      "best.pt": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42\\best.pt",
+        "sha256": "a8f6963e153972f7497df3dad52df1cb7eb52e9cf1be1e8b8c6a5b649303d942",
+        "bytes": 306928139
+      },
+      "status.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42\\status.json",
+        "sha256": "0e007652e02cf5bc7f8adfd883b99c2b6dd9d24e3a2e99feea4e11b061e8af99",
+        "bytes": 141
+      },
+      "gpu_preflight_verification.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\checks\\gpu_preflight_verification.json",
+        "sha256": "24da03c967ee2650b3f035e7eb5dc10da7ff15eb95f5b545a08091d0dfd9ec54",
+        "bytes": 17451
+      },
+      "timing.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42\\timing.json",
+        "sha256": "3551b76970c1d4e6ad0932d8afd2b2796d8ec236090ff63305c75242316e128a",
+        "bytes": 114
+      }
+    },
+    "preflight_relabelled": false,
+    "old_runtime_sha256": "2eb6874a0f088966d79b5f03381e2381e792dc66831f07040b53273933f0a2a4",
+    "new_runtime_sha256": "ef8a816949b4c38ed44dd906168c9d54dd22378c1f83a76447ab6bf0c4d4d963",
+    "old_implementation_id": "ca9d91c38034f61d2ee015d159c226e79636e9542e89f37160957bc9fe0c5c24",
+    "new_implementation_id": "ff10ad1e6734bf520794d80f695041cbb6ec12695bd63d27689ffa9535fba794",
+    "tool_sha256": "6752f769726cac1dc35a8b8029829bd5f70af2e2959d8f1f96b00749bbbfe4b1",
+    "staged_checkpoints": {
+      "last.pt": {
+        "old_sha256": "a5b1eaa433502f2bad4a2d432bf7c3312acf5aabb14a4231905f6bf9efa5b5e8",
+        "new_sha256": "baf01dea2671f35a5aaf26cb0d236764519d1e5cd8dd2bd9c6a1b89c2145abb4",
+        "phase": "train",
+        "epoch": 3,
+        "next_index": 25600,
+        "best_epoch": 2,
+        "best_score": 0.9048640671885614,
+        "checkpoint_serial": 24,
+        "finite_model_tensor_count": 78,
+        "finite_optimizer_tensor_count": 234,
+        "model_optimizer_scaler_rng_state_exactly_preserved": true,
+        "scaler_scale": 131072.0
+      },
+      "best.pt": {
+        "old_sha256": "a8f6963e153972f7497df3dad52df1cb7eb52e9cf1be1e8b8c6a5b649303d942",
+        "new_sha256": "eb7b2f6177e0f4c2815ce994ec8daa70f5a1384c6a41c4daa6305ec4e8bd0d78",
+        "phase": "epoch_done",
+        "epoch": 2,
+        "next_index": 113287,
+        "best_epoch": 2,
+        "best_score": 0.9048640671885614,
+        "checkpoint_serial": 22,
+        "finite_model_tensor_count": 78,
+        "finite_optimizer_tensor_count": 234,
+        "model_optimizer_scaler_rng_state_exactly_preserved": true,
+        "scaler_scale": 131072.0
+      }
+    },
+    "elapsed_seconds": 26.740446100000554,
+    "completed_utc": "2026-11-15T14:45:45.880628+00:00",
+    "new_config_sha256": "9fe25f978ff5315e10221453a4e04e67c0e66084f93de2101e1b56e8bdfdeeba",
+    "original_artifacts_unchanged": true,
+    "strict_identity_checks_preserved": true,
+    "runtime_verification_required_before_deployment": true,
+    "original_preflight_note": "Backed up unchanged. It does not verify the new runtime. Root must provide real new-runtime CPU/CUDA verification before deployment.",
+    "deployment_candidates": [
+      "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\final_fusion\\amp_fix_stage\\migration\\staged\\config.json",
+      "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\final_fusion\\amp_fix_stage\\migration\\staged\\last.pt",
+      "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\final_fusion\\amp_fix_stage\\migration\\staged\\best.pt"
+    ]
+  },
+  "notebook_verification": {
+    "passed": true,
+    "notebook_sha256": "6c1aa8ba1b99a50cb9e5a4c0b7527727b3e88df15e0cc4613d3d6ed1286bb2dc",
+    "executed_code_sections": [
+      "imports",
+      "settings",
+      "prepared_data",
+      "metrics",
+      "load_preparation",
+      "region_features",
+      "region_cache",
+      "models",
+      "runtime",
+      "orchestration",
+      "check_control",
+      "extraction_switch",
+      "training_switch",
+      "results",
+      "inference",
+      "new_image_switch"
+    ],
+    "full_train_images": 113287,
+    "validation_images": 5000,
+    "strict_new_code_preflight_and_identity_checks": true,
+    "strict_staged_checkpoint_restore_on_cpu": true,
+    "resume_epoch": 3,
+    "resume_next_index": 25600,
+    "gpu_used": false,
+    "main_training_started": false
+  },
+  "main_training_started": false,
+  "started_utc": "2026-11-15T14:48:31.270006+00:00",
+  "passed": true,
+  "plain_weight_files_unchanged": true,
+  "completed_utc": "2026-11-15T14:48:35.907561+00:00"
+}

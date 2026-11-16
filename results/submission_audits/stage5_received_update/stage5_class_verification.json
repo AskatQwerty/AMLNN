@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "notebook_executed": false,
+  "model_forward_executed": false,
+  "archived_source_sha256": "91eacbcf2c5f9c688739df163043b3efd8ad643a6b8ea090e1b21376e6f1d612",
+  "base_model_ast_matches_shared_starter": true,
+  "models": [
+    {
+      "variant": "protocol",
+      "strict_load": true,
+      "parameters": 18132756
+    },
+    {
+      "variant": "projln",
+      "strict_load": true,
+      "parameters": 18133780
+    }
+  ]
+}

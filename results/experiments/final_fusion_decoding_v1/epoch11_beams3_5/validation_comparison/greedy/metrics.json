@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "identity_sha256": "cdcb862898dcc0c2a3703f92f33f77b129941a48d32aba7a42033990ece3ca3d",
+  "mode": "greedy",
+  "images": 5000,
+  "scores": {
+    "bleu1": 0.7332339242650038,
+    "bleu4": 0.28482146174180245,
+    "cider_d": 0.9385081041213583
+  },
+  "generation_seconds": 77.59124860000156,
+  "metric_seconds": 5.938094400000409,
+  "evaluation_seconds": 83.52934300000197,
+  "predictions_sha256": "eaa9c7dca8bc4c5de4d214fa7a9a35c0ce388cca7574e33e3ad74d34382c14d5",
+  "average_words": 10.8558,
+  "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_beam_followup_20261115\\validation_comparison\\greedy\\validation_predictions.json",
+  "metrics_computed": true
+}

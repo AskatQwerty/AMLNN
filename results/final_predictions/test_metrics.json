@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "candidate": "epoch11_beam5_alpha0",
+  "role": "primary_validation_selected",
+  "images": 5000,
+  "identity_sha256": "5df9278ac2ae6c26e6561953d4b9df2b200918b8ae1617fcbbf31f06b992e2a3",
+  "scores": {
+    "bleu1": 0.7491571932575314,
+    "bleu4": 0.32615082120016037,
+    "cider_d": 0.9983915922664485
+  },
+  "validation_scores": {
+    "bleu1": 0.7413195222103705,
+    "bleu4": 0.31620121416779773,
+    "cider_d": 0.9801341231384657
+  },
+  "generation_seconds": 88.97163719998935,
+  "metric_seconds": 10.76171500000055,
+  "predictions_sha256": "9b06459b19576ec6b6ade4fcbc268adba7829daa4c49de853870adabe3efd2a7",
+  "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\submission_20261115\\final_test_results\\epoch11_beam5_alpha0\\test_predictions.json",
+  "metrics_computed": true
+}

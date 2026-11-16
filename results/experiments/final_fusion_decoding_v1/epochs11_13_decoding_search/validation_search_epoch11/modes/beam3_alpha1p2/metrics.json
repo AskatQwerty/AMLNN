@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "identity_sha256": "ee4c12dd2a880fd3ebdcac48b1d15d302bdc5c3c65a1a15501398d09e75456f1",
+  "mode": "beam3_alpha1p2",
+  "images": 5000,
+  "generation_group": "beam3",
+  "shared_group_generation_seconds": 47.6636585999986,
+  "individual_generation_seconds": null,
+  "scoring_seconds": 4.6786879999999655,
+  "scores": {
+    "bleu1": 0.7274084050743366,
+    "bleu4": 0.2992116368030623,
+    "cider_d": 0.9718572601536549
+  },
+  "predictions_sha256": "04f3f12d148ce9c64ecfc9b90f0521dcc1659704e89a192b2a5cb24b3c757766",
+  "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\modes\\beam3_alpha1p2\\validation_predictions.json",
+  "average_words": 10.9874,
+  "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+}

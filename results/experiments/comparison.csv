@@ -1,0 +1,3 @@
+run,encoder,decoder,feature_dim,trainable_parameters,best_epoch,val_loss,bleu1,bleu4,cider_d,training_minutes,device,status
+resnet50_lstm_seed42,resnet50,lstm,2048,13404436,14,2.183940468237276,0.7021196914088701,0.2451136930011622,0.7798675401431374,28.86613242,NVIDIA GeForce RTX 4060 Laptop GPU (cuda),finished
+resnet50_rnn_seed42,resnet50,rnn,2048,11828500,10,2.4761726793138257,0.6901381054269463,0.21985771575096488,0.662836663010429,16.912616019999994,NVIDIA GeForce RTX 4060 Laptop GPU (cuda),finished

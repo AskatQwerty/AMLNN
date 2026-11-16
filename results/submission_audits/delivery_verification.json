@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "notebook_sha256": "1686199258d42fca71149b0badfb3e2196c373ab51707ebcf750c5437a8336ae",
+  "original_notebooks_unchanged": [
+    "FinalAML",
+    "SpatialAttention",
+    "FinalFusion",
+    "Stage5_Starter"
+  ],
+  "heavy_flags": {
+    "EXTRACT_REGION_FEATURES": false,
+    "ALLOW_WEIGHT_DOWNLOAD": false,
+    "RUN_FUSION_TRAINING": false,
+    "RUN_NEW_IMAGE": false,
+    "RUN_DATA_PREPARATION": false,
+    "RUN_GLOBAL_FEATURE_EXTRACTION": false,
+    "RUN_BASELINE_TRAINING": false,
+    "EXTRACT_SPATIAL_FEATURES": false,
+    "RUN_SPATIAL_TRAINING": false,
+    "RUN_REGION_HANDOFF_EXTRACTION": false,
+    "RUN_FINAL_TEST": false,
+    "CREATE_NEW_SEARCH_SNAPSHOT": false,
+    "RUN_DECODING_SEARCH": false
+  },
+  "inline_png_count": 5,
+  "fresh_kernel_code_cells": 37,
+  "selected_weights_unchanged": true,
+  "test_predictions": [
+    {
+      "candidate": "epoch11_beam5_alpha0",
+      "images": 5000,
+      "human_references": 25008,
+      "scores": {
+        "bleu1": 0.7491571932575314,
+        "bleu4": 0.32615082120016037,
+        "cider_d": 0.9983915922664485
+      }
+    },
+    {
+      "candidate": "epoch11_beam7_alpha0",
+      "images": 5000,
+      "human_references": 25008,
+      "scores": {
+        "bleu1": 0.7472250649452739,
+        "bleu4": 0.32504591473553823,
+        "cider_d": 0.9942752531493309
+      }
+    },
+    {
+      "candidate": "epoch11_beam5_alpha0p3",
+      "images": 5000,
+      "human_references": 25008,
+      "scores": {
+        "bleu1": 0.7447070598198333,
+        "bleu4": 0.32214318128812913,
+        "cider_d": 0.9976276342548055
+      }
+    }
+  ],
+  "test_primary_fixed_from_validation": true,
+  "stage5_raw_csv_preserved": true
+}

@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "notebook_sha256": "1686199258d42fca71149b0badfb3e2196c373ab51707ebcf750c5437a8336ae",
+  "no_gpu_or_notebook_execution_in_this_static_audit": true,
+  "unresolved_globals": [],
+  "unchanged_model_class_asts": [
+    "CaptionDecoder",
+    "CaptionTransformer",
+    "CaptionSpatialLSTM",
+    "CaptionSpatialTransformer",
+    "CaptionRegionLSTM"
+  ],
+  "unchanged_factory_definition_counts": {
+    "make_baseline_stage": 35,
+    "make_spatial_stage": 54,
+    "make_region_handoff_stage": 25
+  },
+  "fusion_core_ast_hashes": {
+    "models": "aac377250db8748d6171a43d3dbb5c353a3b3f3977bb2b4314c71fd527fa9c80",
+    "runtime": "56dbfbfbd94403e338dad3f2a6252836a4507418c27a043d872ca04ed07355b4",
+    "region_features": "12dc3ba9b3e79b75aeb6668e7e2bbf32b1fd8904ff892c4d40d29e6a978ae10f",
+    "region_cache": "ac087c69248d3c06baa52b1d7cc6cc591a6142af1eb23d3d6176981190790728"
+  },
+  "all_imports_at_beginning": true,
+  "no_code_spaces_after_commas": true,
+  "heavy_operation_flags": {
+    "EXTRACT_REGION_FEATURES": false,
+    "ALLOW_WEIGHT_DOWNLOAD": false,
+    "RUN_FUSION_TRAINING": false,
+    "RUN_NEW_IMAGE": false,
+    "RUN_DATA_PREPARATION": false,
+    "RUN_GLOBAL_FEATURE_EXTRACTION": false,
+    "RUN_BASELINE_TRAINING": false,
+    "EXTRACT_SPATIAL_FEATURES": false,
+    "RUN_SPATIAL_TRAINING": false,
+    "RUN_REGION_HANDOFF_EXTRACTION": false,
+    "RUN_FINAL_TEST": false,
+    "CREATE_NEW_SEARCH_SNAPSHOT": false,
+    "RUN_DECODING_SEARCH": false
+  },
+  "factory_global_nonlocal_declarations": 0,
+  "all_report_helpers_exact_ast": true,
+  "final_test_manifest_original_bytes_match_identity": true,
+  "completed_test_report_included": true
+}

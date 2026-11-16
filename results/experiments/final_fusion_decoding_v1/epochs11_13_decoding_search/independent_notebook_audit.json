@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "gpu_used": false,
+  "full_notebook_executed": false,
+  "only_path_settings_evaluated": true,
+  "project_written": false,
+  "original_sha256": "1dc05731cab07dcaddab15948450ff6bd903852c444e91d3258b59a47c9818ca",
+  "staged_sha256": "21ac59911448a8178652da25cf238701c85ed09323b8d91e76982bfa48e64c81",
+  "all_original_cells_outputs_preserved_except_training_false": true,
+  "changed_original_cell_index": 4,
+  "missing_globals": [],
+  "referenced_global_count": 255,
+  "exact_helper_ast_including_decorators": [
+    "fusion_beam_search_many",
+    "search_mode_name",
+    "search_group_modes",
+    "search_validate_chunk",
+    "search_load_chunks",
+    "search_score_variant",
+    "evaluate_search_group",
+    "run_fusion_decoding_search"
+  ],
+  "main_training_and_new_snapshot_search_flags_false": true,
+  "frozen_epoch11_epoch13_search64_full_requested_grid": true,
+  "optional_new_snapshot_separate_from_both_existing_snapshots": true
+}

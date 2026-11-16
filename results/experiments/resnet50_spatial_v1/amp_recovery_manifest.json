@@ -1,0 +1,414 @@
+{
+  "passed": true,
+  "deployed_utc": "2026-11-15T16:16:03.247597+00:00",
+  "notebook_sha256": "44fd22079aac4527a54fe300d1311fc77271103d344991a469e2788cf7b96084",
+  "implementation": "14c0b8e5e3b96f7bb8041805eecb6266695c146ab8dc3cad7887e3bb392046a4",
+  "backup": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\recovery_before_amp_fix_20261115_2203",
+  "migration": {
+    "passed": true,
+    "status": "staged_not_deployed",
+    "project_written": false,
+    "gpu_used": false,
+    "started_utc": "2026-11-15T16:12:17.530880+00:00",
+    "allowed_identity_leaf": "implementation",
+    "old_implementation": "04025c8a9845faac540bd62a85603c7aef48c19600754be1864ac5c7d58b70f2",
+    "new_implementation": "14c0b8e5e3b96f7bb8041805eecb6266695c146ab8dc3cad7887e3bb392046a4",
+    "new_notebook": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\spatial_fix_20261115\\SpatialAttention.fixed.ipynb",
+    "new_notebook_sha256": "44fd22079aac4527a54fe300d1311fc77271103d344991a469e2788cf7b96084",
+    "changed_code_cells": [
+      "checkpoints",
+      "comparison",
+      "imports",
+      "model_checks",
+      "preflight_evaluation",
+      "settings",
+      "spatial_configs",
+      "training_function",
+      "verification"
+    ],
+    "model_and_metric_source_ast_unchanged": true,
+    "source_files": {
+      "SpatialAttention.ipynb": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\SpatialAttention.ipynb",
+        "sha256": "d25d4b950510419982bca28c6ebb4a48e6550d115c1ee2a0fd03825c7900de81",
+        "bytes": 482901
+      },
+      "resnet50_lstm_attention_depth3_seed42/config.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42\\config.json",
+        "sha256": "0170941a054c012f4ecf92e034f3d24b249b7ff3235805f7bc149c794e2cb2d1",
+        "bytes": 3328
+      },
+      "resnet50_lstm_attention_depth3_seed42/best.pt": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42\\best.pt",
+        "sha256": "e2aeba33e26354ce2c38d9a2a73200dc8ebe27a5a759c40bcaf73f6287b96aea",
+        "bytes": 223929002
+      },
+      "resnet50_lstm_attention_depth3_seed42/last.pt": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42\\last.pt",
+        "sha256": "38215ccef32c10739c602f2f07b11f87b29c4761a7e60ecdd49346ab8d7a09aa",
+        "bytes": 223929258
+      },
+      "resnet50_lstm_attention_depth3_seed42/best_weights.pt": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42\\best_weights.pt",
+        "sha256": "9d34520087c75e5e37e9cb6f5c8e8fc70f5748f73515e3922f861bc3619b4fe5",
+        "bytes": 74634383
+      },
+      "resnet50_lstm_attention_depth3_seed42/last_weights.pt": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42\\last_weights.pt",
+        "sha256": "24969ab08d372c547ea275043f16d50eee3faa86753a45fea4a4688181917b12",
+        "bytes": 74634383
+      },
+      "resnet50_lstm_attention_depth3_seed42/status.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42\\status.json",
+        "sha256": "1f968e9669fb2068d6d1eb8d4167c3488e0efa30990fe4c3e9374a628151c886",
+        "bytes": 44
+      },
+      "resnet50_lstm_attention_depth3_seed42/history.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42\\history.json",
+        "sha256": "c51d2772830186ea77ad933526c10c370810b575908097b962f2cc82c54a03e0",
+        "bytes": 5592
+      },
+      "resnet50_lstm_attention_depth3_seed42/summary.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42\\summary.json",
+        "sha256": "5573c6057fedd5a49289a5fe9b02a7a98a80def1614c5c186a1ea20a3a306481",
+        "bytes": 858
+      },
+      "resnet50_lstm_attention_depth3_seed42/vocabulary.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42\\vocabulary.json",
+        "sha256": "eaa9db6d3d790e95821831c2f198d8365ae1923c7f65b9d420a835dea86657fa",
+        "bytes": 370451
+      },
+      "resnet50_transformer_cross_attention_depth3_seed42/config.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_transformer_cross_attention_depth3_seed42\\config.json",
+        "sha256": "2ffaeb32be4dac943bf4159a7801c4aec7071fb01819012adef205964500dd25",
+        "bytes": 3567
+      },
+      "resnet50_transformer_cross_attention_depth3_seed42/best.pt": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_transformer_cross_attention_depth3_seed42\\best.pt",
+        "sha256": "ba3e41fda13d6192c422440b3bc84c6682c24e3456f53aec9c4156da029453b3",
+        "bytes": 287384955
+      },
+      "resnet50_transformer_cross_attention_depth3_seed42/last.pt": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_transformer_cross_attention_depth3_seed42\\last.pt",
+        "sha256": "7ff7a0fb4df6308437baa0e2000f0d6fb3a27d08f4323491272396b2b9dcee6c",
+        "bytes": 287384955
+      },
+      "resnet50_transformer_cross_attention_depth3_seed42/best_weights.pt": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_transformer_cross_attention_depth3_seed42\\best_weights.pt",
+        "sha256": "47df922329f5a856fe1abf8e92b41ec3f17e23e0496bd81d78da4c90e2dc2b0f",
+        "bytes": 95786963
+      },
+      "resnet50_transformer_cross_attention_depth3_seed42/last_weights.pt": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_transformer_cross_attention_depth3_seed42\\last_weights.pt",
+        "sha256": "f637346e5bc310f52c9a5b568c142ea8a42a075cc25a2d78efa6b4a8d2da6d31",
+        "bytes": 95786963
+      },
+      "resnet50_transformer_cross_attention_depth3_seed42/status.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_transformer_cross_attention_depth3_seed42\\status.json",
+        "sha256": "21f8184339ae5df88b3fd3e83ea302df79a93657a7b4a14f6b443c6980f36d7a",
+        "bytes": 155
+      },
+      "resnet50_transformer_cross_attention_depth3_seed42/history.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_transformer_cross_attention_depth3_seed42\\history.json",
+        "sha256": "7206d2c315a6e1981fb0bf32772ab2eaf0defaf7c94e5562b1fbb872e0e4502e",
+        "bytes": 302
+      },
+      "resnet50_transformer_cross_attention_depth3_seed42/summary.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_transformer_cross_attention_depth3_seed42\\summary.json",
+        "sha256": "db1de2feb08a8d232c4ac272ef1272b90b24f7f441972485d81c11be74eb9de0",
+        "bytes": 905
+      },
+      "resnet50_transformer_cross_attention_depth3_seed42/vocabulary.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_transformer_cross_attention_depth3_seed42\\vocabulary.json",
+        "sha256": "eaa9db6d3d790e95821831c2f198d8365ae1923c7f65b9d420a835dea86657fa",
+        "bytes": 370451
+      },
+      "checks/resnet50_lstm_attention_spatial_depth_3_dd2f49c06956.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\checks\\resnet50_lstm_attention_spatial_depth_3_dd2f49c06956.json",
+        "sha256": "7e65a55c8aee9d4a87d4eeea29055d110c2da6024656c9d57ad8667e25a1ed64",
+        "bytes": 9172
+      },
+      "checks/resnet50_transformer_cross_attention_spatial_depth_3_ae9d6d94b26c.json": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\checks\\resnet50_transformer_cross_attention_spatial_depth_3_ae9d6d94b26c.json",
+        "sha256": "f599cf443dd9c59430ef76873282a47409507663b7433198a9aebd95ac795eb0",
+        "bytes": 4426
+      }
+    },
+    "original_statuses": {
+      "resnet50_lstm_attention_depth3_seed42": "finished",
+      "resnet50_transformer_cross_attention_depth3_seed42": "interrupted"
+    },
+    "runs": {
+      "resnet50_lstm_attention_depth3_seed42": {
+        "config_sha256": "5d7309cab6b62666ca56c4dc49964fe43231f43cd0369cdd09da160a96914c8d",
+        "checkpoints": {
+          "best.pt": {
+            "original_sha256": "e2aeba33e26354ce2c38d9a2a73200dc8ebe27a5a759c40bcaf73f6287b96aea",
+            "staged_sha256": "7379cf8e0c2cb5f2779576e4f1e6941929534498a062bc4f5fa9a15816f3b52d",
+            "plain_weights_sha256": "9d34520087c75e5e37e9cb6f5c8e8fc70f5748f73515e3922f861bc3619b4fe5",
+            "plain_weights_match_checkpoint": true,
+            "plain_weights_not_replaced": true,
+            "model_optimizer_scaler_rng_state_and_seeds_exactly_preserved": true,
+            "finite_model_tensors": 23,
+            "finite_optimizer_tensors": 69,
+            "state": {
+              "phase": "epoch_done",
+              "epoch": 16,
+              "next_index": 113287,
+              "best_epoch": 16,
+              "best_score": 0.7802000607319697,
+              "bad_epochs": 0
+            },
+            "scaler_scale": 1024.0
+          },
+          "last.pt": {
+            "original_sha256": "38215ccef32c10739c602f2f07b11f87b29c4761a7e60ecdd49346ab8d7a09aa",
+            "staged_sha256": "c037f636c701fd833f02f54a3188f84f8dc36cbb5c27d47333896f82352a4293",
+            "plain_weights_sha256": "24969ab08d372c547ea275043f16d50eee3faa86753a45fea4a4688181917b12",
+            "plain_weights_match_checkpoint": true,
+            "plain_weights_not_replaced": true,
+            "model_optimizer_scaler_rng_state_and_seeds_exactly_preserved": true,
+            "finite_model_tensors": 23,
+            "finite_optimizer_tensors": 69,
+            "state": {
+              "phase": "finished",
+              "epoch": 19,
+              "next_index": 113287,
+              "best_epoch": 16,
+              "best_score": 0.7802000607319697,
+              "bad_epochs": 3
+            },
+            "scaler_scale": 128.0
+          }
+        }
+      },
+      "resnet50_transformer_cross_attention_depth3_seed42": {
+        "config_sha256": "9fd076df1d9b0ef038932ae05e2717a02d26627747e35b560e86e04e994a6aea",
+        "checkpoints": {
+          "best.pt": {
+            "original_sha256": "ba3e41fda13d6192c422440b3bc84c6682c24e3456f53aec9c4156da029453b3",
+            "staged_sha256": "f72914c345ea238657df266cb3d2a9ccdefa17f008d708a2771caacbce55209e",
+            "plain_weights_sha256": "47df922329f5a856fe1abf8e92b41ec3f17e23e0496bd81d78da4c90e2dc2b0f",
+            "plain_weights_match_checkpoint": true,
+            "plain_weights_not_replaced": true,
+            "model_optimizer_scaler_rng_state_and_seeds_exactly_preserved": true,
+            "finite_model_tensors": 64,
+            "finite_optimizer_tensors": 192,
+            "state": {
+              "phase": "epoch_done",
+              "epoch": 1,
+              "next_index": 113287,
+              "best_epoch": 1,
+              "best_score": 0.011322554985092256,
+              "bad_epochs": 0
+            },
+            "scaler_scale": 256.0
+          },
+          "last.pt": {
+            "original_sha256": "7ff7a0fb4df6308437baa0e2000f0d6fb3a27d08f4323491272396b2b9dcee6c",
+            "staged_sha256": "045361efc24ef4108a3489115260c568968f023f73563cbe1725ea58a37287e4",
+            "plain_weights_sha256": "f637346e5bc310f52c9a5b568c142ea8a42a075cc25a2d78efa6b4a8d2da6d31",
+            "plain_weights_match_checkpoint": true,
+            "plain_weights_not_replaced": true,
+            "model_optimizer_scaler_rng_state_and_seeds_exactly_preserved": true,
+            "finite_model_tensors": 64,
+            "finite_optimizer_tensors": 192,
+            "state": {
+              "phase": "epoch_done",
+              "epoch": 1,
+              "next_index": 113287,
+              "best_epoch": 1,
+              "best_score": 0.011322554985092256,
+              "bad_epochs": 0
+            },
+            "scaler_scale": 256.0
+          }
+        }
+      }
+    },
+    "tool_sha256": "bba26f03d87a17dbf50ea6b98c97c9221ebf8a344b227f1be12ba7fb281f9f13",
+    "preflight_relabelled": false,
+    "elapsed_seconds": 36.4569733999997,
+    "completed_utc": "2026-11-15T16:12:50.792639+00:00",
+    "original_files_unchanged": true,
+    "only_implementation_identity_leaf_changed": true,
+    "plain_weights_unchanged": true,
+    "strict_identity_checks_preserved": true,
+    "deployment_note": "Root must deploy only config.json, best.pt and last.pt for these two runs after patch verification. Keep originals and this manifest. Do not replace plain weights or relabel old preflight reports."
+  },
+  "cpu_verification": {
+    "passed": true,
+    "notebook_sha256": "44fd22079aac4527a54fe300d1311fc77271103d344991a469e2788cf7b96084",
+    "implementation": "14c0b8e5e3b96f7bb8041805eecb6266695c146ab8dc3cad7887e3bb392046a4",
+    "definition_cells_executed": [
+      "imports",
+      "settings",
+      "helpers",
+      "prepared_data",
+      "spatial_features",
+      "spatial_models",
+      "spatial_configs",
+      "metrics",
+      "model_checks",
+      "preflight_evaluation",
+      "checkpoints",
+      "training_function"
+    ],
+    "checks": [
+      {
+        "decoder": "lstm_attention",
+        "phase": "finished",
+        "epoch": 19,
+        "next_index": 113287,
+        "best_epoch": 16,
+        "best_score": 0.7802000607319697,
+        "scaler_scale": 128.0,
+        "strict_resume_identity_and_model_optimizer_scaler_restore": true
+      },
+      {
+        "decoder": "transformer_cross_attention",
+        "phase": "epoch_done",
+        "epoch": 1,
+        "next_index": 113287,
+        "best_epoch": 1,
+        "best_score": 0.011322554985092256,
+        "scaler_scale": 256.0,
+        "strict_resume_identity_and_model_optimizer_scaler_restore": true
+      }
+    ],
+    "gpu_used": false,
+    "transformer_gpu_executed": false,
+    "training_default_off": true,
+    "selected_decoders": [
+      "lstm_attention"
+    ],
+    "full_training_executed": false,
+    "project_written": false,
+    "split_counts": {
+      "train": 113287,
+      "val": 5000,
+      "test": 5000
+    }
+  },
+  "cuda_lstm_verification": {
+    "passed": true,
+    "notebook_sha256": "44fd22079aac4527a54fe300d1311fc77271103d344991a469e2788cf7b96084",
+    "implementation": "14c0b8e5e3b96f7bb8041805eecb6266695c146ab8dc3cad7887e3bb392046a4",
+    "definition_cells_executed": [
+      "imports",
+      "settings",
+      "helpers",
+      "prepared_data",
+      "spatial_features",
+      "spatial_models",
+      "spatial_configs",
+      "metrics",
+      "model_checks",
+      "preflight_evaluation",
+      "checkpoints",
+      "training_function"
+    ],
+    "checks": [
+      {
+        "decoder": "lstm_attention",
+        "amp_smoke": {
+          "passed": true,
+          "amp_tested": true,
+          "device": "cuda",
+          "batch_size": 64,
+          "target_tokens": 846,
+          "loss": 9.208831787109375,
+          "recovery_loss": 9.162400245666504,
+          "finite_clipped_update": true,
+          "injected_overflow_skipped": true,
+          "overflow_preserved_weights_and_adam": true,
+          "scale_backoff": true,
+          "clean_recovery": true,
+          "greedy_checked": true,
+          "diagnostics": {
+            "gradient_diagnostics_scope": "Counters start when overflow-aware stepping is first used; earlier checkpoint steps are not inferred.",
+            "last_optimizer_step_skipped": false,
+            "last_amp_scale_before": 32768.0,
+            "last_amp_scale_after": 32768.0,
+            "last_gradient_norm": 0.22638863325119019,
+            "amp_consecutive_skips": 0,
+            "successful_optimizer_steps": 2,
+            "epoch_successful_optimizer_steps": 2,
+            "amp_skipped_steps": 1,
+            "epoch_amp_skipped_steps": 1,
+            "amp_overflow_events": [
+              {
+                "epoch": null,
+                "next_index_before_batch": null,
+                "scale_before": 65536.0,
+                "scale_after": 32768.0,
+                "consecutive_skips": 1
+              }
+            ]
+          },
+          "elapsed_seconds": 10.220101099999738,
+          "note": "Temporary decoder/Adam/scaler discarded; no main weights were used or changed."
+        },
+        "legacy_fp32_evidence_reused_without_relabelling": true
+      }
+    ],
+    "gpu_used": true,
+    "transformer_gpu_executed": false,
+    "training_default_off": true,
+    "selected_decoders": [
+      "lstm_attention"
+    ],
+    "full_training_executed": false,
+    "project_written": false,
+    "split_counts": {
+      "train": 113287,
+      "val": 5000,
+      "test": 5000
+    }
+  },
+  "training_disabled": true,
+  "selected_decoders": [
+    "lstm_attention"
+  ],
+  "plain_weights_and_history_byte_identical": true,
+  "full_training_started": false,
+  "transformer_training_started": false,
+  "changed_files": [
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42\\config.json",
+      "sha256": "5d7309cab6b62666ca56c4dc49964fe43231f43cd0369cdd09da160a96914c8d"
+    },
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42\\best.pt",
+      "sha256": "7379cf8e0c2cb5f2779576e4f1e6941929534498a062bc4f5fa9a15816f3b52d"
+    },
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42\\last.pt",
+      "sha256": "c037f636c701fd833f02f54a3188f84f8dc36cbb5c27d47333896f82352a4293"
+    },
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_transformer_cross_attention_depth3_seed42\\config.json",
+      "sha256": "9fd076df1d9b0ef038932ae05e2717a02d26627747e35b560e86e04e994a6aea"
+    },
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_transformer_cross_attention_depth3_seed42\\best.pt",
+      "sha256": "f72914c345ea238657df266cb3d2a9ccdefa17f008d708a2771caacbce55209e"
+    },
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_transformer_cross_attention_depth3_seed42\\last.pt",
+      "sha256": "045361efc24ef4108a3489115260c568968f023f73563cbe1725ea58a37287e4"
+    },
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\SpatialAttention.ipynb",
+      "sha256": "44fd22079aac4527a54fe300d1311fc77271103d344991a469e2788cf7b96084"
+    },
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\checks\\resnet50_lstm_attention_spatial_depth_3_099f03e43e0d.json",
+      "sha256": "cca8fb46bd2b9adc640e77503e2425bd455ec305ec202a8ff4214ad07bb8a89f"
+    },
+    {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\experiment_plan.json",
+      "sha256": "d2162d6049bd4c87b0642925d51e27cf4e35845c1e7315e7ba2b876bf5655a96"
+    }
+  ]
+}

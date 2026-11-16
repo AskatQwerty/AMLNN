@@ -1,0 +1,37 @@
+{
+  "run_name": "fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42",
+  "encoder": "fasterrcnn_resnet50_fpn_coco_v1_regions",
+  "decoder": "lstm_attention",
+  "feature_dim": 1024,
+  "max_regions": 36,
+  "embedding_size": 512,
+  "hidden_size": 512,
+  "num_layers": 3,
+  "dropout": 0.3,
+  "seed": 42,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "trainable_parameters": 18133780,
+  "status": "finished",
+  "epochs_completed": 28,
+  "best_epoch": 25,
+  "stop_epoch": 28,
+  "optimizer_updates": 49588,
+  "val_loss": 2.1687018859807585,
+  "bleu1": 0.7123667417068092,
+  "bleu4": 0.25331504868148297,
+  "cider_d": 0.8184569357036644,
+  "training_seconds": 6931.243972863,
+  "training_time": "01:55:31",
+  "timing_note": "Active caption-training time: training passes, full validation and checkpoint writes; excludes pauses, preflight and region extraction (same convention as laptop A).",
+  "devices": [
+    {
+      "device": "cuda",
+      "name": "Tesla T4",
+      "torch": "2.13.0+cu126",
+      "torchvision": "0.28.0+cu126",
+      "cuda_runtime": "12.6"
+    }
+  ],
+  "test_metrics": "not evaluated in stage 5"
+}

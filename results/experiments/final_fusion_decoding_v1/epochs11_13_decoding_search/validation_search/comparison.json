@@ -1,0 +1,783 @@
+{
+  "status": "complete",
+  "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+  "snapshot_epoch": 13,
+  "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+  "validation_images": 5000,
+  "configured_variants": 16,
+  "groups": {
+    "greedy": {
+      "status": "complete",
+      "group": "greedy",
+      "images": 5000,
+      "generation_seconds": 19.94317629998477,
+      "modes": [
+        "greedy"
+      ],
+      "results": {
+        "greedy": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "greedy",
+          "images": 5000,
+          "generation_group": "greedy",
+          "shared_group_generation_seconds": 19.94317629998477,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 5.912467799997103,
+          "scores": {
+            "bleu1": 0.7341919724643178,
+            "bleu4": 0.28347707416379225,
+            "cider_d": 0.9414635883821234
+          },
+          "predictions_sha256": "055f879614eac752c4ddabb9bf0c0cf9f31e59ec984d74f44383d10dad75fe12",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\greedy\\validation_predictions.json",
+          "average_words": 10.7998,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        }
+      },
+      "metrics_computed": true,
+      "reference_check": null
+    },
+    "beam3": {
+      "status": "complete",
+      "group": "beam3",
+      "images": 5000,
+      "generation_seconds": 52.88114009999117,
+      "modes": [
+        "beam3_alpha0",
+        "beam3_alpha0p3",
+        "beam3_alpha0p6",
+        "beam3_alpha0p9",
+        "beam3_alpha1p2"
+      ],
+      "results": {
+        "beam3_alpha0": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam3_alpha0",
+          "images": 5000,
+          "generation_group": "beam3",
+          "shared_group_generation_seconds": 52.88114009999117,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 5.346875499999442,
+          "scores": {
+            "bleu1": 0.7375916770676817,
+            "bleu4": 0.3088956038633756,
+            "cider_d": 0.9629087550250526
+          },
+          "predictions_sha256": "41c4b70c8f36eeffc3c64a7df7e254b992c60eb9e21c124852da5c261fdcdb22",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam3_alpha0\\validation_predictions.json",
+          "average_words": 10.1048,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        },
+        "beam3_alpha0p3": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam3_alpha0p3",
+          "images": 5000,
+          "generation_group": "beam3",
+          "shared_group_generation_seconds": 52.88114009999117,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 5.630346699999791,
+          "scores": {
+            "bleu1": 0.7392182122324841,
+            "bleu4": 0.30698320198544893,
+            "cider_d": 0.9673663764389807
+          },
+          "predictions_sha256": "6149c9762336bbe10fc163a56e4735a3b5da515cd37342894f58711b172a24c9",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam3_alpha0p3\\validation_predictions.json",
+          "average_words": 10.3994,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        },
+        "beam3_alpha0p6": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam3_alpha0p6",
+          "images": 5000,
+          "generation_group": "beam3",
+          "shared_group_generation_seconds": 52.88114009999117,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 5.278193599999213,
+          "scores": {
+            "bleu1": 0.735983342797639,
+            "bleu4": 0.3047208371010532,
+            "cider_d": 0.9683485535779338
+          },
+          "predictions_sha256": "1702d50d16678e8cdb4809a437375312e475395fe8afa5ecc9603264253e8d4f",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam3_alpha0p6\\validation_predictions.json",
+          "average_words": 10.5636,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        },
+        "beam3_alpha0p9": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam3_alpha0p9",
+          "images": 5000,
+          "generation_group": "beam3",
+          "shared_group_generation_seconds": 52.88114009999117,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 5.663327899997967,
+          "scores": {
+            "bleu1": 0.7321258874168347,
+            "bleu4": 0.30246435403557526,
+            "cider_d": 0.969056910573722
+          },
+          "predictions_sha256": "fd28e7e65edb09a095894892bd558a85709d4d140a688c6694f057cd0d84e3b7",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam3_alpha0p9\\validation_predictions.json",
+          "average_words": 10.731,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        },
+        "beam3_alpha1p2": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam3_alpha1p2",
+          "images": 5000,
+          "generation_group": "beam3",
+          "shared_group_generation_seconds": 52.88114009999117,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 5.075681900001655,
+          "scores": {
+            "bleu1": 0.7273507864881027,
+            "bleu4": 0.29911479099690724,
+            "cider_d": 0.9675314183239363
+          },
+          "predictions_sha256": "8bd9eafd32eef7ef8ba7c4dcd90e62526a0b369069122c57be9a34abf15499a6",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam3_alpha1p2\\validation_predictions.json",
+          "average_words": 10.945,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        }
+      },
+      "metrics_computed": true,
+      "reference_check": {
+        "passed": true,
+        "images": 64,
+        "beam_size": 3,
+        "length_penalty": 0.6,
+        "seconds": 0.5699142000012216,
+        "note": "Excluded from the shared generation timer; included in total wall time."
+      }
+    },
+    "beam5": {
+      "status": "complete",
+      "group": "beam5",
+      "images": 5000,
+      "generation_seconds": 70.73115180000605,
+      "modes": [
+        "beam5_alpha0",
+        "beam5_alpha0p3",
+        "beam5_alpha0p6",
+        "beam5_alpha0p9",
+        "beam5_alpha1p2"
+      ],
+      "results": {
+        "beam5_alpha0": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam5_alpha0",
+          "images": 5000,
+          "generation_group": "beam5",
+          "shared_group_generation_seconds": 70.73115180000605,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 4.86123790000056,
+          "scores": {
+            "bleu1": 0.740210064807007,
+            "bleu4": 0.3143023906132979,
+            "cider_d": 0.9714465659553252
+          },
+          "predictions_sha256": "e75bbc25e2130f7294496ee4d5f59e6b0956bf75f2941bec8c80ce7ce35b2a4d",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam5_alpha0\\validation_predictions.json",
+          "average_words": 10.1584,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        },
+        "beam5_alpha0p3": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam5_alpha0p3",
+          "images": 5000,
+          "generation_group": "beam5",
+          "shared_group_generation_seconds": 70.73115180000605,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 5.0129448999978194,
+          "scores": {
+            "bleu1": 0.7357053321762466,
+            "bleu4": 0.31046881938380616,
+            "cider_d": 0.9703930481434618
+          },
+          "predictions_sha256": "0521647681335349478f777891856fff37c6ce558ec2f3881d12e6dd6e3b2390",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam5_alpha0p3\\validation_predictions.json",
+          "average_words": 10.371,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        },
+        "beam5_alpha0p6": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam5_alpha0p6",
+          "images": 5000,
+          "generation_group": "beam5",
+          "shared_group_generation_seconds": 70.73115180000605,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 5.431502499999624,
+          "scores": {
+            "bleu1": 0.7308303686321866,
+            "bleu4": 0.30666791269440014,
+            "cider_d": 0.9664461777918123
+          },
+          "predictions_sha256": "c350463ccca65f3d5430a710fb3747e78576ee8ffd00a89d1d2ff84c4710b71d",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam5_alpha0p6\\validation_predictions.json",
+          "average_words": 10.5688,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        },
+        "beam5_alpha0p9": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam5_alpha0p9",
+          "images": 5000,
+          "generation_group": "beam5",
+          "shared_group_generation_seconds": 70.73115180000605,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 5.4321796000003815,
+          "scores": {
+            "bleu1": 0.725755240730068,
+            "bleu4": 0.30352869344234323,
+            "cider_d": 0.9646061045318267
+          },
+          "predictions_sha256": "300a876f9ca01e1a63ea0126931ec5780caedbdc97c4dc6341c119b2fdb5c501",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam5_alpha0p9\\validation_predictions.json",
+          "average_words": 10.7714,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        },
+        "beam5_alpha1p2": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam5_alpha1p2",
+          "images": 5000,
+          "generation_group": "beam5",
+          "shared_group_generation_seconds": 70.73115180000605,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 4.4141674999991665,
+          "scores": {
+            "bleu1": 0.7197764308786572,
+            "bleu4": 0.2990805919564111,
+            "cider_d": 0.9599252949253896
+          },
+          "predictions_sha256": "edb87fc5de9b678269869ea1409383319e8229d0f690d5b9d8b52478c90ec0b0",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam5_alpha1p2\\validation_predictions.json",
+          "average_words": 11.0208,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        }
+      },
+      "metrics_computed": true,
+      "reference_check": null
+    },
+    "beam7": {
+      "status": "complete",
+      "group": "beam7",
+      "images": 5000,
+      "generation_seconds": 96.84416829999827,
+      "modes": [
+        "beam7_alpha0",
+        "beam7_alpha0p3",
+        "beam7_alpha0p6",
+        "beam7_alpha0p9",
+        "beam7_alpha1p2"
+      ],
+      "results": {
+        "beam7_alpha0": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam7_alpha0",
+          "images": 5000,
+          "generation_group": "beam7",
+          "shared_group_generation_seconds": 96.84416829999827,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 5.228000499999325,
+          "scores": {
+            "bleu1": 0.7379326676401955,
+            "bleu4": 0.3134075860816188,
+            "cider_d": 0.9751546115256755
+          },
+          "predictions_sha256": "5fed81900ac8b7b56cc9afad99410b3ad1953c61a440e512e9a8cab75bd6c5d3",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam7_alpha0\\validation_predictions.json",
+          "average_words": 10.1348,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        },
+        "beam7_alpha0p3": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam7_alpha0p3",
+          "images": 5000,
+          "generation_group": "beam7",
+          "shared_group_generation_seconds": 96.84416829999827,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 4.66590499999802,
+          "scores": {
+            "bleu1": 0.7323110243072201,
+            "bleu4": 0.30884110520675373,
+            "cider_d": 0.9710716410849338
+          },
+          "predictions_sha256": "876e97a8c505ab76dff85b31e090c97fcc9aa30e3d6ea21ec6eba3dda03507f9",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam7_alpha0p3\\validation_predictions.json",
+          "average_words": 10.3426,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        },
+        "beam7_alpha0p6": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam7_alpha0p6",
+          "images": 5000,
+          "generation_group": "beam7",
+          "shared_group_generation_seconds": 96.84416829999827,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 4.870403700002498,
+          "scores": {
+            "bleu1": 0.7272347773286897,
+            "bleu4": 0.3047374868203905,
+            "cider_d": 0.9660942276193971
+          },
+          "predictions_sha256": "2e05c32909222a0e98d1362d7d49483512b83710a5650414d2da436320619cb9",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam7_alpha0p6\\validation_predictions.json",
+          "average_words": 10.5402,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        },
+        "beam7_alpha0p9": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam7_alpha0p9",
+          "images": 5000,
+          "generation_group": "beam7",
+          "shared_group_generation_seconds": 96.84416829999827,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 4.795556299999589,
+          "scores": {
+            "bleu1": 0.7207344496273724,
+            "bleu4": 0.30057094088595154,
+            "cider_d": 0.9615340217193558
+          },
+          "predictions_sha256": "f2b6d9a1d14b1d54c9beb63a5944b5e93b6b340b6c2b3a32becf040bb544c661",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam7_alpha0p9\\validation_predictions.json",
+          "average_words": 10.7618,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        },
+        "beam7_alpha1p2": {
+          "status": "complete",
+          "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+          "mode": "beam7_alpha1p2",
+          "images": 5000,
+          "generation_group": "beam7",
+          "shared_group_generation_seconds": 96.84416829999827,
+          "individual_generation_seconds": null,
+          "scoring_seconds": 5.887352199999441,
+          "scores": {
+            "bleu1": 0.7142468880795653,
+            "bleu4": 0.2963221131967673,
+            "cider_d": 0.958455753571233
+          },
+          "predictions_sha256": "3e3519d70a0796d22fd14141dd120027a382812ef5ef2744678d1267787dec83",
+          "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam7_alpha1p2\\validation_predictions.json",
+          "average_words": 11.0382,
+          "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+        }
+      },
+      "metrics_computed": true,
+      "reference_check": null
+    }
+  },
+  "results": {
+    "greedy": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "greedy",
+      "images": 5000,
+      "generation_group": "greedy",
+      "shared_group_generation_seconds": 19.94317629998477,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 5.912467799997103,
+      "scores": {
+        "bleu1": 0.7341919724643178,
+        "bleu4": 0.28347707416379225,
+        "cider_d": 0.9414635883821234
+      },
+      "predictions_sha256": "055f879614eac752c4ddabb9bf0c0cf9f31e59ec984d74f44383d10dad75fe12",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\greedy\\validation_predictions.json",
+      "average_words": 10.7998,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam3_alpha0": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam3_alpha0",
+      "images": 5000,
+      "generation_group": "beam3",
+      "shared_group_generation_seconds": 52.88114009999117,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 5.346875499999442,
+      "scores": {
+        "bleu1": 0.7375916770676817,
+        "bleu4": 0.3088956038633756,
+        "cider_d": 0.9629087550250526
+      },
+      "predictions_sha256": "41c4b70c8f36eeffc3c64a7df7e254b992c60eb9e21c124852da5c261fdcdb22",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam3_alpha0\\validation_predictions.json",
+      "average_words": 10.1048,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam3_alpha0p3": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam3_alpha0p3",
+      "images": 5000,
+      "generation_group": "beam3",
+      "shared_group_generation_seconds": 52.88114009999117,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 5.630346699999791,
+      "scores": {
+        "bleu1": 0.7392182122324841,
+        "bleu4": 0.30698320198544893,
+        "cider_d": 0.9673663764389807
+      },
+      "predictions_sha256": "6149c9762336bbe10fc163a56e4735a3b5da515cd37342894f58711b172a24c9",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam3_alpha0p3\\validation_predictions.json",
+      "average_words": 10.3994,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam3_alpha0p6": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam3_alpha0p6",
+      "images": 5000,
+      "generation_group": "beam3",
+      "shared_group_generation_seconds": 52.88114009999117,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 5.278193599999213,
+      "scores": {
+        "bleu1": 0.735983342797639,
+        "bleu4": 0.3047208371010532,
+        "cider_d": 0.9683485535779338
+      },
+      "predictions_sha256": "1702d50d16678e8cdb4809a437375312e475395fe8afa5ecc9603264253e8d4f",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam3_alpha0p6\\validation_predictions.json",
+      "average_words": 10.5636,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam3_alpha0p9": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam3_alpha0p9",
+      "images": 5000,
+      "generation_group": "beam3",
+      "shared_group_generation_seconds": 52.88114009999117,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 5.663327899997967,
+      "scores": {
+        "bleu1": 0.7321258874168347,
+        "bleu4": 0.30246435403557526,
+        "cider_d": 0.969056910573722
+      },
+      "predictions_sha256": "fd28e7e65edb09a095894892bd558a85709d4d140a688c6694f057cd0d84e3b7",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam3_alpha0p9\\validation_predictions.json",
+      "average_words": 10.731,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam3_alpha1p2": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam3_alpha1p2",
+      "images": 5000,
+      "generation_group": "beam3",
+      "shared_group_generation_seconds": 52.88114009999117,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 5.075681900001655,
+      "scores": {
+        "bleu1": 0.7273507864881027,
+        "bleu4": 0.29911479099690724,
+        "cider_d": 0.9675314183239363
+      },
+      "predictions_sha256": "8bd9eafd32eef7ef8ba7c4dcd90e62526a0b369069122c57be9a34abf15499a6",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam3_alpha1p2\\validation_predictions.json",
+      "average_words": 10.945,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam5_alpha0": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam5_alpha0",
+      "images": 5000,
+      "generation_group": "beam5",
+      "shared_group_generation_seconds": 70.73115180000605,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 4.86123790000056,
+      "scores": {
+        "bleu1": 0.740210064807007,
+        "bleu4": 0.3143023906132979,
+        "cider_d": 0.9714465659553252
+      },
+      "predictions_sha256": "e75bbc25e2130f7294496ee4d5f59e6b0956bf75f2941bec8c80ce7ce35b2a4d",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam5_alpha0\\validation_predictions.json",
+      "average_words": 10.1584,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam5_alpha0p3": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam5_alpha0p3",
+      "images": 5000,
+      "generation_group": "beam5",
+      "shared_group_generation_seconds": 70.73115180000605,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 5.0129448999978194,
+      "scores": {
+        "bleu1": 0.7357053321762466,
+        "bleu4": 0.31046881938380616,
+        "cider_d": 0.9703930481434618
+      },
+      "predictions_sha256": "0521647681335349478f777891856fff37c6ce558ec2f3881d12e6dd6e3b2390",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam5_alpha0p3\\validation_predictions.json",
+      "average_words": 10.371,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam5_alpha0p6": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam5_alpha0p6",
+      "images": 5000,
+      "generation_group": "beam5",
+      "shared_group_generation_seconds": 70.73115180000605,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 5.431502499999624,
+      "scores": {
+        "bleu1": 0.7308303686321866,
+        "bleu4": 0.30666791269440014,
+        "cider_d": 0.9664461777918123
+      },
+      "predictions_sha256": "c350463ccca65f3d5430a710fb3747e78576ee8ffd00a89d1d2ff84c4710b71d",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam5_alpha0p6\\validation_predictions.json",
+      "average_words": 10.5688,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam5_alpha0p9": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam5_alpha0p9",
+      "images": 5000,
+      "generation_group": "beam5",
+      "shared_group_generation_seconds": 70.73115180000605,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 5.4321796000003815,
+      "scores": {
+        "bleu1": 0.725755240730068,
+        "bleu4": 0.30352869344234323,
+        "cider_d": 0.9646061045318267
+      },
+      "predictions_sha256": "300a876f9ca01e1a63ea0126931ec5780caedbdc97c4dc6341c119b2fdb5c501",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam5_alpha0p9\\validation_predictions.json",
+      "average_words": 10.7714,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam5_alpha1p2": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam5_alpha1p2",
+      "images": 5000,
+      "generation_group": "beam5",
+      "shared_group_generation_seconds": 70.73115180000605,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 4.4141674999991665,
+      "scores": {
+        "bleu1": 0.7197764308786572,
+        "bleu4": 0.2990805919564111,
+        "cider_d": 0.9599252949253896
+      },
+      "predictions_sha256": "edb87fc5de9b678269869ea1409383319e8229d0f690d5b9d8b52478c90ec0b0",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam5_alpha1p2\\validation_predictions.json",
+      "average_words": 11.0208,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam7_alpha0": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam7_alpha0",
+      "images": 5000,
+      "generation_group": "beam7",
+      "shared_group_generation_seconds": 96.84416829999827,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 5.228000499999325,
+      "scores": {
+        "bleu1": 0.7379326676401955,
+        "bleu4": 0.3134075860816188,
+        "cider_d": 0.9751546115256755
+      },
+      "predictions_sha256": "5fed81900ac8b7b56cc9afad99410b3ad1953c61a440e512e9a8cab75bd6c5d3",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam7_alpha0\\validation_predictions.json",
+      "average_words": 10.1348,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam7_alpha0p3": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam7_alpha0p3",
+      "images": 5000,
+      "generation_group": "beam7",
+      "shared_group_generation_seconds": 96.84416829999827,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 4.66590499999802,
+      "scores": {
+        "bleu1": 0.7323110243072201,
+        "bleu4": 0.30884110520675373,
+        "cider_d": 0.9710716410849338
+      },
+      "predictions_sha256": "876e97a8c505ab76dff85b31e090c97fcc9aa30e3d6ea21ec6eba3dda03507f9",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam7_alpha0p3\\validation_predictions.json",
+      "average_words": 10.3426,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam7_alpha0p6": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam7_alpha0p6",
+      "images": 5000,
+      "generation_group": "beam7",
+      "shared_group_generation_seconds": 96.84416829999827,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 4.870403700002498,
+      "scores": {
+        "bleu1": 0.7272347773286897,
+        "bleu4": 0.3047374868203905,
+        "cider_d": 0.9660942276193971
+      },
+      "predictions_sha256": "2e05c32909222a0e98d1362d7d49483512b83710a5650414d2da436320619cb9",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam7_alpha0p6\\validation_predictions.json",
+      "average_words": 10.5402,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam7_alpha0p9": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam7_alpha0p9",
+      "images": 5000,
+      "generation_group": "beam7",
+      "shared_group_generation_seconds": 96.84416829999827,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 4.795556299999589,
+      "scores": {
+        "bleu1": 0.7207344496273724,
+        "bleu4": 0.30057094088595154,
+        "cider_d": 0.9615340217193558
+      },
+      "predictions_sha256": "f2b6d9a1d14b1d54c9beb63a5944b5e93b6b340b6c2b3a32becf040bb544c661",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam7_alpha0p9\\validation_predictions.json",
+      "average_words": 10.7618,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    },
+    "beam7_alpha1p2": {
+      "status": "complete",
+      "identity_sha256": "d074e0aacb4447e0c529c5ba9c33cddc503502d876030b0f2ebda1ea3a3d3d3b",
+      "mode": "beam7_alpha1p2",
+      "images": 5000,
+      "generation_group": "beam7",
+      "shared_group_generation_seconds": 96.84416829999827,
+      "individual_generation_seconds": null,
+      "scoring_seconds": 5.887352199999441,
+      "scores": {
+        "bleu1": 0.7142468880795653,
+        "bleu4": 0.2963221131967673,
+        "cider_d": 0.958455753571233
+      },
+      "predictions_sha256": "3e3519d70a0796d22fd14141dd120027a382812ef5ef2744678d1267787dec83",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam7_alpha1p2\\validation_predictions.json",
+      "average_words": 11.0382,
+      "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+    }
+  },
+  "device": {
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "torch": "2.13.0+cu126",
+    "cuda_runtime": "12.6",
+    "cpu_threads": 2
+  },
+  "unique_generation_seconds": 240.39963649998026,
+  "total_scoring_seconds": 83.5061434999916,
+  "active_wall_seconds": 342.5541415999978,
+  "timing_note": "Each width generation pass is counted once. Alpha variants share that pass; their repeated CSV timer column must not be summed. Wall time includes setup, scoring, reference check and I/O.",
+  "test_evaluated": false,
+  "model_training_performed": false,
+  "original_checkpoints_modified": false,
+  "selected_mode_by_validation_cider": "beam7_alpha0",
+  "differences_from_greedy": {
+    "beam3_alpha0": {
+      "cider_d": 0.02144516664292917,
+      "bleu1": 0.0033997046033639178,
+      "bleu4": 0.02541852969958336
+    },
+    "beam3_alpha0p3": {
+      "cider_d": 0.025902788056857307,
+      "bleu1": 0.005026239768166296,
+      "bleu4": 0.023506127821656675
+    },
+    "beam3_alpha0p6": {
+      "cider_d": 0.026884965195810406,
+      "bleu1": 0.0017913703333212183,
+      "bleu4": 0.021243762937260935
+    },
+    "beam3_alpha0p9": {
+      "cider_d": 0.0275933221915986,
+      "bleu1": -0.0020660850474830683,
+      "bleu4": 0.018987279871783003
+    },
+    "beam3_alpha1p2": {
+      "cider_d": 0.026067829941812892,
+      "bleu1": -0.006841185976215081,
+      "bleu4": 0.01563771683311499
+    },
+    "beam5_alpha0": {
+      "cider_d": 0.029982977573201786,
+      "bleu1": 0.006018092342689241,
+      "bleu4": 0.030825316449505646
+    },
+    "beam5_alpha0p3": {
+      "cider_d": 0.028929459761338427,
+      "bleu1": 0.0015133597119287856,
+      "bleu4": 0.026991745220013907
+    },
+    "beam5_alpha0p6": {
+      "cider_d": 0.024982589409688893,
+      "bleu1": -0.0033616038321311326,
+      "bleu4": 0.023190838530607882
+    },
+    "beam5_alpha0p9": {
+      "cider_d": 0.023142516149703307,
+      "bleu1": -0.008436731734249747,
+      "bleu4": 0.02005161927855098
+    },
+    "beam5_alpha1p2": {
+      "cider_d": 0.018461706543266176,
+      "bleu1": -0.014415541585660607,
+      "bleu4": 0.01560351779261887
+    },
+    "beam7_alpha0": {
+      "cider_d": 0.0336910231435521,
+      "bleu1": 0.0037406951758777174,
+      "bleu4": 0.02993051191782653
+    },
+    "beam7_alpha0p3": {
+      "cider_d": 0.029608052702810417,
+      "bleu1": -0.0018809481570977171,
+      "bleu4": 0.025364031042961477
+    },
+    "beam7_alpha0p6": {
+      "cider_d": 0.02463063923727371,
+      "bleu1": -0.0069571951356280914,
+      "bleu4": 0.021260412656598227
+    },
+    "beam7_alpha0p9": {
+      "cider_d": 0.020070433337232352,
+      "bleu1": -0.013457522836945346,
+      "bleu4": 0.01709386672215929
+    },
+    "beam7_alpha1p2": {
+      "cider_d": 0.01699216518910962,
+      "bleu1": -0.01994508438475251,
+      "bleu4": 0.01284503903297507
+    }
+  }
+}

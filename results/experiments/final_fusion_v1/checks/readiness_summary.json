@@ -1,0 +1,22 @@
+{
+  "ready_for_manual_training": true,
+  "main_training_started_by_agent": false,
+  "train_images": 113287,
+  "validation_images": 5000,
+  "test_used": false,
+  "roi_cache_key": "bda502ad58d06004f213238efb497e73fb2922f00dc13a1845a3b8cabe185ac2",
+  "cache_audit_completed_utc": "2026-11-15T13:57:00.035913+00:00",
+  "notebook_sha256": "6b40515a3050bb5e7fe4a1804541504401cf5dfc5e9223385a1630a316ce74dc",
+  "code_identity": {
+    "models_sha256": "727f7ac7e9659a5ce4be3dc66a30f55e6714b87a3a95162f4d0a2ee72cd6e559",
+    "models_cell_ast_sha256": "aac377250db8748d6171a43d3dbb5c353a3b3f3977bb2b4314c71fd527fa9c80",
+    "runtime_sha256": "2eb6874a0f088966d79b5f03381e2381e792dc66831f07040b53273933f0a2a4",
+    "runtime_cell_ast_sha256": "ffba0f7e9ff42d83ee23b2741992ee892a4692fe04e50bfca757c28006316c35",
+    "region_features_sha256": "880a6dbb01e34ec883cc763585f644709e651884e2f8cd24087ef647ec584929",
+    "region_features_cell_ast_sha256": "12dc3ba9b3e79b75aeb6668e7e2bbf32b1fd8904ff892c4d40d29e6a978ae10f",
+    "region_cache_sha256": "89a32feb28efaba14b8f42261b6cd660766d92bdb680dafebc773c33075d52c7",
+    "region_cache_cell_ast_sha256": "ac087c69248d3c06baa52b1d7cc6cc591a6142af1eb23d3d6176981190790728",
+    "model_runtime_implementation_id": "ca9d91c38034f61d2ee015d159c226e79636e9542e89f37160957bc9fe0c5c24",
+    "region_producer_code_id": "a9980e51d7cbd7567b6f1992cb99784728dc9586be4b86b03553f2b7eb0cb5a5"
+  }
+}

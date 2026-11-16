@@ -4,3 +4,22 @@
 *.txt text eol=lf
 # The stage-5 handoff publishes byte checksums; preserve its exact archive bytes.
 stage5_handoff/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Preserve final archive bytes: several source/config hashes are checked by inference.
+/AML_Final_Submission.ipynb -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/FinalFusion.ipynb -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/FinalAML.ipynb -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/SpatialAttention.ipynb -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+metadata/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+results/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+src/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+inference/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tools/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+# Published archive manifests describe the exact bytes of every packaged file.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary

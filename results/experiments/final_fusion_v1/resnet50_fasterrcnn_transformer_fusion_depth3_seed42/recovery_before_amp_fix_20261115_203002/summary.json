@@ -1,0 +1,33 @@
+{
+  "encoder": "resnet50_spatial+fasterrcnn_resnet50_fpn",
+  "decoder": "gated_cross_attention_transformer",
+  "run_name": "resnet50_fasterrcnn_transformer_fusion_depth3_seed42",
+  "train_images": 113287,
+  "validation_images": 5000,
+  "trainable_parameters": 25520407,
+  "best_epoch": 2,
+  "best_is_initial_baseline": false,
+  "best_cider_d": 0.9048640671885614,
+  "val_loss": 2.027247774384973,
+  "bleu1": 0.728268714721926,
+  "bleu4": 0.27765047078909716,
+  "cider_d": 0.9048640671885614,
+  "bad_epochs": 0,
+  "epoch": 3,
+  "phase": "train",
+  "stop_reason": null,
+  "training_seconds": 1392.0576610999997,
+  "training_time": "00:23:12",
+  "initial_validation_seconds": 34.12915559999965,
+  "devices": [
+    {
+      "device": "cuda",
+      "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "torch": "2.13.0+cu126",
+      "cuda_runtime": "12.6"
+    }
+  ],
+  "data_note": "Fusion stage uses the fixed saved train subset. The warm-start caption model previously trained on the full original project train split.",
+  "timing_note": "Active run includes initial validation, training, validation and checkpoint I/O; excludes loading, extraction, preflight and paused downtime.",
+  "test_evaluated": false
+}

@@ -1,0 +1,5 @@
+model,input,layers,parameters,best_epoch,val_loss,bleu1,bleu4,cider_d,training_time,device,status
+Global lstm,1 global vector,3,17606932,22,2.1222638227283497,0.7099184405688685,0.2514700996024224,0.8081027963316038,00:36:41,NVIDIA GeForce RTX 4060 Laptop GPU,finished
+lstm_attention,49 spatial locations,3,18657044,,,,,,,,pending
+Global transformer,1 global vector,3,20778772,21,2.0729966763489065,0.7149021705054546,0.26325920740195224,0.8578049436328543,00:40:49,NVIDIA GeForce RTX 4060 Laptop GPU,finished
+transformer_cross_attention,49 spatial locations,3,23940884,,,,,,,,pending

@@ -1,0 +1,229 @@
+{
+  "kind": "stage5_results_B_projln",
+  "run_name": "fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42",
+  "implementation": "e4935d48aa74fbca2a28ba2591085096da482fa368b40df5eb79bac122ac38b2",
+  "created_utc": "2026-11-15T17:32:11.845205+00:00",
+  "files": {
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/best.pt": {
+      "bytes": 217654095,
+      "sha256": "21cec38267dd59470af07fa0c11b65abc1f1be53beeeb05588f65aff6d76f4ff"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/best_weights.pt": {
+      "bytes": 72541913,
+      "sha256": "01a739c4e66ec56312acabb8981eb4a18913ba403a4dbf7a996e3efb62ce9076"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/config.json": {
+      "bytes": 4158,
+      "sha256": "f45f6a613960d358d74d0e8dc70075f020ba34dbbaf1203ca3278f4eda84b12d"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/history.csv": {
+      "bytes": 4058,
+      "sha256": "6b595895f182887bfde914fc659d1f292c437a4662d1c9757987fda658f102ec"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/history.json": {
+      "bytes": 8620,
+      "sha256": "5588b33219fcf9a332b6e53c851d0c7e9a8b608474f2ffe12736be43836d2f4d"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/last.pt": {
+      "bytes": 217654415,
+      "sha256": "a6f2fe9698c10b970e2772496e56a101b5b3881eeb9d86ce4cd80828fa4ddb27"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/last_weights.pt": {
+      "bytes": 72541913,
+      "sha256": "df9604d60464d078bbc1465ab574dd592f17c9f19acef5dbf2c7e6ec098a3f90"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_01.json": {
+      "bytes": 2181020,
+      "sha256": "743af20721b19f15dce12362864f72633bad90717371e4dbe8a16f878d092a85"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_02.json": {
+      "bytes": 2189696,
+      "sha256": "a9c3a98ff7485ed213b3038134047cf998ded235b8d1e7f1f0a1712946ba19cf"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_03.json": {
+      "bytes": 2195286,
+      "sha256": "a359bea4715ecc4a78f9f9f8c2fcf32b74fa23a0b423903b8d54f9540c243db6"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_04.json": {
+      "bytes": 2181131,
+      "sha256": "00ab2dd007422aa62f95af4fb357444e7f101ef4baaafae13974481a9244afa6"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_05.json": {
+      "bytes": 2186405,
+      "sha256": "113785953b6c4882a6eacd051f6ed9ca883bf2773e854ceb32d41dcb47429993"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_06.json": {
+      "bytes": 2180552,
+      "sha256": "c13665b064beb02d6e6338a7a008e281cf6284ab98cabab455c098f020057cdf"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_07.json": {
+      "bytes": 2182849,
+      "sha256": "e5d4e229a74e4491897d69eb55a02b263d3f4ba576b1ec032edaefe5c03f5e80"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_08.json": {
+      "bytes": 2181238,
+      "sha256": "d199e890648b496b97ff18000ec74be9232b53d8b737beb8e846cb42adc7979d"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_09.json": {
+      "bytes": 2182211,
+      "sha256": "1c968eb9e3f9eced9e6518972492d285fff91e1ea1f3a51e5bc11f0dfd52df97"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_10.json": {
+      "bytes": 2181873,
+      "sha256": "d5ddab4f7916e172d11f7d030a5865404ab13e2c0d1231ecfeb142b4deb49821"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_11.json": {
+      "bytes": 2184024,
+      "sha256": "f92d5678b515b06bf25b517a0913fa2dfce273ded7abfa9cc8ed6b9ab24ea74b"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_12.json": {
+      "bytes": 2189358,
+      "sha256": "414b071f072685d9d759162d868527d68f0a2b54e2d724e3970a02fe042226b0"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_13.json": {
+      "bytes": 2184993,
+      "sha256": "8e3f4102740dfaafc8a4eface7d26fadaedd9ad50655afbd2f3e9823727b00aa"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_14.json": {
+      "bytes": 2187270,
+      "sha256": "c2ef8e291cd39e9262e9571c54aff0e34366c9e54e80553d081f30327967f20a"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_15.json": {
+      "bytes": 2186821,
+      "sha256": "d511e6a1774d9491a49447350c947c6f5da3968374f3703194ffa42ab73debb5"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_16.json": {
+      "bytes": 2187896,
+      "sha256": "ced343321dce102ee80e5df0327043b32bdea3c53818ac18fb0f112bfe9fbe96"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_17.json": {
+      "bytes": 2188720,
+      "sha256": "6e4dcf42062a00630a5025093db7e0074d00a0e109c7fca51a6daabd056c8038"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_18.json": {
+      "bytes": 2189068,
+      "sha256": "688c6090ac52b83d3ed9c2d3a1789bac648735d0733b819bc0dc981aadf9c1e5"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_19.json": {
+      "bytes": 2187831,
+      "sha256": "ec7d59680336d7be03851a8ad899444f10cbb8a372e0c38c225605a9611a56f5"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_20.json": {
+      "bytes": 2189319,
+      "sha256": "7a0b5d56e2a966fa61ae50240ba10cbab597d6b359a8ad290b10cf4c41ec0780"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_21.json": {
+      "bytes": 2188567,
+      "sha256": "dceaa8e9ae639214784f361570aa639b7d72accc64512999adabddd360bea3e2"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_22.json": {
+      "bytes": 2187934,
+      "sha256": "cb3c8fa6d83288932b859c4b88af9ebb06e6b25cbb229b595a65f56e98686383"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_23.json": {
+      "bytes": 2186067,
+      "sha256": "e1097480c18f0d4dad61cfa00e1c6ddec6f03b458082d28a8e43516c0748cd33"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_24.json": {
+      "bytes": 2186924,
+      "sha256": "1a36aaa8947280662e45805836f5c3557b41c7ed0c082a5f42f2bfe2d3b539d6"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_25.json": {
+      "bytes": 2185582,
+      "sha256": "00b1917223aaa4fafb0ea7281d0b3fafec63e3ae39dec3ccc858c8c0bbc0f870"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_26.json": {
+      "bytes": 2185710,
+      "sha256": "3c797d0154a482ac3fb10c33ea03f9eb48369d907f7714ebf6d5862e7614c31b"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_27.json": {
+      "bytes": 2188334,
+      "sha256": "c0415781fc73ad7e558945e8f3edd952aec3bdfdd6ca1240d45b5e53af0d796a"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/predictions/val_epoch_28.json": {
+      "bytes": 2190580,
+      "sha256": "d80dba2d307996aeed67a96a0db54789f903ef6fff71f8f73708047eb8082fbe"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/status.json": {
+      "bytes": 41,
+      "sha256": "a465e3d403d7746eb2084825271b775a0e44765cb0f151dcd5977ff8fa44b82c"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/summary.json": {
+      "bytes": 1120,
+      "sha256": "5abaf888a7f3d2c9f89501e216099720c6533d39b9aefe80342dc631ec423837"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/validation_best.json": {
+      "bytes": 2295814,
+      "sha256": "81472cea18bf13e4b6b0adfb745bea4b3e553a14751b5a94d9103179937dbef4"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/validation_last.json": {
+      "bytes": 2300812,
+      "sha256": "86182212ffa262593cbfd03e83e368abccbbee5bb86f18d4f965a412974572cf"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42/vocabulary.json": {
+      "bytes": 350518,
+      "sha256": "a70e37b0a58c54880fd8a659f4b077633deca15afe925e6203e8f338224796ba"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/checks/preflight_fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42_534ce4390097.json": {
+      "bytes": 7810,
+      "sha256": "58e0ed8ac6e733713fa64d25a9a0b79fb72b3360b31b4b4c16c9b1cfac452d62"
+    },
+    "experiments/fasterrcnn_regions_projln_v1/checks/preflight_summary.json": {
+      "bytes": 1101,
+      "sha256": "070c6ee20f123414b57e1fde0c3f71f4d62f92f0bf182b13998a05e09c822186"
+    },
+    "stage5_reports/environment_report.json": {
+      "bytes": 781,
+      "sha256": "9990462bfff24023d52c40b1ac0db7572b54b04dc8f99e281228b8166ea19e3b"
+    },
+    "stage5_reports/learning_curves.png": {
+      "bytes": 32796,
+      "sha256": "92ad2564bb7e8bf5e8743e3a90492b83aa215e172d511e3bab2aa767d1f1325e"
+    },
+    "stage5_reports/loop_audit.json": {
+      "bytes": 20292,
+      "sha256": "934e62b509a8dd80c530f9df5918721f2e6954e37313ae1b5a704da9ab1a6cc3"
+    },
+    "stage5_reports/region_count_histogram.png": {
+      "bytes": 13242,
+      "sha256": "3aa03009ad38f4d46e632c831e2ff0ea8b95442a46fcb2c7e4115d41f25e7d1f"
+    },
+    "stage5_reports/verification_report.json": {
+      "bytes": 14369,
+      "sha256": "a5c67e95757574c055bc912636ac4c22539dd91435c245315986d8c922266820"
+    },
+    "cache/features/fasterrcnn_regions_v1/region_cache_report.json": {
+      "bytes": 18840,
+      "sha256": "f20f187d19299fc993314dc52a53e8d5cdd96d1461c03d00bca76875c3a3bf8f"
+    },
+    "cache/features/fasterrcnn_regions_v1/train2017_image_ids.json": {
+      "bytes": 1160306,
+      "sha256": "25d2034e612a6f45c2d3c9bd66f3390e074472a8e6fd72c2e7c8a83bc62d1c52"
+    },
+    "cache/features/fasterrcnn_regions_v1/train2017_meta.json": {
+      "bytes": 6593,
+      "sha256": "e039d56c5e5fdaf7b0c1a2be70af96da57462b4d1c7443c1b168a6be8107253e"
+    },
+    "cache/features/fasterrcnn_regions_v1/train2017_progress.json": {
+      "bytes": 4696,
+      "sha256": "40d6b00bf196e5582e4796d46140e012865cade92e3bd4bb99354b346bcbfa6a"
+    },
+    "cache/features/fasterrcnn_regions_v1/val2017_image_ids.json": {
+      "bytes": 49039,
+      "sha256": "e07c71fd3cad1e967f7f907d359315d38101adaf59f9658e4e8c2c0670f7741b"
+    },
+    "cache/features/fasterrcnn_regions_v1/val2017_meta.json": {
+      "bytes": 6522,
+      "sha256": "7eaee0d37de52b56e59b6cd6b744e69fa0a0a64625aa3081044f5223eeaf3b42"
+    },
+    "cache/features/fasterrcnn_regions_v1/val2017_progress.json": {
+      "bytes": 4682,
+      "sha256": "26117c350b891d60f6ea0707c1a1f9cb224f160f704f141f057e3ff880b1d111"
+    },
+    "FasterRCNN_Stage5_projln.source.ipynb": {
+      "bytes": 185346,
+      "sha256": "91eacbcf2c5f9c688739df163043b3efd8ad643a6b8ea090e1b21376e6f1d612"
+    }
+  },
+  "not_included": "Region arrays (*.npy, ~8.5 GiB; unchanged, in the previous version's Output) and raw JPEGs. The executed notebook is downloaded from Kaggle."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "identity_sha256": "ee4c12dd2a880fd3ebdcac48b1d15d302bdc5c3c65a1a15501398d09e75456f1",
+  "mode": "greedy",
+  "images": 5000,
+  "generation_group": "greedy",
+  "shared_group_generation_seconds": 17.538673699975334,
+  "individual_generation_seconds": null,
+  "scoring_seconds": 5.333271800001967,
+  "scores": {
+    "bleu1": 0.7332474226803989,
+    "bleu4": 0.28472710795716094,
+    "cider_d": 0.938023589121302
+  },
+  "predictions_sha256": "2caef838575c636b56f199d4b6e306cd7b7daa4a2eef365db8edf17a07e532b5",
+  "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\modes\\greedy\\validation_predictions.json",
+  "average_words": 10.8556,
+  "timing_note": "Generation belongs to the shared width pass; do not sum it across alpha rows."
+}

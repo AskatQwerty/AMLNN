@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "gpu_disabled": true,
+  "inference_or_checkpoint_load": false,
+  "project_written": false,
+  "all_inline_dependencies_executed": true,
+  "wrapper_id_matches_standalone": "45904a8d6f9c0ba7ea048fdd2e2991bbbc7abfaa4571e7251cab3382197abf17",
+  "test_helper_id_matches_standalone": "f1ef03ae866ccb42b82aff9b6be1f7581eb9ba4a39312f96ddb8d24d36870fee",
+  "frozen_manifest_exact_top3_verified": true,
+  "full5000_test_cache_sha_finite_masks_verified": true,
+  "executed_definition_sections": [
+    "imports",
+    "settings",
+    "fusion_prepared_data",
+    "fusion_metrics",
+    "fusion_region_features",
+    "fusion_region_cache",
+    "fusion_models",
+    "fusion_runtime",
+    "fusion_orchestration",
+    "fusion_inference",
+    "fusion_decoding_beam_search",
+    "fusion_decoding_evaluation_helpers",
+    "test_cache",
+    "final_test"
+  ],
+  "notebook_sha256": "1686199258d42fca71149b0badfb3e2196c373ab51707ebcf750c5437a8336ae"
+}

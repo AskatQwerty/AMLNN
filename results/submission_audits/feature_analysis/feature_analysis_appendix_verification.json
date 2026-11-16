@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "source_sha256": "b9bf7be3f5fcfdd692eadb133fff5c4b173a5f12deb3e37e63163ae6ba7f9442",
+  "output_sha256": "1d89c09b3348554510f4f03d1ee2ab6cd2f7b898c38f0d6eaa5edeb24bb0d0a4",
+  "original_cells_preserved": 48,
+  "added_markdown_cells": 7,
+  "total_cells": 55,
+  "existing_outputs_unchanged": true,
+  "code_changed": false,
+  "new_code_executed": false,
+  "figure_embedded_in_notebook": true,
+  "schema_validated": true
+}

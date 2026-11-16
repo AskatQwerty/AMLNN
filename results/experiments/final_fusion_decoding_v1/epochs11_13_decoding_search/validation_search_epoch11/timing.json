@@ -1,0 +1,5 @@
+{
+  "identity_sha256": "ee4c12dd2a880fd3ebdcac48b1d15d302bdc5c3c65a1a15501398d09e75456f1",
+  "active_wall_seconds": 324.5282655999981,
+  "note": "Includes data/model loading, shared generation, reference check, scoring and artifact I/O; excludes pauses between attempts."
+}

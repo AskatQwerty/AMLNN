@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    "original_unresized_detector_input",
+    "224_padded_normalized_grid_input",
+    "grid_and_roi_float16_storage_roundtrip",
+    "global_pool_before_grid_storage_rounding",
+    "valid_mask_and_normalized_boxes",
+    "actual_vocabulary_ids",
+    "eval_no_grad_and_mode_restore",
+    "caption_and_region_audit_contract",
+    "exact_source_image_sha256"
+  ],
+  "cpu_stubs_only": true,
+  "gpu_used": false,
+  "weights_loaded_or_downloaded": false,
+  "real_caption_model_or_cnn_executed": false,
+  "inference_source_sha256": "a9199eddb15366c26c7f78cf7b2598128f97ac85dd64d7ee926a58037318886e"
+}

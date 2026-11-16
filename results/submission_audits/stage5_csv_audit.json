@@ -1,0 +1,29 @@
+{
+  "source": "C:/Users/askat/Downloads/stage5_B_projln_val_metrics_epochs_1-26.csv",
+  "source_sha256": "ba03c634af9366ed72488c90aa05a8fd6b5532420fad7fc8f2631e7e4e446a26",
+  "rows": 26,
+  "best": {
+    "epoch": 25,
+    "train_loss": 2.2737,
+    "val_loss": 2.1687,
+    "val_BLEU-1": 0.7124,
+    "val_BLEU-4": 0.2533,
+    "val_CIDEr-D": 0.8185,
+    "patience": 0,
+    "new_best": "yes"
+  },
+  "last": {
+    "epoch": 26,
+    "train_loss": 2.2637,
+    "val_loss": 2.1725,
+    "val_BLEU-1": 0.7113,
+    "val_BLEU-4": 0.2502,
+    "val_CIDEr-D": 0.8164,
+    "patience": 1,
+    "new_best": ""
+  },
+  "reported_precision_decimals": 4,
+  "checkpoint_verified": false,
+  "status": "Preliminary teammate CSV, through epoch26; final weights and actual training notebook not received",
+  "epoch_and_patience_checks_passed": true
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "encoder": "resnet18",
+    "decoder": "rnn",
+    "variant": "image_layernorm",
+    "cider_d": 0.5325727461930342,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_rnn_image_layernorm_seed42\\summary.json"
+  },
+  {
+    "encoder": "resnet50",
+    "decoder": "rnn",
+    "variant": "image_layernorm",
+    "cider_d": 0.6479525841389041,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_rnn_image_layernorm_seed42\\summary.json"
+  },
+  {
+    "encoder": "vgg19",
+    "decoder": "rnn",
+    "variant": "image_layernorm",
+    "cider_d": 0.5975695031288579,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_rnn_image_layernorm_seed42\\summary.json"
+  },
+  {
+    "encoder": "mobilenet_v2",
+    "decoder": "rnn",
+    "variant": "image_layernorm",
+    "cider_d": 0.5921918681286177,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_rnn_image_layernorm_seed42\\summary.json"
+  },
+  {
+    "encoder": "efficientnet_v2_s",
+    "decoder": "rnn",
+    "variant": "image_layernorm",
+    "cider_d": 0.6442038105471309,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_rnn_image_layernorm_seed42\\summary.json"
+  },
+  {
+    "encoder": "resnet18",
+    "decoder": "lstm",
+    "variant": "image_layernorm",
+    "cider_d": 0.6628609657993029,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_lstm_image_layernorm_seed42\\summary.json"
+  },
+  {
+    "encoder": "resnet50",
+    "decoder": "lstm",
+    "variant": "stacked",
+    "cider_d": 0.804683641587932,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_stacked_seed42\\summary.json"
+  },
+  {
+    "encoder": "vgg19",
+    "decoder": "lstm",
+    "variant": "image_layernorm",
+    "cider_d": 0.7549416220951173,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_lstm_image_layernorm_seed42\\summary.json"
+  },
+  {
+    "encoder": "mobilenet_v2",
+    "decoder": "lstm",
+    "variant": "image_layernorm",
+    "cider_d": 0.7810364348944486,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_lstm_image_layernorm_seed42\\summary.json"
+  },
+  {
+    "encoder": "efficientnet_v2_s",
+    "decoder": "lstm",
+    "variant": "image_layernorm",
+    "cider_d": 0.7859981705443181,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_lstm_image_layernorm_seed42\\summary.json"
+  },
+  {
+    "encoder": "resnet18",
+    "decoder": "transformer",
+    "variant": "baseline",
+    "cider_d": 0.6809171758349254,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_transformer_baseline_seed42\\summary.json"
+  },
+  {
+    "encoder": "resnet50",
+    "decoder": "transformer",
+    "variant": "stacked",
+    "cider_d": 0.8085378515111861,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_stacked_seed42\\summary.json"
+  },
+  {
+    "encoder": "vgg19",
+    "decoder": "transformer",
+    "variant": "stacked",
+    "cider_d": 0.7506790930859192,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_transformer_stacked_seed42\\summary.json"
+  },
+  {
+    "encoder": "mobilenet_v2",
+    "decoder": "transformer",
+    "variant": "image_layernorm",
+    "cider_d": 0.7643655987804671,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_transformer_image_layernorm_seed42\\summary.json"
+  },
+  {
+    "encoder": "efficientnet_v2_s",
+    "decoder": "transformer",
+    "variant": "stacked",
+    "cider_d": 0.7800950307209185,
+    "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_transformer_stacked_seed42\\summary.json"
+  }
+]

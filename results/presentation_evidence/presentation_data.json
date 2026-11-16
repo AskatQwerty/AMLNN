@@ -1,0 +1,1395 @@
+{
+  "read_only_project": true,
+  "gpu_used": false,
+  "source_root": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs",
+  "metric": {
+    "name": "Validation CIDEr-D",
+    "scale": "Native pycocoevalcap1.2 score, no extra factor100",
+    "split": "All5000 labeled validation images",
+    "tokenizer": "project_regex_v1,not official PTB leaderboard tokenization"
+  },
+  "best_original15_per_encoder": [
+    {
+      "encoder": "resnet18",
+      "decoder": "transformer",
+      "variant": "baseline",
+      "run_name": "resnet18_transformer_baseline_seed42",
+      "cider_d": 0.6809171758349254,
+      "bleu1": 0.6737824842372978,
+      "bleu4": 0.22333569975979142,
+      "best_epoch": 17,
+      "stop_epoch": 20,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_transformer_baseline_seed42\\summary.json",
+        "sha256": "9995e5bcf92e209b6cce0dcffca7459f55293cc78b05785d6d5b1f8c6905f002"
+      },
+      "runs_compared": 15
+    },
+    {
+      "encoder": "resnet50",
+      "decoder": "transformer",
+      "variant": "stacked",
+      "run_name": "resnet50_transformer_stacked_seed42",
+      "cider_d": 0.8085378515111861,
+      "bleu1": 0.7146624371787141,
+      "bleu4": 0.2492566312068522,
+      "best_epoch": 5,
+      "stop_epoch": 8,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_stacked_seed42\\summary.json",
+        "sha256": "f2bb7c6e34cd4db02d3fb372a030862e46dc2e5b3abfb42b4804606fa51c6127"
+      },
+      "runs_compared": 15
+    },
+    {
+      "encoder": "vgg19",
+      "decoder": "lstm",
+      "variant": "image_layernorm",
+      "run_name": "vgg19_lstm_image_layernorm_seed42",
+      "cider_d": 0.7549416220951173,
+      "bleu1": 0.6906817888903083,
+      "bleu4": 0.2348474627552309,
+      "best_epoch": 24,
+      "stop_epoch": 27,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_lstm_image_layernorm_seed42\\summary.json",
+        "sha256": "737be1e1eefe57d61c4e141c13c70a905a9603aba4956c0304856a71687f9512"
+      },
+      "runs_compared": 15
+    },
+    {
+      "encoder": "mobilenet_v2",
+      "decoder": "lstm",
+      "variant": "image_layernorm",
+      "run_name": "mobilenet_v2_lstm_image_layernorm_seed42",
+      "cider_d": 0.7810364348944486,
+      "bleu1": 0.702072394664081,
+      "bleu4": 0.24610995894855972,
+      "best_epoch": 25,
+      "stop_epoch": 28,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_lstm_image_layernorm_seed42\\summary.json",
+        "sha256": "7d1966669326d8a42267e1fea7cd7aff25f98e2fab88add89fe7e842ff4c3105"
+      },
+      "runs_compared": 15
+    },
+    {
+      "encoder": "efficientnet_v2_s",
+      "decoder": "lstm",
+      "variant": "image_layernorm",
+      "run_name": "efficientnet_v2_s_lstm_image_layernorm_seed42",
+      "cider_d": 0.7859981705443181,
+      "bleu1": 0.7021875115667783,
+      "bleu4": 0.24082349154876678,
+      "best_epoch": 16,
+      "stop_epoch": 19,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_lstm_image_layernorm_seed42\\summary.json",
+        "sha256": "530ef79dd35c99c50751a68d29989f2c8a5813302d1df50c50296727c7e3d71e"
+      },
+      "runs_compared": 15
+    }
+  ],
+  "best_original75_per_decoder": [
+    {
+      "encoder": "resnet50",
+      "decoder": "rnn",
+      "variant": "image_layernorm",
+      "run_name": "resnet50_rnn_image_layernorm_seed42",
+      "cider_d": 0.6479525841389041,
+      "bleu1": 0.6660623571846607,
+      "bleu4": 0.2130892200827739,
+      "best_epoch": 5,
+      "stop_epoch": 8,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_rnn_image_layernorm_seed42\\summary.json",
+        "sha256": "2b53c7199e20eb26a3a1c85e77d68bb8e6617f43d4a8ae86a41c426d92b7c7e5"
+      },
+      "runs_compared": 25
+    },
+    {
+      "encoder": "resnet50",
+      "decoder": "lstm",
+      "variant": "stacked",
+      "run_name": "resnet50_lstm_stacked_seed42",
+      "cider_d": 0.804683641587932,
+      "bleu1": 0.7077562326869676,
+      "bleu4": 0.24969176619645309,
+      "best_epoch": 11,
+      "stop_epoch": 14,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_stacked_seed42\\summary.json",
+        "sha256": "ee9ed5eac0927b6a3b38f6c1097d0bdc7103a7d84d3494ad329477200f2b0e6d"
+      },
+      "runs_compared": 25
+    },
+    {
+      "encoder": "resnet50",
+      "decoder": "transformer",
+      "variant": "stacked",
+      "run_name": "resnet50_transformer_stacked_seed42",
+      "cider_d": 0.8085378515111861,
+      "bleu1": 0.7146624371787141,
+      "bleu4": 0.2492566312068522,
+      "best_epoch": 5,
+      "stop_epoch": 8,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_stacked_seed42\\summary.json",
+        "sha256": "f2bb7c6e34cd4db02d3fb372a030862e46dc2e5b3abfb42b4804606fa51c6127"
+      },
+      "runs_compared": 25
+    }
+  ],
+  "resnet50_depth_1_to_4": [
+    {
+      "layers": 1,
+      "encoder": "resnet50",
+      "decoder": "lstm",
+      "variant": "baseline",
+      "run_name": "resnet50_lstm_baseline_seed42",
+      "cider_d": 0.7849292522563285,
+      "bleu1": 0.7041655711227003,
+      "bleu4": 0.24331247085174146,
+      "best_epoch": 16,
+      "stop_epoch": 19,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_baseline_seed42\\summary.json",
+        "sha256": "792aa42b645e57fd661cb68dcb69fcb7619969d353cf8aace8a961fbc95a01c5"
+      }
+    },
+    {
+      "layers": 2,
+      "encoder": "resnet50",
+      "decoder": "lstm",
+      "variant": "stacked",
+      "run_name": "resnet50_lstm_stacked_seed42",
+      "cider_d": 0.804683641587932,
+      "bleu1": 0.7077562326869676,
+      "bleu4": 0.24969176619645309,
+      "best_epoch": 11,
+      "stop_epoch": 14,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_stacked_seed42\\summary.json",
+        "sha256": "ee9ed5eac0927b6a3b38f6c1097d0bdc7103a7d84d3494ad329477200f2b0e6d"
+      }
+    },
+    {
+      "layers": 3,
+      "encoder": "resnet50",
+      "decoder": "lstm",
+      "variant": "depth_3",
+      "run_name": "resnet50_lstm_depth_3_seed42",
+      "cider_d": 0.8081027963316038,
+      "bleu1": 0.7099184405688685,
+      "bleu4": 0.2514700996024224,
+      "best_epoch": 22,
+      "stop_epoch": 25,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_depth_3_seed42\\summary.json",
+        "sha256": "3f0ac7331701a3c8cf040b4338262f042656335019e4131415ac0f5814bca4a9"
+      }
+    },
+    {
+      "layers": 4,
+      "encoder": "resnet50",
+      "decoder": "lstm",
+      "variant": "depth_4",
+      "run_name": "resnet50_lstm_depth_4_seed42",
+      "cider_d": 0.7670166901890682,
+      "bleu1": 0.7081301268755591,
+      "bleu4": 0.239931945761195,
+      "best_epoch": 10,
+      "stop_epoch": 13,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_depth_4_seed42\\summary.json",
+        "sha256": "fab79c7b7da4006be098ff23d036b7a540dd728c28bb11386005d0d3f6e57f8d"
+      }
+    },
+    {
+      "layers": 1,
+      "encoder": "resnet50",
+      "decoder": "transformer",
+      "variant": "baseline",
+      "run_name": "resnet50_transformer_baseline_seed42",
+      "cider_d": 0.8046986153349001,
+      "bleu1": 0.7081423972732304,
+      "bleu4": 0.25307127300788124,
+      "best_epoch": 6,
+      "stop_epoch": 9,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_baseline_seed42\\summary.json",
+        "sha256": "5ba3ceec913963a6dd4edbd459bdcfce49e43473fb322e5500a3a657899d7069"
+      }
+    },
+    {
+      "layers": 2,
+      "encoder": "resnet50",
+      "decoder": "transformer",
+      "variant": "stacked",
+      "run_name": "resnet50_transformer_stacked_seed42",
+      "cider_d": 0.8085378515111861,
+      "bleu1": 0.7146624371787141,
+      "bleu4": 0.2492566312068522,
+      "best_epoch": 5,
+      "stop_epoch": 8,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_stacked_seed42\\summary.json",
+        "sha256": "f2bb7c6e34cd4db02d3fb372a030862e46dc2e5b3abfb42b4804606fa51c6127"
+      }
+    },
+    {
+      "layers": 3,
+      "encoder": "resnet50",
+      "decoder": "transformer",
+      "variant": "depth_3",
+      "run_name": "resnet50_transformer_depth_3_seed42",
+      "cider_d": 0.8578049436328543,
+      "bleu1": 0.7149021705054546,
+      "bleu4": 0.26325920740195224,
+      "best_epoch": 21,
+      "stop_epoch": 24,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_depth_3_seed42\\summary.json",
+        "sha256": "ece75be2456c3047dbce96d5ed95c3f01d0698ff9d622991e5bfe36bcc6ddbae"
+      }
+    },
+    {
+      "layers": 4,
+      "encoder": "resnet50",
+      "decoder": "transformer",
+      "variant": "depth_4",
+      "run_name": "resnet50_transformer_depth_4_seed42",
+      "cider_d": 0.8387274415667194,
+      "bleu1": 0.7196645717898048,
+      "bleu4": 0.2576459490109933,
+      "best_epoch": 16,
+      "stop_epoch": 19,
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_depth_4_seed42\\summary.json",
+        "sha256": "5d4748e087d3edb593879e1bde0d1f2b906774679cdfb1462956d544e7b243e8"
+      }
+    }
+  ],
+  "paired_profile_effects": [
+    {
+      "profile": "baseline",
+      "pairs": 15,
+      "mean_cider_d_delta": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 15,
+      "mean_best_epoch_delta": 0,
+      "by_decoder": {
+        "rnn": {
+          "pairs": 5,
+          "mean_cider_d_delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 5,
+          "mean_best_epoch_delta": 0
+        },
+        "lstm": {
+          "pairs": 5,
+          "mean_cider_d_delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 5,
+          "mean_best_epoch_delta": 0
+        },
+        "transformer": {
+          "pairs": 5,
+          "mean_cider_d_delta": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 5,
+          "mean_best_epoch_delta": 0
+        }
+      }
+    },
+    {
+      "profile": "small_hidden",
+      "pairs": 15,
+      "mean_cider_d_delta": -0.03335369845284524,
+      "wins": 0,
+      "losses": 15,
+      "ties": 0,
+      "mean_best_epoch_delta": 1,
+      "by_decoder": {
+        "rnn": {
+          "pairs": 5,
+          "mean_cider_d_delta": -0.04399788017039119,
+          "wins": 0,
+          "losses": 5,
+          "ties": 0,
+          "mean_best_epoch_delta": 0
+        },
+        "lstm": {
+          "pairs": 5,
+          "mean_cider_d_delta": -0.027700914443789592,
+          "wins": 0,
+          "losses": 5,
+          "ties": 0,
+          "mean_best_epoch_delta": 1.8
+        },
+        "transformer": {
+          "pairs": 5,
+          "mean_cider_d_delta": -0.028362300744354953,
+          "wins": 0,
+          "losses": 5,
+          "ties": 0,
+          "mean_best_epoch_delta": 1.2
+        }
+      }
+    },
+    {
+      "profile": "stacked",
+      "pairs": 15,
+      "mean_cider_d_delta": 0.008427465162991218,
+      "wins": 10,
+      "losses": 5,
+      "ties": 0,
+      "mean_best_epoch_delta": 0.2,
+      "by_decoder": {
+        "rnn": {
+          "pairs": 5,
+          "mean_cider_d_delta": -0.008360931257020388,
+          "wins": 2,
+          "losses": 3,
+          "ties": 0,
+          "mean_best_epoch_delta": -0.4
+        },
+        "lstm": {
+          "pairs": 5,
+          "mean_cider_d_delta": 0.02636282010333162,
+          "wins": 5,
+          "losses": 0,
+          "ties": 0,
+          "mean_best_epoch_delta": 1.4
+        },
+        "transformer": {
+          "pairs": 5,
+          "mean_cider_d_delta": 0.007280506642662421,
+          "wins": 3,
+          "losses": 2,
+          "ties": 0,
+          "mean_best_epoch_delta": -0.4
+        }
+      }
+    },
+    {
+      "profile": "high_dropout",
+      "pairs": 15,
+      "mean_cider_d_delta": -0.04149754332607288,
+      "wins": 0,
+      "losses": 15,
+      "ties": 0,
+      "mean_best_epoch_delta": 0.5333333333333333,
+      "by_decoder": {
+        "rnn": {
+          "pairs": 5,
+          "mean_cider_d_delta": -0.016466414098465054,
+          "wins": 0,
+          "losses": 5,
+          "ties": 0,
+          "mean_best_epoch_delta": 0.6
+        },
+        "lstm": {
+          "pairs": 5,
+          "mean_cider_d_delta": -0.02448570500274123,
+          "wins": 0,
+          "losses": 5,
+          "ties": 0,
+          "mean_best_epoch_delta": -1.4
+        },
+        "transformer": {
+          "pairs": 5,
+          "mean_cider_d_delta": -0.08354051087701235,
+          "wins": 0,
+          "losses": 5,
+          "ties": 0,
+          "mean_best_epoch_delta": 2.4
+        }
+      }
+    },
+    {
+      "profile": "image_layernorm",
+      "pairs": 15,
+      "mean_cider_d_delta": 0.031593795817650094,
+      "wins": 12,
+      "losses": 3,
+      "ties": 0,
+      "mean_best_epoch_delta": 1.4,
+      "by_decoder": {
+        "rnn": {
+          "pairs": 5,
+          "mean_cider_d_delta": 0.03671387080324155,
+          "wins": 5,
+          "losses": 0,
+          "ties": 0,
+          "mean_best_epoch_delta": 0.8
+        },
+        "lstm": {
+          "pairs": 5,
+          "mean_cider_d_delta": 0.0670316020538938,
+          "wins": 5,
+          "losses": 0,
+          "ties": 0,
+          "mean_best_epoch_delta": 4.6
+        },
+        "transformer": {
+          "pairs": 5,
+          "mean_cider_d_delta": -0.008964085404185074,
+          "wins": 2,
+          "losses": 3,
+          "ties": 0,
+          "mean_best_epoch_delta": -1.2
+        }
+      }
+    }
+  ],
+  "paired_profile_definition": "For each profile, compare to baseline within each fixed encoder+decoder pair (15 pairs=5encoders x3decoders). Delta is profile minus baseline in native CIDEr-D units and best-epoch count. Wins require delta>1e-12. These are single-seed paired descriptive comparisons, not statistical significance tests.",
+  "five_profile_settings": [
+    {
+      "profile": "baseline",
+      "rnn_and_lstm": {
+        "embedding_size": 512,
+        "hidden_size": 512,
+        "num_layers": 1,
+        "dropout": 0.3,
+        "image_layernorm": false,
+        "recurrent_dropout": 0.0
+      },
+      "transformer": {
+        "embedding_size": 512,
+        "hidden_size": 512,
+        "num_layers": 1,
+        "dropout": 0.3,
+        "image_layernorm": false,
+        "d_model": 512,
+        "nhead": 8,
+        "dim_feedforward": 2048,
+        "max_positions": 34,
+        "norm_first": true,
+        "position_encoding": "learned"
+      }
+    },
+    {
+      "profile": "small_hidden",
+      "rnn_and_lstm": {
+        "embedding_size": 512,
+        "hidden_size": 256,
+        "num_layers": 1,
+        "dropout": 0.3,
+        "image_layernorm": false,
+        "recurrent_dropout": 0.0
+      },
+      "transformer": {
+        "embedding_size": 256,
+        "hidden_size": 256,
+        "num_layers": 1,
+        "dropout": 0.3,
+        "image_layernorm": false,
+        "d_model": 256,
+        "nhead": 8,
+        "dim_feedforward": 2048,
+        "max_positions": 34,
+        "norm_first": true,
+        "position_encoding": "learned"
+      }
+    },
+    {
+      "profile": "stacked",
+      "rnn_and_lstm": {
+        "embedding_size": 512,
+        "hidden_size": 512,
+        "num_layers": 2,
+        "dropout": 0.3,
+        "image_layernorm": false,
+        "recurrent_dropout": 0.0
+      },
+      "transformer": {
+        "embedding_size": 512,
+        "hidden_size": 512,
+        "num_layers": 2,
+        "dropout": 0.3,
+        "image_layernorm": false,
+        "d_model": 512,
+        "nhead": 8,
+        "dim_feedforward": 2048,
+        "max_positions": 34,
+        "norm_first": true,
+        "position_encoding": "learned"
+      }
+    },
+    {
+      "profile": "high_dropout",
+      "rnn_and_lstm": {
+        "embedding_size": 512,
+        "hidden_size": 512,
+        "num_layers": 1,
+        "dropout": 0.5,
+        "image_layernorm": false,
+        "recurrent_dropout": 0.0
+      },
+      "transformer": {
+        "embedding_size": 512,
+        "hidden_size": 512,
+        "num_layers": 1,
+        "dropout": 0.5,
+        "image_layernorm": false,
+        "d_model": 512,
+        "nhead": 8,
+        "dim_feedforward": 2048,
+        "max_positions": 34,
+        "norm_first": true,
+        "position_encoding": "learned"
+      }
+    },
+    {
+      "profile": "image_layernorm",
+      "rnn_and_lstm": {
+        "embedding_size": 512,
+        "hidden_size": 512,
+        "num_layers": 1,
+        "dropout": 0.3,
+        "image_layernorm": true,
+        "recurrent_dropout": 0.0
+      },
+      "transformer": {
+        "embedding_size": 512,
+        "hidden_size": 512,
+        "num_layers": 1,
+        "dropout": 0.3,
+        "image_layernorm": true,
+        "d_model": 512,
+        "nhead": 8,
+        "dim_feedforward": 2048,
+        "max_positions": 34,
+        "norm_first": true,
+        "position_encoding": "learned"
+      }
+    }
+  ],
+  "common_settings": {
+    "seed": 42,
+    "batch_size": 64,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "patience": 3,
+    "gradient_clip": 5.0,
+    "amp": true,
+    "max_generation_steps": 33
+  },
+  "profile_notes": [
+    "small_hidden changes RNN/LSTM hidden512->256 but keeps embedding512. Transformer small_hidden changes embedding and d_model512->256, while heads8 and FFN2048 stay fixed.",
+    "stacked uses2layers; the4extra depth experiments use3or4layers and are excluded from original75 comparisons.",
+    "high_dropout uses0.5 instead of0.3. Recurrent built-in dropout remains0; explicit embedding/output dropout is used.",
+    "image_layernorm adds normalization after the visual projection; its meaning is not an extra layer in the recurrent stack."
+  ],
+  "stage5_learning_curves": [
+    {
+      "variant": "protocol",
+      "label": "Without projection LayerNorm",
+      "best_epoch": 1,
+      "stop_epoch": 4,
+      "best_cider_d": 0.05142162794394879,
+      "epochs": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "cider_d": [
+        0.05142162794394879,
+        0.05142162794394879,
+        0.05142162794394879,
+        0.049157309844417435
+      ],
+      "train_loss": [
+        4.953926639310459,
+        4.86577871666645,
+        4.857790784584988,
+        4.851453597994578
+      ],
+      "val_loss": [
+        4.745962823980434,
+        4.727781381061282,
+        4.726010175995124,
+        4.720972671081121
+      ],
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\stage5_received_20261115\\protocol\\experiments\\fasterrcnn_regions_v1\\fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42\\history.json",
+        "sha256": "7323ef6d2d331c6bf930fbc6621f8563deee7a6d3bb8ed2865392af0574cc316"
+      }
+    },
+    {
+      "variant": "projln",
+      "label": "With projection LayerNorm",
+      "best_epoch": 25,
+      "stop_epoch": 28,
+      "best_cider_d": 0.8184569357036644,
+      "epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "cider_d": [
+        0.37794590696420316,
+        0.5851861795271408,
+        0.6104619570718721,
+        0.6819850888982283,
+        0.6989104050601647,
+        0.7338573667393333,
+        0.7282929671419113,
+        0.7387521432507189,
+        0.7423305472514721,
+        0.7687601116914752,
+        0.7658208880732266,
+        0.755283484713587,
+        0.7785049354965031,
+        0.7742291481867848,
+        0.7780307613344929,
+        0.7957218649405097,
+        0.7868796953783119,
+        0.8055745893125211,
+        0.7989600851415373,
+        0.7863085221534165,
+        0.8096439427691934,
+        0.8112740385347668,
+        0.8096179021953988,
+        0.8144038050660191,
+        0.8184569357036644,
+        0.8163523664202378,
+        0.7979209386001643,
+        0.8021128356083369
+      ],
+      "train_loss": [
+        3.985835420804014,
+        3.0474893437515655,
+        2.825126902033485,
+        2.7097197073406587,
+        2.629705513878821,
+        2.574390036979788,
+        2.531026339929283,
+        2.497708508332043,
+        2.4618758768677664,
+        2.4444330583757417,
+        2.4219711276220304,
+        2.4002323637129983,
+        2.3867081204033154,
+        2.3699395749375385,
+        2.359507082167822,
+        2.3453046713054126,
+        2.33419953595847,
+        2.3255374757027205,
+        2.3143512691910537,
+        2.3073745040523517,
+        2.297783908665456,
+        2.292176765290965,
+        2.285225269052326,
+        2.277080201570778,
+        2.2736581492649313,
+        2.2637291108768682,
+        2.2611411033956945,
+        2.2525745616415276
+      ],
+      "val_loss": [
+        3.0185173192805594,
+        2.6730867041989512,
+        2.5313959918608333,
+        2.4506039739416563,
+        2.39190781142904,
+        2.358055521527786,
+        2.323603547391766,
+        2.309671176954659,
+        2.2831711309734093,
+        2.268468678533728,
+        2.2559080684593735,
+        2.2432941814209273,
+        2.236177283585297,
+        2.2233909703407493,
+        2.221001148286038,
+        2.207618569662636,
+        2.2063619439347972,
+        2.1979421074302454,
+        2.1995138467453774,
+        2.192598216832966,
+        2.189592160794434,
+        2.1835530897331212,
+        2.178174370069607,
+        2.1747619739304214,
+        2.1687018859807585,
+        2.1725487060706006,
+        2.170124720818464,
+        2.1649830479647374
+      ],
+      "source": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\stage5_received_20261115\\projln\\experiments\\fasterrcnn_regions_projln_v1\\fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42\\history.json",
+        "sha256": "5588b33219fcf9a332b6e53c851d0c7e9a8b608474f2ffe12736be43836d2f4d"
+      }
+    }
+  ],
+  "fusion_learning_curve": {
+    "epochs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "greedy_cider_d": [
+      0.8578049436328543,
+      0.8871402549672517,
+      0.9048640671885614,
+      0.9027795220930936,
+      0.9226150510355524,
+      0.9262180435258267,
+      0.9279337910850493,
+      0.9297469330960315,
+      0.9299388165359149,
+      0.9328386608150924,
+      0.9376379489024441,
+      0.938023589121302,
+      0.9376182779933971,
+      0.9414635883821234
+    ],
+    "train_loss": [
+      null,
+      2.2195268706442643,
+      2.1939948089871724,
+      2.180901800523212,
+      2.1736071044338883,
+      2.1610490395152495,
+      2.1556897529732852,
+      2.1507119555346628,
+      2.1451245036621978,
+      2.1339743391466883,
+      2.1352875491409935,
+      2.1300059197114805,
+      2.121164546875056,
+      2.119639945456342
+    ],
+    "val_loss": [
+      2.0729966763489065,
+      2.039511689429892,
+      2.027247774384973,
+      2.0188989600742397,
+      2.013017533329285,
+      2.0062385760981014,
+      2.0034921074485457,
+      1.9994420984114278,
+      1.9988346107312838,
+      1.9951306779324627,
+      1.9929554983652986,
+      1.9892282860171233,
+      1.9898716182258696,
+      1.9862413034649191
+    ],
+    "source": {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42\\history.json",
+      "sha256": "b560b09219fa5c27679e7f4db7e690b7dd40e9abf50a4ba65c88d0c2c594264b"
+    },
+    "epoch0_note": "Initialization evaluation before fusion updates; transferred prefix model, not a newly trained epoch.",
+    "stopping_note": "The run was manually stopped during epoch14; only completed epochs0..13 appear here. Epoch13 is greedy-best; decoding selection later chose epoch11."
+  },
+  "global_source_runs": [
+    {
+      "run_name": "efficientnet_v2_s_lstm_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_lstm_baseline_seed42\\summary.json",
+        "sha256": "31935ecb51971300b2f43ae97c4a45e35b519f31a219faae23fc545c3753ab14"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_lstm_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_lstm_high_dropout_seed42\\summary.json",
+        "sha256": "aabe800a026de9c52d52d861517b23d709ab263aa3d8a60aa45bf2b96d33608a"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_lstm_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_lstm_image_layernorm_seed42\\summary.json",
+        "sha256": "530ef79dd35c99c50751a68d29989f2c8a5813302d1df50c50296727c7e3d71e"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_lstm_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_lstm_small_hidden_seed42\\summary.json",
+        "sha256": "9649e5ddff607d35df7e73fec3bea65ff13e0f18f66dc9a791a44452776e523c"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_lstm_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_lstm_stacked_seed42\\summary.json",
+        "sha256": "537e47fb60a197e96b0efbd15a847d72dba1f2f8ef4ac953ef452f8c8c6349dc"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_rnn_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_rnn_baseline_seed42\\summary.json",
+        "sha256": "9e4435ab1313fea25bb45be1ddb2d60087c4956798a932d26eb4a01f47638e8a"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_rnn_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_rnn_high_dropout_seed42\\summary.json",
+        "sha256": "4e12860ea2865914c11e94b9a2a9df7fdeaf93135bd77954c84d4101d6e3d91b"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_rnn_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_rnn_image_layernorm_seed42\\summary.json",
+        "sha256": "6cd88e0584933b14a1815d12f12c69b64a4a40a05b9a79002889fa43eae51c0e"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_rnn_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_rnn_small_hidden_seed42\\summary.json",
+        "sha256": "b9179afe8a924ef95fde7a3138d7c480b951f9ebf57b83889ea9a75511eaa8e1"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_rnn_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_rnn_stacked_seed42\\summary.json",
+        "sha256": "0f35e8984ea09129f457f7309f8513546857cbfc75595cfd5898bdef61d1bf38"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_transformer_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_transformer_baseline_seed42\\summary.json",
+        "sha256": "a42d363b7ac262b6382d82d29ae1f613eaa37327de5a1ed5827b43b06834bf6d"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_transformer_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_transformer_high_dropout_seed42\\summary.json",
+        "sha256": "9bf999c0ba09e8bf00aafe76e5d868b97de0d36a27a9e20bcbb0e0e6d8da2200"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_transformer_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_transformer_image_layernorm_seed42\\summary.json",
+        "sha256": "3cda1c0ba79512edc28f6115ac1fce90170f35e99d59f7ed4133873c56236f77"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_transformer_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_transformer_small_hidden_seed42\\summary.json",
+        "sha256": "f329d3c5f3dc7bcd88f2bdd6c98455b641c409c4c70301937825805a9e7f407f"
+      }
+    },
+    {
+      "run_name": "efficientnet_v2_s_transformer_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\efficientnet_v2_s_transformer_stacked_seed42\\summary.json",
+        "sha256": "63f17ea0368bf9a73b987a7351babfb173a87a2330666a99e34340271f255fbd"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_lstm_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_lstm_baseline_seed42\\summary.json",
+        "sha256": "fe841228f4d7e7a77e06194d50b99b5c5531548e71d54646b126da5d8ad90a9b"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_lstm_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_lstm_high_dropout_seed42\\summary.json",
+        "sha256": "88ad43653d504dc7a6743ecc0640823c0b11c9f7fc6dabb482be9e456fa5dfe6"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_lstm_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_lstm_image_layernorm_seed42\\summary.json",
+        "sha256": "7d1966669326d8a42267e1fea7cd7aff25f98e2fab88add89fe7e842ff4c3105"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_lstm_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_lstm_small_hidden_seed42\\summary.json",
+        "sha256": "cbaf9196e3cd8c8002d4d658a0e980fc558778f96171a05c80ccef93b434615b"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_lstm_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_lstm_stacked_seed42\\summary.json",
+        "sha256": "47e40e12be345e00b8db987f257f56cde93213b512eeb37570303adb8a5e36af"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_rnn_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_rnn_baseline_seed42\\summary.json",
+        "sha256": "1e56a5b3539197b1a4575bc119c920df8d959e6298e336bfc321ec72f20c9fc6"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_rnn_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_rnn_high_dropout_seed42\\summary.json",
+        "sha256": "1ed00cc17bbc4e28a8a5221e0157430241c772d3957cc74439b648d75237b4b3"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_rnn_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_rnn_image_layernorm_seed42\\summary.json",
+        "sha256": "18fc56800f641c414069c06d359a4b96e74753bd267b31e02d1b8041cb4b68a5"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_rnn_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_rnn_small_hidden_seed42\\summary.json",
+        "sha256": "88733ae5ff95cb26e6f1bce3b528dbc51b8db7c196d73fe8c3c52bd88f215132"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_rnn_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_rnn_stacked_seed42\\summary.json",
+        "sha256": "3de9c1bfc704dcf19cef94ec629d8d2954ad9829099582828252a43dddf7127d"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_transformer_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_transformer_baseline_seed42\\summary.json",
+        "sha256": "f2081ed6b18d8628bb9ec947a5e1d9970f630e568b11182bf89cd654950c62ed"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_transformer_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_transformer_high_dropout_seed42\\summary.json",
+        "sha256": "5c3dd6c405ddff0fed8bae2c795debc3e0fccac54a981ed83d58c3ae4194e519"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_transformer_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_transformer_image_layernorm_seed42\\summary.json",
+        "sha256": "42f843026f378b38434b66535a7508136cd86d77229ee328acc904cfb3d769d7"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_transformer_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_transformer_small_hidden_seed42\\summary.json",
+        "sha256": "9587d54a095a7665074e07c1bb3ccf9619278a3cd5196f88a2813305e13f0f5d"
+      }
+    },
+    {
+      "run_name": "mobilenet_v2_transformer_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\mobilenet_v2_transformer_stacked_seed42\\summary.json",
+        "sha256": "49fb6dad3b29a845276d007cc5b6f9a90d9ef4225419e5ebbd2d2d499ef649b8"
+      }
+    },
+    {
+      "run_name": "resnet18_lstm_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_lstm_baseline_seed42\\summary.json",
+        "sha256": "16d17cfbacdacc70e9e26e7669ee0e6a473b2df3211c8445e2b80ee2046e4d83"
+      }
+    },
+    {
+      "run_name": "resnet18_lstm_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_lstm_high_dropout_seed42\\summary.json",
+        "sha256": "78527358987826c36c1f0c87dc5e25b5e13764bfc031710b3f22d588c10b4f7e"
+      }
+    },
+    {
+      "run_name": "resnet18_lstm_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_lstm_image_layernorm_seed42\\summary.json",
+        "sha256": "78994ccad2712d6b1b05b5bf6c22b4fcfe750b9d8bb1988a6ee014ca90682de8"
+      }
+    },
+    {
+      "run_name": "resnet18_lstm_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_lstm_small_hidden_seed42\\summary.json",
+        "sha256": "a6e9809cad3abcbc620e4a0a4be8ae95697077b7fbff7015d2991c9faf26f57e"
+      }
+    },
+    {
+      "run_name": "resnet18_lstm_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_lstm_stacked_seed42\\summary.json",
+        "sha256": "c2d01bf9c072679e2b91454b68b51b77a3f6c415a4e58601aa234367de8a0718"
+      }
+    },
+    {
+      "run_name": "resnet18_rnn_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_rnn_baseline_seed42\\summary.json",
+        "sha256": "6f8972b32aaea8c9f7553b689b8f22d6925046f78f250110274ac38108e7a7d0"
+      }
+    },
+    {
+      "run_name": "resnet18_rnn_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_rnn_high_dropout_seed42\\summary.json",
+        "sha256": "a0e234a2dd9bb6de1f441e79d6009010c7300a2d9d43e047289aaa39b0d79af3"
+      }
+    },
+    {
+      "run_name": "resnet18_rnn_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_rnn_image_layernorm_seed42\\summary.json",
+        "sha256": "04ece4ec3e249c27b21bbcbf69ce9aeecfeb6615dc3e446b2fe39601f6726e09"
+      }
+    },
+    {
+      "run_name": "resnet18_rnn_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_rnn_small_hidden_seed42\\summary.json",
+        "sha256": "99acf673b92ee6deedce58f06395a8a41a6569309423c8519ec75dc40c49b474"
+      }
+    },
+    {
+      "run_name": "resnet18_rnn_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_rnn_stacked_seed42\\summary.json",
+        "sha256": "76b2a3849eec49c25230bace7f2a4fd694a15e7defc66a87f2134a2cd8d09ac0"
+      }
+    },
+    {
+      "run_name": "resnet18_transformer_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_transformer_baseline_seed42\\summary.json",
+        "sha256": "9995e5bcf92e209b6cce0dcffca7459f55293cc78b05785d6d5b1f8c6905f002"
+      }
+    },
+    {
+      "run_name": "resnet18_transformer_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_transformer_high_dropout_seed42\\summary.json",
+        "sha256": "eac7c43412e0ab4bcadddba1c5b10e0eccb9cb18655de0465fc07ead71770ad2"
+      }
+    },
+    {
+      "run_name": "resnet18_transformer_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_transformer_image_layernorm_seed42\\summary.json",
+        "sha256": "e247a9e0a09d925725f3778284793bb0454b2a95df51f05083c166eb563784a1"
+      }
+    },
+    {
+      "run_name": "resnet18_transformer_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_transformer_small_hidden_seed42\\summary.json",
+        "sha256": "3371d73ef2be12def5040b7595bf3189fefdfeb7c1d1295e592f9d384d9c734d"
+      }
+    },
+    {
+      "run_name": "resnet18_transformer_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet18_transformer_stacked_seed42\\summary.json",
+        "sha256": "2b67c49b015029d659741681b9bc654344423e80e2171b78b6926de2ab23989b"
+      }
+    },
+    {
+      "run_name": "resnet50_lstm_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_baseline_seed42\\summary.json",
+        "sha256": "792aa42b645e57fd661cb68dcb69fcb7619969d353cf8aace8a961fbc95a01c5"
+      }
+    },
+    {
+      "run_name": "resnet50_lstm_depth_3_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_depth_3_seed42\\summary.json",
+        "sha256": "3f0ac7331701a3c8cf040b4338262f042656335019e4131415ac0f5814bca4a9"
+      }
+    },
+    {
+      "run_name": "resnet50_lstm_depth_4_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_depth_4_seed42\\summary.json",
+        "sha256": "fab79c7b7da4006be098ff23d036b7a540dd728c28bb11386005d0d3f6e57f8d"
+      }
+    },
+    {
+      "run_name": "resnet50_lstm_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_high_dropout_seed42\\summary.json",
+        "sha256": "4df15c9aa41cef70b74610abc5c3f29bfb5ce8cdd773c1fa1de5b26bf43bce26"
+      }
+    },
+    {
+      "run_name": "resnet50_lstm_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_image_layernorm_seed42\\summary.json",
+        "sha256": "baa14c29d2d866da13867df91876d781a2a3abf70f7a415c68fcdd717670ee49"
+      }
+    },
+    {
+      "run_name": "resnet50_lstm_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_small_hidden_seed42\\summary.json",
+        "sha256": "264873fda5f2bbe969a67f784a1fa28dc6277b8782b0e3625ef2ba9acb55286f"
+      }
+    },
+    {
+      "run_name": "resnet50_lstm_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_stacked_seed42\\summary.json",
+        "sha256": "ee9ed5eac0927b6a3b38f6c1097d0bdc7103a7d84d3494ad329477200f2b0e6d"
+      }
+    },
+    {
+      "run_name": "resnet50_rnn_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_rnn_baseline_seed42\\summary.json",
+        "sha256": "374424797af8f5afde22d8c92f15b8daa57e41ec3cf14f329ffc8798bbab1ed4"
+      }
+    },
+    {
+      "run_name": "resnet50_rnn_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_rnn_high_dropout_seed42\\summary.json",
+        "sha256": "cf5a22bea0fe0f8ee4835cf263c88d74d22eacbc4aa1100f0e13046022db5f0f"
+      }
+    },
+    {
+      "run_name": "resnet50_rnn_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_rnn_image_layernorm_seed42\\summary.json",
+        "sha256": "2b53c7199e20eb26a3a1c85e77d68bb8e6617f43d4a8ae86a41c426d92b7c7e5"
+      }
+    },
+    {
+      "run_name": "resnet50_rnn_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_rnn_small_hidden_seed42\\summary.json",
+        "sha256": "08ef9678edcf536d6c943ad2ac47066a89ec250713b9741fd6cc0e5dcb234977"
+      }
+    },
+    {
+      "run_name": "resnet50_rnn_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_rnn_stacked_seed42\\summary.json",
+        "sha256": "857516e213257d150d8fb5e17dc2970cbd822dc44c8cb121d46069639d109f44"
+      }
+    },
+    {
+      "run_name": "resnet50_transformer_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_baseline_seed42\\summary.json",
+        "sha256": "5ba3ceec913963a6dd4edbd459bdcfce49e43473fb322e5500a3a657899d7069"
+      }
+    },
+    {
+      "run_name": "resnet50_transformer_depth_3_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_depth_3_seed42\\summary.json",
+        "sha256": "ece75be2456c3047dbce96d5ed95c3f01d0698ff9d622991e5bfe36bcc6ddbae"
+      }
+    },
+    {
+      "run_name": "resnet50_transformer_depth_4_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_depth_4_seed42\\summary.json",
+        "sha256": "5d4748e087d3edb593879e1bde0d1f2b906774679cdfb1462956d544e7b243e8"
+      }
+    },
+    {
+      "run_name": "resnet50_transformer_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_high_dropout_seed42\\summary.json",
+        "sha256": "9dea0e929ec47428e6011f556caae768daafa34b87b91db193ddb646127fb7cc"
+      }
+    },
+    {
+      "run_name": "resnet50_transformer_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_image_layernorm_seed42\\summary.json",
+        "sha256": "e6a5875c1bb9716b3b44fc6fc5f243aa030a829a9c0d547da53dcefc4a534c41"
+      }
+    },
+    {
+      "run_name": "resnet50_transformer_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_small_hidden_seed42\\summary.json",
+        "sha256": "f36b3f251f1581b7b6a71a57d4bda9bad979fa0403ecd020155cbd0d781cd1c9"
+      }
+    },
+    {
+      "run_name": "resnet50_transformer_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_stacked_seed42\\summary.json",
+        "sha256": "f2bb7c6e34cd4db02d3fb372a030862e46dc2e5b3abfb42b4804606fa51c6127"
+      }
+    },
+    {
+      "run_name": "vgg19_lstm_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_lstm_baseline_seed42\\summary.json",
+        "sha256": "041b74d57ba62f354213182c9bf60c3d6269d718145188483a3951a0db839e92"
+      }
+    },
+    {
+      "run_name": "vgg19_lstm_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_lstm_high_dropout_seed42\\summary.json",
+        "sha256": "25f7e65f3bbaba63c957c7d2472bbd351bfcf968f7de1e9c53c3f78a9253d12c"
+      }
+    },
+    {
+      "run_name": "vgg19_lstm_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_lstm_image_layernorm_seed42\\summary.json",
+        "sha256": "737be1e1eefe57d61c4e141c13c70a905a9603aba4956c0304856a71687f9512"
+      }
+    },
+    {
+      "run_name": "vgg19_lstm_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_lstm_small_hidden_seed42\\summary.json",
+        "sha256": "1a25eea5838bc740541886cdb9ba3136b2742dd16c0b1cb70682b4c23581c273"
+      }
+    },
+    {
+      "run_name": "vgg19_lstm_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_lstm_stacked_seed42\\summary.json",
+        "sha256": "df2834f51d548678b3a376f64466872fffe15b2d94efb61daa8f85cf40e01512"
+      }
+    },
+    {
+      "run_name": "vgg19_rnn_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_rnn_baseline_seed42\\summary.json",
+        "sha256": "c8dc131b6c71e9e530b59b949c8f9622d131c2fecedd354695ce304e5cf9cf5b"
+      }
+    },
+    {
+      "run_name": "vgg19_rnn_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_rnn_high_dropout_seed42\\summary.json",
+        "sha256": "c08a285fb48e753819ca099998341fe50eb85840cef661d07d95dc9655d1f003"
+      }
+    },
+    {
+      "run_name": "vgg19_rnn_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_rnn_image_layernorm_seed42\\summary.json",
+        "sha256": "6571bd92b93839285f0bcead3ab026676367f93d4774c596b378efe856da88d3"
+      }
+    },
+    {
+      "run_name": "vgg19_rnn_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_rnn_small_hidden_seed42\\summary.json",
+        "sha256": "b0f3d3ace4dcec9007cabf5b94d8a93c877b0babb8eccccce58d53a5a75d2161"
+      }
+    },
+    {
+      "run_name": "vgg19_rnn_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_rnn_stacked_seed42\\summary.json",
+        "sha256": "f8e6704d151f36ce686a2aceac8fa4655b53a9dcdc2efdd9cbf6393f9fb59d26"
+      }
+    },
+    {
+      "run_name": "vgg19_transformer_baseline_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_transformer_baseline_seed42\\summary.json",
+        "sha256": "95286cdaccfd0eb47d202106ea174dbb5dd4a2bc9f62052205a76b147302d212"
+      }
+    },
+    {
+      "run_name": "vgg19_transformer_high_dropout_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_transformer_high_dropout_seed42\\summary.json",
+        "sha256": "fa08c4ca6701132292af5e4b4b3ebfc1c7cc0f487b5fa3aec87ffa8ac67169da"
+      }
+    },
+    {
+      "run_name": "vgg19_transformer_image_layernorm_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_transformer_image_layernorm_seed42\\summary.json",
+        "sha256": "23ec1fbf02080faa022490373e7ea435a1ed527fd856484162911576d3b61b8d"
+      }
+    },
+    {
+      "run_name": "vgg19_transformer_small_hidden_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_transformer_small_hidden_seed42\\summary.json",
+        "sha256": "4a22837c2baee724b897ff80d00d07c0026bb7b059b10b383af9a8562149897b"
+      }
+    },
+    {
+      "run_name": "vgg19_transformer_stacked_seed42",
+      "summary": {
+        "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\vgg19_transformer_stacked_seed42\\summary.json",
+        "sha256": "20c9f1e8ef18164b41b056d75937a151dc98e1afdd0b79eb5035195a9ae779ca"
+      }
+    }
+  ],
+  "checks": {
+    "global_runs": 79,
+    "original_grid_runs": 75,
+    "depth_extra_runs": 4,
+    "each_original_grid_combination_once": true,
+    "all_global_best_scores_match_histories": true,
+    "all_global_stopped_best_plus3": true,
+    "profile_settings_identical_across_encoders": true
+  },
+  "caveat": "Best-of15 and best-of25 show selected experiment outcomes, not controlled encoder-only/decoder-only causal effects. Device/timing comparisons are not normalized."
+}

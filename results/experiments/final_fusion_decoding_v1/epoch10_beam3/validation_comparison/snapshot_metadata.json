@@ -1,0 +1,31 @@
+{
+  "full_checkpoint_sha256": "2303bb5b2d9fe46cde8885f350e72c3f3e282f9ec33b807d0b43380ab8f682f2",
+  "weights_sha256": "32b9047e06359c050e719864d7ee395ecc2cc934e6978b77236f4f2cb8d7a34e",
+  "original_best_path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42\\best.pt",
+  "copied_utc": "2026-11-15T16:25:55.033910+00:00",
+  "snapshot_epoch": 10,
+  "best_epoch": 10,
+  "best_record": {
+    "epoch": 10,
+    "train_loss": 2.1352875491409935,
+    "val_loss": 1.9929554983652986,
+    "bleu1": 0.7336772618849369,
+    "bleu4": 0.2852177960076194,
+    "cider_d": 0.9376379489024441,
+    "train_images_seen": 113287,
+    "partial_epoch": false,
+    "train_seconds": 839.3037857000018,
+    "validation_seconds": 61.184547400000156,
+    "epoch_seconds": 907.7729967000014,
+    "amp_skipped_steps": 7,
+    "epoch_amp_skipped_steps": 0,
+    "successful_optimizer_steps": 13761,
+    "epoch_successful_optimizer_steps": 1771,
+    "amp_scale": 65536.0
+  },
+  "source_run": "resnet50_fasterrcnn_transformer_fusion_depth3_seed42",
+  "implementation_id": "ff10ad1e6734bf520794d80f695041cbb6ec12695bd63d27689ffa9535fba794",
+  "scope": "Best available at snapshot time; ongoing training may produce a later best. Both decoding methods must use this same immutable snapshot.",
+  "original_checkpoint_modified": false,
+  "training_interrupted": false
+}

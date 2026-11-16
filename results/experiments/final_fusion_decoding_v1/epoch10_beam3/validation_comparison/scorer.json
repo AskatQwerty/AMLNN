@@ -1,0 +1,29 @@
+{
+  "package": "pycocoevalcap",
+  "version": "1.2",
+  "bleu": {
+    "implementation": "Bleu(4)",
+    "aggregation": "corpus",
+    "scale": "0..1; no multiplication by 100"
+  },
+  "cider_d": {
+    "implementation": "Cider(n=4,sigma=6.0)",
+    "ngrams": 4,
+    "sigma": 6.0,
+    "scale": "native score, including the implementation's factor 10; no extra multiplication",
+    "document_frequency": "all reference sets in the evaluated split"
+  },
+  "tokenization": {
+    "name": "project_regex_v1",
+    "normalization": "NFKC,lowercase,smart quotes,whitespace",
+    "token_pattern": "[^\\W_]+(?:'[^\\W_]+)*|[^\\w\\s]",
+    "reference_vocabulary_mapping": false,
+    "note": "Same tokenizer for predictions and raw references; not COCO leaderboard PTB tokenization."
+  },
+  "source_sha256": {
+    "bleu": "05b74a92b32e071eacfb954ef34328137cfd1b82c563572648633087def23776",
+    "bleu_scorer": "413ccfef71b88c5f11d25d05fdcf08625a1559338ffbb7c2787e800116eaecdd",
+    "cider": "268b71cb096ccd10cf4a7cd49a9a72072001922f1876f4e88833e1eb4649cfcb",
+    "cider_scorer": "299037838373391c3335e066c867ba2d6dd8617d2c8fb2c4193f32620a774adc"
+  }
+}

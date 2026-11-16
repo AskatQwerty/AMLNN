@@ -1,0 +1,58 @@
+[
+  {
+    "model": "Global lstm",
+    "input": "1 global vector",
+    "layers": 3,
+    "parameters": 17606932,
+    "best_epoch": 22,
+    "val_loss": 2.1222638227283497,
+    "bleu1": 0.7099184405688685,
+    "bleu4": 0.2514700996024224,
+    "cider_d": 0.8081027963316038,
+    "training_time": "00:36:41",
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "status": "finished"
+  },
+  {
+    "model": "lstm_attention",
+    "input": "49 spatial locations",
+    "layers": 3,
+    "parameters": 18657044,
+    "best_epoch": null,
+    "val_loss": null,
+    "bleu1": null,
+    "bleu4": null,
+    "cider_d": null,
+    "training_time": null,
+    "device": null,
+    "status": "pending"
+  },
+  {
+    "model": "Global transformer",
+    "input": "1 global vector",
+    "layers": 3,
+    "parameters": 20778772,
+    "best_epoch": 21,
+    "val_loss": 2.0729966763489065,
+    "bleu1": 0.7149021705054546,
+    "bleu4": 0.26325920740195224,
+    "cider_d": 0.8578049436328543,
+    "training_time": "00:40:49",
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "status": "finished"
+  },
+  {
+    "model": "transformer_cross_attention",
+    "input": "49 spatial locations",
+    "layers": 3,
+    "parameters": 23940884,
+    "best_epoch": null,
+    "val_loss": null,
+    "bleu1": null,
+    "bleu4": null,
+    "cider_d": null,
+    "training_time": null,
+    "device": null,
+    "status": "pending"
+  }
+]

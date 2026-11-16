@@ -1,0 +1,35 @@
+{
+  "encoder": "mobilenet_v2",
+  "decoder": "transformer",
+  "variant": "stacked",
+  "embedding_size": 512,
+  "hidden_size": 512,
+  "num_layers": 2,
+  "dropout": 0.3,
+  "image_layernorm": false,
+  "seed": 42,
+  "d_model": 512,
+  "nhead": 8,
+  "dim_feedforward": 2048,
+  "max_positions": 34,
+  "norm_first": true,
+  "position_encoding": "learned",
+  "feature_dim": 1280,
+  "trainable_parameters": 17233172,
+  "best_epoch": 5,
+  "val_loss": 2.2920688981727677,
+  "bleu1": 0.6878670380966593,
+  "bleu4": 0.2278076608108054,
+  "cider_d": 0.7145129503567942,
+  "training_seconds": 689.5007903000005,
+  "training_time": "00:11:30",
+  "devices": [
+    {
+      "device": "cuda",
+      "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "torch": "2.13.0+cu126",
+      "cuda_runtime": "12.6"
+    }
+  ],
+  "status": "finished"
+}

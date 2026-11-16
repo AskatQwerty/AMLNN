@@ -1,0 +1,12 @@
+{
+  "all_1021_candidates_removed": true,
+  "protected_weights_sha256_unchanged": true,
+  "notebooks_vocabulary_splits_prepared_data_unchanged": true,
+  "all_retained_project_files_present_with_same_size": 5190,
+  "dataset_jpeg_counts": {
+    "train2017": 118287,
+    "val2017": 5000,
+    "test2017": 40670
+  },
+  "feature_arrays_remaining": 0
+}

@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "source_sha256": "394e8e75045f7caceabe50782fe99c446b6c606ea4ce10d9eeb12a605403ec06",
+  "all_code_asts_unchanged": true,
+  "suppressed_return_cells": [
+    {
+      "index": 7,
+      "section": "preparation_report",
+      "last_line": "show_data_examples(PROJECT_DIR,RAW_IMAGE_ROOT);"
+    },
+    {
+      "index": 13,
+      "section": "baseline_run_report",
+      "last_line": "report_global_models(PROJECT_DIR);"
+    },
+    {
+      "index": 17,
+      "section": "spatial_run_report",
+      "last_line": "report_spatial_models(PROJECT_DIR);"
+    },
+    {
+      "index": 26,
+      "section": "region_report",
+      "last_line": "report_stage5_received(PROJECT_DIR);"
+    },
+    {
+      "index": 41,
+      "section": "decoding_report",
+      "last_line": "show_prediction_comparison(PROJECT_DIR,RAW_IMAGE_ROOT);"
+    },
+    {
+      "index": 46,
+      "section": "test_report",
+      "last_line": "report_final_test(PROJECT_DIR,RAW_IMAGE_ROOT,FINAL_TEST_RESULTS_DIR);"
+    }
+  ],
+  "title_caveat_added": true,
+  "stage5_source_sentence_updated": true,
+  "loop_audit_summary_added": true,
+  "local_v3_filename_found": false,
+  "used_archived_layernorm_source": true
+}

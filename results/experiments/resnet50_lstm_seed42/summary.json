@@ -1,0 +1,21 @@
+{
+  "encoder": "resnet50",
+  "decoder": "lstm",
+  "feature_dim": 2048,
+  "trainable_parameters": 13404436,
+  "best_epoch": 14,
+  "val_loss": 2.183940468237276,
+  "bleu1": 0.7021196914088701,
+  "bleu4": 0.2451136930011622,
+  "cider_d": 0.7798675401431374,
+  "training_seconds": 1731.9679452,
+  "devices": [
+    {
+      "device": "cuda",
+      "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "torch": "2.13.0+cu126",
+      "cuda_runtime": "12.6"
+    }
+  ],
+  "status": "finished"
+}

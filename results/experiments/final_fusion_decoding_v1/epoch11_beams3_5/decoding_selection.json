@@ -1,0 +1,72 @@
+{
+  "criterion": "Highest full-validation CIDEr-D among the explicitly evaluated snapshot/mode pairs",
+  "test_used": false,
+  "candidates": [
+    {
+      "snapshot_epoch": 10,
+      "mode": "greedy",
+      "scores": {
+        "bleu1": 0.7336340611192115,
+        "bleu4": 0.285171985192873,
+        "cider_d": 0.9375309195015806
+      },
+      "checkpoint_sha256": "2303bb5b2d9fe46cde8885f350e72c3f3e282f9ec33b807d0b43380ab8f682f2",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch10_beam3\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 10,
+      "mode": "beam3",
+      "scores": {
+        "bleu1": 0.7371038499356944,
+        "bleu4": 0.3071142050960997,
+        "cider_d": 0.9733194297239733
+      },
+      "checkpoint_sha256": "2303bb5b2d9fe46cde8885f350e72c3f3e282f9ec33b807d0b43380ab8f682f2",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch10_beam3\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "greedy",
+      "scores": {
+        "bleu1": 0.7332339242650038,
+        "bleu4": 0.28482146174180245,
+        "cider_d": 0.9385081041213583
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch11_beams3_5\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam3",
+      "scores": {
+        "bleu1": 0.7365980547387331,
+        "bleu4": 0.30700210932680516,
+        "cider_d": 0.9760928603235935
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch11_beams3_5\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5",
+      "scores": {
+        "bleu1": 0.732413558167249,
+        "bleu4": 0.30742143864345634,
+        "cider_d": 0.9741615864158868
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch11_beams3_5\\best_snapshot\\best_weights.pt"
+    }
+  ],
+  "selected": {
+    "snapshot_epoch": 11,
+    "mode": "beam3",
+    "scores": {
+      "bleu1": 0.7365980547387331,
+      "bleu4": 0.30700210932680516,
+      "cider_d": 0.9760928603235935
+    },
+    "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+    "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch11_beams3_5\\best_snapshot\\best_weights.pt"
+  }
+}

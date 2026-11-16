@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "notebook": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\submission_20261115\\AML_Final_Submission.ipynb",
+  "notebook_sha256": "1cc1f66ec01b28ed0604efc733aa1a4c37a4e7f6cb41bf3083fac8f042607b38",
+  "source_notebooks": {
+    "FinalAML": {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\FinalAML.ipynb",
+      "sha256": "8b8d544de460227516c02caa69cd11bd01d48bfbe1b4206e897a5b7153dca0e4"
+    },
+    "SpatialAttention": {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\SpatialAttention.ipynb",
+      "sha256": "44fd22079aac4527a54fe300d1311fc77271103d344991a469e2788cf7b96084"
+    },
+    "FinalFusion": {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\FinalFusion.ipynb",
+      "sha256": "21ac59911448a8178652da25cf238701c85ed09323b8d91e76982bfa48e64c81"
+    },
+    "Stage5_Starter": {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\transfer\\stage5_handoff_v1\\Stage5_Starter.ipynb",
+      "sha256": "8d709333df756e37a82b82470fb73eb26f3d98909e8d9b8b6a2d776c3f2baf4c"
+    }
+  },
+  "cell_count": 48,
+  "fusion_core_hashes": {
+    "models": {
+      "original_ast_sha256": "aac377250db8748d6171a43d3dbb5c353a3b3f3977bb2b4314c71fd527fa9c80",
+      "submission_ast_sha256": "aac377250db8748d6171a43d3dbb5c353a3b3f3977bb2b4314c71fd527fa9c80"
+    },
+    "runtime": {
+      "original_ast_sha256": "56dbfbfbd94403e338dad3f2a6252836a4507418c27a043d872ca04ed07355b4",
+      "submission_ast_sha256": "56dbfbfbd94403e338dad3f2a6252836a4507418c27a043d872ca04ed07355b4"
+    },
+    "region_features": {
+      "original_ast_sha256": "12dc3ba9b3e79b75aeb6668e7e2bbf32b1fd8904ff892c4d40d29e6a978ae10f",
+      "submission_ast_sha256": "12dc3ba9b3e79b75aeb6668e7e2bbf32b1fd8904ff892c4d40d29e6a978ae10f"
+    },
+    "region_cache": {
+      "original_ast_sha256": "ac087c69248d3c06baa52b1d7cc6cc591a6142af1eb23d3d6176981190790728",
+      "submission_ast_sha256": "ac087c69248d3c06baa52b1d7cc6cc591a6142af1eb23d3d6176981190790728"
+    }
+  },
+  "all_imports_in_first_code_cell": true,
+  "comma_cleanup_ast_preserved": true,
+  "default_heavy_operations_disabled": true,
+  "final_test": {
+    "path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\submission_20261115\\final_test_results\\test_comparison.json",
+    "sha256": "39208898e7905d5fb2f04661d145fed6ad7ba95281fa72299f9df145264e1168",
+    "status": "complete",
+    "test_images": 5000,
+    "primary": "epoch11_beam5_alpha0",
+    "scores": {
+      "bleu1": 0.7491571932575314,
+      "bleu4": 0.32615082120016037,
+      "cider_d": 0.9983915922664485
+    },
+    "test_based_reselection": false
+  },
+  "stage5_csv_sha256": "ba03c634af9366ed72488c90aa05a8fd6b5532420fad7fc8f2631e7e4e446a26",
+  "project_written": false,
+  "gpu_used": false
+}

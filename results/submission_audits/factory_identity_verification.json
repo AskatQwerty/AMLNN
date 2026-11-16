@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "gpu_disabled": true,
+  "models_instantiated": false,
+  "project_written": false,
+  "global_configs_exact_saved": 79,
+  "spatial_configs_exact_saved": 2,
+  "spatial_model_source_hash": "75bcb20c5b76a873b9176f6a8ab1b0dc7c648696851337548ec2f2d2846edf47",
+  "nested_training_closures_separated": true,
+  "region_factory_created_without_extraction": true,
+  "executed_definition_sections": [
+    "imports",
+    "settings",
+    "baseline_recurrent_model",
+    "baseline_transformer_model",
+    "baseline_helpers",
+    "spatial_models",
+    "spatial_helpers",
+    "fusion_region_features",
+    "region_lstm_starter",
+    "region_handoff_helpers"
+  ],
+  "notebook_sha256": "1686199258d42fca71149b0badfb3e2196c373ab51707ebcf750c5437a8336ae"
+}

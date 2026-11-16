@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "scope": "Read-only full validation ROI cache audit; no active train partial files touched",
+  "images": 5000,
+  "unique_image_ids": true,
+  "ids_match_complete_project_validation": true,
+  "all_file_sha256_verified": {
+    "features": "0c6d92a6e42a2fce9a9c56f2c8a8f1ca4d287770bfe379b2757c8c0723ea06fd",
+    "mask": "85c0784f0d849a00a30dd058d3c7d6fd83c45f82e9aec5cb55e64e4dbf90024b",
+    "normalized_boxes": "484b71ea7879c61a848691c0c65392085109f290e8b4829e7f21c75650c0267f",
+    "boxes": "3b74b235eb468e094d884be95774e9c9a28d96c069c7c6fd8bad429d522ccaaf",
+    "scores": "f95d889cd3b9083f4c8705a930c21026774c1d9c4ee013774446e88ab16e4f59",
+    "labels": "0d5f13915e5da4fc845aae05ce7066d20c4e247e5c3811de06c2060cd51682fa",
+    "num_regions": "aebd7638f385ca89d48cd0a872f02ea3b37c798d39458d6d934748156e217ab4",
+    "fallback": "976c9bbfc62d603a2973dc49be788f5e7af89171599a8209b0d9c8a32ac24dbc"
+  },
+  "all_rows_finite_masks_counts_padding_boxes_valid": true,
+  "region_count_min": 1,
+  "region_count_mean": 13.5304,
+  "region_count_max": 36,
+  "fallback_images": 15,
+  "zero_valid_feature_vectors": 0,
+  "feature_range": [
+    0.0,
+    10.3125
+  ],
+  "elapsed_seconds": 2.6771214000000327,
+  "gpu_used": false,
+  "project_modified": false
+}

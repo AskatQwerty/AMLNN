@@ -1,0 +1,48 @@
+{
+  "order": [
+    {
+      "section": "Presentation",
+      "source": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\final_delivery_20261116\\AML_Presentation_updated.pdf",
+      "source_sha256": "0a08caf2727f8a9daf6f5cf4d70039ffed4f6a6b05eac27b595b0091ad9d8c44",
+      "pages": 24,
+      "starts_at_pdf_page": 1,
+      "ends_at_pdf_page": 24
+    },
+    {
+      "section": "Executed notebook and outputs",
+      "source": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\final_delivery_20261116\\notebook\\AML_Final_Submission_full.pdf",
+      "source_sha256": "9bbdb002a6a6052eb793b7754bcda9416ba9795fee8912dd9c7df8a6dc04832b",
+      "pages": 280,
+      "starts_at_pdf_page": 25,
+      "ends_at_pdf_page": 304
+    },
+    {
+      "section": "Research report",
+      "source": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\final_delivery_20261116\\report\\AML_Research_Report.pdf",
+      "source_sha256": "f0e30f2e7e44f369011f2a33474c4599106b27ea150ad2ae2113476fbb44e8f7",
+      "pages": 18,
+      "starts_at_pdf_page": 305,
+      "ends_at_pdf_page": 322
+    }
+  ],
+  "file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\output\\pdf\\Aubakirov_Askat_Dagystanov_Bakdaulet_BDA2403_final_project_updated.pdf",
+  "source_notebook_modified": false,
+  "pages": 322,
+  "bytes": 10383313,
+  "sha256": "11082836c1666e94b71b7fa31142b6c4b04287d123e1053171aa9a4cf960495f",
+  "merge_checks": [
+    {
+      "section": "Presentation",
+      "all_pages_text_and_dimensions_preserved": true
+    },
+    {
+      "section": "Executed notebook and outputs",
+      "all_pages_text_and_dimensions_preserved": true
+    },
+    {
+      "section": "Research report",
+      "all_pages_text_and_dimensions_preserved": true
+    }
+  ],
+  "top_level_bookmarks": 3
+}

@@ -1,0 +1,1485 @@
+{
+  "config": {
+    "source_id": "ebc5c99a1d4cb77eaf6d1d46b16f3f83db1ca698d663307fd77a87a2290e0a9d",
+    "split_id": "8e2ac80c42ddee7b32a319cb01444c8b8831af2cd1a6c881e2d41cd8e5c5e1a2",
+    "settings": {
+      "version": 1,
+      "min_frequency": 5,
+      "max_vocab_tokens": 10000,
+      "special_tokens": [
+        "<pad>",
+        "<unk>",
+        "<start>",
+        "<end>"
+      ],
+      "token_pattern": "[^\\W_]+(?:'[^\\W_]+)*|[^\\w\\s]"
+    },
+    "max_content_tokens": 32
+  },
+  "cache_sha256": "eb24d7d0c4e36a0139867cb937e86312d58cc8f642f24f74d3b7612f9e8aaf8d",
+  "stats": {
+    "train_caption_duplicates_removed": 192,
+    "validation_duplicates_removed": 0,
+    "test_duplicates_removed": 0,
+    "vocabulary_fit_split": "project train only; held-out test IDs excluded",
+    "normalization": "NFKC, lowercase, smart quotes, whitespace; keep punctuation, numbers, contractions and stopwords",
+    "max_content_tokens": 32,
+    "max_sequence_length": 34,
+    "quality_review_candidates": [
+      {
+        "split": "train",
+        "image_id": 564,
+        "caption": "There is no image here to provide a description for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 5424,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 10643,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 11426,
+        "caption": "There is no image here to make a description of.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 12429,
+        "caption": "There is no  image shown here for me to display and so I have nothing specific to write about",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 15388,
+        "caption": "There is no image here to provide a description for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 16360,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 17137,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 22729,
+        "caption": "There are no image in this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 24755,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 28154,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 29356,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 31601,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 33959,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 34757,
+        "caption": "There is no image to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 37169,
+        "caption": "There is no image to describe at this time.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 47953,
+        "caption": "There is no image showing on the screen at this time.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 49942,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 51993,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 52947,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 53406,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 63370,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 63482,
+        "caption": "I am unable to see a picture above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 63644,
+        "caption": "There is no image to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 67356,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 71811,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 73814,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 74213,
+        "caption": "There is no image shown on the page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 80987,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 86861,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 87377,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 88080,
+        "caption": "There is no picture here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 91852,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 92710,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 96073,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 99073,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 102159,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 102620,
+        "caption": "There are no image to describe on this page.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 105643,
+        "caption": "I do not see a picture shown above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 106993,
+        "caption": "There is no image to describe in this page.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 107741,
+        "caption": "there is no picture in this particular one.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 108210,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 109837,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 121534,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 125036,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 125076,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 128450,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 129060,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 131415,
+        "caption": "There is no photo here to provide a description for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 135683,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 138070,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 142002,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 145567,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 146837,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 151016,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 152483,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 162459,
+        "caption": "There is no image for me to write about.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 162627,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 163012,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 164848,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 176414,
+        "caption": "There is no picture here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 179930,
+        "caption": "too dark I can't see the image here.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 187722,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 202275,
+        "caption": "There is no photo here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 202402,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 207998,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 208479,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 210752,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 213219,
+        "caption": "There is no image here and refreshing doesn't help.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 220834,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 223580,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 224241,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 228388,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 231080,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 231637,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 237923,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 238822,
+        "caption": "There is no picture here, and the system said I had to type at least eight words to move on.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 242457,
+        "caption": "There Is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 243234,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 244209,
+        "caption": "There is no image to be judged on this hit",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 244540,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 246154,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 248755,
+        "caption": "There is no image here to post a description or.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 255271,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 262191,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 263406,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 264870,
+        "caption": "There is no image that is on display to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 265742,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 269964,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 274957,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 275532,
+        "caption": "There is no picture to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 275980,
+        "caption": "There is no image shown on this page to be described",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 277403,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 277637,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 279065,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 279443,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 282773,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 287232,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 289967,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 292315,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 299023,
+        "caption": "There is no image showing on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 299769,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 301927,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 302989,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 304332,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 304905,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 308292,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 308796,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 309403,
+        "caption": "There is no photo here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 312385,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 316782,
+        "caption": "There is no picture here to write a description of.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 321683,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 329090,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 359314,
+        "caption": "There is no photo here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 360613,
+        "caption": "There are no images to describe; however it requires eight words to move on.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 362154,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 362824,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 363957,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 367518,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 370657,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 372212,
+        "caption": "There is no image to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 379448,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 382307,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 383756,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 386927,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 387561,
+        "caption": "There is no picture to write anything about.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 387812,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 390625,
+        "caption": "there is no image for this hit or hits.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 391910,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 393995,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 396136,
+        "caption": "There is no image to describe at this time.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 396942,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 397268,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 398119,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 400398,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 400642,
+        "caption": "There is no image being displayed to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 402655,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 407196,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 417547,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 419497,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 419556,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 423083,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 423576,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 424793,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 426283,
+        "caption": "There is no image on this page to describe,",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 431426,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 433607,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 445233,
+        "caption": "There is no image to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 448787,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 449847,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 453475,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 455369,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 456478,
+        "caption": "There Is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 458189,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 459644,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 463507,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 463925,
+        "caption": "There is no image displayed in this box it is empty with no picture",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 464902,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 465235,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 466531,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 466557,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 470780,
+        "caption": "There is no image to describe at this time.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 471708,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 473337,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 477111,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 478736,
+        "caption": "There is no picture here to write a description of.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 481736,
+        "caption": "There is no image on this blank page.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 484418,
+        "caption": "there is no image for this hit or hits",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 488538,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 490057,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 491272,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 494811,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 496166,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 496617,
+        "caption": "There is no photo here to write a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 499755,
+        "caption": "There is no picture here to describe with a caption.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 502895,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 507642,
+        "caption": "There is no image on the screen to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 512263,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 513482,
+        "caption": "There is no image on display to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 514781,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 517755,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 520501,
+        "caption": "there is no image in this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 525971,
+        "caption": "There is no picture or image sorry sorry",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 526021,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 529226,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 542221,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 547790,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 552942,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 553061,
+        "caption": "There are no image to describe on this page..",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 560309,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 566547,
+        "caption": "There Is no image on display at this time.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 570721,
+        "caption": "There is no picture to describe in this image",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 571443,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 573320,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 575249,
+        "caption": "There is no image on this page to describe.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 575410,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "train",
+        "image_id": 575786,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "val",
+        "image_id": 38118,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "val",
+        "image_id": 52017,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "val",
+        "image_id": 133645,
+        "caption": "There is no image to be reviewed on this hit.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "val",
+        "image_id": 157365,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "val",
+        "image_id": 164637,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "val",
+        "image_id": 166478,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "val",
+        "image_id": 425227,
+        "caption": "There is no image to describe for this question.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "val",
+        "image_id": 426268,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "val",
+        "image_id": 508586,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "val",
+        "image_id": 521956,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "val",
+        "image_id": 544565,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "val",
+        "image_id": 565877,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "test",
+        "image_id": 31084,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "test",
+        "image_id": 156328,
+        "caption": "There is no image but I have to still write to move forwar",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "test",
+        "image_id": 225322,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "test",
+        "image_id": 241591,
+        "caption": "I am unable to see an image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "test",
+        "image_id": 242193,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "test",
+        "image_id": 246423,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "test",
+        "image_id": 306724,
+        "caption": "I am unable to see an image displayed above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "test",
+        "image_id": 432604,
+        "caption": "I am unable to see the image above.",
+        "reason": "Possible worker error; review manually."
+      },
+      {
+        "split": "test",
+        "image_id": 535934,
+        "caption": "There is no image here to provide a caption for.",
+        "reason": "Possible worker error; review manually."
+      }
+    ],
+    "quality_review_count": 218,
+    "validation_and_test_reference_policy": "All original captions retained. Use original captions for evaluation; never truncate reference captions.",
+    "train": {
+      "images": 113287,
+      "captions": 566553,
+      "tokens": 6408961,
+      "unique_tokens": 26933,
+      "length_min": 6,
+      "length_max": 59,
+      "length_mean": 11.312200270760194,
+      "length_quantiles": {
+        "0.5": 11,
+        "0.9": 14,
+        "0.95": 16,
+        "0.99": 20,
+        "0.999": 31
+      },
+      "truncation": {
+        "20": {
+          "captions": 5440,
+          "fraction": 0.009601926033398465
+        },
+        "32": {
+          "captions": 460,
+          "fraction": 0.0008119275690006055
+        }
+      }
+    },
+    "val": {
+      "images": 5000,
+      "captions": 25014,
+      "tokens": 282555,
+      "unique_tokens": 7272,
+      "length_min": 7,
+      "length_max": 54,
+      "length_mean": 11.295874310386184,
+      "length_quantiles": {
+        "0.5": 11,
+        "0.9": 14,
+        "0.95": 16,
+        "0.99": 20,
+        "0.999": 28
+      },
+      "truncation": {
+        "20": {
+          "captions": 214,
+          "fraction": 0.008555209082913568
+        },
+        "32": {
+          "captions": 12,
+          "fraction": 0.0004797313504437515
+        }
+      }
+    },
+    "test": {
+      "images": 5000,
+      "captions": 25008,
+      "tokens": 282959,
+      "unique_tokens": 7200,
+      "length_min": 7,
+      "length_max": 47,
+      "length_mean": 11.314739283429303,
+      "length_quantiles": {
+        "0.5": 11,
+        "0.9": 14,
+        "0.95": 16,
+        "0.99": 20,
+        "0.999": 29
+      },
+      "truncation": {
+        "20": {
+          "captions": 246,
+          "fraction": 0.009836852207293667
+        },
+        "32": {
+          "captions": 13,
+          "fraction": 0.0005198336532309661
+        }
+      }
+    }
+  },
+  "vocab_comparison": {
+    "5000": {
+      "regular_tokens": 5000,
+      "total_tokens": 5004,
+      "train": {
+        "unk_tokens": 79311,
+        "total_tokens": 6408961,
+        "unk_rate": 0.012375016792893575,
+        "fully_known_caption_rate": 0.8809361171858591
+      },
+      "val": {
+        "unk_tokens": 3637,
+        "total_tokens": 282555,
+        "unk_rate": 0.01287183026313461,
+        "fully_known_caption_rate": 0.8772687295114736
+      }
+    },
+    "10000": {
+      "regular_tokens": 10000,
+      "total_tokens": 10004,
+      "train": {
+        "unk_tokens": 27627,
+        "total_tokens": 6408961,
+        "unk_rate": 0.0043106831200876395,
+        "fully_known_caption_rate": 0.9554128210423385
+      },
+      "val": {
+        "unk_tokens": 1441,
+        "total_tokens": 282555,
+        "unk_rate": 0.0050998920564137955,
+        "fully_known_caption_rate": 0.9482289917646118
+      }
+    },
+    "all": {
+      "regular_tokens": 26933,
+      "total_tokens": 26937,
+      "train": {
+        "unk_tokens": 0,
+        "total_tokens": 6408961,
+        "unk_rate": 0.0,
+        "fully_known_caption_rate": 1.0
+      },
+      "val": {
+        "unk_tokens": 529,
+        "total_tokens": 282555,
+        "unk_rate": 0.0018722018722018721,
+        "fully_known_caption_rate": 0.9801711041816583
+      }
+    },
+    "selected": {
+      "regular_tokens": 10000,
+      "total_tokens": 10004,
+      "train": {
+        "unk_tokens": 27627,
+        "total_tokens": 6408961,
+        "unk_rate": 0.0043106831200876395,
+        "fully_known_caption_rate": 0.9554128210423385
+      },
+      "val": {
+        "unk_tokens": 1441,
+        "total_tokens": 282555,
+        "unk_rate": 0.0050998920564137955,
+        "fully_known_caption_rate": 0.9482289917646118
+      }
+    }
+  }
+}

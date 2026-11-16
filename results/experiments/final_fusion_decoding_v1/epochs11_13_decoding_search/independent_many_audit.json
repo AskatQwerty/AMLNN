@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "threads": 1,
+  "exact_separate_original_comparisons": 525,
+  "images_per_comparison": 3,
+  "different_alpha_groups": 45,
+  "decoder_forward_calls_saved": 1668,
+  "styles": [
+    "random",
+    "quantized_ties",
+    "late_eos",
+    "never_eos",
+    "all_equal",
+    "only_eos",
+    "cross_length_tie"
+  ],
+  "beam_widths": [
+    3,
+    5,
+    7
+  ],
+  "length_penalties": [
+    0.0,
+    0.3,
+    0.6,
+    0.9,
+    1.2
+  ],
+  "helper_sha256": "f10575e9aa3b6481c2821ee71d31c73a658e14643cca65d2fe57de8732a00c7b",
+  "original_helper_sha256": "0c9300b08eb999935992e6ed5909b9ed4d37a4da720df9eccc9ce1c99aa71b88",
+  "elapsed_seconds": 6.734084600000642,
+  "limits": "CPU deterministic policies; no GPU execution or corpus rescoring."
+}

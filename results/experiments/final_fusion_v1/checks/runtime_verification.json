@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    "independent_grid_region_global_id_mapping",
+    "private_caption_rng_and_fixed_validation_caption",
+    "batch_shapes_and_teacher_shift",
+    "real_fusion_cpu_forward_backward_optimizer_token_loss",
+    "production_validation_requires_all5000",
+    "epoch0_baseline_and_full_validation_preserved",
+    "finished_run_and_initial_best_honestly_labeled",
+    "interrupted_resume_exact_model_optimizer_and_rng",
+    "resumed_caption_order_and_partial_token_loss_exact",
+    "completed_run_does_not_restart_or_replace_checkpoint",
+    "full_required_artifact_set_saved",
+    "deadline_admission_keeps_validated_baseline_without_training"
+  ],
+  "check_count": 12,
+  "runtime_sha256": "2eb6874a0f088966d79b5f03381e2381e792dc66831f07040b53273933f0a2a4",
+  "fixture": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\final_fusion\\runtime_fixture_1v84fhfy",
+  "gpu_used": false,
+  "real_dataset_used": false,
+  "real_metrics_executed": false,
+  "model": "Real FusionCaptionTransformer at tiny width16/layer1 with standard2048/1024 input dimensions",
+  "full_production_training": false,
+  "project_written": false
+}

@@ -1,0 +1,91 @@
+{
+  "status": "complete",
+  "identity_sha256": "5df9278ac2ae6c26e6561953d4b9df2b200918b8ae1617fcbbf31f06b992e2a3",
+  "split": "saved_labeled_project_test",
+  "test_images": 5000,
+  "results": {
+    "epoch11_beam5_alpha0": {
+      "status": "complete",
+      "candidate": "epoch11_beam5_alpha0",
+      "role": "primary_validation_selected",
+      "images": 5000,
+      "identity_sha256": "5df9278ac2ae6c26e6561953d4b9df2b200918b8ae1617fcbbf31f06b992e2a3",
+      "scores": {
+        "bleu1": 0.7491571932575314,
+        "bleu4": 0.32615082120016037,
+        "cider_d": 0.9983915922664485
+      },
+      "validation_scores": {
+        "bleu1": 0.7413195222103705,
+        "bleu4": 0.31620121416779773,
+        "cider_d": 0.9801341231384657
+      },
+      "generation_seconds": 88.97163719998935,
+      "metric_seconds": 10.76171500000055,
+      "predictions_sha256": "9b06459b19576ec6b6ade4fcbc268adba7829daa4c49de853870adabe3efd2a7",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\submission_20261115\\final_test_results\\epoch11_beam5_alpha0\\test_predictions.json",
+      "metrics_computed": true
+    },
+    "epoch11_beam7_alpha0": {
+      "status": "complete",
+      "candidate": "epoch11_beam7_alpha0",
+      "role": "exploratory_comparator",
+      "images": 5000,
+      "identity_sha256": "5df9278ac2ae6c26e6561953d4b9df2b200918b8ae1617fcbbf31f06b992e2a3",
+      "scores": {
+        "bleu1": 0.7472250649452739,
+        "bleu4": 0.32504591473553823,
+        "cider_d": 0.9942752531493309
+      },
+      "validation_scores": {
+        "bleu1": 0.7383572670467942,
+        "bleu4": 0.3154757043367164,
+        "cider_d": 0.9798129101550891
+      },
+      "generation_seconds": 104.8557320999862,
+      "metric_seconds": 7.892568900002516,
+      "predictions_sha256": "81a95a7bbcfcc25ca53efad70df4237b4704ada5720c7218cf6dda18a9b0388f",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\submission_20261115\\final_test_results\\epoch11_beam7_alpha0\\test_predictions.json",
+      "metrics_computed": true
+    },
+    "epoch11_beam5_alpha0p3": {
+      "status": "complete",
+      "candidate": "epoch11_beam5_alpha0p3",
+      "role": "exploratory_comparator",
+      "images": 5000,
+      "identity_sha256": "5df9278ac2ae6c26e6561953d4b9df2b200918b8ae1617fcbbf31f06b992e2a3",
+      "scores": {
+        "bleu1": 0.7447070598198333,
+        "bleu4": 0.32214318128812913,
+        "cider_d": 0.9976276342548055
+      },
+      "validation_scores": {
+        "bleu1": 0.7375525473408011,
+        "bleu4": 0.3121989820368696,
+        "cider_d": 0.9791545106102075
+      },
+      "generation_seconds": 69.71363559999372,
+      "metric_seconds": 4.945253400001093,
+      "predictions_sha256": "f96b0f6ca11f6a83102ac03ad25bc24e678dbe336d52d547ebf98cd7624147a9",
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\submission_20261115\\final_test_results\\epoch11_beam5_alpha0p3\\test_predictions.json",
+      "metrics_computed": true
+    }
+  },
+  "primary_selected_by_validation": "epoch11_beam5_alpha0",
+  "test_based_reselection": false,
+  "comparison_scope": "Exploratory comparison of three candidates fixed using validation before test inference.",
+  "pretraining_limitation": "The project test comes from COCO train2017, which was used for detector pretraining. It is caption-decoder-held-out, not unseen by the complete pretrained visual system.",
+  "device": {
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "torch": "2.13.0+cu126",
+    "cuda_runtime": "12.6",
+    "cpu_threads": 2
+  },
+  "this_invocation_wall_seconds": 303.90701120000085,
+  "generation_seconds_sum": 263.54100489996927,
+  "metric_seconds_sum": 23.599537300004158,
+  "timing_note": "Generation includes feature reads, copies and decoding. Saved cumulative candidate times exclude pauses; invocation wall time includes setup and verification.",
+  "model_training_performed": false,
+  "original_checkpoints_modified": false
+}

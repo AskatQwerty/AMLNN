@@ -1,0 +1,46 @@
+{
+  "metrics": {
+    "exact": {
+      "bleu1": 0.9999999999130434,
+      "bleu4": 0.9999999999005891,
+      "cider_d": 10.0
+    },
+    "unrelated": {
+      "bleu1": 3.9109747962120824e-17,
+      "bleu4": 5.908261514240822e-17,
+      "cider_d": 0.0
+    },
+    "empty_predictions": {
+      "bleu1": 0.0,
+      "bleu4": 0.0,
+      "cider_d": 0.0
+    }
+  },
+  "resume_test": {
+    "train_images": 256,
+    "val_images": 64,
+    "batch_size": 32,
+    "epochs": 2,
+    "interrupted_at": {
+      "epoch": 1,
+      "next_index": 192,
+      "partial_token_count": 2330
+    },
+    "max_weight_difference": 0.0,
+    "max_adam_exp_avg_difference": 0.0,
+    "max_history_difference": 0.0,
+    "bitwise_identical": true,
+    "state_fields_identical": true,
+    "scaler_state_identical": true,
+    "completed_run_not_restarted": true,
+    "refused": [
+      "changed_config",
+      "changed_cache_identity"
+    ],
+    "seconds": 28.46492735100037,
+    "passed": true,
+    "note": "CUDA kernels may be nondeterministic; agreement is required within 1e-3."
+  },
+  "seconds": 70.75821125500079,
+  "main_passed": true
+}

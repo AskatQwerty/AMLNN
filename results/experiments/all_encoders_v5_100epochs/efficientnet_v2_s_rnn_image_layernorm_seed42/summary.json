@@ -1,0 +1,29 @@
+{
+  "encoder": "efficientnet_v2_s",
+  "decoder": "rnn",
+  "variant": "image_layernorm",
+  "embedding_size": 512,
+  "hidden_size": 512,
+  "num_layers": 1,
+  "dropout": 0.3,
+  "image_layernorm": true,
+  "seed": 42,
+  "feature_dim": 1280,
+  "trainable_parameters": 11436308,
+  "best_epoch": 5,
+  "val_loss": 2.5104588874237055,
+  "bleu1": 0.6613358594301301,
+  "bleu4": 0.2065225016912926,
+  "cider_d": 0.6442038105471309,
+  "training_seconds": 348.74719368099977,
+  "training_time": "00:05:49",
+  "devices": [
+    {
+      "device": "cuda",
+      "name": "Tesla T4",
+      "torch": "2.11.0+cu130",
+      "cuda_runtime": "13.0"
+    }
+  ],
+  "status": "finished"
+}

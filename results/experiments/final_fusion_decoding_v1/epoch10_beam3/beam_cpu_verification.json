@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checks": [
+    "Beam1 matches greedy exactly, preserves original training mode, and uses no gradients.",
+    "Known greedy counterexample improved; all images/beams decoded together, with correct prefix parents and repeated masks/global image token.",
+    "EOS candidates finish without returning EOS/PAD/START, even when forbidden token logits are larger.",
+    "No-EOS paths stop at the exact maximum and survive final alive/finished comparison.",
+    "Completed length counts content+EOS; finished candidates remain available after later decoding.",
+    "Original eval mode is restored.",
+    "Invalid beam width, positional capacity, penalty and special IDs fail explicitly.",
+    "Real FusionCaptionTransformer CPU integration: beam1 parity, valid beam3 tokens, unchanged entire state_dict and no gradients."
+  ],
+  "count": 8,
+  "beam_source_sha256": "0c9300b08eb999935992e6ed5909b9ed4d37a4da720df9eccc9ce1c99aa71b88",
+  "scripted_counterexample": {
+    "greedy": [
+      [
+        4,
+        6
+      ],
+      [
+        6
+      ]
+    ],
+    "beam3": [
+      [
+        5
+      ],
+      [
+        6
+      ]
+    ]
+  },
+  "scope": "CPU scripted probabilities and a small randomly initialized real architecture only; no trained weights, CUDA, real-image inference or metrics."
+}

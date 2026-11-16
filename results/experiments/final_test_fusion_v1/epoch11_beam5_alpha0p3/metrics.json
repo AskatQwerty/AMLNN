@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "candidate": "epoch11_beam5_alpha0p3",
+  "role": "exploratory_comparator",
+  "images": 5000,
+  "identity_sha256": "5df9278ac2ae6c26e6561953d4b9df2b200918b8ae1617fcbbf31f06b992e2a3",
+  "scores": {
+    "bleu1": 0.7447070598198333,
+    "bleu4": 0.32214318128812913,
+    "cider_d": 0.9976276342548055
+  },
+  "validation_scores": {
+    "bleu1": 0.7375525473408011,
+    "bleu4": 0.3121989820368696,
+    "cider_d": 0.9791545106102075
+  },
+  "generation_seconds": 69.71363559999372,
+  "metric_seconds": 4.945253400001093,
+  "predictions_sha256": "f96b0f6ca11f6a83102ac03ad25bc24e678dbe336d52d547ebf98cd7624147a9",
+  "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\submission_20261115\\final_test_results\\epoch11_beam5_alpha0p3\\test_predictions.json",
+  "metrics_computed": true
+}

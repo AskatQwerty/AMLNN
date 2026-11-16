@@ -1,0 +1,418 @@
+{
+  "passed": true,
+  "no_rescoring": true,
+  "gpu_used": false,
+  "project_written": false,
+  "identical_conditions_except_snapshot": true,
+  "conditions": [
+    "5000 validation IDs",
+    "data and vocabulary",
+    "cache",
+    "scorer",
+    "batch64",
+    "device and precision",
+    "helper code",
+    "width and alpha grid"
+  ],
+  "evaluated_pairs": 32,
+  "historical_batch16_rows_in_primary_selection": false,
+  "selected": {
+    "snapshot_epoch": 11,
+    "mode": "beam5_alpha0",
+    "scores": {
+      "bleu1": 0.7413195222103705,
+      "bleu4": 0.31620121416779773,
+      "cider_d": 0.9801341231384657
+    },
+    "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+    "predictions_sha256": "75e4532c2d8378b26219dadd72f73de959ec2495c65ca912982195f5c2d917af",
+    "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+  },
+  "all_candidates": [
+    {
+      "snapshot_epoch": 13,
+      "mode": "greedy",
+      "scores": {
+        "bleu1": 0.7341919724643178,
+        "bleu4": 0.28347707416379225,
+        "cider_d": 0.9414635883821234
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "055f879614eac752c4ddabb9bf0c0cf9f31e59ec984d74f44383d10dad75fe12",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam3_alpha0",
+      "scores": {
+        "bleu1": 0.7375916770676817,
+        "bleu4": 0.3088956038633756,
+        "cider_d": 0.9629087550250526
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "41c4b70c8f36eeffc3c64a7df7e254b992c60eb9e21c124852da5c261fdcdb22",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam3_alpha0p3",
+      "scores": {
+        "bleu1": 0.7392182122324841,
+        "bleu4": 0.30698320198544893,
+        "cider_d": 0.9673663764389807
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "6149c9762336bbe10fc163a56e4735a3b5da515cd37342894f58711b172a24c9",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam3_alpha0p6",
+      "scores": {
+        "bleu1": 0.735983342797639,
+        "bleu4": 0.3047208371010532,
+        "cider_d": 0.9683485535779338
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "1702d50d16678e8cdb4809a437375312e475395fe8afa5ecc9603264253e8d4f",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam3_alpha0p9",
+      "scores": {
+        "bleu1": 0.7321258874168347,
+        "bleu4": 0.30246435403557526,
+        "cider_d": 0.969056910573722
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "fd28e7e65edb09a095894892bd558a85709d4d140a688c6694f057cd0d84e3b7",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam3_alpha1p2",
+      "scores": {
+        "bleu1": 0.7273507864881027,
+        "bleu4": 0.29911479099690724,
+        "cider_d": 0.9675314183239363
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "8bd9eafd32eef7ef8ba7c4dcd90e62526a0b369069122c57be9a34abf15499a6",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam5_alpha0",
+      "scores": {
+        "bleu1": 0.740210064807007,
+        "bleu4": 0.3143023906132979,
+        "cider_d": 0.9714465659553252
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "e75bbc25e2130f7294496ee4d5f59e6b0956bf75f2941bec8c80ce7ce35b2a4d",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam5_alpha0p3",
+      "scores": {
+        "bleu1": 0.7357053321762466,
+        "bleu4": 0.31046881938380616,
+        "cider_d": 0.9703930481434618
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "0521647681335349478f777891856fff37c6ce558ec2f3881d12e6dd6e3b2390",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam5_alpha0p6",
+      "scores": {
+        "bleu1": 0.7308303686321866,
+        "bleu4": 0.30666791269440014,
+        "cider_d": 0.9664461777918123
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "c350463ccca65f3d5430a710fb3747e78576ee8ffd00a89d1d2ff84c4710b71d",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam5_alpha0p9",
+      "scores": {
+        "bleu1": 0.725755240730068,
+        "bleu4": 0.30352869344234323,
+        "cider_d": 0.9646061045318267
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "300a876f9ca01e1a63ea0126931ec5780caedbdc97c4dc6341c119b2fdb5c501",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam5_alpha1p2",
+      "scores": {
+        "bleu1": 0.7197764308786572,
+        "bleu4": 0.2990805919564111,
+        "cider_d": 0.9599252949253896
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "edb87fc5de9b678269869ea1409383319e8229d0f690d5b9d8b52478c90ec0b0",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam7_alpha0",
+      "scores": {
+        "bleu1": 0.7379326676401955,
+        "bleu4": 0.3134075860816188,
+        "cider_d": 0.9751546115256755
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "5fed81900ac8b7b56cc9afad99410b3ad1953c61a440e512e9a8cab75bd6c5d3",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam7_alpha0p3",
+      "scores": {
+        "bleu1": 0.7323110243072201,
+        "bleu4": 0.30884110520675373,
+        "cider_d": 0.9710716410849338
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "876e97a8c505ab76dff85b31e090c97fcc9aa30e3d6ea21ec6eba3dda03507f9",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam7_alpha0p6",
+      "scores": {
+        "bleu1": 0.7272347773286897,
+        "bleu4": 0.3047374868203905,
+        "cider_d": 0.9660942276193971
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "2e05c32909222a0e98d1362d7d49483512b83710a5650414d2da436320619cb9",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam7_alpha0p9",
+      "scores": {
+        "bleu1": 0.7207344496273724,
+        "bleu4": 0.30057094088595154,
+        "cider_d": 0.9615340217193558
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "f2b6d9a1d14b1d54c9beb63a5944b5e93b6b340b6c2b3a32becf040bb544c661",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam7_alpha1p2",
+      "scores": {
+        "bleu1": 0.7142468880795653,
+        "bleu4": 0.2963221131967673,
+        "cider_d": 0.958455753571233
+      },
+      "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "predictions_sha256": "3e3519d70a0796d22fd14141dd120027a382812ef5ef2744678d1267787dec83",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "greedy",
+      "scores": {
+        "bleu1": 0.7332474226803989,
+        "bleu4": 0.28472710795716094,
+        "cider_d": 0.938023589121302
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "2caef838575c636b56f199d4b6e306cd7b7daa4a2eef365db8edf17a07e532b5",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam3_alpha0",
+      "scores": {
+        "bleu1": 0.7413761461107828,
+        "bleu4": 0.31534816090658685,
+        "cider_d": 0.976347408459723
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "c22c28873e5af030c9b9d94bdb36d465843241b28067464be5f3a2989be8dadf",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam3_alpha0p3",
+      "scores": {
+        "bleu1": 0.7407918175027153,
+        "bleu4": 0.31135157517181883,
+        "cider_d": 0.9788818757019438
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "a99e0a290a0fee16728fe32685bed21778de53d74b490123e5133ac89ec8588f",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam3_alpha0p6",
+      "scores": {
+        "bleu1": 0.7365712993327918,
+        "bleu4": 0.3069713666700139,
+        "cider_d": 0.9760220891215023
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "afbace5a21bd3f05750f7b82639e204969ae5aef3d582ad6b5acffcd8aabaf7d",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam3_alpha0p9",
+      "scores": {
+        "bleu1": 0.7326710653124633,
+        "bleu4": 0.3040772915807314,
+        "cider_d": 0.9769244764410064
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "7e2aaebd4dd6ae1d24d58e88de35904207645b4bf933816782ade455c5fe3461",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam3_alpha1p2",
+      "scores": {
+        "bleu1": 0.7274084050743366,
+        "bleu4": 0.2992116368030623,
+        "cider_d": 0.9718572601536549
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "04f3f12d148ce9c64ecfc9b90f0521dcc1659704e89a192b2a5cb24b3c757766",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5_alpha0",
+      "scores": {
+        "bleu1": 0.7413195222103705,
+        "bleu4": 0.31620121416779773,
+        "cider_d": 0.9801341231384657
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "75e4532c2d8378b26219dadd72f73de959ec2495c65ca912982195f5c2d917af",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5_alpha0p3",
+      "scores": {
+        "bleu1": 0.7375525473408011,
+        "bleu4": 0.3121989820368696,
+        "cider_d": 0.9791545106102075
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "be7a09bcff8c6dc84417acc0e9794b53a90a95140ab32ca68037da747f4f9b4f",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5_alpha0p6",
+      "scores": {
+        "bleu1": 0.732369307642792,
+        "bleu4": 0.30731499754746516,
+        "cider_d": 0.9743149717465002
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "0e3fe088f46fb343b0d0417109b1aa02d2adbe730a3dd71165a30cab2a515bd7",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5_alpha0p9",
+      "scores": {
+        "bleu1": 0.7274276295075153,
+        "bleu4": 0.3038759633878535,
+        "cider_d": 0.9709606222856589
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "3d4fa3e2e6f4eb6dbf6fb6d1c7730dd2ede8a19e63249ca5fdb0465ce023b811",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5_alpha1p2",
+      "scores": {
+        "bleu1": 0.7209062449105026,
+        "bleu4": 0.2988442831036808,
+        "cider_d": 0.9638295643186849
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "9eb54241c693ce446701a56c66d2fcd13aa9ef83873f8ae180fc3e1dbc282b4c",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam7_alpha0",
+      "scores": {
+        "bleu1": 0.7383572670467942,
+        "bleu4": 0.3154757043367164,
+        "cider_d": 0.9798129101550891
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "1024eb26b4b429ed07726dfa53845137207537d931898d44f8eca9cbd78d0154",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam7_alpha0p3",
+      "scores": {
+        "bleu1": 0.7342279539909234,
+        "bleu4": 0.31237853103804897,
+        "cider_d": 0.9786020314018977
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "2d1b59c88a00cc29a8bac2dca6d59dad123cfe2aacdd2c6ff7d658e9fee00369",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam7_alpha0p6",
+      "scores": {
+        "bleu1": 0.7284177779463792,
+        "bleu4": 0.30761572181783026,
+        "cider_d": 0.9744079448934192
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "37b72534c00c84ec6dde3fd0ad00bd376233cc6d0e65ecff8b90fb0a9d3b5423",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam7_alpha0p9",
+      "scores": {
+        "bleu1": 0.7219127634768636,
+        "bleu4": 0.30364445333814394,
+        "cider_d": 0.9683991084590653
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "5f3e21ddd5bf0f919bc1645d86032c8e622c16cfea863a44c9c0b353160209a1",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam7_alpha1p2",
+      "scores": {
+        "bleu1": 0.7151597184623586,
+        "bleu4": 0.2983742835012176,
+        "cider_d": 0.9603117295544343
+      },
+      "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "predictions_sha256": "d9a4b191511e9b46c28fc3492107723f59c4312144f1d02c9a80f86d19da8751",
+      "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json"
+    }
+  ],
+  "scope": "Checkpoint and decoding selection on validation; not a causal architecture comparison or test estimate."
+}

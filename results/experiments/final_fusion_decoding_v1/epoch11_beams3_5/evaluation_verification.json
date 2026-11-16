@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    "Partial generation computes no corpus scores; resume processes only missing IDs and preserves completed chunks",
+    "Completed evaluation reuses validated full-corpus metrics without generation or scoring",
+    "Actual beam helper and greedy use identical IDs/raw references and correct token-to-text serialization",
+    "Beam5 dispatches actual width5, uses its own resumable files and keeps the same full IDs/references",
+    "Original config without beam_sizes still dispatches beam3 and rejects unconfigured beam5",
+    "Interruption after a committed chunk resumes to the same exact predictions",
+    "Resume rejects modified references and a different snapshot/config identity",
+    "Generated padding/start/end tokens are rejected in saved outputs",
+    "Evaluation lock rejects concurrent writers and removes only its own lock",
+    "Invalid, duplicate, noninteger and empty beam-size configurations fail before I/O",
+    "Original runner remains unchanged and beam helper was copied byte-for-byte"
+  ],
+  "count": 11,
+  "gpu_used": false,
+  "project_written": false,
+  "main_training_performed": false,
+  "real_metrics_scored": false,
+  "synthetic_only": true,
+  "evaluation_source_sha256": "e6d7c3861d86f962ed2b0668c96697dd1884a30621e78ee59efb5351b0e6442d",
+  "beam_source_sha256": "0c9300b08eb999935992e6ed5909b9ed4d37a4da720df9eccc9ce1c99aa71b88"
+}

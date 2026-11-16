@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "original_notebook": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\FinalFusion.ipynb",
+  "original_notebook_sha256": "1dc05731cab07dcaddab15948450ff6bd903852c444e91d3258b59a47c9818ca",
+  "staged_notebook": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\FinalFusion.ipynb",
+  "staged_notebook_sha256": "21ac59911448a8178652da25cf238701c85ed09323b8d91e76982bfa48e64c81",
+  "original_cell_count": 36,
+  "staged_cell_count": 43,
+  "all_original_cells_preserved_except_imports_and_requested_training_flag": true,
+  "all_epoch10_and_epoch11_helpers_outputs_preserved_exactly": true,
+  "imports_added": [],
+  "original_training_flag": true,
+  "staged_training_flag": false,
+  "training_flag_change_reason": "The user explicitly stopped training and requested decoding results.",
+  "other_training_settings_preserved": true,
+  "new_search_flag_default_false": true,
+  "new_snapshot_flag_default_false": true,
+  "original_core_hashes": {
+    "region_features": {
+      "source_sha256": "2d9a7cc34b7ac94f1ee9f40ac351261a1819471a38dd750336c4092dac0a1286",
+      "ast_sha256": "12dc3ba9b3e79b75aeb6668e7e2bbf32b1fd8904ff892c4d40d29e6a978ae10f"
+    },
+    "region_cache": {
+      "source_sha256": "95ec3dba585d9030f0b10cac6cbaa11346e7cd89c5cb9d3a62fb25a011117648",
+      "ast_sha256": "ac087c69248d3c06baa52b1d7cc6cc591a6142af1eb23d3d6176981190790728"
+    },
+    "models": {
+      "source_sha256": "7bbd739af27252323c0851e379f0fe7eeae0262ae8f7cf2246f19fc83ee2cda9",
+      "ast_sha256": "aac377250db8748d6171a43d3dbb5c353a3b3f3977bb2b4314c71fd527fa9c80"
+    },
+    "runtime": {
+      "source_sha256": "d92dcdac4d4c932a412849167c45d25887a82d443e56fbc03ac0de78e05dc82c",
+      "ast_sha256": "56dbfbfbd94403e338dad3f2a6252836a4507418c27a043d872ca04ed07355b4"
+    }
+  },
+  "staged_core_hashes": {
+    "region_features": {
+      "source_sha256": "2d9a7cc34b7ac94f1ee9f40ac351261a1819471a38dd750336c4092dac0a1286",
+      "ast_sha256": "12dc3ba9b3e79b75aeb6668e7e2bbf32b1fd8904ff892c4d40d29e6a978ae10f"
+    },
+    "region_cache": {
+      "source_sha256": "95ec3dba585d9030f0b10cac6cbaa11346e7cd89c5cb9d3a62fb25a011117648",
+      "ast_sha256": "ac087c69248d3c06baa52b1d7cc6cc591a6142af1eb23d3d6176981190790728"
+    },
+    "models": {
+      "source_sha256": "7bbd739af27252323c0851e379f0fe7eeae0262ae8f7cf2246f19fc83ee2cda9",
+      "ast_sha256": "aac377250db8748d6171a43d3dbb5c353a3b3f3977bb2b4314c71fd527fa9c80"
+    },
+    "runtime": {
+      "source_sha256": "d92dcdac4d4c932a412849167c45d25887a82d443e56fbc03ac0de78e05dc82c",
+      "ast_sha256": "56dbfbfbd94403e338dad3f2a6252836a4507418c27a043d872ca04ed07355b4"
+    }
+  },
+  "shared_beam_source_sha256": "f10575e9aa3b6481c2821ee71d31c73a658e14643cca65d2fe57de8732a00c7b",
+  "search_runner_source_sha256": "db2c2fcf7556da881a3d209f8321c379e1d85b202aa006ce5424eb5286d5a7c6",
+  "reused_identical_definitions": [
+    "beam_eval_hash",
+    "beam_eval_file_sha",
+    "beam_eval_json",
+    "beam_eval_function_id",
+    "beam_evaluation_lock",
+    "beam_validate_records",
+    "load_beam_snapshot"
+  ],
+  "reused_epoch11_runner_sha256": "e6d7c3861d86f962ed2b0668c96697dd1884a30621e78ee59efb5351b0e6442d",
+  "snapshot_epoch": 13,
+  "snapshot_metadata_sha256": "318ac807f0402060eaaed7adffc4f23c4e7fb165faea7906617879acbbff9864",
+  "snapshot_full_checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+  "epoch11_snapshot_metadata_sha256": "427618c84e448c751bf10316dff762cfc2ebb66ddeded004a3abbe16a89cd5df",
+  "epoch11_snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+  "saved_result_outputs": {
+    "epoch13": {
+      "path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\comparison.json",
+      "sha256": "46989e2733dc2a6f8f9199fa04ff9282aa953efe737ca2301611f748cad1c6c5",
+      "status": "complete",
+      "snapshot_epoch": 13,
+      "full_validation_images": 5000,
+      "configurations": 16,
+      "selected_mode_by_validation_cider": "beam7_alpha0",
+      "selected_predictions_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search\\modes\\beam7_alpha0\\validation_predictions.json",
+      "selected_predictions_file_sha256": "20ddfbbe7592f231d7b5d4dba625ed05ac4888322b08c086eec8312e0141e9bc"
+    },
+    "epoch11": {
+      "path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json",
+      "sha256": "9f2bbf4b1524e4e27edb471c95bd9ef8fa2e1da60f95feab21eb7eaa8c7c53ac",
+      "status": "complete",
+      "snapshot_epoch": 11,
+      "full_validation_images": 5000,
+      "configurations": 16,
+      "selected_mode_by_validation_cider": "beam5_alpha0",
+      "selected_predictions_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\modes\\beam5_alpha0\\validation_predictions.json",
+      "selected_predictions_file_sha256": "40f3b7eeb0095abcbde48cda53ad672b8e033ae2db3b5ed116bf7567cfd6cecc"
+    }
+  },
+  "primary_validation_choice": {
+    "source": "epoch11",
+    "comparison_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_decoding_search_20261115\\validation_search_epoch11\\comparison.json",
+    "mode": "beam5_alpha0",
+    "snapshot_epoch": 11,
+    "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+    "evaluation_identity_sha256": "ee4c12dd2a880fd3ebdcac48b1d15d302bdc5c3c65a1a15501398d09e75456f1",
+    "batch_size": 64,
+    "amp_enabled": true,
+    "device": {
+      "device": "cuda:0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "torch": "2.13.0+cu126",
+      "cuda_runtime": "12.6",
+      "cpu_threads": 2
+    },
+    "cider_d": 0.9801341231384657,
+    "beam_size": 5,
+    "length_penalty": 0.0,
+    "selected_predictions_file_sha256": "40f3b7eeb0095abcbde48cda53ad672b8e033ae2db3b5ed116bf7567cfd6cecc"
+  },
+  "primary_selection_scope": "32 new variants with matching batch64/AMP/device settings; historical batch16 results excluded",
+  "batch_size": 64,
+  "cpu_threads": 2,
+  "decorators_and_function_asts_preserved": true,
+  "project_written": false,
+  "gpu_used": false,
+  "training_or_evaluation_started": false
+}

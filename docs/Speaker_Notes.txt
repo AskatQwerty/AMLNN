@@ -1,0 +1,191 @@
+SLIDE 1
+BAKDAULET — 0:00–0:20. We built an image-captioning system that generates a sentence from a photograph. Our project moves from one global image vector to spatial and object-region information. We compare the models, explain the final fusion decoder, and show both improvements and remaining mistakes.
+
+SLIDE 2
+BAKDAULET — 0:20–1:05
+
+A fluent caption must also match the image. This matters for image search and accessibility, where wrong objects or actions can mislead users. We ask three questions: which frozen encoder and decoder give the best global baseline; whether spatial locations and object regions help; and whether we can combine them while keeping the CNNs frozen. We compare complete systems and also look at individual changes. Finally, we check actual captions, because a higher overlap score does not guarantee correct visual details.
+
+SLIDE 3
+BAKDAULET — 1:05–2:05
+
+We use 123,287 labeled COCO images: 113,287 for training, 5,000 for validation and 5,000 for our local test. Official test2017 has no public captions, so it is excluded. Our split has no overlapping image IDs or exact image hashes. The vocabulary comes only from training captions. We sample one caption per image each training epoch, and keep all references for metrics. Features are cached from frozen encoders. A key limitation is that our test comes from COCO train2017, also the source used to pretrain the detector. This is a caption-training holdout; it does not establish fully unseen-image performance for the whole system. Exact detector-training image overlap was not reconstructed.
+
+SLIDE 4
+BAKDAULET → ASKAT — 2:05–2:30
+
+CIDEr-D is our main validation criterion. BLEU-1 measures word overlap and BLEU-4 looks at longer phrases. Every model is evaluated on all 5,000 validation images using all human captions and identical tokenization. These are project scores, not official leaderboard numbers. Askat will now explain what the experiments taught us and how the final model works.
+
+Sources:
+Vedantam et al. (2015), CIDEr. https://openaccess.thecvf.com/content_cvpr_2015/html/Vedantam_CIDEr_Consensus-Based_Image_2015_CVPR_paper.html
+
+SLIDE 5
+ASKAT — 2:30–3:05
+
+Here we show all five CNNs, with three decoder families for each. Every bar is the best of the same five configurations, using seed 42 and the full validation set. ResNet50 leads in all three decoder families within this search. LSTM and Transformer-prefix are almost tied for ResNet50, around point eight one CIDEr. This supports choosing ResNet50 for the next depth experiments. These maxima are selected validation scores, not repeated-seed averages, and do not establish that ResNet50 always wins on other tasks.
+
+Sources:
+Project: experiments/all_encoders_v5_100epochs; original75 runs, all full-validation metrics.
+
+SLIDE 6
+ASKAT — 3:05–3:45
+
+The three-layer prefix Transformer reached point eight five eight CIDEr and became our strongest global model. A fourth layer reduced quality for both decoder types. Depth also did not mean faster convergence: the three-layer Transformer selected epoch twenty-one, compared with epoch five for two layers. We used the same patience of three, so stopping happened three epochs later. Stronger dropout was also unhelpful: increasing it from point three to point five reduced CIDEr in all fifteen matched encoder-decoder pairs. We keep point three. These are single-seed observations, so we do not claim universal optimal settings.
+
+
+
+SLIDE 7
+ASKAT — 3:45–4:25
+
+Extra visual tokens did not automatically help. The grid-attention LSTM stopped earlier but scored below the global LSTM: a worse plateau, not faster successful convergence. The region LSTM initially produced the same caption for every image. Adding LayerNorm after visual projection raised CIDEr from point zero five one to point eight one eight. The loop audit found complete optimizer coverage, no double division, and similarly weak embedding updates in FP 32 and AMP. Grid and region runs also differ in normalization and pretraining, so their difference cannot be attributed only to regions.
+
+Sources:
+Stage5 received archives: protocol and projln; verified full-validation predictions.
+Anderson et al. (2018). https://openaccess.thecvf.com/content_cvpr_2018/html/Anderson_Bottom-Up_and_Top-Down_CVPR_2018_paper.html
+
+SLIDE 8
+ASKAT — 4:25–5:20
+
+ResNet 50 provides a global vector and forty-nine spatial positions before global pooling. A separate Faster R-CNN provides up to thirty-six numeric region vectors. We project both sources to five hundred twelve dimensions and normalize them. The grid receives row and column embeddings; regions receive box-coordinate embeddings. Source embeddings distinguish the two. Concatenation creates eighty-five memory positions, with padded regions masked. We retain the global image prefix in the word stream. The three-layer Transformer can read earlier words and attend to every valid visual token. Both CNNs are frozen; we train only fusion and the decoder.
+
+Sources:
+Verified implementation: work/final_fusion/models.py; FinalFusionCaptioner and GatedCrossAttentionLayer.
+Anderson et al. (2018). https://openaccess.thecvf.com/content_cvpr_2018/html/Anderson_Bottom-Up_and_Top-Down_CVPR_2018_paper.html
+Ren et al. (2015). https://proceedings.neurips.cc/paper/2015/hash/14bfa6bb14875e45bba028a21ed38046-Abstract.html
+
+SLIDE 9
+ASKAT — 5:20–6:10
+
+Each layer first reads the earlier words with masked self-attention. Then cross-attention lets the current text retrieve useful image details from the grid and region features. A feed-forward network transforms the result. We transfer the trained prefix model and start the new visual gate at zero, preserving the starting model in evaluation mode. The branch learns during continued training. The gate is a learned signed multiplier, not an attention probability. The exact equations are in the backup for questions.
+
+Sources:
+Vaswani et al. (2017). https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html
+Actual block order: LN1/self attention/residual; LN2/cross attention/tanh gate/residual; LN3/FFN/residual; final norm and vocabulary head outside repeated stack. Dropout is omitted from displayed formula for readability.
+
+SLIDE 10
+ASKAT — 6:10–6:45
+
+Teacher forcing shifts the human caption by one token: input starts with start, and target ends with end. Loss averages over real target tokens and ignores padding. Generation instead uses the model’s own previous predictions. We train twenty-five point five two million parameters with Adam, AMP and clipping, using a lower learning rate for transferred weights. Checkpoints preserve optimizer and random states. The fusion run took about two and a half active hours and was manually stopped during epoch fourteen.
+
+SLIDE 11
+ASKAT — 6:45–7:30
+
+Our best validation CIDEr is point nine eight zero. Prefix versus fusion compares different trained systems, including new features and additional training. The clean decoding comparison uses the exact same epoch-eleven checkpoint: greedy gives point nine three eight zero; beam five gives point nine eight zero one, a four point four nine percent increase. Beam search keeps five candidate captions during generation; weights stay unchanged. Epoch thirteen greedy scores point nine four one five on the learning-curve backup slide, so that is a different checkpoint. We chose the primary decoding setting on validation before test. Test CIDEr is point nine nine eight four. Test captions are held out for caption training, but the detector uses the same COCO training source, so this is not a fully unseen-image test for the entire system.
+
+SLIDE 12
+ASKAT — 7:30–8:15
+
+Here is one image across the saved models. The RNN predicts frisbee in a park. Even the stronger prefix Transformer says the person is throwing a frisbee. The final fusion caption correctly identifies the skateboard and street. The human reference is more specific about a trick, so the final output is still not perfect. This example is selected to illustrate a visible change; it is not a random sample or a measure of average error reduction. We did not rewrite the predictions or generate synthetic examples. A second matched example, where baseball becomes horse jumping, is in the backup slides.
+
+Sources:
+COCO val2017 image119911; original JPEG and exact saved predictions in curated_examples.json.
+Different models, pretraining and decoding settings; not a causal component ablation.
+
+SLIDE 13
+ASKAT — 8:15–9:05
+
+Two errors show why a higher caption score is not the same as reliable visual understanding. On the left, the model says two teddy bears although three are visible. It gets the object category and setting, but misses the count. On the right, it constructs a plausible sentence about a woman walking with an umbrella, while the photo contains headless mannequins. This is a wrong object, invented action and invented object in one sentence. Common language patterns can outweigh the visual evidence. These are curated failure examples, not measured error rates. We prepared an unfiltered random twenty-image test gallery, but the planned hundred-image human assessment remains unfinished.
+
+Sources:
+COCO validation image113403 and423944; exact saved epoch11 beam5alpha0 captions.
+Examples were manually inspected; no human accuracy percentage or prevalence estimate was computed.
+
+SLIDE 14
+ASKAT — 9:05–10:00
+
+Our strongest global model was ResNet50 with a three-layer prefix Transformer. Grid attention alone did not improve the LSTM; LayerNorm helped the regional model learn. The final fusion system with beam search achieved our best validation result, but its gain combines architecture changes and additional training. We did not isolate fusion alone. The reported test CIDEr is point nine nine eight four and BLEU-four is point three two six two. These are caption-training holdout results: the detector was pretrained on the same COCO source. Next we need an equally long continued-prefix control, repeated seeds, a formal human evaluation, partial fine-tuning and an external-image test. We exceeded the original numeric BLEU targets and expanded the evaluation beyond the midterm plan.
+
+SLIDE 15
+REFERENCE SLIDE — Not part of the timed talk
+
+Paper titles are clickable. Our model is inspired by these works; it is not an exact reproduction of their implementations, training data or reported evaluation protocol. COCO dataset and additional implementation references are included on the backup evidence slide.
+
+Sources:
+Vinyals et al. (2015) · Show and Tell
+https://openaccess.thecvf.com/content_cvpr_2015/html/Vinyals_Show_and_Tell_2015_CVPR_paper.html
+Anderson et al. (2018) · Bottom-Up and Top-Down Attention
+https://openaccess.thecvf.com/content_cvpr_2018/html/Anderson_Bottom-Up_and_Top-Down_CVPR_2018_paper.html
+Ren et al. (2015) · Faster R-CNN
+https://proceedings.neurips.cc/paper/2015/hash/14bfa6bb14875e45bba028a21ed38046-Abstract.html
+Vaswani et al. (2017) · Attention Is All You Need
+https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html
+Vedantam et al. (2015) · CIDEr
+https://openaccess.thecvf.com/content_cvpr_2015/html/Vedantam_CIDEr_Consensus-Based_Image_2015_CVPR_paper.html
+
+SLIDE 16
+BACKUP — Not in the 10-minute talk
+
+All original runs used Adam at1e-3, batch64, maximum100epochs, early-stopping patience3 and seed42. Recurrent built-in dropout was zero; separate dropout was used. Transformer had8heads, FFN2048, learned positions and pre-norm. ImageLayerNorm here means the global image projection; it is separate from internal Transformer layer normalization. Devices differ across workers, so total time is not a controlled architecture benchmark.
+
+
+
+SLIDE 17
+BACKUP — Not in the timed talk
+
+Matched means the same encoder and decoder, changing one predefined profile. Mean best-epoch changes were+1.0 for smaller hidden size,+0.2 for stacked,+0.53 for high dropout and+1.4 for imageLayerNorm. The corresponding validation improvements were not monotonic in epoch count. Internal Transformer norms remain present even when imageLayerNorm is off.
+
+
+
+SLIDE 18
+BACKUP — Not in the timed talk
+
+Epoch0 is initialization validation, not a trained fusion epoch. Validation loss fell from2.0730 to1.9862 byepoch13. Train loss is measured with dropout and one random caption per image, while validation uses eval mode and one fixed caption forloss, so their magnitudes are not directly comparable. Beam search selection is a separate evaluation of epoch11 and13; it does not alter the training curve.
+
+
+
+SLIDE 19
+BACKUP — Not in the timed talk
+
+The constant caption is the most frequent normalized caption in train: a man riding a wave on top of a surfboard . It appears157times among566745train captions. It was selected from training data only and evaluated now as a transparent post-training audit on all5000validation images with all references. Scores: BLEU1=.489545,BLEU4=.071578,CIDErD=.067727. A test-set constant-baseline comparison and formal100-image human score were not computed. The original numerical targets were exceeded; no invented revised target is claimed. Full random gallery is available as random20_test_gallery.html.
+
+
+
+SLIDE 20
+BACKUP — Not in the timed talk
+
+This native slide illustration shows thegeometry of preprocessing rather than a savedprocessed tensor. A640×480image scales to224×168,then28pixelpaddingis added aboveandbelow. The actual ResNet transform applies EXIF orientation,RGBconversion, centered padding and ImageNet normalization. This keeps the whole frame and proportions,but objects occupy a smaller part of the square. The detector does not use this224transform: it uses its own aspect-preserving800/1333transform. The displayed source photo comes from the unfilteredseed42testgallery; no new caption was selected here.
+
+
+
+SLIDE 21
+BACKUP — Not in the timed talk
+
+The original photo visibly contains a horse and rider clearing an obstacle. The final caption corrects the dominant object and action. All shown prediction strings are copied exactly from saved full-validation predictions. This is curated qualitative evidence, not an isolated causal ablation.
+
+
+
+SLIDE 22
+BACKUP — Not in the timed talk
+
+All paper titles are clickable. Scientific graphs and architecture diagrams are native editable presentation objects. COCO photos are original files. Results are read from the verified local experiment artifacts; we did not rerun training for the presentation. The final assignment additionally requires one merged PDF containing the slides, executed notebook and research paper.
+
+Sources:
+Lin et al. (2014) · Microsoft COCO
+https://arxiv.org/abs/1405.0312
+Papineni et al. (2002) · BLEU
+https://aclanthology.org/P02-1040/
+He et al. (2016) · Deep Residual Learning
+https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html
+Xu et al. (2015) · Show, Attend and Tell
+https://proceedings.mlr.press/v37/xuc15.html
+Torchvision · Faster R-CNN pretrained weights
+https://docs.pytorch.org/vision/main/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html
+
+SLIDE 23
+BACKUP — Not in the timed talk
+
+The provided reference images illustrated a two3x3basic residual block and Fast R-CNN. This slide adapts the ideas to the actual models. ResNet50 uses bottleneck blocks with1x1,3x3,1x1convolutions and stages containing3,4,6,3blocks. A projection shortcut is used when dimensions change. Faster R-CNN adds a learned region proposal network. Our frozen torchvision ResNet50-FPN detector makes detections, applies score0.2and class-agnosticNMS0.5, keeps up to36, then re-pools the selected final boxes through the two-layerROIbox head to obtain1024-dimensional vectors. Class names and scores are not captiondecoder inputs. Neither CNN is updated by captiontraining.
+
+Sources:
+He et al. (2016). Deep Residual Learning for Image Recognition. https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html
+Ren et al. (2015). Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks. https://proceedings.neurips.cc/paper/2015/hash/14bfa6bb14875e45bba028a21ed38046-Abstract.html
+Project extraction source verified in architecture_brief.json.
+
+SLIDE 24
+BACKUP — Not part of the timed talk
+
+The decoder has three pre-norm layers, each with masked self-attention, gated visual cross-attention and a ReLU feed-forward network of width 2048. Hidden width is 512 and there are eight heads. The gate scales the cross-attention residual and can be negative; it is not a probability. We initialize it at zero and transfer the prefix model, preserving the initial function in evaluation mode. Cross entropy is computed on next-word logits without a prior softmax and averaged over non-padding target tokens. These equations describe the actual model.
+
+Sources:
+Vaswani et al. (2017), Attention Is All You Need.
+Verified project implementation: FinalFusionCaptioner and GatedCrossAttentionLayer.

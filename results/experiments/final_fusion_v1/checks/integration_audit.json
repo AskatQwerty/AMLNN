@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "scope": "Independent read-only source, AST, JSON and current cache metadata review. No GPU/model imports or metrics.",
+  "notebook_source_identity_match": {
+    "models": true,
+    "runtime": true,
+    "region_features": true,
+    "region_cache": true
+  },
+  "active_extraction_producer_matches_runner_notebook": true,
+  "train_plan_exact_seed42_40000_and_no_test": true,
+  "validation_cache_complete_5000": true,
+  "preflight_report_keys_match_runner_guard": true,
+  "exact_global_feature_path_wired": true,
+  "checkpoint_resume_and_deadline_review": "No blocking issue found. Fixeddate18:15 extraction,21:40epochadmission,22:00hardstop Asia/Bishkek.",
+  "blocking_findings": [],
+  "nonblocking_notes": [
+    "Inherited detector feature contract text says normalized boxes are reporting-only for stage5; final fusion model/config explicitly use normalized box positions. Interpret this as a downstream consumer change, not a different extraction pipeline.",
+    "Preflight required model/runtime source hashes match GPU report fields. Root must pass/copy the newly successful gpu_preflight_report.json to the project checks path before starting."
+  ],
+  "test_evaluated": false,
+  "project_modified": false
+}

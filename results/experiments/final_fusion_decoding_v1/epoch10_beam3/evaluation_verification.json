@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    "Partial generation computes no corpus scores; resume processes only missing IDs and preserves completed chunks",
+    "Completed evaluation reuses validated full-corpus metrics without generation or scoring",
+    "Actual beam helper and greedy use identical IDs/raw references and correct token-to-text serialization",
+    "Interruption after a committed chunk resumes to the same exact predictions",
+    "Resume rejects modified references and a different snapshot/config identity",
+    "Generated padding/start/end tokens are rejected in saved outputs",
+    "Evaluation lock rejects concurrent writers and removes only its own lock",
+    "Real epoch10 full snapshot SHA, weights finiteness, model/scorer/data/cache identity and all5000 disjoint validation IDs verified on CPU"
+  ],
+  "count": 8,
+  "gpu_used": false,
+  "project_written": false,
+  "main_training_performed": false,
+  "real_metrics_scored": false,
+  "real_snapshot_read_only": true,
+  "evaluation_source_sha256": "bf688c8622309b06b4ff026bf9a2e65e8dbc07da1151d3dd294770c1b8ee5c90",
+  "beam_source_sha256": "0c9300b08eb999935992e6ed5909b9ed4d37a4da720df9eccc9ce1c99aa71b88"
+}

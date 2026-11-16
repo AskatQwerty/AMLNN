@@ -1,0 +1,29 @@
+{
+  "encoder": "efficientnet_v2_s",
+  "decoder": "rnn",
+  "variant": "small_hidden",
+  "embedding_size": 512,
+  "hidden_size": 256,
+  "num_layers": 1,
+  "dropout": 0.3,
+  "image_layernorm": false,
+  "seed": 42,
+  "feature_dim": 1280,
+  "trainable_parameters": 8546068,
+  "best_epoch": 4,
+  "val_loss": 2.5940031176703706,
+  "bleu1": 0.6633904242895939,
+  "bleu4": 0.1989298151933542,
+  "cider_d": 0.5967470985799479,
+  "training_seconds": 447.81396900000254,
+  "training_time": "00:07:28",
+  "devices": [
+    {
+      "device": "cuda",
+      "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "torch": "2.13.0+cu126",
+      "cuda_runtime": "12.6"
+    }
+  ],
+  "status": "finished"
+}

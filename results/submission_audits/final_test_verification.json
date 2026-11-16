@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "count": 8,
+  "checks": [
+    "Partial2000 does not score; resume processes only missing3000 and preserves committed chunks",
+    "Completed5000 output reuses validated metrics without another decode or scoring",
+    "Allthree fixed widths/alphas dispatch separately with all5000 original raw reference sets",
+    "Resume rejects altered raw refs and mismatched snapshot/config identity",
+    "Saved generated text rejects forbidden special tokens",
+    "Frozen candidate manifest rejects changes from the original validation-selected top3",
+    "Actual epoch11 immutable checkpoint SHA/finiteness/scorer/data/training-cache lineage verified on CPU",
+    "Saved test guards reject partial IDs and any train/test overlap"
+  ],
+  "gpu_used": false,
+  "project_written": false,
+  "real_test_predictions_generated": false,
+  "real_test_metrics_computed": false,
+  "real_checkpoint_read_only": true,
+  "test_source_sha256": "490a4a26da701530af84a339b5306d03006666628d14778bdf6cf0d0fd90aea0",
+  "test_cache_source_sha256": "26dc4442c336674f83f2220fb418ac3a272f37f692436bd0277e31563ceac45c"
+}

@@ -1,0 +1,184 @@
+{
+  "passed": true,
+  "no_rescoring": true,
+  "gpu_used": false,
+  "project_written": false,
+  "snapshot_epoch": 13,
+  "checkpoint_sha256_verified": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+  "all_16_modes_exact5000_ids25014_raw_references": true,
+  "all_chunks_and_prediction_hashes_verified": true,
+  "shared_generation_counted_once": true,
+  "csv_matches_json": true,
+  "historical_epoch10_epoch11_unchanged": true,
+  "selected_mode": "beam7_alpha0",
+  "methods": {
+    "greedy": {
+      "scores": {
+        "bleu1": 0.7341919724643178,
+        "bleu4": 0.28347707416379225,
+        "cider_d": 0.9414635883821234
+      },
+      "average_words": 10.7998,
+      "scoring_seconds": 5.912467799997103,
+      "verified_chunks": 79
+    },
+    "beam3_alpha0": {
+      "scores": {
+        "bleu1": 0.7375916770676817,
+        "bleu4": 0.3088956038633756,
+        "cider_d": 0.9629087550250526
+      },
+      "average_words": 10.1048,
+      "scoring_seconds": 5.346875499999442,
+      "verified_chunks": 79
+    },
+    "beam3_alpha0p3": {
+      "scores": {
+        "bleu1": 0.7392182122324841,
+        "bleu4": 0.30698320198544893,
+        "cider_d": 0.9673663764389807
+      },
+      "average_words": 10.3994,
+      "scoring_seconds": 5.630346699999791,
+      "verified_chunks": 79
+    },
+    "beam3_alpha0p6": {
+      "scores": {
+        "bleu1": 0.735983342797639,
+        "bleu4": 0.3047208371010532,
+        "cider_d": 0.9683485535779338
+      },
+      "average_words": 10.5636,
+      "scoring_seconds": 5.278193599999213,
+      "verified_chunks": 79
+    },
+    "beam3_alpha0p9": {
+      "scores": {
+        "bleu1": 0.7321258874168347,
+        "bleu4": 0.30246435403557526,
+        "cider_d": 0.969056910573722
+      },
+      "average_words": 10.731,
+      "scoring_seconds": 5.663327899997967,
+      "verified_chunks": 79
+    },
+    "beam3_alpha1p2": {
+      "scores": {
+        "bleu1": 0.7273507864881027,
+        "bleu4": 0.29911479099690724,
+        "cider_d": 0.9675314183239363
+      },
+      "average_words": 10.945,
+      "scoring_seconds": 5.075681900001655,
+      "verified_chunks": 79
+    },
+    "beam5_alpha0": {
+      "scores": {
+        "bleu1": 0.740210064807007,
+        "bleu4": 0.3143023906132979,
+        "cider_d": 0.9714465659553252
+      },
+      "average_words": 10.1584,
+      "scoring_seconds": 4.86123790000056,
+      "verified_chunks": 79
+    },
+    "beam5_alpha0p3": {
+      "scores": {
+        "bleu1": 0.7357053321762466,
+        "bleu4": 0.31046881938380616,
+        "cider_d": 0.9703930481434618
+      },
+      "average_words": 10.371,
+      "scoring_seconds": 5.0129448999978194,
+      "verified_chunks": 79
+    },
+    "beam5_alpha0p6": {
+      "scores": {
+        "bleu1": 0.7308303686321866,
+        "bleu4": 0.30666791269440014,
+        "cider_d": 0.9664461777918123
+      },
+      "average_words": 10.5688,
+      "scoring_seconds": 5.431502499999624,
+      "verified_chunks": 79
+    },
+    "beam5_alpha0p9": {
+      "scores": {
+        "bleu1": 0.725755240730068,
+        "bleu4": 0.30352869344234323,
+        "cider_d": 0.9646061045318267
+      },
+      "average_words": 10.7714,
+      "scoring_seconds": 5.4321796000003815,
+      "verified_chunks": 79
+    },
+    "beam5_alpha1p2": {
+      "scores": {
+        "bleu1": 0.7197764308786572,
+        "bleu4": 0.2990805919564111,
+        "cider_d": 0.9599252949253896
+      },
+      "average_words": 11.0208,
+      "scoring_seconds": 4.4141674999991665,
+      "verified_chunks": 79
+    },
+    "beam7_alpha0": {
+      "scores": {
+        "bleu1": 0.7379326676401955,
+        "bleu4": 0.3134075860816188,
+        "cider_d": 0.9751546115256755
+      },
+      "average_words": 10.1348,
+      "scoring_seconds": 5.228000499999325,
+      "verified_chunks": 79
+    },
+    "beam7_alpha0p3": {
+      "scores": {
+        "bleu1": 0.7323110243072201,
+        "bleu4": 0.30884110520675373,
+        "cider_d": 0.9710716410849338
+      },
+      "average_words": 10.3426,
+      "scoring_seconds": 4.66590499999802,
+      "verified_chunks": 79
+    },
+    "beam7_alpha0p6": {
+      "scores": {
+        "bleu1": 0.7272347773286897,
+        "bleu4": 0.3047374868203905,
+        "cider_d": 0.9660942276193971
+      },
+      "average_words": 10.5402,
+      "scoring_seconds": 4.870403700002498,
+      "verified_chunks": 79
+    },
+    "beam7_alpha0p9": {
+      "scores": {
+        "bleu1": 0.7207344496273724,
+        "bleu4": 0.30057094088595154,
+        "cider_d": 0.9615340217193558
+      },
+      "average_words": 10.7618,
+      "scoring_seconds": 4.795556299999589,
+      "verified_chunks": 79
+    },
+    "beam7_alpha1p2": {
+      "scores": {
+        "bleu1": 0.7142468880795653,
+        "bleu4": 0.2963221131967673,
+        "cider_d": 0.958455753571233
+      },
+      "average_words": 11.0382,
+      "scoring_seconds": 5.887352199999441,
+      "verified_chunks": 79
+    }
+  },
+  "group_generation_seconds": {
+    "greedy": 19.94317629998477,
+    "beam3": 52.88114009999117,
+    "beam5": 70.73115180000605,
+    "beam7": 96.84416829999827
+  },
+  "comparison_sha256": "46989e2733dc2a6f8f9199fa04ff9282aa953efe737ca2301611f748cad1c6c5",
+  "elapsed_seconds": 5.835345299998153
+}

@@ -1,0 +1,577 @@
+{
+  "bundle": {
+    "directory": "/kaggle/input/datasets/dxpeare/aml-stage5-handoff",
+    "files_verified": 32,
+    "protocol_version": "caption_stage5_handoff_v1"
+  },
+  "updated_utc": "2026-11-15T13:45:56.122859+00:00",
+  "cpu_development_checks_before_this_run": {
+    "environment": "Linux x86_64 CPU only; Python 3.13; torch 2.13.0, torchvision 0.28.0, pycocoevalcap 1.2",
+    "passed": [
+      "bundle SHA256 (32 files), full data/split/vocabulary verification, 18,132,756 decoder parameters",
+      "detector code path on 6 real COCO train2017 JPEGs with a RANDOMLY INITIALIZED Faster R-CNN (pretrained weights could not be downloaded there): shapes, masks, padding, box limits only",
+      "resumable cache writer on a 256-train/64-val subset with stub region records and synthetic JPEGs of the annotated sizes, including a pause at the session limit and resume from the committed row",
+      "real-batch mask/attention/gradient/greedy checks and 4-image memorization (loss 0.087, exact captions)",
+      "interruption/resume test bitwise identical on CPU; changed config/cache refused; finished run not restarted",
+      "training, strict early stopping, pause at the session limit and resume in a new kernel, verified archive",
+      "two-worker region scheduling: cache byte-identical to the single-process writer on the same stub records, also after a pause at the session limit and resume; read back by the unchanged load_region_cache"
+    ],
+    "not_shown_by_these_checks": "real pretrained detector outputs, full 123,287-image extraction, real training quality"
+  },
+  "data": {
+    "split_sizes": {
+      "train": 113287,
+      "val": 5000,
+      "test": 5000
+    },
+    "special_ids": {
+      "pad": 0,
+      "unk": 1,
+      "start": 2,
+      "end": 3
+    },
+    "vocab_size": 10004,
+    "provenance_matches_protocol": true,
+    "disjoint_splits_and_duplicate_audit": "checked by load_region_prepared_data",
+    "raw_references": "original human captions, no <unk> mapping"
+  },
+  "raw_images": {
+    "raw_image_root": "/kaggle/input/datasets/awsaf49/coco-2017-dataset/coco2017",
+    "sources": {
+      "train2017": {
+        "expected_ids": 118287,
+        "local_files": 118287,
+        "missing": 0,
+        "extra_local_files": 0,
+        "official_zip": "http://images.cocodataset.org/zips/train2017.zip",
+        "official_jpegs": 118287,
+        "crc32_and_size_checked": 118287,
+        "crc32_mismatches": 0
+      },
+      "val2017": {
+        "expected_ids": 5000,
+        "local_files": 5000,
+        "missing": 0,
+        "extra_local_files": 0,
+        "official_zip": "http://images.cocodataset.org/zips/val2017.zip",
+        "official_jpegs": 5000,
+        "crc32_and_size_checked": 5000,
+        "crc32_mismatches": 0
+      }
+    },
+    "seconds": 243.104472347,
+    "note": "Every photo is also checked against its annotation height/width during extraction. CRC32 identity with the official zip is reported above when the network check ran."
+  },
+  "detector_smoke": {
+    "detector": {
+      "builder": "torchvision.models.detection.fasterrcnn_resnet50_fpn",
+      "weights_enum": "FasterRCNN_ResNet50_FPN_Weights.COCO_V1",
+      "url": "https://download.pytorch.org/models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth",
+      "weights_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+      "frozen": true,
+      "eval_mode": true,
+      "devices": [
+        "cuda:0",
+        "cuda:1"
+      ]
+    },
+    "images": [
+      {
+        "image_id": 9,
+        "original_size": [
+          480,
+          640
+        ],
+        "transformed_size": [
+          800,
+          1066
+        ],
+        "regions": 19,
+        "fallback": false,
+        "score_min": 0.2820475399494171,
+        "score_max": 0.9892359375953674,
+        "feature_abs_max": 4.835891246795654,
+        "labels": [
+          "bowl",
+          "broccoli",
+          "bowl",
+          "orange",
+          "orange",
+          "bowl",
+          "orange",
+          "orange",
+          "apple",
+          "orange"
+        ],
+        "seconds": 18.21456789299998
+      },
+      {
+        "image_id": 25,
+        "original_size": [
+          426,
+          640
+        ],
+        "transformed_size": [
+          800,
+          1201
+        ],
+        "regions": 3,
+        "fallback": false,
+        "score_min": 0.2878793478012085,
+        "score_max": 0.9976025223731995,
+        "feature_abs_max": 5.100520133972168,
+        "labels": [
+          "giraffe",
+          "giraffe",
+          "kite"
+        ],
+        "seconds": 8.327052182999978
+      },
+      {
+        "image_id": 30,
+        "original_size": [
+          428,
+          640
+        ],
+        "transformed_size": [
+          800,
+          1196
+        ],
+        "regions": 2,
+        "fallback": false,
+        "score_min": 0.8898366093635559,
+        "score_max": 0.9941341280937195,
+        "feature_abs_max": 4.635335922241211,
+        "labels": [
+          "vase",
+          "potted plant"
+        ],
+        "seconds": 0.2268296630001032
+      },
+      {
+        "image_id": 34,
+        "original_size": [
+          425,
+          640
+        ],
+        "transformed_size": [
+          800,
+          1204
+        ],
+        "regions": 1,
+        "fallback": false,
+        "score_min": 0.9999014139175415,
+        "score_max": 0.9999014139175415,
+        "feature_abs_max": 5.958400726318359,
+        "labels": [
+          "zebra"
+        ],
+        "seconds": 0.17880534000005355
+      },
+      {
+        "image_id": 36,
+        "original_size": [
+          640,
+          481
+        ],
+        "transformed_size": [
+          1064,
+          800
+        ],
+        "regions": 3,
+        "fallback": false,
+        "score_min": 0.23923587799072266,
+        "score_max": 0.9966921806335449,
+        "feature_abs_max": 4.314955234527588,
+        "labels": [
+          "umbrella",
+          "person",
+          "umbrella"
+        ],
+        "seconds": 1.5452040659999966
+      },
+      {
+        "image_id": 42,
+        "original_size": [
+          478,
+          640
+        ],
+        "transformed_size": [
+          800,
+          1071
+        ],
+        "regions": 5,
+        "fallback": false,
+        "score_min": 0.3455180823802948,
+        "score_max": 0.705237865447998,
+        "feature_abs_max": 5.092608451843262,
+        "labels": [
+          "teddy bear",
+          "suitcase",
+          "remote",
+          "chair",
+          "cell phone"
+        ],
+        "seconds": 0.16494219699995938
+      }
+    ],
+    "median_seconds_per_image": 0.2268296630001032,
+    "estimated_full_detector_hours_excluding_io": 7.7680968506371455,
+    "checks": "finite float16-safe vectors, count/mask agreement, padding, scores>=0.2, boxes inside original image",
+    "passed": true
+  },
+  "region_cache": {
+    "status": "complete",
+    "cache_dir": "/kaggle/working/cache/features/fasterrcnn_regions_v1",
+    "train2017": {
+      "shape": [
+        118287,
+        36,
+        1024
+      ],
+      "validation": {
+        "all_finite": true,
+        "counts_match_prefix_masks": true,
+        "padding_valid": true,
+        "images_checked": 118287,
+        "valid_regions": 1631017,
+        "count_min": 1,
+        "count_mean": 13.788641186267299,
+        "count_max": 36,
+        "fallback_images": 303,
+        "fallback_rate": 0.0025615663597859445
+      },
+      "active_seconds": 11780.208766524001,
+      "gpu": [
+        "Tesla T4",
+        "Tesla T4"
+      ],
+      "batch_size": 1,
+      "arrays_sha256": {
+        "features": "9384188f36a1e1d203585aafc6170d129c6513962748f1bb0b453cbf319c6cf1",
+        "mask": "65bbe8f7d90c6571d8c31479c1935d6932e63f27f39d6a3bb2da3a3fce33f5d8",
+        "num_regions": "e65553775f3cc0754266d507d37449c91d43285c0f4be30e98e1af6d20457d2f",
+        "boxes": "f9d424c315cc3b86a47cca089916af93215e0910fdd8ea83f9c0218fdde825c5",
+        "scores": "ed892374ae89a1c087708904e1b7c96a3b78a26771461a9abdd22ddeb90c76dd",
+        "labels": "716206e8232e7dd0ad70883e88f6007c314448ac7e3ec496ec69212d94ddb2e0",
+        "fallback": "c00404a527fb91bf73af0460014b8b36d7cad830963d0f72b0cb3722ede9c2d1"
+      }
+    },
+    "val2017": {
+      "shape": [
+        5000,
+        36,
+        1024
+      ],
+      "validation": {
+        "all_finite": true,
+        "counts_match_prefix_masks": true,
+        "padding_valid": true,
+        "images_checked": 5000,
+        "valid_regions": 67669,
+        "count_min": 1,
+        "count_mean": 13.5338,
+        "count_max": 36,
+        "fallback_images": 15,
+        "fallback_rate": 0.003
+      },
+      "active_seconds": 623.862526298999,
+      "gpu": [
+        "Tesla T4",
+        "Tesla T4"
+      ],
+      "batch_size": 1,
+      "arrays_sha256": {
+        "features": "fd7e0ec03820665bcb2e604e071902af12dfaeb2a2177cc3c64624d05aea4e0f",
+        "mask": "bbcaab14a4451730469339e4d023a3a8002f7a7577e4ac6166c343d0e5f82a7c",
+        "num_regions": "1a6438f1aae9c0bff89febdd0035cd5addf655b81de1e143e11d1a05377558de",
+        "boxes": "3dafda2d1920bfcf78871b59d938d35f4fbd28b7931c1080b9b984bd90d915a5",
+        "scores": "34c81d6c8aa3fa23cdd94e418122db199e38453a8e7a3fad08895ef5b4025dbf",
+        "labels": "aaa17cda97903fa1781ceae89502a35611e6c7e3a7604c4b000b1d853e4de81b",
+        "fallback": "976c9bbfc62d603a2973dc49be788f5e7af89171599a8209b0d9c8a32ac24dbc"
+      }
+    },
+    "train_rows": {
+      "images": 113287,
+      "regions_min": 1,
+      "regions_mean": 13.789666952077466,
+      "regions_max": 36,
+      "images_with_36": 13060,
+      "fallback_images": 293,
+      "fallback_rate": 0.002586351478986998,
+      "note": "fallback = one full-image ROI, not a detected object"
+    },
+    "val_rows": {
+      "images": 5000,
+      "regions_min": 1,
+      "regions_mean": 13.5338,
+      "regions_max": 36,
+      "images_with_36": 548,
+      "fallback_images": 15,
+      "fallback_rate": 0.003,
+      "note": "fallback = one full-image ROI, not a detected object"
+    },
+    "test_rows": {
+      "images": 5000,
+      "regions_min": 1,
+      "regions_mean": 13.7654,
+      "regions_max": 36,
+      "images_with_36": 574,
+      "fallback_images": 10,
+      "fallback_rate": 0.002,
+      "note": "fallback = one full-image ROI, not a detected object"
+    },
+    "total_active_extraction_seconds": 12404.071292823,
+    "total_active_extraction_time": "03:26:44",
+    "detector": {
+      "builder": "torchvision.models.detection.fasterrcnn_resnet50_fpn",
+      "weights_enum": "FasterRCNN_ResNet50_FPN_Weights.COCO_V1",
+      "url": "https://download.pytorch.org/models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth",
+      "weights_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+      "frozen": true,
+      "eval_mode": true,
+      "devices": [
+        "cuda:0",
+        "cuda:1"
+      ]
+    },
+    "producer_code_id": "4251f50b1691b1fcc2269cae5b7ba97e394a7b8217f532e59a3464889fb41f50",
+    "extraction_device": {
+      "parallel_devices": [
+        {
+          "device": "cuda:0",
+          "type": "cuda",
+          "gpu": "Tesla T4",
+          "compute_capability": [
+            7,
+            5
+          ],
+          "cuda_runtime": "12.6"
+        },
+        {
+          "device": "cuda:1",
+          "type": "cuda",
+          "gpu": "Tesla T4",
+          "compute_capability": [
+            7,
+            5
+          ],
+          "cuda_runtime": "12.6"
+        }
+      ],
+      "workers": 2,
+      "row_assignment": "contiguous row blocks of each source in source order, one block per GPU",
+      "per_worker_batch_size": 1,
+      "cudnn_benchmark": true,
+      "cudnn_deterministic": false
+    },
+    "deviation_agreed_with_laptop_A": "Extraction ran on all GPUs in parallel threads: one frozen COCO_V1 detector per GPU, batch 1 per photo, the unchanged extract_region_batch/_region_pack_records/_region_finish_source/load_region_cache; contiguous row blocks per GPU; cuDNN autotuning on for detector inference only. New producer_code_id derived from the protocol ID plus the orchestration source. Per-photo outputs do not depend on the GPU split; bit-identity across devices is not claimed."
+  },
+  "implementation": {
+    "b_implementation_id": "9af96b8dbaf46699003b9a4a817f68440fc813564a970c3ad16807230f68ba9e",
+    "stage3_implementation_id_not_reused": "04025c8a9845faac540bd62a85603c7aef48c19600754be1864ac5c7d58b70f2",
+    "region_producer_code_id": "ebdda01871a467a6c94208a2c1c2206d26db2db2e80ef7cd6b005878e0c76cf7"
+  },
+  "preflight": {
+    "passed": true,
+    "real_batch": {
+      "batch_size": 64,
+      "loss": 9.20240592956543,
+      "target_tokens": 846,
+      "gradient_norm_before_clip": 0.20386920869350433,
+      "trainable_parameters": 18132756,
+      "generation_lengths": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "mask_checks": {
+        "attention_sums_to_one": true,
+        "invalid_attention_zero": true,
+        "padding_value_invariance_incl_nan": true,
+        "mixed_counts_incl_single_region": true,
+        "all_invalid_rejected": true,
+        "causal": true,
+        "right_padding": true,
+        "image_conditioning": true
+      },
+      "greedy_end_stop_and_pad_start_blocked": true,
+      "greedy_length_limit": true,
+      "padded_region_gradients_zero": true,
+      "passed": true
+    },
+    "memorization": {
+      "images": 4,
+      "dropout": 0.0,
+      "steps": 775,
+      "initial_loss": 9.203413963317871,
+      "final_loss": 0.09443654119968414,
+      "greedy_exact": 1.0,
+      "token_accuracy": 0.9999999403953552,
+      "texts": [
+        {
+          "image_id": 9,
+          "target": "closeup of bins of food that include broccoli and bread .",
+          "generated": "closeup of bins of food that include broccoli and bread ."
+        },
+        {
+          "image_id": 25,
+          "target": "a giraffe eating food from the top of the tree .",
+          "generated": "a giraffe eating food from the top of the tree ."
+        },
+        {
+          "image_id": 30,
+          "target": "a flower vase is sitting on a porch stand .",
+          "generated": "a flower vase is sitting on a porch stand ."
+        },
+        {
+          "image_id": 34,
+          "target": "a zebra grazing on lush green grass in a field .",
+          "generated": "a zebra grazing on lush green grass in a field ."
+        }
+      ],
+      "seconds": 40.84141464899949,
+      "passed": true,
+      "note": "Disposable model; the real run re-seeds and builds a fresh model."
+    },
+    "resume_test": {
+      "train_images": 256,
+      "val_images": 64,
+      "batch_size": 32,
+      "epochs": 2,
+      "interrupted_at": {
+        "epoch": 1,
+        "next_index": 192,
+        "partial_token_count": 2330
+      },
+      "max_weight_difference": 0.0,
+      "max_adam_exp_avg_difference": 0.0,
+      "max_history_difference": 0.0,
+      "bitwise_identical": true,
+      "state_fields_identical": true,
+      "scaler_state_identical": true,
+      "completed_run_not_restarted": true,
+      "refused": [
+        "changed_config",
+        "changed_cache_identity"
+      ],
+      "seconds": 28.46492735100037,
+      "passed": true,
+      "note": "CUDA kernels may be nondeterministic; agreement is required within 1e-3."
+    },
+    "seconds": 70.75821125500079,
+    "timing_note": "Preflight time is separate from extraction and caption-training time."
+  },
+  "training": {
+    "status": "finished",
+    "summary": {
+      "run_name": "fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42",
+      "encoder": "fasterrcnn_resnet50_fpn_coco_v1_regions",
+      "decoder": "lstm_attention",
+      "feature_dim": 1024,
+      "max_regions": 36,
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 3,
+      "dropout": 0.3,
+      "seed": 42,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "trainable_parameters": 18132756,
+      "status": "finished",
+      "epochs_completed": 4,
+      "best_epoch": 1,
+      "stop_epoch": 4,
+      "optimizer_updates": 7084,
+      "val_loss": 4.745962823980434,
+      "bleu1": 0.4487799999999911,
+      "bleu4": 6.78606390086938e-11,
+      "cider_d": 0.05142162794394879,
+      "training_seconds": 990.7370289669998,
+      "training_time": "00:16:31",
+      "timing_note": "Active caption-training time: training passes, full validation and checkpoint writes; excludes pauses, preflight and region extraction (same convention as laptop A).",
+      "devices": [
+        {
+          "device": "cuda",
+          "name": "Tesla T4",
+          "torch": "2.13.0+cu126",
+          "torchvision": "0.28.0+cu126",
+          "cuda_runtime": "12.6"
+        }
+      ],
+      "test_metrics": "not evaluated in stage 5"
+    }
+  },
+  "final_status": {
+    "region_cache": "complete",
+    "training": "finished",
+    "test_evaluated": false,
+    "changed_settings": [
+      "Run on Kaggle (Tesla T4) because laptop B has no CUDA GPU; raw COCO JPEGs from the Kaggle COCO 2017 mirror, verified against the official zip directory when the network check ran.",
+      "Agreed with laptop A for speed: region extraction on both T4 GPUs in parallel (one frozen detector per GPU, batch 1, unchanged primitive), new producer_code_id; cuDNN autotuning during detector inference only."
+    ],
+    "unchanged": "split, vocabulary, decoder, batch 64, Adam 0.001, patience 3, seed 42, metrics",
+    "honesty_note": "CPU synthetic checks are not evidence of real-detector correctness; the real checks are the ones run above."
+  }
+}

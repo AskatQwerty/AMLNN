@@ -1,0 +1,1041 @@
+{
+  "paired_variants": {
+    "stacked": {
+      "pairs": [
+        {
+          "encoder": "efficientnet_v2_s",
+          "decoder": "lstm",
+          "baseline": 0.7559067507171473,
+          "variant": 0.7647602109215896,
+          "cider_delta": 0.008853460204442332,
+          "best_epoch_delta": -4,
+          "stop_epoch_delta": -4,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "efficientnet_v2_s",
+          "decoder": "rnn",
+          "baseline": 0.6331726004363132,
+          "variant": 0.628566459201046,
+          "cider_delta": -0.004606141235267147,
+          "best_epoch_delta": 3,
+          "stop_epoch_delta": 3,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "efficientnet_v2_s",
+          "decoder": "transformer",
+          "baseline": 0.7652468267668486,
+          "variant": 0.7800950307209185,
+          "cider_delta": 0.014848203954069827,
+          "best_epoch_delta": 2,
+          "stop_epoch_delta": 2,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "mobilenet_v2",
+          "decoder": "lstm",
+          "baseline": 0.7047057918271148,
+          "variant": 0.7463359460308998,
+          "cider_delta": 0.04163015420378502,
+          "best_epoch_delta": 11,
+          "stop_epoch_delta": 11,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "mobilenet_v2",
+          "decoder": "rnn",
+          "baseline": 0.5700939065644313,
+          "variant": 0.5254056024904601,
+          "cider_delta": -0.044688304073971175,
+          "best_epoch_delta": -6,
+          "stop_epoch_delta": -6,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "mobilenet_v2",
+          "decoder": "transformer",
+          "baseline": 0.733956964151004,
+          "variant": 0.7145129503567942,
+          "cider_delta": -0.01944401379420979,
+          "best_epoch_delta": -5,
+          "stop_epoch_delta": -5,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet18",
+          "decoder": "lstm",
+          "baseline": 0.5757103848256871,
+          "variant": 0.6111753058514424,
+          "cider_delta": 0.03546492102575527,
+          "best_epoch_delta": 5,
+          "stop_epoch_delta": 5,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet18",
+          "decoder": "rnn",
+          "baseline": 0.4797938560052323,
+          "variant": 0.4825724541480108,
+          "cider_delta": 0.0027785981427785322,
+          "best_epoch_delta": -3,
+          "stop_epoch_delta": -3,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet18",
+          "decoder": "transformer",
+          "baseline": 0.6809171758349254,
+          "variant": 0.6604454457594515,
+          "cider_delta": -0.02047173007547387,
+          "best_epoch_delta": -8,
+          "stop_epoch_delta": -8,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet50",
+          "decoder": "lstm",
+          "baseline": 0.7849292522563285,
+          "variant": 0.804683641587932,
+          "cider_delta": 0.01975438933160356,
+          "best_epoch_delta": -5,
+          "stop_epoch_delta": -5,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet50",
+          "decoder": "rnn",
+          "baseline": 0.6324473551178432,
+          "variant": 0.6231127319698717,
+          "cider_delta": -0.00933462314797151,
+          "best_epoch_delta": -1,
+          "stop_epoch_delta": -1,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet50",
+          "decoder": "transformer",
+          "baseline": 0.8046986153349001,
+          "variant": 0.8085378515111861,
+          "cider_delta": 0.0038392361762860094,
+          "best_epoch_delta": -1,
+          "stop_epoch_delta": -1,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "vgg19",
+          "decoder": "lstm",
+          "baseline": 0.6197004352712916,
+          "variant": 0.6458116110223635,
+          "cider_delta": 0.026111175751071913,
+          "best_epoch_delta": 0,
+          "stop_epoch_delta": 0,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "vgg19",
+          "decoder": "rnn",
+          "baseline": 0.5154134399965171,
+          "variant": 0.5294592540258465,
+          "cider_delta": 0.014045814029329362,
+          "best_epoch_delta": 5,
+          "stop_epoch_delta": 5,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "vgg19",
+          "decoder": "transformer",
+          "baseline": 0.6930482561332793,
+          "variant": 0.7506790930859192,
+          "cider_delta": 0.05763083695263993,
+          "best_epoch_delta": 10,
+          "stop_epoch_delta": 10,
+          "base_layers": 1,
+          "variant_layers": 2,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        }
+      ],
+      "wins": 10,
+      "mean_delta": 0.008427465162991218,
+      "median_delta": 0.008853460204442332,
+      "mean_best_epoch_delta": 0.2,
+      "by_decoder": {
+        "rnn": {
+          "wins": 2,
+          "mean_delta": -0.008360931257020388
+        },
+        "lstm": {
+          "wins": 5,
+          "mean_delta": 0.02636282010333162
+        },
+        "transformer": {
+          "wins": 3,
+          "mean_delta": 0.007280506642662421
+        }
+      }
+    },
+    "high_dropout": {
+      "pairs": [
+        {
+          "encoder": "efficientnet_v2_s",
+          "decoder": "lstm",
+          "baseline": 0.7559067507171473,
+          "variant": 0.7395931824733253,
+          "cider_delta": -0.01631356824382202,
+          "best_epoch_delta": -3,
+          "stop_epoch_delta": -3,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "efficientnet_v2_s",
+          "decoder": "rnn",
+          "baseline": 0.6331726004363132,
+          "variant": 0.6142152564440401,
+          "cider_delta": -0.018957343992273112,
+          "best_epoch_delta": 5,
+          "stop_epoch_delta": 5,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "efficientnet_v2_s",
+          "decoder": "transformer",
+          "baseline": 0.7652468267668486,
+          "variant": 0.6947047105375328,
+          "cider_delta": -0.07054211622931583,
+          "best_epoch_delta": 1,
+          "stop_epoch_delta": 1,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "mobilenet_v2",
+          "decoder": "lstm",
+          "baseline": 0.7047057918271148,
+          "variant": 0.687884884194585,
+          "cider_delta": -0.016820907632529747,
+          "best_epoch_delta": 0,
+          "stop_epoch_delta": 0,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "mobilenet_v2",
+          "decoder": "rnn",
+          "baseline": 0.5700939065644313,
+          "variant": 0.5590081678810876,
+          "cider_delta": -0.011085738683343616,
+          "best_epoch_delta": -3,
+          "stop_epoch_delta": -3,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "mobilenet_v2",
+          "decoder": "transformer",
+          "baseline": 0.733956964151004,
+          "variant": 0.6197042649579185,
+          "cider_delta": -0.11425269919308545,
+          "best_epoch_delta": -3,
+          "stop_epoch_delta": -3,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "resnet18",
+          "decoder": "lstm",
+          "baseline": 0.5757103848256871,
+          "variant": 0.5416662021545008,
+          "cider_delta": -0.03404418267118636,
+          "best_epoch_delta": 0,
+          "stop_epoch_delta": 0,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "resnet18",
+          "decoder": "rnn",
+          "baseline": 0.4797938560052323,
+          "variant": 0.44563436241130094,
+          "cider_delta": -0.034159493593931334,
+          "best_epoch_delta": -2,
+          "stop_epoch_delta": -2,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "resnet18",
+          "decoder": "transformer",
+          "baseline": 0.6809171758349254,
+          "variant": 0.5910331973615651,
+          "cider_delta": -0.08988397847336027,
+          "best_epoch_delta": 4,
+          "stop_epoch_delta": 4,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "resnet50",
+          "decoder": "lstm",
+          "baseline": 0.7849292522563285,
+          "variant": 0.7338836512532738,
+          "cider_delta": -0.051045601003054664,
+          "best_epoch_delta": -11,
+          "stop_epoch_delta": -11,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "resnet50",
+          "decoder": "rnn",
+          "baseline": 0.6324473551178432,
+          "variant": 0.6208263707658179,
+          "cider_delta": -0.011620984352025299,
+          "best_epoch_delta": -1,
+          "stop_epoch_delta": -1,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "resnet50",
+          "decoder": "transformer",
+          "baseline": 0.8046986153349001,
+          "variant": 0.7064233895676116,
+          "cider_delta": -0.09827522576728842,
+          "best_epoch_delta": 0,
+          "stop_epoch_delta": 0,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "vgg19",
+          "decoder": "lstm",
+          "baseline": 0.6197004352712916,
+          "variant": 0.6154961698081782,
+          "cider_delta": -0.004204265463113366,
+          "best_epoch_delta": 7,
+          "stop_epoch_delta": 7,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "vgg19",
+          "decoder": "rnn",
+          "baseline": 0.5154134399965171,
+          "variant": 0.5089049301257652,
+          "cider_delta": -0.006508509870751911,
+          "best_epoch_delta": 4,
+          "stop_epoch_delta": 4,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        },
+        {
+          "encoder": "vgg19",
+          "decoder": "transformer",
+          "baseline": 0.6930482561332793,
+          "variant": 0.6482997214112675,
+          "cider_delta": -0.04474853472201179,
+          "best_epoch_delta": 10,
+          "stop_epoch_delta": 10,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.5
+        }
+      ],
+      "wins": 0,
+      "mean_delta": -0.04149754332607288,
+      "median_delta": -0.03404418267118636,
+      "mean_best_epoch_delta": 0.5333333333333333,
+      "by_decoder": {
+        "rnn": {
+          "wins": 0,
+          "mean_delta": -0.016466414098465054
+        },
+        "lstm": {
+          "wins": 0,
+          "mean_delta": -0.02448570500274123
+        },
+        "transformer": {
+          "wins": 0,
+          "mean_delta": -0.08354051087701235
+        }
+      }
+    },
+    "image_layernorm": {
+      "pairs": [
+        {
+          "encoder": "efficientnet_v2_s",
+          "decoder": "lstm",
+          "baseline": 0.7559067507171473,
+          "variant": 0.7859981705443181,
+          "cider_delta": 0.030091419827170784,
+          "best_epoch_delta": 2,
+          "stop_epoch_delta": 2,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "efficientnet_v2_s",
+          "decoder": "rnn",
+          "baseline": 0.6331726004363132,
+          "variant": 0.6442038105471309,
+          "cider_delta": 0.011031210110817757,
+          "best_epoch_delta": 0,
+          "stop_epoch_delta": 0,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "efficientnet_v2_s",
+          "decoder": "transformer",
+          "baseline": 0.7652468267668486,
+          "variant": 0.7448617580536114,
+          "cider_delta": -0.020385068713237198,
+          "best_epoch_delta": -4,
+          "stop_epoch_delta": -4,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "mobilenet_v2",
+          "decoder": "lstm",
+          "baseline": 0.7047057918271148,
+          "variant": 0.7810364348944486,
+          "cider_delta": 0.07633064306733384,
+          "best_epoch_delta": 14,
+          "stop_epoch_delta": 14,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "mobilenet_v2",
+          "decoder": "rnn",
+          "baseline": 0.5700939065644313,
+          "variant": 0.5921918681286177,
+          "cider_delta": 0.02209796156418642,
+          "best_epoch_delta": -3,
+          "stop_epoch_delta": -3,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "mobilenet_v2",
+          "decoder": "transformer",
+          "baseline": 0.733956964151004,
+          "variant": 0.7643655987804671,
+          "cider_delta": 0.030408634629463083,
+          "best_epoch_delta": 11,
+          "stop_epoch_delta": 11,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet18",
+          "decoder": "lstm",
+          "baseline": 0.5757103848256871,
+          "variant": 0.6628609657993029,
+          "cider_delta": 0.08715058097361572,
+          "best_epoch_delta": 5,
+          "stop_epoch_delta": 5,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet18",
+          "decoder": "rnn",
+          "baseline": 0.4797938560052323,
+          "variant": 0.5325727461930342,
+          "cider_delta": 0.05277889018780191,
+          "best_epoch_delta": 2,
+          "stop_epoch_delta": 2,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet18",
+          "decoder": "transformer",
+          "baseline": 0.6809171758349254,
+          "variant": 0.6280202868574161,
+          "cider_delta": -0.052896888977509327,
+          "best_epoch_delta": -12,
+          "stop_epoch_delta": -12,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet50",
+          "decoder": "lstm",
+          "baseline": 0.7849292522563285,
+          "variant": 0.7912734318338515,
+          "cider_delta": 0.006344179577522979,
+          "best_epoch_delta": -11,
+          "stop_epoch_delta": -11,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet50",
+          "decoder": "rnn",
+          "baseline": 0.6324473551178432,
+          "variant": 0.6479525841389041,
+          "cider_delta": 0.015505229021060885,
+          "best_epoch_delta": 0,
+          "stop_epoch_delta": 0,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet50",
+          "decoder": "transformer",
+          "baseline": 0.8046986153349001,
+          "variant": 0.7961351884566387,
+          "cider_delta": -0.008563426878261393,
+          "best_epoch_delta": 0,
+          "stop_epoch_delta": 0,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "vgg19",
+          "decoder": "lstm",
+          "baseline": 0.6197004352712916,
+          "variant": 0.7549416220951173,
+          "cider_delta": 0.1352411868238257,
+          "best_epoch_delta": 13,
+          "stop_epoch_delta": 13,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "vgg19",
+          "decoder": "rnn",
+          "baseline": 0.5154134399965171,
+          "variant": 0.5975695031288579,
+          "cider_delta": 0.0821560631323408,
+          "best_epoch_delta": 5,
+          "stop_epoch_delta": 5,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "vgg19",
+          "decoder": "transformer",
+          "baseline": 0.6930482561332793,
+          "variant": 0.6996645790518987,
+          "cider_delta": 0.006616322918619466,
+          "best_epoch_delta": -1,
+          "stop_epoch_delta": -1,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        }
+      ],
+      "wins": 12,
+      "mean_delta": 0.031593795817650094,
+      "median_delta": 0.02209796156418642,
+      "mean_best_epoch_delta": 1.4,
+      "by_decoder": {
+        "rnn": {
+          "wins": 5,
+          "mean_delta": 0.03671387080324155
+        },
+        "lstm": {
+          "wins": 5,
+          "mean_delta": 0.0670316020538938
+        },
+        "transformer": {
+          "wins": 2,
+          "mean_delta": -0.008964085404185074
+        }
+      }
+    },
+    "small_hidden": {
+      "pairs": [
+        {
+          "encoder": "efficientnet_v2_s",
+          "decoder": "lstm",
+          "baseline": 0.7559067507171473,
+          "variant": 0.731294237346135,
+          "cider_delta": -0.024612513371012334,
+          "best_epoch_delta": 3,
+          "stop_epoch_delta": 3,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "efficientnet_v2_s",
+          "decoder": "rnn",
+          "baseline": 0.6331726004363132,
+          "variant": 0.5967470985799479,
+          "cider_delta": -0.03642550185636528,
+          "best_epoch_delta": -1,
+          "stop_epoch_delta": -1,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "efficientnet_v2_s",
+          "decoder": "transformer",
+          "baseline": 0.7652468267668486,
+          "variant": 0.736184635835454,
+          "cider_delta": -0.029062190931394616,
+          "best_epoch_delta": -4,
+          "stop_epoch_delta": -4,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "mobilenet_v2",
+          "decoder": "lstm",
+          "baseline": 0.7047057918271148,
+          "variant": 0.6873468970741604,
+          "cider_delta": -0.01735889475295438,
+          "best_epoch_delta": 7,
+          "stop_epoch_delta": 7,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "mobilenet_v2",
+          "decoder": "rnn",
+          "baseline": 0.5700939065644313,
+          "variant": 0.5227508386925611,
+          "cider_delta": -0.04734306787187015,
+          "best_epoch_delta": -3,
+          "stop_epoch_delta": -3,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "mobilenet_v2",
+          "decoder": "transformer",
+          "baseline": 0.733956964151004,
+          "variant": 0.68303286057779,
+          "cider_delta": -0.050924103573213975,
+          "best_epoch_delta": -4,
+          "stop_epoch_delta": -4,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet18",
+          "decoder": "lstm",
+          "baseline": 0.5757103848256871,
+          "variant": 0.5492658638025639,
+          "cider_delta": -0.026444521023123224,
+          "best_epoch_delta": 6,
+          "stop_epoch_delta": 6,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet18",
+          "decoder": "rnn",
+          "baseline": 0.4797938560052323,
+          "variant": 0.4016691458984812,
+          "cider_delta": -0.0781247101067511,
+          "best_epoch_delta": -3,
+          "stop_epoch_delta": -3,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet18",
+          "decoder": "transformer",
+          "baseline": 0.6809171758349254,
+          "variant": 0.6410869308011654,
+          "cider_delta": -0.03983024503375998,
+          "best_epoch_delta": 0,
+          "stop_epoch_delta": 0,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet50",
+          "decoder": "lstm",
+          "baseline": 0.7849292522563285,
+          "variant": 0.7539412684759061,
+          "cider_delta": -0.030987983780422335,
+          "best_epoch_delta": -6,
+          "stop_epoch_delta": -6,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet50",
+          "decoder": "rnn",
+          "baseline": 0.6324473551178432,
+          "variant": 0.6010901362796669,
+          "cider_delta": -0.031357218838176326,
+          "best_epoch_delta": 1,
+          "stop_epoch_delta": 1,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "resnet50",
+          "decoder": "transformer",
+          "baseline": 0.8046986153349001,
+          "variant": 0.7991830710088701,
+          "cider_delta": -0.005515544326029964,
+          "best_epoch_delta": 10,
+          "stop_epoch_delta": 10,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "vgg19",
+          "decoder": "lstm",
+          "baseline": 0.6197004352712916,
+          "variant": 0.5805997759798559,
+          "cider_delta": -0.03910065929143569,
+          "best_epoch_delta": -1,
+          "stop_epoch_delta": -1,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "vgg19",
+          "decoder": "rnn",
+          "baseline": 0.5154134399965171,
+          "variant": 0.488674537817724,
+          "cider_delta": -0.0267389021787931,
+          "best_epoch_delta": 6,
+          "stop_epoch_delta": 6,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        },
+        {
+          "encoder": "vgg19",
+          "decoder": "transformer",
+          "baseline": 0.6930482561332793,
+          "variant": 0.676568836275903,
+          "cider_delta": -0.01647941985737622,
+          "best_epoch_delta": 4,
+          "stop_epoch_delta": 4,
+          "base_layers": 1,
+          "variant_layers": 1,
+          "base_dropout": 0.3,
+          "variant_dropout": 0.3
+        }
+      ],
+      "wins": 0,
+      "mean_delta": -0.03335369845284524,
+      "median_delta": -0.030987983780422335,
+      "mean_best_epoch_delta": 1,
+      "by_decoder": {
+        "rnn": {
+          "wins": 0,
+          "mean_delta": -0.04399788017039119
+        },
+        "lstm": {
+          "wins": 0,
+          "mean_delta": -0.027700914443789592
+        },
+        "transformer": {
+          "wins": 0,
+          "mean_delta": -0.028362300744354953
+        }
+      }
+    }
+  },
+  "resnet50_depth": [
+    {
+      "decoder": "lstm",
+      "variant": "baseline",
+      "num_layers": 1,
+      "cider_d": 0.7849292522563285,
+      "bleu4": 0.24331247085174146,
+      "best_epoch": 16,
+      "stop_epoch": 19,
+      "val_loss": 2.178917135040478,
+      "trainable_parameters": 13404436,
+      "training_seconds": 1158.9112607999996,
+      "mean_epoch_seconds": 60.564054752631485
+    },
+    {
+      "decoder": "lstm",
+      "variant": "stacked",
+      "num_layers": 2,
+      "cider_d": 0.804683641587932,
+      "bleu4": 0.24969176619645309,
+      "best_epoch": 11,
+      "stop_epoch": 14,
+      "val_loss": 2.1644222123761825,
+      "trainable_parameters": 15505684,
+      "training_seconds": 1520.7657984000007,
+      "mean_epoch_seconds": 108.08781693571434
+    },
+    {
+      "decoder": "lstm",
+      "variant": "depth_3",
+      "num_layers": 3,
+      "cider_d": 0.8081027963316038,
+      "bleu4": 0.2514700996024224,
+      "best_epoch": 22,
+      "stop_epoch": 25,
+      "val_loss": 2.1222638227283497,
+      "trainable_parameters": 17606932,
+      "training_seconds": 2201.3925323000003,
+      "mean_epoch_seconds": 87.49054207999998
+    },
+    {
+      "decoder": "lstm",
+      "variant": "depth_4",
+      "num_layers": 4,
+      "cider_d": 0.7670166901890682,
+      "bleu4": 0.239931945761195,
+      "best_epoch": 10,
+      "stop_epoch": 13,
+      "val_loss": 2.2560509209402255,
+      "trainable_parameters": 19708180,
+      "training_seconds": 1213.8162505999999,
+      "mean_epoch_seconds": 92.77239446153841
+    },
+    {
+      "decoder": "transformer",
+      "variant": "baseline",
+      "num_layers": 1,
+      "cider_d": 0.8046986153349001,
+      "bleu4": 0.25307127300788124,
+      "best_epoch": 6,
+      "stop_epoch": 9,
+      "val_loss": 2.2763675724010146,
+      "trainable_parameters": 14474004,
+      "training_seconds": 653.4626783000003,
+      "mean_epoch_seconds": 72.17012955555553
+    },
+    {
+      "decoder": "transformer",
+      "variant": "stacked",
+      "num_layers": 2,
+      "cider_d": 0.8085378515111861,
+      "bleu4": 0.2492566312068522,
+      "best_epoch": 5,
+      "stop_epoch": 8,
+      "val_loss": 2.2505273740646845,
+      "trainable_parameters": 17626388,
+      "training_seconds": 686.1623231000012,
+      "mean_epoch_seconds": 85.25517731249988
+    },
+    {
+      "decoder": "transformer",
+      "variant": "depth_3",
+      "num_layers": 3,
+      "cider_d": 0.8578049436328543,
+      "bleu4": 0.26325920740195224,
+      "best_epoch": 21,
+      "stop_epoch": 24,
+      "val_loss": 2.0729966763489065,
+      "trainable_parameters": 20778772,
+      "training_seconds": 2449.2111528,
+      "mean_epoch_seconds": 101.3877567208333
+    },
+    {
+      "decoder": "transformer",
+      "variant": "depth_4",
+      "num_layers": 4,
+      "cider_d": 0.8387274415667194,
+      "bleu4": 0.2576459490109933,
+      "best_epoch": 16,
+      "stop_epoch": 19,
+      "val_loss": 2.126875850899778,
+      "trainable_parameters": 23931156,
+      "training_seconds": 2338.5939769000006,
+      "mean_epoch_seconds": 122.332718936842
+    }
+  ],
+  "encoders": [
+    {
+      "encoder": "efficientnet_v2_s",
+      "mean_cider": 0.7077033826083573,
+      "best_cider": 0.7859981705443181,
+      "best_decoder": "lstm",
+      "best_variant": "image_layernorm"
+    },
+    {
+      "encoder": "mobilenet_v2",
+      "mean_cider": 0.6594888651068227,
+      "best_cider": 0.7810364348944486,
+      "best_decoder": "lstm",
+      "best_variant": "image_layernorm"
+    },
+    {
+      "encoder": "resnet18",
+      "mean_cider": 0.5656282882469387,
+      "best_cider": 0.6809171758349254,
+      "best_decoder": "transformer",
+      "best_variant": "baseline"
+    },
+    {
+      "encoder": "resnet50",
+      "mean_cider": 0.7272745693039068,
+      "best_cider": 0.8085378515111861,
+      "best_decoder": "transformer",
+      "best_variant": "stacked"
+    },
+    {
+      "encoder": "vgg19",
+      "mean_cider": 0.6216554510153189,
+      "best_cider": 0.7549416220951173,
+      "best_decoder": "lstm",
+      "best_variant": "image_layernorm"
+    }
+  ],
+  "decoders": [
+    {
+      "decoder": "rnn",
+      "mean_cider": 0.5597619606795404,
+      "best_cider": 0.6479525841389041,
+      "best_variant": "image_layernorm",
+      "best_encoder": "resnet50"
+    },
+    {
+      "decoder": "lstm",
+      "mean_cider": 0.6964320835216528,
+      "best_cider": 0.804683641587932,
+      "best_variant": "stacked",
+      "best_encoder": "resnet50"
+    },
+    {
+      "decoder": "transformer",
+      "mean_cider": 0.7128562895676135,
+      "best_cider": 0.8085378515111861,
+      "best_variant": "stacked",
+      "best_encoder": "resnet50"
+    }
+  ],
+  "single_seed": 42,
+  "data_split": "validation",
+  "project_modified": false
+}

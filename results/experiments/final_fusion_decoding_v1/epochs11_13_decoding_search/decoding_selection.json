@@ -1,0 +1,920 @@
+{
+  "selected": {
+    "snapshot_epoch": 11,
+    "mode": "beam5_alpha0",
+    "beam_size": 5,
+    "length_penalty": 0.0,
+    "max_steps": 33,
+    "scores": {
+      "bleu1": 0.7413195222103705,
+      "bleu4": 0.31620121416779773,
+      "cider_d": 0.9801341231384657
+    },
+    "evaluation_batch_size": 64,
+    "amp": true,
+    "device": {
+      "device": "cuda:0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "torch": "2.13.0+cu126",
+      "cuda_runtime": "12.6",
+      "cpu_threads": 2
+    },
+    "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+    "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+    "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+  },
+  "candidates": [
+    {
+      "snapshot_epoch": 13,
+      "mode": "greedy",
+      "beam_size": 1,
+      "length_penalty": null,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7341919724643178,
+        "bleu4": 0.28347707416379225,
+        "cider_d": 0.9414635883821234
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam3_alpha0",
+      "beam_size": 3,
+      "length_penalty": 0.0,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7375916770676817,
+        "bleu4": 0.3088956038633756,
+        "cider_d": 0.9629087550250526
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam3_alpha0p3",
+      "beam_size": 3,
+      "length_penalty": 0.3,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7392182122324841,
+        "bleu4": 0.30698320198544893,
+        "cider_d": 0.9673663764389807
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam3_alpha0p6",
+      "beam_size": 3,
+      "length_penalty": 0.6,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.735983342797639,
+        "bleu4": 0.3047208371010532,
+        "cider_d": 0.9683485535779338
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam3_alpha0p9",
+      "beam_size": 3,
+      "length_penalty": 0.9,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7321258874168347,
+        "bleu4": 0.30246435403557526,
+        "cider_d": 0.969056910573722
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam3_alpha1p2",
+      "beam_size": 3,
+      "length_penalty": 1.2,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7273507864881027,
+        "bleu4": 0.29911479099690724,
+        "cider_d": 0.9675314183239363
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam5_alpha0",
+      "beam_size": 5,
+      "length_penalty": 0.0,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.740210064807007,
+        "bleu4": 0.3143023906132979,
+        "cider_d": 0.9714465659553252
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam5_alpha0p3",
+      "beam_size": 5,
+      "length_penalty": 0.3,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7357053321762466,
+        "bleu4": 0.31046881938380616,
+        "cider_d": 0.9703930481434618
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam5_alpha0p6",
+      "beam_size": 5,
+      "length_penalty": 0.6,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7308303686321866,
+        "bleu4": 0.30666791269440014,
+        "cider_d": 0.9664461777918123
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam5_alpha0p9",
+      "beam_size": 5,
+      "length_penalty": 0.9,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.725755240730068,
+        "bleu4": 0.30352869344234323,
+        "cider_d": 0.9646061045318267
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam5_alpha1p2",
+      "beam_size": 5,
+      "length_penalty": 1.2,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7197764308786572,
+        "bleu4": 0.2990805919564111,
+        "cider_d": 0.9599252949253896
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam7_alpha0",
+      "beam_size": 7,
+      "length_penalty": 0.0,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7379326676401955,
+        "bleu4": 0.3134075860816188,
+        "cider_d": 0.9751546115256755
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam7_alpha0p3",
+      "beam_size": 7,
+      "length_penalty": 0.3,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7323110243072201,
+        "bleu4": 0.30884110520675373,
+        "cider_d": 0.9710716410849338
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam7_alpha0p6",
+      "beam_size": 7,
+      "length_penalty": 0.6,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7272347773286897,
+        "bleu4": 0.3047374868203905,
+        "cider_d": 0.9660942276193971
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam7_alpha0p9",
+      "beam_size": 7,
+      "length_penalty": 0.9,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7207344496273724,
+        "bleu4": 0.30057094088595154,
+        "cider_d": 0.9615340217193558
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 13,
+      "mode": "beam7_alpha1p2",
+      "beam_size": 7,
+      "length_penalty": 1.2,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7142468880795653,
+        "bleu4": 0.2963221131967673,
+        "cider_d": 0.958455753571233
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "f0d08df9d414eecb7be0438ec39c8f435c50373938548e022f74f26ca5beb3e9",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "greedy",
+      "beam_size": 1,
+      "length_penalty": null,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7332474226803989,
+        "bleu4": 0.28472710795716094,
+        "cider_d": 0.938023589121302
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam3_alpha0",
+      "beam_size": 3,
+      "length_penalty": 0.0,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7413761461107828,
+        "bleu4": 0.31534816090658685,
+        "cider_d": 0.976347408459723
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam3_alpha0p3",
+      "beam_size": 3,
+      "length_penalty": 0.3,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7407918175027153,
+        "bleu4": 0.31135157517181883,
+        "cider_d": 0.9788818757019438
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam3_alpha0p6",
+      "beam_size": 3,
+      "length_penalty": 0.6,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7365712993327918,
+        "bleu4": 0.3069713666700139,
+        "cider_d": 0.9760220891215023
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam3_alpha0p9",
+      "beam_size": 3,
+      "length_penalty": 0.9,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7326710653124633,
+        "bleu4": 0.3040772915807314,
+        "cider_d": 0.9769244764410064
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam3_alpha1p2",
+      "beam_size": 3,
+      "length_penalty": 1.2,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7274084050743366,
+        "bleu4": 0.2992116368030623,
+        "cider_d": 0.9718572601536549
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5_alpha0",
+      "beam_size": 5,
+      "length_penalty": 0.0,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7413195222103705,
+        "bleu4": 0.31620121416779773,
+        "cider_d": 0.9801341231384657
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5_alpha0p3",
+      "beam_size": 5,
+      "length_penalty": 0.3,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7375525473408011,
+        "bleu4": 0.3121989820368696,
+        "cider_d": 0.9791545106102075
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5_alpha0p6",
+      "beam_size": 5,
+      "length_penalty": 0.6,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.732369307642792,
+        "bleu4": 0.30731499754746516,
+        "cider_d": 0.9743149717465002
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5_alpha0p9",
+      "beam_size": 5,
+      "length_penalty": 0.9,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7274276295075153,
+        "bleu4": 0.3038759633878535,
+        "cider_d": 0.9709606222856589
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5_alpha1p2",
+      "beam_size": 5,
+      "length_penalty": 1.2,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7209062449105026,
+        "bleu4": 0.2988442831036808,
+        "cider_d": 0.9638295643186849
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam7_alpha0",
+      "beam_size": 7,
+      "length_penalty": 0.0,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7383572670467942,
+        "bleu4": 0.3154757043367164,
+        "cider_d": 0.9798129101550891
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam7_alpha0p3",
+      "beam_size": 7,
+      "length_penalty": 0.3,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7342279539909234,
+        "bleu4": 0.31237853103804897,
+        "cider_d": 0.9786020314018977
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam7_alpha0p6",
+      "beam_size": 7,
+      "length_penalty": 0.6,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7284177779463792,
+        "bleu4": 0.30761572181783026,
+        "cider_d": 0.9744079448934192
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam7_alpha0p9",
+      "beam_size": 7,
+      "length_penalty": 0.9,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7219127634768636,
+        "bleu4": 0.30364445333814394,
+        "cider_d": 0.9683991084590653
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam7_alpha1p2",
+      "beam_size": 7,
+      "length_penalty": 1.2,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7151597184623586,
+        "bleu4": 0.2983742835012176,
+        "cider_d": 0.9603117295544343
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt"
+    }
+  ],
+  "historical_candidates": [
+    {
+      "snapshot_epoch": 10,
+      "mode": "greedy",
+      "beam_size": 1,
+      "length_penalty": null,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7336340611192115,
+        "bleu4": 0.285171985192873,
+        "cider_d": 0.9375309195015806
+      },
+      "evaluation_batch_size": 16,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "2303bb5b2d9fe46cde8885f350e72c3f3e282f9ec33b807d0b43380ab8f682f2",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch10_beam3\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch10_beam3\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 10,
+      "mode": "beam3",
+      "beam_size": 3,
+      "length_penalty": 0.6,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7371038499356944,
+        "bleu4": 0.3071142050960997,
+        "cider_d": 0.9733194297239733
+      },
+      "evaluation_batch_size": 16,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "2303bb5b2d9fe46cde8885f350e72c3f3e282f9ec33b807d0b43380ab8f682f2",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch10_beam3\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch10_beam3\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "greedy",
+      "beam_size": 1,
+      "length_penalty": null,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7332339242650038,
+        "bleu4": 0.28482146174180245,
+        "cider_d": 0.9385081041213583
+      },
+      "evaluation_batch_size": 16,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch11_beams3_5\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch11_beams3_5\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam3",
+      "beam_size": 3,
+      "length_penalty": 0.6,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7365980547387331,
+        "bleu4": 0.30700210932680516,
+        "cider_d": 0.9760928603235935
+      },
+      "evaluation_batch_size": 16,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch11_beams3_5\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch11_beams3_5\\best_snapshot\\best_weights.pt"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5",
+      "beam_size": 5,
+      "length_penalty": 0.6,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.732413558167249,
+        "bleu4": 0.30742143864345634,
+        "cider_d": 0.9741615864158868
+      },
+      "evaluation_batch_size": 16,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch11_beams3_5\\best_snapshot",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch11_beams3_5\\best_snapshot\\best_weights.pt"
+    }
+  ],
+  "historical_scores_used_for_selection": false,
+  "test_used": false
+}

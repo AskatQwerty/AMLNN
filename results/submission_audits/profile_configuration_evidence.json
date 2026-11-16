@@ -1,0 +1,554 @@
+{
+  "evidence": "Exact saved summary/config JSON; same profile settings checked across every encoder.",
+  "profiles": [
+    {
+      "decoder": "lstm",
+      "variant": "baseline",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 1,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": null,
+      "nhead": null,
+      "dim_feedforward": null,
+      "max_positions": null,
+      "norm_first": null,
+      "position_encoding": null,
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_lstm_baseline_seed42",
+        "mobilenet_v2_lstm_baseline_seed42",
+        "resnet18_lstm_baseline_seed42",
+        "resnet50_lstm_baseline_seed42",
+        "vgg19_lstm_baseline_seed42"
+      ]
+    },
+    {
+      "decoder": "lstm",
+      "variant": "depth_3",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 3,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": null,
+      "nhead": null,
+      "dim_feedforward": null,
+      "max_positions": null,
+      "norm_first": null,
+      "position_encoding": null,
+      "encoders_tested": [
+        "resnet50"
+      ],
+      "number_of_runs": 1,
+      "source_run_names": [
+        "resnet50_lstm_depth_3_seed42"
+      ]
+    },
+    {
+      "decoder": "lstm",
+      "variant": "depth_4",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 4,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": null,
+      "nhead": null,
+      "dim_feedforward": null,
+      "max_positions": null,
+      "norm_first": null,
+      "position_encoding": null,
+      "encoders_tested": [
+        "resnet50"
+      ],
+      "number_of_runs": 1,
+      "source_run_names": [
+        "resnet50_lstm_depth_4_seed42"
+      ]
+    },
+    {
+      "decoder": "lstm",
+      "variant": "high_dropout",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 1,
+      "dropout": 0.5,
+      "image_layernorm": false,
+      "d_model": null,
+      "nhead": null,
+      "dim_feedforward": null,
+      "max_positions": null,
+      "norm_first": null,
+      "position_encoding": null,
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_lstm_high_dropout_seed42",
+        "mobilenet_v2_lstm_high_dropout_seed42",
+        "resnet18_lstm_high_dropout_seed42",
+        "resnet50_lstm_high_dropout_seed42",
+        "vgg19_lstm_high_dropout_seed42"
+      ]
+    },
+    {
+      "decoder": "lstm",
+      "variant": "image_layernorm",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 1,
+      "dropout": 0.3,
+      "image_layernorm": true,
+      "d_model": null,
+      "nhead": null,
+      "dim_feedforward": null,
+      "max_positions": null,
+      "norm_first": null,
+      "position_encoding": null,
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_lstm_image_layernorm_seed42",
+        "mobilenet_v2_lstm_image_layernorm_seed42",
+        "resnet18_lstm_image_layernorm_seed42",
+        "resnet50_lstm_image_layernorm_seed42",
+        "vgg19_lstm_image_layernorm_seed42"
+      ]
+    },
+    {
+      "decoder": "lstm",
+      "variant": "small_hidden",
+      "embedding_size": 512,
+      "hidden_size": 256,
+      "num_layers": 1,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": null,
+      "nhead": null,
+      "dim_feedforward": null,
+      "max_positions": null,
+      "norm_first": null,
+      "position_encoding": null,
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_lstm_small_hidden_seed42",
+        "mobilenet_v2_lstm_small_hidden_seed42",
+        "resnet18_lstm_small_hidden_seed42",
+        "resnet50_lstm_small_hidden_seed42",
+        "vgg19_lstm_small_hidden_seed42"
+      ]
+    },
+    {
+      "decoder": "lstm",
+      "variant": "stacked",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 2,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": null,
+      "nhead": null,
+      "dim_feedforward": null,
+      "max_positions": null,
+      "norm_first": null,
+      "position_encoding": null,
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_lstm_stacked_seed42",
+        "mobilenet_v2_lstm_stacked_seed42",
+        "resnet18_lstm_stacked_seed42",
+        "resnet50_lstm_stacked_seed42",
+        "vgg19_lstm_stacked_seed42"
+      ]
+    },
+    {
+      "decoder": "rnn",
+      "variant": "baseline",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 1,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": null,
+      "nhead": null,
+      "dim_feedforward": null,
+      "max_positions": null,
+      "norm_first": null,
+      "position_encoding": null,
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_rnn_baseline_seed42",
+        "mobilenet_v2_rnn_baseline_seed42",
+        "resnet18_rnn_baseline_seed42",
+        "resnet50_rnn_baseline_seed42",
+        "vgg19_rnn_baseline_seed42"
+      ]
+    },
+    {
+      "decoder": "rnn",
+      "variant": "high_dropout",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 1,
+      "dropout": 0.5,
+      "image_layernorm": false,
+      "d_model": null,
+      "nhead": null,
+      "dim_feedforward": null,
+      "max_positions": null,
+      "norm_first": null,
+      "position_encoding": null,
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_rnn_high_dropout_seed42",
+        "mobilenet_v2_rnn_high_dropout_seed42",
+        "resnet18_rnn_high_dropout_seed42",
+        "resnet50_rnn_high_dropout_seed42",
+        "vgg19_rnn_high_dropout_seed42"
+      ]
+    },
+    {
+      "decoder": "rnn",
+      "variant": "image_layernorm",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 1,
+      "dropout": 0.3,
+      "image_layernorm": true,
+      "d_model": null,
+      "nhead": null,
+      "dim_feedforward": null,
+      "max_positions": null,
+      "norm_first": null,
+      "position_encoding": null,
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_rnn_image_layernorm_seed42",
+        "mobilenet_v2_rnn_image_layernorm_seed42",
+        "resnet18_rnn_image_layernorm_seed42",
+        "resnet50_rnn_image_layernorm_seed42",
+        "vgg19_rnn_image_layernorm_seed42"
+      ]
+    },
+    {
+      "decoder": "rnn",
+      "variant": "small_hidden",
+      "embedding_size": 512,
+      "hidden_size": 256,
+      "num_layers": 1,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": null,
+      "nhead": null,
+      "dim_feedforward": null,
+      "max_positions": null,
+      "norm_first": null,
+      "position_encoding": null,
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_rnn_small_hidden_seed42",
+        "mobilenet_v2_rnn_small_hidden_seed42",
+        "resnet18_rnn_small_hidden_seed42",
+        "resnet50_rnn_small_hidden_seed42",
+        "vgg19_rnn_small_hidden_seed42"
+      ]
+    },
+    {
+      "decoder": "rnn",
+      "variant": "stacked",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 2,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": null,
+      "nhead": null,
+      "dim_feedforward": null,
+      "max_positions": null,
+      "norm_first": null,
+      "position_encoding": null,
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_rnn_stacked_seed42",
+        "mobilenet_v2_rnn_stacked_seed42",
+        "resnet18_rnn_stacked_seed42",
+        "resnet50_rnn_stacked_seed42",
+        "vgg19_rnn_stacked_seed42"
+      ]
+    },
+    {
+      "decoder": "transformer",
+      "variant": "baseline",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 1,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": 512,
+      "nhead": 8,
+      "dim_feedforward": 2048,
+      "max_positions": 34,
+      "norm_first": true,
+      "position_encoding": "learned",
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_transformer_baseline_seed42",
+        "mobilenet_v2_transformer_baseline_seed42",
+        "resnet18_transformer_baseline_seed42",
+        "resnet50_transformer_baseline_seed42",
+        "vgg19_transformer_baseline_seed42"
+      ]
+    },
+    {
+      "decoder": "transformer",
+      "variant": "depth_3",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 3,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": 512,
+      "nhead": 8,
+      "dim_feedforward": 2048,
+      "max_positions": 34,
+      "norm_first": true,
+      "position_encoding": "learned",
+      "encoders_tested": [
+        "resnet50"
+      ],
+      "number_of_runs": 1,
+      "source_run_names": [
+        "resnet50_transformer_depth_3_seed42"
+      ]
+    },
+    {
+      "decoder": "transformer",
+      "variant": "depth_4",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 4,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": 512,
+      "nhead": 8,
+      "dim_feedforward": 2048,
+      "max_positions": 34,
+      "norm_first": true,
+      "position_encoding": "learned",
+      "encoders_tested": [
+        "resnet50"
+      ],
+      "number_of_runs": 1,
+      "source_run_names": [
+        "resnet50_transformer_depth_4_seed42"
+      ]
+    },
+    {
+      "decoder": "transformer",
+      "variant": "high_dropout",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 1,
+      "dropout": 0.5,
+      "image_layernorm": false,
+      "d_model": 512,
+      "nhead": 8,
+      "dim_feedforward": 2048,
+      "max_positions": 34,
+      "norm_first": true,
+      "position_encoding": "learned",
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_transformer_high_dropout_seed42",
+        "mobilenet_v2_transformer_high_dropout_seed42",
+        "resnet18_transformer_high_dropout_seed42",
+        "resnet50_transformer_high_dropout_seed42",
+        "vgg19_transformer_high_dropout_seed42"
+      ]
+    },
+    {
+      "decoder": "transformer",
+      "variant": "image_layernorm",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 1,
+      "dropout": 0.3,
+      "image_layernorm": true,
+      "d_model": 512,
+      "nhead": 8,
+      "dim_feedforward": 2048,
+      "max_positions": 34,
+      "norm_first": true,
+      "position_encoding": "learned",
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_transformer_image_layernorm_seed42",
+        "mobilenet_v2_transformer_image_layernorm_seed42",
+        "resnet18_transformer_image_layernorm_seed42",
+        "resnet50_transformer_image_layernorm_seed42",
+        "vgg19_transformer_image_layernorm_seed42"
+      ]
+    },
+    {
+      "decoder": "transformer",
+      "variant": "small_hidden",
+      "embedding_size": 256,
+      "hidden_size": 256,
+      "num_layers": 1,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": 256,
+      "nhead": 8,
+      "dim_feedforward": 2048,
+      "max_positions": 34,
+      "norm_first": true,
+      "position_encoding": "learned",
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_transformer_small_hidden_seed42",
+        "mobilenet_v2_transformer_small_hidden_seed42",
+        "resnet18_transformer_small_hidden_seed42",
+        "resnet50_transformer_small_hidden_seed42",
+        "vgg19_transformer_small_hidden_seed42"
+      ]
+    },
+    {
+      "decoder": "transformer",
+      "variant": "stacked",
+      "embedding_size": 512,
+      "hidden_size": 512,
+      "num_layers": 2,
+      "dropout": 0.3,
+      "image_layernorm": false,
+      "d_model": 512,
+      "nhead": 8,
+      "dim_feedforward": 2048,
+      "max_positions": 34,
+      "norm_first": true,
+      "position_encoding": "learned",
+      "encoders_tested": [
+        "efficientnet_v2_s",
+        "mobilenet_v2",
+        "resnet18",
+        "resnet50",
+        "vgg19"
+      ],
+      "number_of_runs": 5,
+      "source_run_names": [
+        "efficientnet_v2_s_transformer_stacked_seed42",
+        "mobilenet_v2_transformer_stacked_seed42",
+        "resnet18_transformer_stacked_seed42",
+        "resnet50_transformer_stacked_seed42",
+        "vgg19_transformer_stacked_seed42"
+      ]
+    }
+  ],
+  "run_count": 79,
+  "common_training": {
+    "seed": 42,
+    "batch_size": 64,
+    "max_epochs": 100,
+    "patience": 3,
+    "adam_learning_rate": 0.001,
+    "gradient_clip": 5.0,
+    "amp": true
+  },
+  "important_difference": "small_hidden RNN/LSTM keeps embedding512 and hidden256; small_hidden Transformer uses d_model/embedding256, heads8 and feedforward2048."
+}

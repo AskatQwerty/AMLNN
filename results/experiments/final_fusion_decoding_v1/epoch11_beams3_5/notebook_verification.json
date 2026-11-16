@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "original_notebook": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\FinalFusion.ipynb",
+  "original_notebook_sha256": "8dd71fa71c05ad4a959c52cc433fcdde53c5e8fb6e02adc311802d006e9c931b",
+  "staged_notebook": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_beam_followup_20261115\\FinalFusion.ipynb",
+  "staged_notebook_sha256": "1dc05731cab07dcaddab15948450ff6bd903852c444e91d3258b59a47c9818ca",
+  "original_cell_count": 33,
+  "staged_cell_count": 36,
+  "all_non_decoding_cells_preserved_except_added_imports": true,
+  "epoch10_beam_helper_preserved_exactly": true,
+  "epoch10_original_saved_outputs_preserved_exactly": true,
+  "historical_result_output": {
+    "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epoch10_beam3\\validation_comparison\\comparison.json",
+    "sha256": "fa748ad3f5e6e546f8b8e3729f9889cbf86363d3fae6520cf966c18b550c9f0f",
+    "status": "complete",
+    "snapshot_epoch": 10,
+    "full_validation_images": 5000,
+    "methods": [
+      "greedy",
+      "beam3"
+    ]
+  },
+  "saved_result_output": {
+    "path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_beam_followup_20261115\\validation_comparison\\comparison.json",
+    "sha256": "9d624aec36c15fc68f85f26661c3ad94997f5bcea6c302be6aae1293ae9dd227",
+    "status": "complete",
+    "snapshot_epoch": 11,
+    "full_validation_images": 5000,
+    "methods": [
+      "greedy",
+      "beam3",
+      "beam5"
+    ]
+  },
+  "imports_added": [],
+  "original_training_flag": true,
+  "training_flag_preserved": true,
+  "comparison_flag_default_false": true,
+  "snapshot_flag_default_false": true,
+  "original_core_hashes": {
+    "region_features": {
+      "source_sha256": "2d9a7cc34b7ac94f1ee9f40ac351261a1819471a38dd750336c4092dac0a1286",
+      "ast_sha256": "12dc3ba9b3e79b75aeb6668e7e2bbf32b1fd8904ff892c4d40d29e6a978ae10f"
+    },
+    "region_cache": {
+      "source_sha256": "95ec3dba585d9030f0b10cac6cbaa11346e7cd89c5cb9d3a62fb25a011117648",
+      "ast_sha256": "ac087c69248d3c06baa52b1d7cc6cc591a6142af1eb23d3d6176981190790728"
+    },
+    "models": {
+      "source_sha256": "7bbd739af27252323c0851e379f0fe7eeae0262ae8f7cf2246f19fc83ee2cda9",
+      "ast_sha256": "aac377250db8748d6171a43d3dbb5c353a3b3f3977bb2b4314c71fd527fa9c80"
+    },
+    "runtime": {
+      "source_sha256": "d92dcdac4d4c932a412849167c45d25887a82d443e56fbc03ac0de78e05dc82c",
+      "ast_sha256": "56dbfbfbd94403e338dad3f2a6252836a4507418c27a043d872ca04ed07355b4"
+    }
+  },
+  "staged_core_hashes": {
+    "region_features": {
+      "source_sha256": "2d9a7cc34b7ac94f1ee9f40ac351261a1819471a38dd750336c4092dac0a1286",
+      "ast_sha256": "12dc3ba9b3e79b75aeb6668e7e2bbf32b1fd8904ff892c4d40d29e6a978ae10f"
+    },
+    "region_cache": {
+      "source_sha256": "95ec3dba585d9030f0b10cac6cbaa11346e7cd89c5cb9d3a62fb25a011117648",
+      "ast_sha256": "ac087c69248d3c06baa52b1d7cc6cc591a6142af1eb23d3d6176981190790728"
+    },
+    "models": {
+      "source_sha256": "7bbd739af27252323c0851e379f0fe7eeae0262ae8f7cf2246f19fc83ee2cda9",
+      "ast_sha256": "aac377250db8748d6171a43d3dbb5c353a3b3f3977bb2b4314c71fd527fa9c80"
+    },
+    "runtime": {
+      "source_sha256": "d92dcdac4d4c932a412849167c45d25887a82d443e56fbc03ac0de78e05dc82c",
+      "ast_sha256": "56dbfbfbd94403e338dad3f2a6252836a4507418c27a043d872ca04ed07355b4"
+    }
+  },
+  "beam_source_sha256": "0c9300b08eb999935992e6ed5909b9ed4d37a4da720df9eccc9ce1c99aa71b88",
+  "runner_source_sha256": "e6d7c3861d86f962ed2b0668c96697dd1884a30621e78ee59efb5351b0e6442d",
+  "snapshot_source_sha256": "34d65fb0537f6f1cc110faf09224af98fe42523454c4b3db49ae7d37680fc247",
+  "snapshot_metadata_sha256": "427618c84e448c751bf10316dff762cfc2ebb66ddeded004a3abbe16a89cd5df",
+  "snapshot_epoch": 11,
+  "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+  "decorators_and_function_asts_preserved": true,
+  "inline_code_has_no_local_imports_or_file_dependency": true,
+  "project_written": false,
+  "gpu_used": false,
+  "training_or_evaluation_started": false
+}

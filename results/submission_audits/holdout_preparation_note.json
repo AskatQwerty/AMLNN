@@ -1,0 +1,8 @@
+{
+  "status": "preparation_only; no responses or scores collected",
+  "sample_size": 100,
+  "selection_method": "random.Random(42).sample(sorted(saved_test_image_ids),100)",
+  "response_workbook_sha256": "a217061c1a2f5cba6d6ea13210c4aa23f6dbfb04b9ce2ec4bf9842de3e61a236",
+  "actual_workbook_matches_verified_initial_blank_template": true,
+  "interpretation": "100 held-out test images were prepared/copied for a manual Qwen comparison. No responses or scores are present in the unchanged blank workbook. Do not describe the test images as never accessed; distinguish preparation from training/model selection/test metrics."
+}

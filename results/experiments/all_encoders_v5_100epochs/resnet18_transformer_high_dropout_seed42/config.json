@@ -1,0 +1,102 @@
+{
+  "implementation": "097d3721f9bfe2111d91345835f0cfab782ed5f1bd9a52d3263ab945cb00cc91",
+  "config": {
+    "encoder": "resnet18",
+    "variant": "high_dropout",
+    "seed": 42,
+    "decoder": "transformer",
+    "architecture": "image_prefix_causal",
+    "position_encoding": "learned",
+    "embedding_size": 512,
+    "d_model": 512,
+    "hidden_size": 512,
+    "num_layers": 1,
+    "dropout": 0.5,
+    "image_layernorm": false,
+    "nhead": 8,
+    "dim_feedforward": 2048,
+    "max_positions": 34,
+    "norm_first": true,
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "max_epochs": 100,
+    "patience": 3,
+    "gradient_clip": 5.0,
+    "amp": true,
+    "max_generation_steps": 33,
+    "checkpoint_every_batches": 200,
+    "print_every_batches": 100,
+    "overfit_images": 4,
+    "overfit_steps": 200,
+    "overfit_target_loss": 0.1,
+    "run_name": "resnet18_transformer_high_dropout_seed42"
+  },
+  "data": {
+    "source_id": "ebc5c99a1d4cb77eaf6d1d46b16f3f83db1ca698d663307fd77a87a2290e0a9d",
+    "split_id": "8e2ac80c42ddee7b32a319cb01444c8b8831af2cd1a6c881e2d41cd8e5c5e1a2",
+    "prepared_sha256": "eb24d7d0c4e36a0139867cb937e86312d58cc8f642f24f74d3b7612f9e8aaf8d",
+    "vocab_sha256": "2cf42401bcd0074ab8fc431d323788de78baf0f616e66639edcdc542b15f2c55",
+    "splits_sha256": "fc60cb5fc0f55422cf3aa7d76a97ecc149c04dd286bdaa6a26a9692e8a850770",
+    "annotations_sha256": {
+      "train2017": "4b62086319480e0739ef390d04084515defb9c213ff13605a036061e33314317",
+      "val2017": "afe3b30e403dd7f228e2373023abbd60042a6e10ec6874d3652df034d289ebb9"
+    },
+    "feature_cache_keys": {
+      "resnet50": {
+        "train2017": "619a5972e8e87bccf6cccbf93b4199d24b257e429da4d5bcf8cccf5db8251f56",
+        "val2017": "619a5972e8e87bccf6cccbf93b4199d24b257e429da4d5bcf8cccf5db8251f56"
+      },
+      "resnet18": {
+        "train2017": "5e566ab62109ad6aa885b1c0afed36c57fc16ce9484993b60f7142e9e65b2251",
+        "val2017": "5e566ab62109ad6aa885b1c0afed36c57fc16ce9484993b60f7142e9e65b2251"
+      },
+      "vgg19": {
+        "train2017": "fba125b31149cc7a5bd728dbab3f6dbaceb99c0bccfbf8f0e8270207bbd92c66",
+        "val2017": "fba125b31149cc7a5bd728dbab3f6dbaceb99c0bccfbf8f0e8270207bbd92c66"
+      },
+      "mobilenet_v2": {
+        "train2017": "dd1260b5c2e832da6ed39d442f475e025f1bca83419bae3ac4cb3417fad6ebaf",
+        "val2017": "dd1260b5c2e832da6ed39d442f475e025f1bca83419bae3ac4cb3417fad6ebaf"
+      },
+      "efficientnet_v2_s": {
+        "train2017": "8c6e01f894a7b2a08288913716d766cd156a64c556253e06221ffa853805fbcf",
+        "val2017": "8c6e01f894a7b2a08288913716d766cd156a64c556253e06221ffa853805fbcf"
+      }
+    }
+  },
+  "metrics": {
+    "package": "pycocoevalcap",
+    "version": "1.2",
+    "bleu": {
+      "implementation": "Bleu(4)",
+      "aggregation": "corpus",
+      "scale": "0..1; no multiplication by 100"
+    },
+    "cider_d": {
+      "implementation": "Cider(n=4,sigma=6.0)",
+      "ngrams": 4,
+      "sigma": 6.0,
+      "scale": "native score, including the implementation's factor 10; no extra multiplication",
+      "document_frequency": "all reference sets in the evaluated split"
+    },
+    "tokenization": {
+      "name": "project_regex_v1",
+      "normalization": "NFKC,lowercase,smart quotes,whitespace",
+      "token_pattern": "[^\\W_]+(?:'[^\\W_]+)*|[^\\w\\s]",
+      "reference_vocabulary_mapping": false,
+      "note": "Same tokenizer for predictions and raw references; not COCO leaderboard PTB tokenization."
+    },
+    "source_sha256": {
+      "bleu": "05b74a92b32e071eacfb954ef34328137cfd1b82c563572648633087def23776",
+      "bleu_scorer": "413ccfef71b88c5f11d25d05fdcf08625a1559338ffbb7c2787e800116eaecdd",
+      "cider": "268b71cb096ccd10cf4a7cd49a9a72072001922f1876f4e88833e1eb4649cfcb",
+      "cider_scorer": "299037838373391c3335e066c867ba2d6dd8617d2c8fb2c4193f32620a774adc"
+    }
+  },
+  "feature_dim": 512,
+  "split_sizes": {
+    "train": 113287,
+    "val": 5000,
+    "test": 5000
+  }
+}

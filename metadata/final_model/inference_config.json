@@ -1,0 +1,32 @@
+{
+  "snapshot_epoch": 11,
+  "mode": "beam5_alpha0",
+  "beam_size": 5,
+  "length_penalty": 0.0,
+  "max_steps": 33,
+  "scores": {
+    "bleu1": 0.7413195222103705,
+    "bleu4": 0.31620121416779773,
+    "cider_d": 0.9801341231384657
+  },
+  "evaluation_batch_size": 64,
+  "amp": true,
+  "device": {
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "torch": "2.13.0+cu126",
+    "cuda_runtime": "12.6",
+    "cpu_threads": 2
+  },
+  "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+  "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+  "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt",
+  "weights_sha256": "f97a57d7adbbbe6b3a6d77589ab2a785520e9a2c7b8a99c573dd9d13c44f7b6f",
+  "selected_weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\selected_model\\weights.pt",
+  "vocabulary_sha256": "eaa9db6d3d790e95821831c2f198d8365ae1923c7f65b9d420a835dea86657fa",
+  "source_run_config_sha256": "750b424c874f606850460837a3f3dbe5f5e06ff44e26407691619ecd3334be4b",
+  "selection_criterion": "Highest full-validation CIDEr-D among 32 epoch11/13 pairs with common batch64/AMP settings; historical batch16 scores are context only",
+  "test_used": false,
+  "training_resumed": false,
+  "cnn_trainable": false
+}

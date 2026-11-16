@@ -1,0 +1,105 @@
+{
+  "status": "complete",
+  "identity_sha256": "cdcb862898dcc0c2a3703f92f33f77b129941a48d32aba7a42033990ece3ca3d",
+  "snapshot_epoch": 11,
+  "snapshot_full_checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+  "snapshot_scope": "Best available at snapshot time; all decoding settings must use this same immutable snapshot.",
+  "validation_images": 5000,
+  "device": {
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "torch": "2.13.0+cu126",
+    "cuda_runtime": "12.6",
+    "cpu_threads": 2
+  },
+  "results": {
+    "greedy": {
+      "status": "complete",
+      "identity_sha256": "cdcb862898dcc0c2a3703f92f33f77b129941a48d32aba7a42033990ece3ca3d",
+      "mode": "greedy",
+      "images": 5000,
+      "scores": {
+        "bleu1": 0.7332339242650038,
+        "bleu4": 0.28482146174180245,
+        "cider_d": 0.9385081041213583
+      },
+      "generation_seconds": 77.59124860000156,
+      "metric_seconds": 5.938094400000409,
+      "evaluation_seconds": 83.52934300000197,
+      "predictions_sha256": "eaa9c7dca8bc4c5de4d214fa7a9a35c0ce388cca7574e33e3ad74d34382c14d5",
+      "average_words": 10.8558,
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_beam_followup_20261115\\validation_comparison\\greedy\\validation_predictions.json",
+      "metrics_computed": true
+    },
+    "beam3": {
+      "status": "complete",
+      "identity_sha256": "cdcb862898dcc0c2a3703f92f33f77b129941a48d32aba7a42033990ece3ca3d",
+      "mode": "beam3",
+      "images": 5000,
+      "scores": {
+        "bleu1": 0.7365980547387331,
+        "bleu4": 0.30700210932680516,
+        "cider_d": 0.9760928603235935
+      },
+      "generation_seconds": 180.94323830004578,
+      "metric_seconds": 6.224553000000014,
+      "evaluation_seconds": 187.1677913000458,
+      "predictions_sha256": "836559512c1a510113a27a314bf4f38e32bbadb614c9b470ee072583790a6274",
+      "average_words": 10.6092,
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_beam_followup_20261115\\validation_comparison\\beam3\\validation_predictions.json",
+      "metrics_computed": true
+    },
+    "beam5": {
+      "status": "complete",
+      "identity_sha256": "cdcb862898dcc0c2a3703f92f33f77b129941a48d32aba7a42033990ece3ca3d",
+      "mode": "beam5",
+      "images": 5000,
+      "scores": {
+        "bleu1": 0.732413558167249,
+        "bleu4": 0.30742143864345634,
+        "cider_d": 0.9741615864158868
+      },
+      "generation_seconds": 202.4394900000225,
+      "metric_seconds": 8.909919400000945,
+      "evaluation_seconds": 211.34940940002343,
+      "predictions_sha256": "b535884a12ee34404734a1f9af8159126332a7a4ff9e28cf95b4152e6c6e66b5",
+      "average_words": 10.5678,
+      "predictions_file": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\fusion_beam_followup_20261115\\validation_comparison\\beam5\\validation_predictions.json",
+      "metrics_computed": true
+    }
+  },
+  "test_evaluated": false,
+  "model_training_performed": false,
+  "original_checkpoints_modified": false,
+  "timing_note": "Per-mode generation includes cache loading, device copies and decoding; scoring is separate. Model loading, artifact I/O and pauses are excluded. Main training continues on the same GPU, so these times are not an isolated architecture benchmark.",
+  "differences_from_greedy": {
+    "beam3": {
+      "cider_d": 0.037584756202235226,
+      "bleu1": 0.0033641304737292987,
+      "bleu4": 0.02218064758500271
+    },
+    "beam5": {
+      "cider_d": 0.03565348229452847,
+      "bleu1": -0.0008203660977548211,
+      "bleu4": 0.022599976901653884
+    }
+  },
+  "beam_deltas": {
+    "beam3": {
+      "cider_d": 0.037584756202235226,
+      "bleu1": 0.0033641304737292987,
+      "bleu4": 0.02218064758500271
+    },
+    "beam5": {
+      "cider_d": 0.03565348229452847,
+      "bleu1": -0.0008203660977548211,
+      "bleu4": 0.022599976901653884
+    }
+  },
+  "selected_mode_by_validation_cider": "beam3",
+  "beam_minus_greedy": {
+    "cider_d": 0.037584756202235226,
+    "bleu1": 0.0033641304737292987,
+    "bleu4": 0.02218064758500271
+  }
+}

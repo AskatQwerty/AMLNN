@@ -1,0 +1,198 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "full_checkpoint_unpickled": false,
+  "models_executed": false,
+  "results": [
+    {
+      "variant": "protocol",
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\stage5_received_20261115\\protocol\\experiments\\fasterrcnn_regions_v1\\fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42\\best_weights.pt",
+      "weights_only_load": true,
+      "tensor_count": 23,
+      "parameter_elements": 18132756,
+      "all_finite": true,
+      "shapes": {
+        "image_projection.weight": [
+          512,
+          1024
+        ],
+        "image_projection.bias": [
+          512
+        ],
+        "embedding.weight": [
+          10004,
+          512
+        ],
+        "attention_visual.weight": [
+          512,
+          512
+        ],
+        "attention_visual.bias": [
+          512
+        ],
+        "attention_hidden.weight": [
+          512,
+          512
+        ],
+        "attention_score.weight": [
+          1,
+          512
+        ],
+        "input_fusion.weight": [
+          512,
+          1024
+        ],
+        "input_fusion.bias": [
+          512
+        ],
+        "recurrent.weight_ih_l0": [
+          2048,
+          512
+        ],
+        "recurrent.weight_hh_l0": [
+          2048,
+          512
+        ],
+        "recurrent.bias_ih_l0": [
+          2048
+        ],
+        "recurrent.bias_hh_l0": [
+          2048
+        ],
+        "recurrent.weight_ih_l1": [
+          2048,
+          512
+        ],
+        "recurrent.weight_hh_l1": [
+          2048,
+          512
+        ],
+        "recurrent.bias_ih_l1": [
+          2048
+        ],
+        "recurrent.bias_hh_l1": [
+          2048
+        ],
+        "recurrent.weight_ih_l2": [
+          2048,
+          512
+        ],
+        "recurrent.weight_hh_l2": [
+          2048,
+          512
+        ],
+        "recurrent.bias_ih_l2": [
+          2048
+        ],
+        "recurrent.bias_hh_l2": [
+          2048
+        ],
+        "output.weight": [
+          10004,
+          512
+        ],
+        "output.bias": [
+          10004
+        ]
+      }
+    },
+    {
+      "variant": "projln",
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\stage5_received_20261115\\projln\\experiments\\fasterrcnn_regions_projln_v1\\fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42\\best_weights.pt",
+      "weights_only_load": true,
+      "tensor_count": 25,
+      "parameter_elements": 18133780,
+      "all_finite": true,
+      "shapes": {
+        "image_projection.weight": [
+          512,
+          1024
+        ],
+        "image_projection.bias": [
+          512
+        ],
+        "embedding.weight": [
+          10004,
+          512
+        ],
+        "attention_visual.weight": [
+          512,
+          512
+        ],
+        "attention_visual.bias": [
+          512
+        ],
+        "attention_hidden.weight": [
+          512,
+          512
+        ],
+        "attention_score.weight": [
+          1,
+          512
+        ],
+        "input_fusion.weight": [
+          512,
+          1024
+        ],
+        "input_fusion.bias": [
+          512
+        ],
+        "recurrent.weight_ih_l0": [
+          2048,
+          512
+        ],
+        "recurrent.weight_hh_l0": [
+          2048,
+          512
+        ],
+        "recurrent.bias_ih_l0": [
+          2048
+        ],
+        "recurrent.bias_hh_l0": [
+          2048
+        ],
+        "recurrent.weight_ih_l1": [
+          2048,
+          512
+        ],
+        "recurrent.weight_hh_l1": [
+          2048,
+          512
+        ],
+        "recurrent.bias_ih_l1": [
+          2048
+        ],
+        "recurrent.bias_hh_l1": [
+          2048
+        ],
+        "recurrent.weight_ih_l2": [
+          2048,
+          512
+        ],
+        "recurrent.weight_hh_l2": [
+          2048,
+          512
+        ],
+        "recurrent.bias_ih_l2": [
+          2048
+        ],
+        "recurrent.bias_hh_l2": [
+          2048
+        ],
+        "output.weight": [
+          10004,
+          512
+        ],
+        "output.bias": [
+          10004
+        ],
+        "visual_norm.weight": [
+          512
+        ],
+        "visual_norm.bias": [
+          512
+        ]
+      }
+    }
+  ]
+}

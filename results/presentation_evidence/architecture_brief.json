@@ -1,0 +1,209 @@
+{
+  "project_title": "Image Captioning: final submission",
+  "suggested_architecture_title": "Two visual representations, one caption decoder",
+  "verified_against": {
+    "models_path": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\final_fusion\\models.py",
+    "models_sha256": "727f7ac7e9659a5ce4be3dc66a30f55e6714b87a3a95162f4d0a2ee72cd6e559",
+    "submission_path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\AML_Final_Submission.ipynb",
+    "submission_models_ast_matches_workspace": true,
+    "config_path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42\\config.json",
+    "selection_path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\decoding_selection.json",
+    "selected_weights_sha256": "f97a57d7adbbbe6b3a6d77589ab2a785520e9a2c7b8a99c573dd9d13c44f7b6f",
+    "inspection": "Static code + JSON artifacts + weights_only=True CPU state dictionary; no model forward, GPU, training or inference."
+  },
+  "one_sentence": "A pretrained caption Transformer keeps its global ResNet50 image prefix and gains three gated cross-attention blocks over a shared memory of 49 spatial ResNet50 tokens and up to 36 Faster R-CNN region tokens.",
+  "architecture": {
+    "frozen_encoders": [
+      {
+        "name": "ResNet50",
+        "weights": "IMAGENET1K_V2",
+        "preprocessing": "EXIF RGB, proportional resize + centered padding to 224 x 224, ImageNet normalization",
+        "feature_map": "[B,2048,7,7] after layer4, before global pooling",
+        "grid": "[B,49,2048]",
+        "global": "[B,2048] from adaptive average pooling",
+        "precision": "Grid cached as float16, read as float32; actual prefix uses the original cached float32 global vector, not mean of already rounded grid.",
+        "sharing": "Global vector and grid come from the same classification ResNet50; the detector has its own separate ResNet50-FPN backbone."
+      },
+      {
+        "name": "Faster R-CNN ResNet50-FPN",
+        "weights": "COCO_V1",
+        "preprocessing": "Original RGB in [0,1]; detector's internal aspect-preserving transform min_size=800,max_size=1333; detector inference float32",
+        "feature_extraction": "Final detections -> score >=0.2 -> class-agnostic NMS IoU0.5 -> top36 -> re-pool final boxes -> two-layer ROI box head",
+        "vectors": "[B,36,1024] with zero padding",
+        "normalized_boxes": "[B,36,4] xyxy divided by width,height,width,height",
+        "valid_mask": "[B,36] bool, True means real ROI",
+        "fallback": "Full-image ROI when no detections survive, so at least one valid region per image",
+        "caption_inputs": "ROI feature vectors, normalized box coordinates and validity mask. No object labels, class words or detection scores are fed into the caption decoder."
+      }
+    ],
+    "trainable_visual_fusion": {
+      "grid": "Linear(2048,512) -> LayerNorm(512) -> add learned row + column + source-0 embeddings",
+      "regions": "Linear(1024,512) -> LayerNorm(512) -> add Linear(4,512)(normalized xyxy) + source-1 embedding; padded positions re-zeroed",
+      "memory": "Concatenate along tokens: [B,49+36,512]=[B,85,512] in padded batches; effective tokens 49+K with 1<=K<=36",
+      "memory_mask": "[B,85], False for every grid token and valid ROI; True for padded ROI. In PyTorch attention, True means ignore.",
+      "position_order": "Visual LayerNorm happens BEFORE adding position/source embeddings; no extra visual encoder stack or post-sum LayerNorm.",
+      "sharing": "The same fused visual memory is supplied as keys and values to all three decoder layers."
+    },
+    "decoder_input": {
+      "prefix": "Linear(2048,512)(original global feature), prepended as position0; not multiplied by sqrt(512)",
+      "words": "Embedding(10004,512,padding_idx=0) multiplied by sqrt(512); learned positions start at1",
+      "positions": "Learned Embedding(34,512), added to prefix and word tokens; then dropout0.3",
+      "teacher_forcing": "Input: <start>,w1,...,wN. Target: w1,...,wN,<end>. N<=32; text input length<=33; with image prefix total<=34.",
+      "tensor": "[B,1+T,512],T<=33",
+      "self_attention_masks": "Boolean upper-triangular causal mask (future tokens blocked), plus padding-key mask. The image prefix is always valid; all words can attend to it."
+    },
+    "block": {
+      "name": "GatedCrossAttentionLayer, custom forward derived from nn.TransformerDecoderLayer",
+      "count": 3,
+      "d_model": 512,
+      "heads": 8,
+      "head_dim": 64,
+      "ffn_hidden": 2048,
+      "dropout": 0.3,
+      "activation": "ReLU",
+      "norm_order": "Pre-norm for all three sublayers; each layer has independent norm1,norm2,norm3 and a scalar cross_gate",
+      "ordered_steps": [
+        "q=LN1(x); a=masked multi-head self-attention(q,q,q); u=x+dropout(a)",
+        "q=LN2(u); c=multi-head cross-attention(q,M,M) with visual padding mask; v=u+tanh(g_l)*dropout(c)",
+        "h=Linear2(dropout(ReLU(Linear1(LN3(v))))); output=v+dropout(h)"
+      ],
+      "cross_attention": "Queries from every causal stream position (including global prefix); K,V are the full visual memory. No causal mask over visual positions.",
+      "gates": "One learned scalar per decoder layer, tanh-bounded in (-1,1), not a per-image/per-token gate and not a sigmoid probability.",
+      "initial_gates": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selected_epoch11_tanh_gate_values": [
+        0.037433356046676636,
+        -0.07044621556997299,
+        -0.05577971786260605
+      ],
+      "dropout_sites": "MultiheadAttention attention probabilities, self/cross/FFN residual outputs; additional dropout between FFN ReLU and Linear2."
+    },
+    "output": "Discard image-prefix position -> final LayerNorm(512) -> dropout0.3 -> Linear(512,10004); raw logits [B,T,10004]. Output weights are separate from token embedding, not tied.",
+    "trainable_parameters": 25520407,
+    "no_attention_map_claim": "No attention heatmap is used as proof of localization; need_weights=False in the actual implementation."
+  },
+  "diagram_blueprint": {
+    "recommended_slides": [
+      {
+        "title": "What does the decoder see?",
+        "layout": "Left: one photo splitting into two frozen blue encoder boxes. Top ResNet50 branches into global prefix [1x2048] and spatial grid [49x2048]. Bottom detector gives ROI vectors [Kx1024] plus boxes/mask. Middle orange trainable projections+LayerNorm+position/source additions. Right shared memory [85x512] feeding a 3-layer caption decoder. Draw a separate global-prefix arrow into the text stream, not into memory. Caption output on far right.",
+        "labels": [
+          "Frozen, cached features",
+          "49 scene locations",
+          "Up to36 object regions",
+          "Trainable fusion",
+          "Global prefix + previous words",
+          "3 layers,512 width,8 heads",
+          "Next-word logits"
+        ]
+      },
+      {
+        "title": "Inside one decoder layer",
+        "layout": "Vertical residual stream: LN1 -> causal self-attention -> +; LN2 -> cross-attention Q from text,K/V from memory -> tanh(g_l) -> +; LN3 -> Linear512→2048,ReLU,dropout,Linear2048→512 -> +. Repeat x3; show final norm+vocabulary head outside repeated block.",
+        "labels": [
+          "Self-attention: previous words + global prefix",
+          "Cross-attention: all valid scene/region tokens",
+          "Gates start at0",
+          "Pre-norm residual blocks"
+        ]
+      }
+    ],
+    "color_legend": {
+      "blue": "Frozen visual encoders / cached numeric features",
+      "orange": "Trainable fusion and decoder",
+      "gray": "Masks / positions / token IDs"
+    },
+    "avoid": [
+      "Do not draw one shared CNN for ResNet50 and detector; they have separate backbones.",
+      "Do not draw image labels as decoder inputs.",
+      "Do not describe fusion as simple averaging; it is token concatenation plus cross-attention.",
+      "Do not omit the retained global prefix.",
+      "Do not draw post-norm blocks or sigmoid gates."
+    ]
+  },
+  "three_main_formulas": [
+    {
+      "title": "Visual memory",
+      "latex": "G_i=\\mathrm{LN}_g(W_g f_i+b_g)+r_{row(i)}+c_{col(i)}+s_g,\\quad R_j=\\mathrm{LN}_r(W_r z_j+b_r)+W_b b_j+b_b+s_r,\\quad M=[G;R]",
+      "plain": "Project both feature types to512 dimensions, normalize, add geometry and source, concatenate tokens. Padded ROI rows are masked."
+    },
+    {
+      "title": "One pre-norm decoder block",
+      "latex": "u=x+\\mathrm{Drop}(\\mathrm{MSA}_{causal}(\\mathrm{LN}_1(x))),\\quad v=u+\\tanh(g_l)\\mathrm{Drop}(\\mathrm{MHA}(\\mathrm{LN}_2(u),M,M)),\\quad x'=v+\\mathrm{Drop}(\\mathrm{FFN}(\\mathrm{LN}_3(v)))",
+      "plain": "Read previous tokens, retrieve relevant visual features, transform the result; residual additions preserve the main stream. FFN=Linear2(Drop(ReLU(Linear1(.))))."
+    },
+    {
+      "title": "Teacher-forced training loss",
+      "latex": "\\mathcal{L}=-\\frac{1}{N_{valid}}\\sum_{b,t:y_{b,t}\\ne PAD}\\log p_\\theta(y_{b,t}\\mid I_b,y_{b,<t})",
+      "plain": "Token-averaged cross entropy includes <end>, ignores padding, and excludes the image-prefix output. The model receives raw logits; no softmax before CrossEntropyLoss."
+    }
+  ],
+  "warm_start": {
+    "source_run": "resnet50_transformer_depth_3_seed42",
+    "source_weights_sha256": "bff8c8c6d4a8c54205c3b8502c0ef03938d5dfc2a786379f8157eb9151f40b73",
+    "copied": "Global image projection, token/position embeddings, masked self-attention, feed-forward layers, final norm and vocabulary output; source norm1 -> norm1, source FFN norm2 -> target norm3.",
+    "extra_initialization": "Grid projection is copied from the old global image projection. Cross-attention, cross LN2, ROI projection, visual norms/geometry/source embeddings are newly initialized. Three gates are reset tozero.",
+    "why_zero": "At initialization in eval mode with identical global features, cross residuals vanish and the transferred prefix model is preserved. Gate gradients can open the branch; initially the gated branch's other parameters do not receive loss gradients through the zero gate.",
+    "equality_scope": "Initialization equality is an eval-mode claim; dropout random-number consumption changes training-mode samples. This is not a new achieved validation score.",
+    "copied_parameter_count": 21827860,
+    "new_parameter_count": 3692547
+  },
+  "training_protocol": {
+    "train_images": 113287,
+    "validation_images": 5000,
+    "test_images": 5000,
+    "seed": 42,
+    "caption_choice": "One randomly selected human caption per image per epoch, reproducible from seed+epoch; first caption fixed for validation loss. All original human captions used as metric references.",
+    "vocabulary_size": 10004,
+    "special_ids": {
+      "pad": 0,
+      "unk": 1,
+      "start": 2,
+      "end": 3
+    },
+    "optimizer": "Adam,weight_decay=0",
+    "lr_transferred_caption_core": 0.0001,
+    "lr_new_fusion_cross_attention": 0.0005,
+    "batch_size": 64,
+    "gradient_norm_clip": 5.0,
+    "amp": "CUDA float16 autocast + GradScaler; unscale before clipping; overflow step skipped with scale backoff",
+    "epochs_limit": 100,
+    "early_stopping": "Configured patience3 on full-validation greedy CIDEr-D. Actual run was manually stopped during epoch14; it did not finish by early stopping.",
+    "checkpoint_selection": "Best greedy checkpoint was epoch13; later controlled decoding comparison selected immutable epoch11 with beam5,alpha0 on validation.",
+    "trainable": "Only decoder and fusion parameters. Both pretrained CNNs are frozen; training reads cached features.",
+    "device": "NVIDIA GeForce RTX4060 Laptop GPU",
+    "time_scope": "Recorded fusion active training about2h31m includes training,validation,checkpoint I/O and initial validation; excludes feature extraction,preflight,loading and paused downtime. It is additional training after the prefix warm start.",
+    "selection_metric": "CIDEr-D through pycocoevalcap1.2 Cider(n=4,sigma=6); native scale, no extra multiplication. BLEU-1/BLEU-4 use corpus0..1. Shared project_regex_v1 normalization/tokenization, not official PTB leaderboard tokenization.",
+    "objective_vs_selection": "Gradient updates minimize cross entropy; CIDEr-D is the validation selection metric, not a differentiable training loss."
+  },
+  "generation_and_selection": {
+    "selected_epoch": 11,
+    "beam_size": 5,
+    "length_penalty_alpha": 0.0,
+    "max_generated_steps": 33,
+    "start": "Image inputs + <start> only; then previous model-predicted tokens. Human previous words are used only during training/loss evaluation.",
+    "stop": "<end> or33 generation steps; padding and another <start> are forbidden.",
+    "ranking": "Accumulated token log probabilities; GNMT length denominator ((5+L)/6)^alpha. Selected alpha0 means no length normalization. L includes EOS and excludes START.",
+    "validation_search": "2 fixed checkpoints x [greedy +3 widths x5 penalties]=32 controlled validation settings, batch64/AMP/device matched.",
+    "validation_metrics": {
+      "bleu1": 0.7413195222103705,
+      "bleu4": 0.31620121416779773,
+      "cider_d": 0.9801341231384657
+    },
+    "selection_sentence": "Model and decoding selected on validation; test metrics reported.",
+    "primary_test_metrics": {
+      "cider_d": 0.9983915922664485,
+      "bleu1": 0.7491571932575314,
+      "bleu4": 0.32615082120016037
+    }
+  },
+  "limitations_for_speaker": [
+    "This is a warm-started continuation, not a from-scratch architecture-only comparison; no matched continued-prefix control was completed.",
+    "The detector was pretrained on COCO detection data. Project test is held out from caption-decoder training, but comes from the same COCOtrain2017 source; exact original filtered detector training overlap was not reconstructed.",
+    "Single-seed experiments and different training devices/budgets do not establish a universal architecture ranking.",
+    "Keep architecture explanation separate from scores: CIDEr improvement alone does not prove the decoder attended to the correct region."
+  ]
+}

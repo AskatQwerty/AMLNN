@@ -1,0 +1,518 @@
+{
+  "read_only": true,
+  "gpu_used": false,
+  "records": {
+    "global_lstm3": {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_lstm_depth_3_seed42",
+      "best_epoch": 22,
+      "completed_epochs": 25,
+      "status": {
+        "status": "finished",
+        "epoch": 25
+      },
+      "trainable_parameters": 17606932,
+      "training_seconds": 2201.3925323000003,
+      "training_time": "00:36:41",
+      "devices": [
+        {
+          "device": "cuda",
+          "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+          "torch": "2.13.0+cu126",
+          "cuda_runtime": "12.6"
+        }
+      ],
+      "mean_completed_epoch_seconds": 87.49054207999998,
+      "median_completed_epoch_seconds": 81.27401640000016,
+      "best": {
+        "epoch": 22,
+        "train_loss": 2.229784888066164,
+        "val_loss": 2.1222638227283497,
+        "bleu1": 0.7099184405688685,
+        "bleu4": 0.2514700996024224,
+        "cider_d": 0.8081027963316038,
+        "epoch_seconds": 81.03412750000007,
+        "validation_seconds": 14.344025500000043
+      },
+      "last_completed": {
+        "epoch": 25,
+        "train_loss": 2.2123535306619795,
+        "val_loss": 2.113173754208092,
+        "bleu1": 0.7060463398873682,
+        "bleu4": 0.24738030592138233,
+        "cider_d": 0.8039659543018378,
+        "epoch_seconds": 83.07003160000022,
+        "validation_seconds": 16.34113709999974
+      },
+      "best_scores": {
+        "val_loss": 2.1222638227283497,
+        "bleu1": 0.7099184405688685,
+        "bleu4": 0.2514700996024224,
+        "cider_d": 0.8081027963316038
+      },
+      "min_val_loss_epoch": 25,
+      "min_val_loss": 2.113173754208092
+    },
+    "spatial_lstm3": {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resnet50_spatial_v1\\resnet50_lstm_attention_depth3_seed42",
+      "best_epoch": 16,
+      "completed_epochs": 19,
+      "status": {
+        "status": "finished",
+        "epoch": 19
+      },
+      "trainable_parameters": 18657044,
+      "training_seconds": 13053.1464999,
+      "training_time": "03:37:33",
+      "devices": [
+        {
+          "device": "cuda",
+          "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+          "torch": "2.13.0+cu126",
+          "cuda_runtime": "12.6"
+        }
+      ],
+      "mean_completed_epoch_seconds": 685.6826947157895,
+      "median_completed_epoch_seconds": 664.1676719999996,
+      "best": {
+        "epoch": 16,
+        "train_loss": 2.3556302404124922,
+        "val_loss": 2.2095602147660935,
+        "bleu1": 0.7094307721209712,
+        "bleu4": 0.24230621115980397,
+        "cider_d": 0.7802000607319697,
+        "epoch_seconds": 821.2759032000013,
+        "validation_seconds": 40.20408920000045
+      },
+      "last_completed": {
+        "epoch": 19,
+        "train_loss": 2.3305994420497598,
+        "val_loss": 2.19832656983679,
+        "bleu1": 0.6958405704360417,
+        "bleu4": 0.24021238957506794,
+        "cider_d": 0.7651973900396591,
+        "epoch_seconds": 747.9192476000026,
+        "validation_seconds": 52.536663099999714
+      },
+      "best_scores": {
+        "val_loss": 2.2095602147660935,
+        "bleu1": 0.7094307721209712,
+        "bleu4": 0.24230621115980397,
+        "cider_d": 0.7802000607319697
+      },
+      "min_val_loss_epoch": 19,
+      "min_val_loss": 2.19832656983679
+    },
+    "region_protocol": {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\stage5_received_20261115\\protocol\\experiments\\fasterrcnn_regions_v1\\fasterrcnn_resnet50_fpn_lstm_attention_depth3_seed42",
+      "best_epoch": 1,
+      "completed_epochs": 4,
+      "status": {
+        "status": "finished",
+        "epoch": 4
+      },
+      "trainable_parameters": 18132756,
+      "training_seconds": 990.7370289669998,
+      "training_time": "00:16:31",
+      "devices": [
+        {
+          "device": "cuda",
+          "name": "Tesla T4",
+          "torch": "2.13.0+cu126",
+          "torchvision": "0.28.0+cu126",
+          "cuda_runtime": "12.6"
+        }
+      ],
+      "mean_completed_epoch_seconds": 247.39778596949964,
+      "median_completed_epoch_seconds": 247.4396665305003,
+      "best": {
+        "epoch": 1,
+        "train_loss": 4.953926639310459,
+        "val_loss": 4.745962823980434,
+        "bleu1": 0.4487799999999911,
+        "bleu4": 6.78606390086938e-11,
+        "cider_d": 0.05142162794394879,
+        "epoch_seconds": 247.15986333599903,
+        "validation_seconds": 11.312961585999801,
+        "updates": 1771
+      },
+      "last_completed": {
+        "epoch": 4,
+        "train_loss": 4.851453597994578,
+        "val_loss": 4.720972671081121,
+        "bleu1": 0.37525136280736265,
+        "bleu4": 7.008585260843138e-11,
+        "cider_d": 0.049157309844417435,
+        "epoch_seconds": 247.40254335600002,
+        "validation_seconds": 11.87051229700046,
+        "updates": 7084
+      },
+      "best_scores": {
+        "val_loss": 4.745962823980434,
+        "bleu1": 0.4487799999999911,
+        "bleu4": 6.78606390086938e-11,
+        "cider_d": 0.05142162794394879
+      },
+      "min_val_loss_epoch": 4,
+      "min_val_loss": 4.720972671081121
+    },
+    "region_layernorm": {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\stage5_received_20261115\\projln\\experiments\\fasterrcnn_regions_projln_v1\\fasterrcnn_resnet50_fpn_lstm_attention_depth3_projln_seed42",
+      "best_epoch": 25,
+      "completed_epochs": 28,
+      "status": {
+        "status": "finished",
+        "epoch": 28
+      },
+      "trainable_parameters": 18133780,
+      "training_seconds": 6931.243972863,
+      "training_time": "01:55:31",
+      "devices": [
+        {
+          "device": "cuda",
+          "name": "Tesla T4",
+          "torch": "2.13.0+cu126",
+          "torchvision": "0.28.0+cu126",
+          "cuda_runtime": "12.6"
+        }
+      ],
+      "mean_completed_epoch_seconds": 247.21760562807142,
+      "median_completed_epoch_seconds": 246.78896119049978,
+      "best": {
+        "epoch": 25,
+        "train_loss": 2.2736581492649313,
+        "val_loss": 2.1687018859807585,
+        "bleu1": 0.7123667417068092,
+        "bleu4": 0.25331504868148297,
+        "cider_d": 0.8184569357036644,
+        "epoch_seconds": 245.83381152000038,
+        "validation_seconds": 12.474453036999876,
+        "updates": 44275
+      },
+      "last_completed": {
+        "epoch": 28,
+        "train_loss": 2.2525745616415276,
+        "val_loss": 2.1649830479647374,
+        "bleu1": 0.7018538154959834,
+        "bleu4": 0.24478496988405185,
+        "cider_d": 0.8021128356083369,
+        "epoch_seconds": 245.0307650499999,
+        "validation_seconds": 12.425898098999824,
+        "updates": 49588
+      },
+      "best_scores": {
+        "val_loss": 2.1687018859807585,
+        "bleu1": 0.7123667417068092,
+        "bleu4": 0.25331504868148297,
+        "cider_d": 0.8184569357036644
+      },
+      "min_val_loss_epoch": 28,
+      "min_val_loss": 2.1649830479647374
+    },
+    "prefix_transformer3": {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\all_encoders_v5_100epochs\\resnet50_transformer_depth_3_seed42",
+      "best_epoch": 21,
+      "completed_epochs": 24,
+      "status": {
+        "status": "finished",
+        "epoch": 24
+      },
+      "trainable_parameters": 20778772,
+      "training_seconds": 2449.2111528,
+      "training_time": "00:40:49",
+      "devices": [
+        {
+          "device": "cuda",
+          "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+          "torch": "2.13.0+cu126",
+          "cuda_runtime": "12.6"
+        }
+      ],
+      "mean_completed_epoch_seconds": 101.3877567208333,
+      "median_completed_epoch_seconds": 100.99128010000004,
+      "best": {
+        "epoch": 21,
+        "train_loss": 2.2629316715056693,
+        "val_loss": 2.0729966763489065,
+        "bleu1": 0.7149021705054546,
+        "bleu4": 0.26325920740195224,
+        "cider_d": 0.8578049436328543,
+        "epoch_seconds": 100.1383068999994,
+        "validation_seconds": 19.948573699999542
+      },
+      "last_completed": {
+        "epoch": 24,
+        "train_loss": 2.2430908692779172,
+        "val_loss": 2.0611564239394538,
+        "bleu1": 0.7137060915962519,
+        "bleu4": 0.26200930735093786,
+        "cider_d": 0.8532083496410251,
+        "epoch_seconds": 102.40618949999953,
+        "validation_seconds": 20.713683599999968
+      },
+      "best_scores": {
+        "val_loss": 2.0729966763489065,
+        "bleu1": 0.7149021705054546,
+        "bleu4": 0.26325920740195224,
+        "cider_d": 0.8578049436328543
+      },
+      "min_val_loss_epoch": 24,
+      "min_val_loss": 2.0611564239394538
+    },
+    "fusion_transformer3": {
+      "path": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_v1\\resnet50_fasterrcnn_transformer_fusion_depth3_seed42",
+      "best_epoch": 13,
+      "completed_epochs": 13,
+      "status": {
+        "phase": "interrupted",
+        "resume_from": "last.pt",
+        "updated_utc": "2026-11-15T16:58:43.700262+00:00",
+        "test_evaluated": false,
+        "amp_skipped_steps": 10,
+        "amp_consecutive_skips": 0,
+        "amp_scale": 65536.0
+      },
+      "trainable_parameters": 25520407,
+      "training_seconds": 9062.894880499998,
+      "training_time": "02:31:02",
+      "devices": [
+        {
+          "device": "cuda",
+          "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+          "torch": "2.13.0+cu126",
+          "cuda_runtime": "12.6"
+        }
+      ],
+      "mean_completed_epoch_seconds": 683.9449461538461,
+      "median_completed_epoch_seconds": 647.244485700001,
+      "best": {
+        "epoch": 13,
+        "train_loss": 2.119639945456342,
+        "val_loss": 1.9862413034649191,
+        "bleu1": 0.7341919724643178,
+        "bleu4": 0.28347707416379225,
+        "cider_d": 0.9414635883821234,
+        "train_images_seen": 113287,
+        "partial_epoch": false,
+        "train_seconds": 589.4832658999985,
+        "validation_seconds": 42.243150099999184,
+        "epoch_seconds": 633.557427599997,
+        "amp_skipped_steps": 10,
+        "epoch_amp_skipped_steps": 1,
+        "successful_optimizer_steps": 19071,
+        "epoch_successful_optimizer_steps": 1770,
+        "amp_scale": 65536.0
+      },
+      "last_completed": {
+        "epoch": 13,
+        "train_loss": 2.119639945456342,
+        "val_loss": 1.9862413034649191,
+        "bleu1": 0.7341919724643178,
+        "bleu4": 0.28347707416379225,
+        "cider_d": 0.9414635883821234,
+        "train_images_seen": 113287,
+        "partial_epoch": false,
+        "train_seconds": 589.4832658999985,
+        "validation_seconds": 42.243150099999184,
+        "epoch_seconds": 633.557427599997,
+        "amp_skipped_steps": 10,
+        "epoch_amp_skipped_steps": 1,
+        "successful_optimizer_steps": 19071,
+        "epoch_successful_optimizer_steps": 1770,
+        "amp_scale": 65536.0
+      },
+      "best_scores": {
+        "val_loss": 1.9862413034649191,
+        "bleu1": 0.7341919724643178,
+        "bleu4": 0.28347707416379225,
+        "cider_d": 0.9414635883821234
+      },
+      "min_val_loss_epoch": 13,
+      "min_val_loss": 1.9862413034649191
+    }
+  },
+  "comparisons": [
+    {
+      "before": "global_lstm3",
+      "after": "spatial_lstm3",
+      "cider_d_delta": -0.027902735599634076,
+      "cider_d_relative_percent": -3.452869576283979,
+      "bleu4_delta": -0.009163888442618423,
+      "best_epoch_delta": -6,
+      "completed_epoch_delta": -6,
+      "parameters_delta": 1050112,
+      "observed_total_training_time_ratio": 5.929495221037277
+    },
+    {
+      "before": "spatial_lstm3",
+      "after": "region_layernorm",
+      "cider_d_delta": 0.03825687497169472,
+      "cider_d_relative_percent": 4.9034698787132625,
+      "bleu4_delta": 0.011008837521678999,
+      "best_epoch_delta": 9,
+      "completed_epoch_delta": 9,
+      "parameters_delta": -523264,
+      "observed_total_training_time_ratio": 0.5310017759255288
+    },
+    {
+      "before": "global_lstm3",
+      "after": "region_layernorm",
+      "cider_d_delta": 0.010354139372060644,
+      "cider_d_relative_percent": 1.2812898828049368,
+      "bleu4_delta": 0.001844949079060576,
+      "best_epoch_delta": 3,
+      "completed_epoch_delta": 3,
+      "parameters_delta": 526848,
+      "observed_total_training_time_ratio": 3.1485724927127294
+    },
+    {
+      "before": "region_protocol",
+      "after": "region_layernorm",
+      "cider_d_delta": 0.7670353077597156,
+      "cider_d_relative_percent": 1491.6589350220659,
+      "bleu4_delta": 0.2533150486136223,
+      "best_epoch_delta": 24,
+      "completed_epoch_delta": 24,
+      "parameters_delta": 1024,
+      "observed_total_training_time_ratio": 6.996048164354893
+    },
+    {
+      "before": "prefix_transformer3",
+      "after": "fusion_transformer3",
+      "cider_d_delta": 0.0836586447492691,
+      "cider_d_relative_percent": 9.75264194619465,
+      "bleu4_delta": 0.02021786676184001,
+      "best_epoch_delta": -8,
+      "completed_epoch_delta": -11,
+      "parameters_delta": 4741635,
+      "observed_total_training_time_ratio": 3.7003321947718013
+    }
+  ],
+  "lstm_same_epoch_comparison": [
+    {
+      "epoch": 1,
+      "global_cider_d": 0.4066816206992489,
+      "spatial_cider_d": 0.3706469972603988,
+      "spatial_minus_global": -0.03603462343885011
+    },
+    {
+      "epoch": 2,
+      "global_cider_d": 0.616029500811216,
+      "spatial_cider_d": 0.56903209440401,
+      "spatial_minus_global": -0.046997406407205955
+    },
+    {
+      "epoch": 3,
+      "global_cider_d": 0.632858159655004,
+      "spatial_cider_d": 0.6456984807886773,
+      "spatial_minus_global": 0.012840321133673283
+    },
+    {
+      "epoch": 4,
+      "global_cider_d": 0.6908718657702524,
+      "spatial_cider_d": 0.6860154772670018,
+      "spatial_minus_global": -0.004856388503250542
+    },
+    {
+      "epoch": 5,
+      "global_cider_d": 0.7297686983764995,
+      "spatial_cider_d": 0.7076001901643597,
+      "spatial_minus_global": -0.02216850821213978
+    },
+    {
+      "epoch": 6,
+      "global_cider_d": 0.7300117124680675,
+      "spatial_cider_d": 0.7135501393083884,
+      "spatial_minus_global": -0.01646157315967911
+    },
+    {
+      "epoch": 7,
+      "global_cider_d": 0.7090485739537832,
+      "spatial_cider_d": 0.6996005628670142,
+      "spatial_minus_global": -0.00944801108676896
+    },
+    {
+      "epoch": 8,
+      "global_cider_d": 0.7441174848094235,
+      "spatial_cider_d": 0.7339670299405967,
+      "spatial_minus_global": -0.01015045486882682
+    },
+    {
+      "epoch": 9,
+      "global_cider_d": 0.7621073866731134,
+      "spatial_cider_d": 0.7558709017749082,
+      "spatial_minus_global": -0.0062364848982051635
+    },
+    {
+      "epoch": 10,
+      "global_cider_d": 0.7712671647395221,
+      "spatial_cider_d": 0.7580539932959633,
+      "spatial_minus_global": -0.013213171443558713
+    },
+    {
+      "epoch": 11,
+      "global_cider_d": 0.7759666523236245,
+      "spatial_cider_d": 0.7576726759358416,
+      "spatial_minus_global": -0.01829397638778285
+    },
+    {
+      "epoch": 12,
+      "global_cider_d": 0.7585563031799933,
+      "spatial_cider_d": 0.7309459420364598,
+      "spatial_minus_global": -0.027610361143533546
+    },
+    {
+      "epoch": 13,
+      "global_cider_d": 0.7744782646902321,
+      "spatial_cider_d": 0.7615315001702575,
+      "spatial_minus_global": -0.012946764519974563
+    },
+    {
+      "epoch": 14,
+      "global_cider_d": 0.7816037572781835,
+      "spatial_cider_d": 0.7509812135088896,
+      "spatial_minus_global": -0.030622543769293964
+    },
+    {
+      "epoch": 15,
+      "global_cider_d": 0.788410894470544,
+      "spatial_cider_d": 0.7667426281846852,
+      "spatial_minus_global": -0.021668266285858828
+    },
+    {
+      "epoch": 16,
+      "global_cider_d": 0.7890213089309837,
+      "spatial_cider_d": 0.7802000607319697,
+      "spatial_minus_global": -0.008821248199013976
+    },
+    {
+      "epoch": 17,
+      "global_cider_d": 0.7928425594955854,
+      "spatial_cider_d": 0.7621000514292944,
+      "spatial_minus_global": -0.030742508066290974
+    },
+    {
+      "epoch": 18,
+      "global_cider_d": 0.7778476080167697,
+      "spatial_cider_d": 0.7679405262906354,
+      "spatial_minus_global": -0.009907081726134304
+    },
+    {
+      "epoch": 19,
+      "global_cider_d": 0.7962381421721875,
+      "spatial_cider_d": 0.7651973900396591,
+      "spatial_minus_global": -0.031040752132528326
+    }
+  ],
+  "spatial_better_same_epoch_count": 1,
+  "caveats": [
+    "Early stopping selects full-validation CIDEr-D with patience 3, not minimum validation loss.",
+    "One seed per configuration cannot establish statistical significance or a universal architecture ranking.",
+    "Spatial LSTM changes both visual input from one global vector to 49 positions and decoder conditioning.",
+    "The spatial run shared this laptop GPU with other work, so elapsed-time ratios are observations, not controlled architecture benchmarks.",
+    "Region runs used Tesla T4 rather than RTX4060 Laptop; visual pretraining also changed from ImageNet to COCO detection.",
+    "Projection LayerNorm comparison uses the same region cache and base decoder but only one seed per run.",
+    "Fusion was warm-started from global prefix checkpoint epoch21, then trained 13 additional complete epochs and interrupted in epoch14.",
+    "Fusion greedy epoch13 and selected beam-decoded epoch11 are different checkpoints; do not attribute their difference solely to beam search.",
+    "No matched continuation of frozen global-prefix baseline was run to isolate fusion benefit."
+  ]
+}

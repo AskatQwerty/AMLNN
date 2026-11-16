@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "validation_completed_first": true,
+  "deadline_selects_completed_train_prefix": true,
+  "no_test_ids": true,
+  "exact_compacted_shapes": true,
+  "normalized_boxes": true,
+  "all_array_hashes": true,
+  "completed_cache_reuse": true,
+  "interruption_resume": true,
+  "incompatible_settings_rejected": true,
+  "missing_validation_deadline_rejected": true,
+  "fixture": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\final_fusion\\fusion_roi_stub_t_icmzbv",
+  "cpu_stub_only": true,
+  "real_detector_executed": false,
+  "gpu_used": false,
+  "project_written": false,
+  "source_sha256": "89a32feb28efaba14b8f42261b6cd660766d92bdb680dafebc773c33075d52c7"
+}

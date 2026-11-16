@@ -1,0 +1,86 @@
+{
+  "created_utc": "2026-11-15T17:32:14.687Z",
+  "selection_source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\decoding_selection.json",
+  "selection_source_sha256": "44224d0ded5811a50672b52621c493c5523deb81b36804dfacba840f05799901",
+  "policy": "Three highest validation CIDEr-D rows from the completed common batch64 search, fixed before test inference. Primary winner stays validation-selected. No test-based reselection.",
+  "split": "saved_labeled_project_test",
+  "expected_images": 5000,
+  "pretraining_limitation": "The project test comes from COCO train2017, which was used for detector pretraining. It is caption-decoder-held-out, not unseen by the complete pretrained visual system.",
+  "candidates": [
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5_alpha0",
+      "beam_size": 5,
+      "length_penalty": 0,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7413195222103705,
+        "bleu4": 0.31620121416779773,
+        "cider_d": 0.9801341231384657
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt",
+      "role": "primary_validation_selected"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam7_alpha0",
+      "beam_size": 7,
+      "length_penalty": 0,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7383572670467942,
+        "bleu4": 0.3154757043367164,
+        "cider_d": 0.9798129101550891
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt",
+      "role": "exploratory_comparator"
+    },
+    {
+      "snapshot_epoch": 11,
+      "mode": "beam5_alpha0p3",
+      "beam_size": 5,
+      "length_penalty": 0.3,
+      "max_steps": 33,
+      "scores": {
+        "bleu1": 0.7375525473408011,
+        "bleu4": 0.3121989820368696,
+        "cider_d": 0.9791545106102075
+      },
+      "evaluation_batch_size": 64,
+      "amp": true,
+      "device": {
+        "device": "cuda:0",
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch": "2.13.0+cu126",
+        "cuda_runtime": "12.6",
+        "cpu_threads": 2
+      },
+      "checkpoint_sha256": "5c8f939ab6c5c71f39f7711ef437c25bb4fdd237a26f86c24b407bfa2e7a7d5b",
+      "snapshot_folder": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11",
+      "weights_file": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_fusion_decoding_v1\\epochs11_13_decoding_search\\best_snapshot_epoch11\\best_weights.pt",
+      "role": "exploratory_comparator"
+    }
+  ]
+}
