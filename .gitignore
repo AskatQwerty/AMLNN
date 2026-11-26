@@ -27,6 +27,7 @@ __pycache__/
 *.7z
 *.tar
 *.tar.gz
+*.tar.xz
 *.zip.*
 *.log
 release_assets/
@@ -36,3 +37,10 @@ venv/
 .pytest_cache/
 .DS_Store
 Thumbs.db
+
+# Local inputs and outputs from the single-photo quickstart.
+/photo.jpg
+/photo.jpeg
+/photo.png
+/caption.json
+/user_photos/

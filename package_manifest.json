@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-11-26T10:28:48.075863+00:00",
+  "created_utc": "2026-11-26T10:36:51.125609+00:00",
   "purpose": "Lightweight final project Git archive",
   "excludes": [
     "package_manifest.json",
@@ -7,7 +7,7 @@
     "Git-ignored datasets, numeric features, weights and archives"
   ],
   "file_count": 568,
-  "bytes": 84052188,
+  "bytes": 84052321,
   "files": [
     {
       "path": ".gitattributes",
@@ -16,8 +16,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 397,
-      "sha256": "7051f02939e9c05eb8e2290fcfcada3b7e2cd4f636f9fe8598db8686f1d8b38e"
+      "bytes": 530,
+      "sha256": "339c63fb06b3f67f3b20c430d084bb9ab80485440d82d81992915da5a021dea1"
     },
     {
       "path": "AML_Final_Submission.ipynb",
