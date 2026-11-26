@@ -28,7 +28,7 @@ Download `final_model_inference.zip` from the [original release](https://github.
 python inference/caption_image.py --image "photo.jpg" --model-dir "local_artifacts/final_model/selected_model" --torch-cache "local_artifacts/final_model/encoder_cache" --device auto --output "caption.json"
 ```
 
-Alternatively, open [Final_Model_Photo.ipynb](../Final_Model_Photo.ipynb), change the image path, and run the cells. Loading the models and generating the caption are timed separately. No training dataset or prepared-caption archive is needed.
+Alternatively, open [Final_Model_Photo.ipynb](../Final_Model_Photo.ipynb). Its default image is the bundled three-bear example; change the path to try your photo. The [one-cell notebook check](../metadata/photo_notebook_smoke_20261126.json) executed the published code without edits in this folder layout on CUDA. Loading the models and generating the caption are timed separately. No training dataset or prepared-caption archive is needed.
 
 The released model uses epoch 11, beam size 5, length penalty 0, and at most 33 generated tokens. The trained weight SHA-256 is:
 

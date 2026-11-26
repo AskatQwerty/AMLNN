@@ -1,13 +1,13 @@
 {
-  "created_utc": "2026-11-26T10:23:15.480064+00:00",
+  "created_utc": "2026-11-26T10:28:48.075863+00:00",
   "purpose": "Lightweight final project Git archive",
   "excludes": [
     "package_manifest.json",
     ".git/",
     "Git-ignored datasets, numeric features, weights and archives"
   ],
-  "file_count": 567,
-  "bytes": 84051002,
+  "file_count": 568,
+  "bytes": 84052188,
   "files": [
     {
       "path": ".gitattributes",
@@ -51,8 +51,8 @@
     },
     {
       "path": "Final_Model_Photo.ipynb",
-      "bytes": 3496,
-      "sha256": "43ab7b7deb8115dd17b1495bd9f41d337c2f4879c78ad8ef939f7a29dc32b273"
+      "bytes": 3696,
+      "sha256": "df54a94ca03b56516bba770c08cf740d2437fb09b3cd9a6061a6fc2e01c570bc"
     },
     {
       "path": "README.md",
@@ -91,8 +91,8 @@
     },
     {
       "path": "docs/REPRODUCING.md",
-      "bytes": 11070,
-      "sha256": "086ef394327a9e4e8d6c7c32c08e72c02ab7cd3f7d2588bb0ec4bd71bc1a4963"
+      "bytes": 11267,
+      "sha256": "fa36b5630adae74614bae0b53c19c65b99e9b053db136d7fdb73d9450d6382f3"
     },
     {
       "path": "docs/Research_Report.pdf",
@@ -215,6 +215,11 @@
       "sha256": "eaa9db6d3d790e95821831c2f198d8365ae1923c7f65b9d420a835dea86657fa"
     },
     {
+      "path": "metadata/photo_notebook_smoke_20261126.json",
+      "bytes": 605,
+      "sha256": "ffe5eef1c5f230ab7eb586506c5b4a37b35c849a55aecc105a0df68eb9577d17"
+    },
+    {
       "path": "metadata/preparation/holdout_validation.json",
       "bytes": 1869,
       "sha256": "196169692e3a51150f0574b60e05856190e92f19dcef359d82b42f5401126346"
@@ -246,8 +251,8 @@
     },
     {
       "path": "metadata/publication_verification_20261126.json",
-      "bytes": 1689,
-      "sha256": "45e7be90dc27cb217a44dce895e30b86bd8805d5bca10593b9da8ce9c8e847f5"
+      "bytes": 1873,
+      "sha256": "680029bceba5866a61a11529ef3ee6519f39a8c688ff7957eb99a73e9c908ec5"
     },
     {
       "path": "metadata/release/SHA256SUMS.txt",

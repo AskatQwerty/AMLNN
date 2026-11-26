@@ -24,6 +24,11 @@
     }
   },
   "local_markdown_links": "passed",
+  "photo_notebook_entry_cell": {
+    "executed_without_code_changes": true,
+    "portable_folder_layout": true,
+    "report": "metadata/photo_notebook_smoke_20261126.json"
+  },
   "finetuning_model_data_training_resume_definitions": "byte-identical to source notebook",
   "restored_prepared_data_and_current_config_match_checkpoint": true,
   "checkpoint_state": {

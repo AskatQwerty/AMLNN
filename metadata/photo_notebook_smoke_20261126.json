@@ -1,0 +1,14 @@
+{
+  "published_cell_source_sha256": "1a106d712074b5fa6d471b3ec282d1a534e076e5516ad9a1815a60295108d6ea",
+  "published_cell_executed_without_edits": true,
+  "layout": "repository-relative inference/, docs/assets/data_examples/, local_artifacts/final_model/",
+  "new_python_environment": false,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "caption": "two teddy bears are laying on a bed .",
+  "loading_seconds": 1.6290979000004882,
+  "inference_seconds": 1.2314412000014272,
+  "training_performed": false,
+  "network_downloads": false,
+  "full_dataset_required": false
+}
