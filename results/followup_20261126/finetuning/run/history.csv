@@ -1,0 +1,2 @@
+epoch,train_loss,val_loss,CIDEr-D,BLEU-1,BLEU-4,validation_seconds,training_seconds,active_seconds,AMP_skipped_updates
+0,,1.9893602087885907,0.9784685306494625,0.7416910881515014,0.3161017622467633,2487.7434991,0.0,2487.7621138,0

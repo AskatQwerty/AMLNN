@@ -1,0 +1,51 @@
+{
+  "results": [
+    {
+      "model": "initial_epoch0",
+      "images": 100,
+      "val_loss": 2.037348932776521,
+      "CIDEr-D": 0.9980558585910444,
+      "BLEU-1": 0.7293307086606995,
+      "BLEU-4": 0.3144994601339384,
+      "target_tokens": 1226,
+      "seconds": 42.21951529999933,
+      "empty_captions": 0
+    },
+    {
+      "model": "finetuned_last",
+      "images": 100,
+      "val_loss": 2.0380197306441636,
+      "CIDEr-D": 0.987386920709156,
+      "BLEU-1": 0.7283349561823482,
+      "BLEU-4": 0.3212846823866881,
+      "target_tokens": 1226,
+      "seconds": 47.57267690000117,
+      "empty_captions": 0
+    }
+  ],
+  "checkpoint_state": {
+    "epoch": 1,
+    "phase": "train",
+    "next_index": 22688,
+    "successful_steps": 709,
+    "best_epoch": 0,
+    "best_score": 0.9784685306494625,
+    "train_tokens": 278922,
+    "active_seconds": 12295.836882099999,
+    "bad_epochs": 0,
+    "stop_reason": null
+  },
+  "evaluated_checkpoint_sha256": "e0f5db37afa2a19349fa59dc3cb6dfb54918a8f12d7de7fcef52b452032a6f8d",
+  "checkpoint_files_unchanged": true,
+  "training_performed": false,
+  "results_folder": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\high_resolution_20261126\\finetune_evaluation\\20261126T095847Z",
+  "changes": {
+    "val_loss": 0.0006707978676425697,
+    "CIDEr-D": -0.010668937881888385,
+    "BLEU-1": -0.000995752478351264,
+    "BLEU-4": 0.00678522225274969
+  },
+  "cider_relative_change_percent": -1.068972020959802,
+  "evaluation_completed": true,
+  "scope": "100 validation images, same fixed IDs as resolution pilot; not full-validation metrics"
+}

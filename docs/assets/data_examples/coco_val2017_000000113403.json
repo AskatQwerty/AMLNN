@@ -1,0 +1,49 @@
+{
+  "image": {
+    "license": 4,
+    "file_name": "000000113403.jpg",
+    "coco_url": "http://images.cocodataset.org/val2017/000000113403.jpg",
+    "height": 451,
+    "width": 640,
+    "date_captured": "2013-11-18 11:37:38",
+    "flickr_url": "http://farm3.staticflickr.com/2613/3713015524_bac439d1e6_z.jpg",
+    "id": 113403
+  },
+  "license": {
+    "url": "http://creativecommons.org/licenses/by/2.0/",
+    "id": 4,
+    "name": "Attribution License"
+  },
+  "flickr_photo_page": "https://www.flickr.com/photo.gne?id=3713015524",
+  "creator_note": "The supplied COCO metadata does not include the photographer name; the original Flickr source is linked.",
+  "image_sha256": "ff974f9495b64648225c9c6fc2d13e642fec69033aa46a524596cb77c5a02224",
+  "references": [
+    {
+      "image_id": 113403,
+      "id": 317093,
+      "caption": "Three teddy bears laying in bed under the covers."
+    },
+    {
+      "image_id": 113403,
+      "id": 318578,
+      "caption": "A group of stuffed animals sitting next to each other in bed."
+    },
+    {
+      "image_id": 113403,
+      "id": 318923,
+      "caption": "A white, beige and brown baby bear under a beige/white comforter."
+    },
+    {
+      "image_id": 113403,
+      "id": 320147,
+      "caption": "A trio of teddy bears bundled up on a bed."
+    },
+    {
+      "image_id": 113403,
+      "id": 321044,
+      "caption": "Three stuffed animals lay in a bed cuddled together."
+    }
+  ],
+  "source": "COCO 2017 captions_val2017.json",
+  "changes": "The JPEG is copied unchanged. The preprocessing figure resizes it and adds padding; diagnostic figures add recorded detector boxes."
+}

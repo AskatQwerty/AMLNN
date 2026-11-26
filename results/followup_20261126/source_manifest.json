@@ -1,0 +1,204 @@
+{
+  "created_utc": "2026-11-26T10:13:16.497859+00:00",
+  "note": "Original local evidence copied byte-for-byte; absolute source paths record provenance only.",
+  "files": [
+    {
+      "path": "results/followup_20261126/resolution/full_validation/baseline_predictions.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\runs\\validation_5000_seed42_20261126T060712_617052Z\\baseline_predictions.json",
+      "bytes": 2417049,
+      "sha256": "87cae6993bb5311485be3f4ef45f73e3f329aa08135d81fb3d87861ffbf3b6b0"
+    },
+    {
+      "path": "results/followup_20261126/resolution/full_validation/both_larger_predictions.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\runs\\validation_5000_seed42_20261126T060712_617052Z\\both_larger_predictions.json",
+      "bytes": 2413466,
+      "sha256": "5b33e1d17accc787ff0549d8383721cea5c9fb1d12cbc66f1ea76d049ae1dd66"
+    },
+    {
+      "path": "results/followup_20261126/resolution/full_validation/detector_1200_predictions.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\runs\\validation_5000_seed42_20261126T060712_617052Z\\detector_1200_predictions.json",
+      "bytes": 2415574,
+      "sha256": "7541e8b4d09b952ff3b3d24d7dba4f1b2f55a61155e257bae996eec2ccdea202"
+    },
+    {
+      "path": "results/followup_20261126/resolution/full_validation/manifest.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\runs\\validation_5000_seed42_20261126T060712_617052Z\\manifest.json",
+      "bytes": 66058,
+      "sha256": "e70c42b801c1c2eeb8e35a37d0b373f8b3b699b1b1280d7e7dd845e1e73e9767"
+    },
+    {
+      "path": "results/followup_20261126/resolution/full_validation/metrics.csv",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\runs\\validation_5000_seed42_20261126T060712_617052Z\\metrics.csv",
+      "bytes": 408,
+      "sha256": "b5595925647ba54074e1573ee8f7954ef117acff89660c321ee5046837c67726"
+    },
+    {
+      "path": "results/followup_20261126/resolution/full_validation/resnet_448_predictions.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\runs\\validation_5000_seed42_20261126T060712_617052Z\\resnet_448_predictions.json",
+      "bytes": 2414988,
+      "sha256": "aad157f288412190656c5d42c19ac2301ccd71f6edadc818823ef42462732460"
+    },
+    {
+      "path": "results/followup_20261126/resolution/pilot_100/baseline_predictions.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\checks\\validation_100_seed42_20261126T055059_752763Z\\baseline_predictions.json",
+      "bytes": 48523,
+      "sha256": "8d64711fd277ffeea876ce0e00eefa46ce06259c33f69be43644c7c1ef830cd2"
+    },
+    {
+      "path": "results/followup_20261126/resolution/pilot_100/both_larger_predictions.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\checks\\validation_100_seed42_20261126T055059_752763Z\\both_larger_predictions.json",
+      "bytes": 48378,
+      "sha256": "686e3e8691e172d0b0cd464673300af9b2af395a3d159af67ee2c39871015f50"
+    },
+    {
+      "path": "results/followup_20261126/resolution/pilot_100/detector_1200_predictions.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\checks\\validation_100_seed42_20261126T055059_752763Z\\detector_1200_predictions.json",
+      "bytes": 48403,
+      "sha256": "ce1956a3f64b878bf8fd0c789268c50a5a7ebef16130a6db94cfe29d00173b0c"
+    },
+    {
+      "path": "results/followup_20261126/resolution/pilot_100/manifest.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\checks\\validation_100_seed42_20261126T055059_752763Z\\manifest.json",
+      "bytes": 3307,
+      "sha256": "aaa79e234a49968d64bd5bb679b4bce34f40226f4a7e2f914bbf1e0c22d147d2"
+    },
+    {
+      "path": "results/followup_20261126/resolution/pilot_100/metrics.csv",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\checks\\validation_100_seed42_20261126T055059_752763Z\\metrics.csv",
+      "bytes": 405,
+      "sha256": "cea946ad5c1d89eefc588d3f64a04e71af463145d8880bd1d34ecc606787aa1d"
+    },
+    {
+      "path": "results/followup_20261126/resolution/pilot_100/resnet_448_predictions.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\checks\\validation_100_seed42_20261126T055059_752763Z\\resnet_448_predictions.json",
+      "bytes": 48398,
+      "sha256": "8c541d35f51a91140293228aace1ae4587737f50e945fdcbee92df122e977825"
+    },
+    {
+      "path": "results/followup_20261126/resolution/teddy_bears/baseline_detections.png",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\checks\\000000113403_20261126T054516_429012Z\\baseline_detections.png",
+      "bytes": 1850244,
+      "sha256": "e9c7d1173a2750ff7d98c51408f7d6d83f4c9d92f5f74069f40b8d37f55a0462"
+    },
+    {
+      "path": "results/followup_20261126/resolution/teddy_bears/both_larger_detections.png",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\checks\\000000113403_20261126T054516_429012Z\\both_larger_detections.png",
+      "bytes": 1791454,
+      "sha256": "16c062a53342fafdf95b5a0b5187b5ebda5e588e839d600ae9fbb0740b521515"
+    },
+    {
+      "path": "results/followup_20261126/resolution/teddy_bears/comparison.csv",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\checks\\000000113403_20261126T054516_429012Z\\comparison.csv",
+      "bytes": 455,
+      "sha256": "387f8e6a22af6439aa5aeb39217f0de0d13e98ae55c121ffc331162031794fb8"
+    },
+    {
+      "path": "results/followup_20261126/resolution/teddy_bears/comparison.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\checks\\000000113403_20261126T054516_429012Z\\comparison.json",
+      "bytes": 51781,
+      "sha256": "db1d11ab6c8d099172211226874d1c75d8610f2c0456dffc4a9237f5c26564e1"
+    },
+    {
+      "path": "results/followup_20261126/resolution/teddy_bears/detector_1200_detections.png",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\checks\\000000113403_20261126T054516_429012Z\\detector_1200_detections.png",
+      "bytes": 1790889,
+      "sha256": "86ee8e8d7c49ed862d0c59da3a644246e32e06167e94fdf7dcce5a268c05ff54"
+    },
+    {
+      "path": "results/followup_20261126/resolution/teddy_bears/resnet_448_detections.png",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\checks\\000000113403_20261126T054516_429012Z\\resnet_448_detections.png",
+      "bytes": 1851041,
+      "sha256": "4bfccddfa8f120a1abafd8b7933cecb5fb1d5d8caea8483548e44e205c776ae6"
+    },
+    {
+      "path": "results/followup_20261126/finetuning/validation_100/finetuned_last_predictions.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_joint_finetune_v1\\resnet50_fasterrcnn_transformer_layer4_seed42\\evaluations\\validation100_20261126T095847Z\\finetuned_last_predictions.json",
+      "bytes": 44951,
+      "sha256": "9cee556a63f89c593c5cf1ffe73965bde5baa4664df5e67c84d888eceb5077a7"
+    },
+    {
+      "path": "results/followup_20261126/finetuning/validation_100/initial_epoch0_predictions.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_joint_finetune_v1\\resnet50_fasterrcnn_transformer_layer4_seed42\\evaluations\\validation100_20261126T095847Z\\initial_epoch0_predictions.json",
+      "bytes": 44938,
+      "sha256": "cab3ccb3a4bc02632294994f3afefd52fb5b853e3af845aa74a0e2583682b53e"
+    },
+    {
+      "path": "results/followup_20261126/finetuning/validation_100/manifest.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_joint_finetune_v1\\resnet50_fasterrcnn_transformer_layer4_seed42\\evaluations\\validation100_20261126T095847Z\\manifest.json",
+      "bytes": 10746,
+      "sha256": "cc376ec3d468bea30c262518c29349932b53e6ed6b4ee90971c86b3f83e54a3b"
+    },
+    {
+      "path": "results/followup_20261126/finetuning/validation_100/metrics.csv",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_joint_finetune_v1\\resnet50_fasterrcnn_transformer_layer4_seed42\\evaluations\\validation100_20261126T095847Z\\metrics.csv",
+      "bytes": 322,
+      "sha256": "efd4af27885014d1b124726e1eb3902152418ddf83d9780f897f1dde5e03c86c"
+    },
+    {
+      "path": "results/followup_20261126/finetuning/validation_100/README.md",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_joint_finetune_v1\\resnet50_fasterrcnn_transformer_layer4_seed42\\evaluations\\validation100_20261126T095847Z\\README.md",
+      "bytes": 1122,
+      "sha256": "687d87f1698e2edbf16cf16d9a90ddbed35a7b1cf7954ec6b8406534e62a8b7f"
+    },
+    {
+      "path": "results/followup_20261126/finetuning/validation_100/summary.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_joint_finetune_v1\\resnet50_fasterrcnn_transformer_layer4_seed42\\evaluations\\validation100_20261126T095847Z\\summary.json",
+      "bytes": 1651,
+      "sha256": "1b9e9fc116527e737d61175d99770937685a0971923cfaf3d2699affa1e8e41d"
+    },
+    {
+      "path": "results/followup_20261126/resolution/three_bears_diagnosis.png",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\three_bears_diagnosis.png",
+      "bytes": 1414797,
+      "sha256": "2e3ce91b4f952eb508f91fca98734d6e6e41341c9f50e604dbfa762f90025cf9"
+    },
+    {
+      "path": "results/followup_20261126/resolution/verification.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\verification.json",
+      "bytes": 911,
+      "sha256": "2c04806dd2feee9b670c05d53e75cb11e3f56f99107fa1e8fd808fa978405d36"
+    },
+    {
+      "path": "results/followup_20261126/resolution/pilot_summary.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\resolution_inference_20261126\\pilot_summary.json",
+      "bytes": 1150,
+      "sha256": "6494f619b667af3e8c3f5c7dc7d114d02867c7ffb22b64b95ea0aec2ca7f262f"
+    },
+    {
+      "path": "results/followup_20261126/finetuning/run/config.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_joint_finetune_v1\\resnet50_fasterrcnn_transformer_layer4_seed42\\config.json",
+      "bytes": 2886,
+      "sha256": "2aed3905c10b75e8ca38e6df3f7bf7c4b451ac6e49564227458a9a6d5bddfc1c"
+    },
+    {
+      "path": "results/followup_20261126/finetuning/run/history.csv",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_joint_finetune_v1\\resnet50_fasterrcnn_transformer_layer4_seed42\\history.csv",
+      "bytes": 232,
+      "sha256": "1c4f41ca4acf0af23a1d4d01251168204e5819f762d1fb4cd3474c63decf1c9d"
+    },
+    {
+      "path": "results/followup_20261126/finetuning/run/history.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_joint_finetune_v1\\resnet50_fasterrcnn_transformer_layer4_seed42\\history.json",
+      "bytes": 337,
+      "sha256": "3de69a66914c4698c43accca0a175730f43b311377e1bb141866566d87a98fdf"
+    },
+    {
+      "path": "results/followup_20261126/finetuning/run/summary.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_joint_finetune_v1\\resnet50_fasterrcnn_transformer_layer4_seed42\\summary.json",
+      "bytes": 849,
+      "sha256": "b3bc963a4925626e3fea1f6b36bfef81b8e5a0f66cbb65c47e5ab871298eb505"
+    },
+    {
+      "path": "results/followup_20261126/finetuning/run/vocabulary.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_joint_finetune_v1\\resnet50_fasterrcnn_transformer_layer4_seed42\\vocabulary.json",
+      "bytes": 370462,
+      "sha256": "3efebfa69b7a4f391d39180612133bd30730817831f5166ce593d7bccefee18b"
+    },
+    {
+      "path": "results/followup_20261126/finetuning/run/validation_predictions_epoch00.json",
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\experiments\\final_joint_finetune_v1\\resnet50_fasterrcnn_transformer_layer4_seed42\\validation_predictions_epoch00.json",
+      "bytes": 2222681,
+      "sha256": "a46570af75d4e7d1c50029cefdee4a80d5720bc2170874245ca5b0ee3a5b86b3"
+    }
+  ]
+}

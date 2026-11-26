@@ -1,0 +1,1960 @@
+{
+  "checkpoint": "original frozen-CNN Fusion, epoch 11",
+  "caption_weights_sha256": "f97a57d7adbbbe6b3a6d77589ab2a785520e9a2c7b8a99c573dd9d13c44f7b6f",
+  "training_performed": false,
+  "loading_seconds": 4.00100580000003,
+  "torch": "2.13.0+cu126",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "settings": [
+    {
+      "name": "baseline",
+      "resnet_size": 224,
+      "detector_min_size": 800,
+      "detector_max_size": 1333
+    },
+    {
+      "name": "detector_1200",
+      "resnet_size": 224,
+      "detector_min_size": 1200,
+      "detector_max_size": 2000
+    },
+    {
+      "name": "resnet_448",
+      "resnet_size": 448,
+      "detector_min_size": 800,
+      "detector_max_size": 1333
+    },
+    {
+      "name": "both_larger",
+      "resnet_size": 448,
+      "detector_min_size": 1200,
+      "detector_max_size": 2000
+    }
+  ],
+  "records": [
+    {
+      "mode": "baseline",
+      "caption": "two teddy bears are laying on a bed .",
+      "token_ids": [
+        17,
+        190,
+        344,
+        22,
+        99,
+        6,
+        4,
+        74,
+        5
+      ],
+      "feature_seconds": 0.16133389999993142,
+      "decoding_seconds": 0.9747502999999824,
+      "total_seconds": 1.1360846999999694,
+      "peak_allocated_GiB": 0.7630324363708496,
+      "generation": {
+        "method": "beam",
+        "beam_size": 5,
+        "length_penalty": 0.0,
+        "max_steps": 33
+      },
+      "image_path": "C:\\Users\\askat\\Downloads\\MSCOCO\\coco2017\\val2017\\000000113403.jpg",
+      "image_sha256": "ff974f9495b64648225c9c6fc2d13e642fec69033aa46a524596cb77c5a02224",
+      "original_rgb_size_width_height": [
+        640,
+        451
+      ],
+      "resnet_input_size_width_height": [
+        224,
+        224
+      ],
+      "resnet_native_feature_shape": [
+        1,
+        2048,
+        7,
+        7
+      ],
+      "resnet_decoder_feature_shape": [
+        1,
+        2048,
+        7,
+        7
+      ],
+      "resnet_grid_tokens": 49,
+      "resnet_grid_pooling": "none",
+      "resnet_preprocessing": "EXIF transpose, RGB, centered BILINEAR resize and padding, ImageNet normalization",
+      "resnet_padding_color": [
+        124,
+        116,
+        104
+      ],
+      "global_pooling": "native CNN feature map, before float16 feature storage rounding",
+      "detector_min_size": 800,
+      "detector_max_size": 1333,
+      "detector_transformed_size_height_width": [
+        800,
+        1135
+      ],
+      "detector_padded_batch_shape": [
+        1,
+        3,
+        800,
+        1152
+      ],
+      "raw_detections_scope": "After detector score filtering and class-specific NMS, before project selection",
+      "raw_detections": [
+        {
+          "box_xyxy": [
+            246.58526611328125,
+            91.74237823486328,
+            460.03192138671875,
+            334.16156005859375
+          ],
+          "score": 0.9928734302520752,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            84.42192077636719,
+            91.19261169433594,
+            299.6005554199219,
+            316.0406494140625
+          ],
+          "score": 0.9871921539306641,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            413.73046875,
+            159.20040893554688,
+            567.0916137695312,
+            341.83056640625
+          ],
+          "score": 0.9824314713478088,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            0.0,
+            130.38092041015625,
+            640.0,
+            448.16912841796875
+          ],
+          "score": 0.7915489077568054,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            89.90815734863281,
+            77.775390625,
+            526.8076782226562,
+            339.841796875
+          ],
+          "score": 0.31916940212249756,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            21.653289794921875,
+            0.0,
+            633.8042602539062,
+            232.03021240234375
+          ],
+          "score": 0.2996548116207123,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            131.97840881347656,
+            0.0,
+            640.0,
+            294.7225646972656
+          ],
+          "score": 0.26564037799835205,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            0.0,
+            23.880149841308594,
+            400.0388488769531,
+            429.0488586425781
+          ],
+          "score": 0.2507230043411255,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            427.8599548339844,
+            12.179085731506348,
+            633.2835083007812,
+            370.70916748046875
+          ],
+          "score": 0.16085012257099152,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            294.8161315917969,
+            60.61190414428711,
+            587.5358276367188,
+            326.7997131347656
+          ],
+          "score": 0.14967119693756104,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            95.10197448730469,
+            264.64984130859375,
+            626.1607666015625,
+            443.2259216308594
+          ],
+          "score": 0.1448570191860199,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            495.40875244140625,
+            85.55905151367188,
+            635.7949829101562,
+            336.25384521484375
+          ],
+          "score": 0.09214340150356293,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            161.21958923339844,
+            203.69058227539062,
+            239.5899658203125,
+            260.0494384765625
+          ],
+          "score": 0.08918294310569763,
+          "label": 32,
+          "category": "tie"
+        },
+        {
+          "box_xyxy": [
+            0.0,
+            105.19615173339844,
+            640.0,
+            446.16650390625
+          ],
+          "score": 0.06501086056232452,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            317.2354736328125,
+            4.556288242340088,
+            635.5125122070312,
+            239.77268981933594
+          ],
+          "score": 0.05363332852721214,
+          "label": 62,
+          "category": "chair"
+        }
+      ],
+      "selected_detections": [
+        {
+          "box_xyxy": [
+            246.58526611328125,
+            91.74237823486328,
+            460.03192138671875,
+            334.16156005859375
+          ],
+          "score": 0.9928734302520752,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            84.42192077636719,
+            91.19261169433594,
+            299.6005554199219,
+            316.0406494140625
+          ],
+          "score": 0.9871921539306641,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            413.73046875,
+            159.20040893554688,
+            567.0916137695312,
+            341.83056640625
+          ],
+          "score": 0.9824314713478088,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            0.0,
+            130.38092041015625,
+            640.0,
+            448.16912841796875
+          ],
+          "score": 0.7915489077568054,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            89.90815734863281,
+            77.775390625,
+            526.8076782226562,
+            339.841796875
+          ],
+          "score": 0.31916940212249756,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            21.653289794921875,
+            0.0,
+            633.8042602539062,
+            232.03021240234375
+          ],
+          "score": 0.2996548116207123,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            0.0,
+            23.880149841308594,
+            400.0388488769531,
+            429.0488586425781
+          ],
+          "score": 0.2507230043411255,
+          "label": 65,
+          "category": "bed"
+        }
+      ],
+      "raw_detection_count": 15,
+      "detections_above_project_score": 8,
+      "valid_regions": 7,
+      "region_fallback": false,
+      "selection": {
+        "detector_score_threshold": 0.05,
+        "detector_class_nms_iou": 0.5,
+        "detector_max_detections": 100,
+        "project_score_threshold": 0.2,
+        "project_class_agnostic_nms_iou": 0.5,
+        "max_regions": 36,
+        "feature_source": "Re-pooled selected final boxes, ROI head output of dimension1024"
+      },
+      "precision": {
+        "resnet": "CUDA autocast float16",
+        "detector": "float32",
+        "grid_and_regions": "float16 storage rounding, returned as float32"
+      },
+      "device": "cuda:0",
+      "cnn_frozen": true,
+      "training_performed": false
+    },
+    {
+      "mode": "detector_1200",
+      "caption": "a teddy bear laying on top of a bed .",
+      "token_ids": [
+        4,
+        190,
+        106,
+        99,
+        6,
+        35,
+        7,
+        4,
+        74,
+        5
+      ],
+      "feature_seconds": 0.27786670000000413,
+      "decoding_seconds": 0.6710826999999426,
+      "total_seconds": 0.9489488000000392,
+      "peak_allocated_GiB": 1.2826857566833496,
+      "generation": {
+        "method": "beam",
+        "beam_size": 5,
+        "length_penalty": 0.0,
+        "max_steps": 33
+      },
+      "image_path": "C:\\Users\\askat\\Downloads\\MSCOCO\\coco2017\\val2017\\000000113403.jpg",
+      "image_sha256": "ff974f9495b64648225c9c6fc2d13e642fec69033aa46a524596cb77c5a02224",
+      "original_rgb_size_width_height": [
+        640,
+        451
+      ],
+      "resnet_input_size_width_height": [
+        224,
+        224
+      ],
+      "resnet_native_feature_shape": [
+        1,
+        2048,
+        7,
+        7
+      ],
+      "resnet_decoder_feature_shape": [
+        1,
+        2048,
+        7,
+        7
+      ],
+      "resnet_grid_tokens": 49,
+      "resnet_grid_pooling": "none",
+      "resnet_preprocessing": "EXIF transpose, RGB, centered BILINEAR resize and padding, ImageNet normalization",
+      "resnet_padding_color": [
+        124,
+        116,
+        104
+      ],
+      "global_pooling": "native CNN feature map, before float16 feature storage rounding",
+      "detector_min_size": 1200,
+      "detector_max_size": 2000,
+      "detector_transformed_size_height_width": [
+        1200,
+        1702
+      ],
+      "detector_padded_batch_shape": [
+        1,
+        3,
+        1216,
+        1728
+      ],
+      "raw_detections_scope": "After detector score filtering and class-specific NMS, before project selection",
+      "raw_detections": [
+        {
+          "box_xyxy": [
+            241.3951416015625,
+            90.8864517211914,
+            477.5912780761719,
+            329.280029296875
+          ],
+          "score": 0.9898079037666321,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            78.02963256835938,
+            90.73905944824219,
+            303.8371276855469,
+            333.2947998046875
+          ],
+          "score": 0.9790418744087219,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            411.9005432128906,
+            150.37649536132812,
+            570.8175048828125,
+            336.70977783203125
+          ],
+          "score": 0.9234509468078613,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            10.957926750183105,
+            184.623291015625,
+            478.2355041503906,
+            451.0
+          ],
+          "score": 0.5933877229690552,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            286.1427917480469,
+            62.310855865478516,
+            588.3660888671875,
+            339.5694580078125
+          ],
+          "score": 0.4556868076324463,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            1.03006112575531,
+            2.698113441467285,
+            321.7396545410156,
+            336.7793884277344
+          ],
+          "score": 0.41329336166381836,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            278.04840087890625,
+            1.020110845565796,
+            635.6080932617188,
+            287.9466857910156
+          ],
+          "score": 0.3992903530597687,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            63.880821228027344,
+            0.0,
+            640.0,
+            249.24191284179688
+          ],
+          "score": 0.3733428120613098,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            188.05181884765625,
+            181.48631286621094,
+            639.7096557617188,
+            451.0
+          ],
+          "score": 0.3651082515716553,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            478.1878967285156,
+            8.164074897766113,
+            637.0532836914062,
+            195.79705810546875
+          ],
+          "score": 0.2962438464164734,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            170.07339477539062,
+            270.877197265625,
+            633.03125,
+            445.5527038574219
+          ],
+          "score": 0.26982319355010986,
+          "label": 67,
+          "category": "dining table"
+        },
+        {
+          "box_xyxy": [
+            145.142822265625,
+            143.30706787109375,
+            452.1216735839844,
+            349.05340576171875
+          ],
+          "score": 0.26380208134651184,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            127.88294982910156,
+            103.6422119140625,
+            293.06982421875,
+            255.20819091796875
+          ],
+          "score": 0.2621980905532837,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            516.927001953125,
+            23.306896209716797,
+            640.0,
+            334.0498962402344
+          ],
+          "score": 0.21893469989299774,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            10.953932762145996,
+            67.64501953125,
+            356.9803161621094,
+            415.21435546875
+          ],
+          "score": 0.2172909379005432,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            143.46336364746094,
+            112.00725555419922,
+            592.1870727539062,
+            417.2716064453125
+          ],
+          "score": 0.19177140295505524,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            318.5445556640625,
+            9.22134780883789,
+            640.0,
+            287.3795471191406
+          ],
+          "score": 0.18698592483997345,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            250.4923095703125,
+            194.02809143066406,
+            449.5602722167969,
+            325.5489196777344
+          ],
+          "score": 0.15773186087608337,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            168.77923583984375,
+            3.305757522583008,
+            628.4058227539062,
+            251.10704040527344
+          ],
+          "score": 0.1550290286540985,
+          "label": 67,
+          "category": "dining table"
+        },
+        {
+          "box_xyxy": [
+            276.7052917480469,
+            93.18888854980469,
+            466.7518615722656,
+            240.53012084960938
+          ],
+          "score": 0.1547565907239914,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            553.5206298828125,
+            162.3070831298828,
+            638.4359130859375,
+            196.67564392089844
+          ],
+          "score": 0.15304963290691376,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            525.5093383789062,
+            183.94252014160156,
+            634.4722290039062,
+            310.3870849609375
+          ],
+          "score": 0.1483212411403656,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            106.18710327148438,
+            151.09376525878906,
+            282.3719787597656,
+            301.239990234375
+          ],
+          "score": 0.11901174485683441,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            539.2577514648438,
+            74.97898864746094,
+            637.1494140625,
+            222.1326446533203
+          ],
+          "score": 0.11810488998889923,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            176.3722381591797,
+            111.0023193359375,
+            636.7557373046875,
+            435.41796875
+          ],
+          "score": 0.11750532686710358,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            382.5231628417969,
+            54.649566650390625,
+            527.53466796875,
+            209.36976623535156
+          ],
+          "score": 0.11701136082410812,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            181.41900634765625,
+            29.33642578125,
+            523.4703979492188,
+            204.18739318847656
+          ],
+          "score": 0.10480532050132751,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            336.3522644042969,
+            156.63917541503906,
+            606.2286376953125,
+            376.33477783203125
+          ],
+          "score": 0.10275644809007645,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            537.8941040039062,
+            167.2183837890625,
+            639.3485717773438,
+            300.6038513183594
+          ],
+          "score": 0.09629275649785995,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            1.2168933153152466,
+            0.0,
+            311.4909973144531,
+            330.9048156738281
+          ],
+          "score": 0.07610924541950226,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            393.182373046875,
+            141.7154083251953,
+            628.5198364257812,
+            349.8141174316406
+          ],
+          "score": 0.07148527354001999,
+          "label": 1,
+          "category": "person"
+        },
+        {
+          "box_xyxy": [
+            113.19865417480469,
+            2.1822946071624756,
+            582.6199340820312,
+            145.83631896972656
+          ],
+          "score": 0.0676901787519455,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            77.90483093261719,
+            0.0,
+            567.3554077148438,
+            183.9401397705078
+          ],
+          "score": 0.06468014419078827,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            363.61920166015625,
+            3.7892322540283203,
+            639.6715698242188,
+            145.06556701660156
+          ],
+          "score": 0.05455322563648224,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            458.628173828125,
+            146.68711853027344,
+            633.2992553710938,
+            320.2453308105469
+          ],
+          "score": 0.05182390287518501,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            363.68731689453125,
+            20.146745681762695,
+            578.2282104492188,
+            251.9864959716797
+          ],
+          "score": 0.05096863582730293,
+          "label": 88,
+          "category": "teddy bear"
+        }
+      ],
+      "selected_detections": [
+        {
+          "box_xyxy": [
+            241.3951416015625,
+            90.8864517211914,
+            477.5912780761719,
+            329.280029296875
+          ],
+          "score": 0.9898079037666321,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            78.02963256835938,
+            90.73905944824219,
+            303.8371276855469,
+            333.2947998046875
+          ],
+          "score": 0.9790418744087219,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            411.9005432128906,
+            150.37649536132812,
+            570.8175048828125,
+            336.70977783203125
+          ],
+          "score": 0.9234509468078613,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            10.957926750183105,
+            184.623291015625,
+            478.2355041503906,
+            451.0
+          ],
+          "score": 0.5933877229690552,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            286.1427917480469,
+            62.310855865478516,
+            588.3660888671875,
+            339.5694580078125
+          ],
+          "score": 0.4556868076324463,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            63.880821228027344,
+            0.0,
+            640.0,
+            249.24191284179688
+          ],
+          "score": 0.3733428120613098,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            188.05181884765625,
+            181.48631286621094,
+            639.7096557617188,
+            451.0
+          ],
+          "score": 0.3651082515716553,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            478.1878967285156,
+            8.164074897766113,
+            637.0532836914062,
+            195.79705810546875
+          ],
+          "score": 0.2962438464164734,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            145.142822265625,
+            143.30706787109375,
+            452.1216735839844,
+            349.05340576171875
+          ],
+          "score": 0.26380208134651184,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            127.88294982910156,
+            103.6422119140625,
+            293.06982421875,
+            255.20819091796875
+          ],
+          "score": 0.2621980905532837,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            516.927001953125,
+            23.306896209716797,
+            640.0,
+            334.0498962402344
+          ],
+          "score": 0.21893469989299774,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            10.953932762145996,
+            67.64501953125,
+            356.9803161621094,
+            415.21435546875
+          ],
+          "score": 0.2172909379005432,
+          "label": 88,
+          "category": "teddy bear"
+        }
+      ],
+      "raw_detection_count": 36,
+      "detections_above_project_score": 15,
+      "valid_regions": 12,
+      "region_fallback": false,
+      "selection": {
+        "detector_score_threshold": 0.05,
+        "detector_class_nms_iou": 0.5,
+        "detector_max_detections": 100,
+        "project_score_threshold": 0.2,
+        "project_class_agnostic_nms_iou": 0.5,
+        "max_regions": 36,
+        "feature_source": "Re-pooled selected final boxes, ROI head output of dimension1024"
+      },
+      "precision": {
+        "resnet": "CUDA autocast float16",
+        "detector": "float32",
+        "grid_and_regions": "float16 storage rounding, returned as float32"
+      },
+      "device": "cuda:0",
+      "cnn_frozen": true,
+      "training_performed": false
+    },
+    {
+      "mode": "resnet_448",
+      "caption": "two stuffed animals are laying on a bed .",
+      "token_ids": [
+        17,
+        237,
+        312,
+        22,
+        99,
+        6,
+        4,
+        74,
+        5
+      ],
+      "feature_seconds": 0.33127909999996064,
+      "decoding_seconds": 0.6929053000000067,
+      "total_seconds": 1.024184900000023,
+      "peak_allocated_GiB": 0.7661490440368652,
+      "generation": {
+        "method": "beam",
+        "beam_size": 5,
+        "length_penalty": 0.0,
+        "max_steps": 33
+      },
+      "image_path": "C:\\Users\\askat\\Downloads\\MSCOCO\\coco2017\\val2017\\000000113403.jpg",
+      "image_sha256": "ff974f9495b64648225c9c6fc2d13e642fec69033aa46a524596cb77c5a02224",
+      "original_rgb_size_width_height": [
+        640,
+        451
+      ],
+      "resnet_input_size_width_height": [
+        448,
+        448
+      ],
+      "resnet_native_feature_shape": [
+        1,
+        2048,
+        14,
+        14
+      ],
+      "resnet_decoder_feature_shape": [
+        1,
+        2048,
+        7,
+        7
+      ],
+      "resnet_grid_tokens": 49,
+      "resnet_grid_pooling": "adaptive average pooling from 14x14 to 7x7",
+      "resnet_preprocessing": "EXIF transpose, RGB, centered BILINEAR resize and padding, ImageNet normalization",
+      "resnet_padding_color": [
+        124,
+        116,
+        104
+      ],
+      "global_pooling": "native CNN feature map, before float16 feature storage rounding",
+      "detector_min_size": 800,
+      "detector_max_size": 1333,
+      "detector_transformed_size_height_width": [
+        800,
+        1135
+      ],
+      "detector_padded_batch_shape": [
+        1,
+        3,
+        800,
+        1152
+      ],
+      "raw_detections_scope": "After detector score filtering and class-specific NMS, before project selection",
+      "raw_detections": [
+        {
+          "box_xyxy": [
+            246.58526611328125,
+            91.74237823486328,
+            460.03192138671875,
+            334.16156005859375
+          ],
+          "score": 0.9928734302520752,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            84.42192077636719,
+            91.19261169433594,
+            299.6005554199219,
+            316.0406494140625
+          ],
+          "score": 0.9871921539306641,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            413.73046875,
+            159.20040893554688,
+            567.0916137695312,
+            341.83056640625
+          ],
+          "score": 0.9824314713478088,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            0.0,
+            130.38092041015625,
+            640.0,
+            448.16912841796875
+          ],
+          "score": 0.7915489077568054,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            89.90815734863281,
+            77.775390625,
+            526.8076782226562,
+            339.841796875
+          ],
+          "score": 0.31916940212249756,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            21.653289794921875,
+            0.0,
+            633.8042602539062,
+            232.03021240234375
+          ],
+          "score": 0.2996548116207123,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            131.97840881347656,
+            0.0,
+            640.0,
+            294.7225646972656
+          ],
+          "score": 0.26564037799835205,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            0.0,
+            23.880149841308594,
+            400.0388488769531,
+            429.0488586425781
+          ],
+          "score": 0.2507230043411255,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            427.8599548339844,
+            12.179085731506348,
+            633.2835083007812,
+            370.70916748046875
+          ],
+          "score": 0.16085012257099152,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            294.8161315917969,
+            60.61190414428711,
+            587.5358276367188,
+            326.7997131347656
+          ],
+          "score": 0.14967119693756104,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            95.10197448730469,
+            264.64984130859375,
+            626.1607666015625,
+            443.2259216308594
+          ],
+          "score": 0.1448570191860199,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            495.40875244140625,
+            85.55905151367188,
+            635.7949829101562,
+            336.25384521484375
+          ],
+          "score": 0.09214340150356293,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            161.21958923339844,
+            203.69058227539062,
+            239.5899658203125,
+            260.0494384765625
+          ],
+          "score": 0.08918294310569763,
+          "label": 32,
+          "category": "tie"
+        },
+        {
+          "box_xyxy": [
+            0.0,
+            105.19615173339844,
+            640.0,
+            446.16650390625
+          ],
+          "score": 0.06501086056232452,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            317.2354736328125,
+            4.556288242340088,
+            635.5125122070312,
+            239.77268981933594
+          ],
+          "score": 0.05363332852721214,
+          "label": 62,
+          "category": "chair"
+        }
+      ],
+      "selected_detections": [
+        {
+          "box_xyxy": [
+            246.58526611328125,
+            91.74237823486328,
+            460.03192138671875,
+            334.16156005859375
+          ],
+          "score": 0.9928734302520752,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            84.42192077636719,
+            91.19261169433594,
+            299.6005554199219,
+            316.0406494140625
+          ],
+          "score": 0.9871921539306641,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            413.73046875,
+            159.20040893554688,
+            567.0916137695312,
+            341.83056640625
+          ],
+          "score": 0.9824314713478088,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            0.0,
+            130.38092041015625,
+            640.0,
+            448.16912841796875
+          ],
+          "score": 0.7915489077568054,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            89.90815734863281,
+            77.775390625,
+            526.8076782226562,
+            339.841796875
+          ],
+          "score": 0.31916940212249756,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            21.653289794921875,
+            0.0,
+            633.8042602539062,
+            232.03021240234375
+          ],
+          "score": 0.2996548116207123,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            0.0,
+            23.880149841308594,
+            400.0388488769531,
+            429.0488586425781
+          ],
+          "score": 0.2507230043411255,
+          "label": 65,
+          "category": "bed"
+        }
+      ],
+      "raw_detection_count": 15,
+      "detections_above_project_score": 8,
+      "valid_regions": 7,
+      "region_fallback": false,
+      "selection": {
+        "detector_score_threshold": 0.05,
+        "detector_class_nms_iou": 0.5,
+        "detector_max_detections": 100,
+        "project_score_threshold": 0.2,
+        "project_class_agnostic_nms_iou": 0.5,
+        "max_regions": 36,
+        "feature_source": "Re-pooled selected final boxes, ROI head output of dimension1024"
+      },
+      "precision": {
+        "resnet": "CUDA autocast float16",
+        "detector": "float32",
+        "grid_and_regions": "float16 storage rounding, returned as float32"
+      },
+      "device": "cuda:0",
+      "cnn_frozen": true,
+      "training_performed": false
+    },
+    {
+      "mode": "both_larger",
+      "caption": "a teddy bear laying on top of a bed .",
+      "token_ids": [
+        4,
+        190,
+        106,
+        99,
+        6,
+        35,
+        7,
+        4,
+        74,
+        5
+      ],
+      "feature_seconds": 0.29183469999998124,
+      "decoding_seconds": 0.6671952999998894,
+      "total_seconds": 0.9590299999999843,
+      "peak_allocated_GiB": 1.2858023643493652,
+      "generation": {
+        "method": "beam",
+        "beam_size": 5,
+        "length_penalty": 0.0,
+        "max_steps": 33
+      },
+      "image_path": "C:\\Users\\askat\\Downloads\\MSCOCO\\coco2017\\val2017\\000000113403.jpg",
+      "image_sha256": "ff974f9495b64648225c9c6fc2d13e642fec69033aa46a524596cb77c5a02224",
+      "original_rgb_size_width_height": [
+        640,
+        451
+      ],
+      "resnet_input_size_width_height": [
+        448,
+        448
+      ],
+      "resnet_native_feature_shape": [
+        1,
+        2048,
+        14,
+        14
+      ],
+      "resnet_decoder_feature_shape": [
+        1,
+        2048,
+        7,
+        7
+      ],
+      "resnet_grid_tokens": 49,
+      "resnet_grid_pooling": "adaptive average pooling from 14x14 to 7x7",
+      "resnet_preprocessing": "EXIF transpose, RGB, centered BILINEAR resize and padding, ImageNet normalization",
+      "resnet_padding_color": [
+        124,
+        116,
+        104
+      ],
+      "global_pooling": "native CNN feature map, before float16 feature storage rounding",
+      "detector_min_size": 1200,
+      "detector_max_size": 2000,
+      "detector_transformed_size_height_width": [
+        1200,
+        1702
+      ],
+      "detector_padded_batch_shape": [
+        1,
+        3,
+        1216,
+        1728
+      ],
+      "raw_detections_scope": "After detector score filtering and class-specific NMS, before project selection",
+      "raw_detections": [
+        {
+          "box_xyxy": [
+            241.3951416015625,
+            90.8864517211914,
+            477.5912780761719,
+            329.280029296875
+          ],
+          "score": 0.9898079037666321,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            78.02963256835938,
+            90.73905944824219,
+            303.8371276855469,
+            333.2947998046875
+          ],
+          "score": 0.9790418744087219,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            411.9005432128906,
+            150.37649536132812,
+            570.8175048828125,
+            336.70977783203125
+          ],
+          "score": 0.9234509468078613,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            10.957926750183105,
+            184.623291015625,
+            478.2355041503906,
+            451.0
+          ],
+          "score": 0.5933877229690552,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            286.1427917480469,
+            62.310855865478516,
+            588.3660888671875,
+            339.5694580078125
+          ],
+          "score": 0.4556868076324463,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            1.03006112575531,
+            2.698113441467285,
+            321.7396545410156,
+            336.7793884277344
+          ],
+          "score": 0.41329336166381836,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            278.04840087890625,
+            1.020110845565796,
+            635.6080932617188,
+            287.9466857910156
+          ],
+          "score": 0.3992903530597687,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            63.880821228027344,
+            0.0,
+            640.0,
+            249.24191284179688
+          ],
+          "score": 0.3733428120613098,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            188.05181884765625,
+            181.48631286621094,
+            639.7096557617188,
+            451.0
+          ],
+          "score": 0.3651082515716553,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            478.1878967285156,
+            8.164074897766113,
+            637.0532836914062,
+            195.79705810546875
+          ],
+          "score": 0.2962438464164734,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            170.07339477539062,
+            270.877197265625,
+            633.03125,
+            445.5527038574219
+          ],
+          "score": 0.26982319355010986,
+          "label": 67,
+          "category": "dining table"
+        },
+        {
+          "box_xyxy": [
+            145.142822265625,
+            143.30706787109375,
+            452.1216735839844,
+            349.05340576171875
+          ],
+          "score": 0.26380208134651184,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            127.88294982910156,
+            103.6422119140625,
+            293.06982421875,
+            255.20819091796875
+          ],
+          "score": 0.2621980905532837,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            516.927001953125,
+            23.306896209716797,
+            640.0,
+            334.0498962402344
+          ],
+          "score": 0.21893469989299774,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            10.953932762145996,
+            67.64501953125,
+            356.9803161621094,
+            415.21435546875
+          ],
+          "score": 0.2172909379005432,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            143.46336364746094,
+            112.00725555419922,
+            592.1870727539062,
+            417.2716064453125
+          ],
+          "score": 0.19177140295505524,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            318.5445556640625,
+            9.22134780883789,
+            640.0,
+            287.3795471191406
+          ],
+          "score": 0.18698592483997345,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            250.4923095703125,
+            194.02809143066406,
+            449.5602722167969,
+            325.5489196777344
+          ],
+          "score": 0.15773186087608337,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            168.77923583984375,
+            3.305757522583008,
+            628.4058227539062,
+            251.10704040527344
+          ],
+          "score": 0.1550290286540985,
+          "label": 67,
+          "category": "dining table"
+        },
+        {
+          "box_xyxy": [
+            276.7052917480469,
+            93.18888854980469,
+            466.7518615722656,
+            240.53012084960938
+          ],
+          "score": 0.1547565907239914,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            553.5206298828125,
+            162.3070831298828,
+            638.4359130859375,
+            196.67564392089844
+          ],
+          "score": 0.15304963290691376,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            525.5093383789062,
+            183.94252014160156,
+            634.4722290039062,
+            310.3870849609375
+          ],
+          "score": 0.1483212411403656,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            106.18710327148438,
+            151.09376525878906,
+            282.3719787597656,
+            301.239990234375
+          ],
+          "score": 0.11901174485683441,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            539.2577514648438,
+            74.97898864746094,
+            637.1494140625,
+            222.1326446533203
+          ],
+          "score": 0.11810488998889923,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            176.3722381591797,
+            111.0023193359375,
+            636.7557373046875,
+            435.41796875
+          ],
+          "score": 0.11750532686710358,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            382.5231628417969,
+            54.649566650390625,
+            527.53466796875,
+            209.36976623535156
+          ],
+          "score": 0.11701136082410812,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            181.41900634765625,
+            29.33642578125,
+            523.4703979492188,
+            204.18739318847656
+          ],
+          "score": 0.10480532050132751,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            336.3522644042969,
+            156.63917541503906,
+            606.2286376953125,
+            376.33477783203125
+          ],
+          "score": 0.10275644809007645,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            537.8941040039062,
+            167.2183837890625,
+            639.3485717773438,
+            300.6038513183594
+          ],
+          "score": 0.09629275649785995,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            1.2168933153152466,
+            0.0,
+            311.4909973144531,
+            330.9048156738281
+          ],
+          "score": 0.07610924541950226,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            393.182373046875,
+            141.7154083251953,
+            628.5198364257812,
+            349.8141174316406
+          ],
+          "score": 0.07148527354001999,
+          "label": 1,
+          "category": "person"
+        },
+        {
+          "box_xyxy": [
+            113.19865417480469,
+            2.1822946071624756,
+            582.6199340820312,
+            145.83631896972656
+          ],
+          "score": 0.0676901787519455,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            77.90483093261719,
+            0.0,
+            567.3554077148438,
+            183.9401397705078
+          ],
+          "score": 0.06468014419078827,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            363.61920166015625,
+            3.7892322540283203,
+            639.6715698242188,
+            145.06556701660156
+          ],
+          "score": 0.05455322563648224,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            458.628173828125,
+            146.68711853027344,
+            633.2992553710938,
+            320.2453308105469
+          ],
+          "score": 0.05182390287518501,
+          "label": 63,
+          "category": "couch"
+        },
+        {
+          "box_xyxy": [
+            363.68731689453125,
+            20.146745681762695,
+            578.2282104492188,
+            251.9864959716797
+          ],
+          "score": 0.05096863582730293,
+          "label": 88,
+          "category": "teddy bear"
+        }
+      ],
+      "selected_detections": [
+        {
+          "box_xyxy": [
+            241.3951416015625,
+            90.8864517211914,
+            477.5912780761719,
+            329.280029296875
+          ],
+          "score": 0.9898079037666321,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            78.02963256835938,
+            90.73905944824219,
+            303.8371276855469,
+            333.2947998046875
+          ],
+          "score": 0.9790418744087219,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            411.9005432128906,
+            150.37649536132812,
+            570.8175048828125,
+            336.70977783203125
+          ],
+          "score": 0.9234509468078613,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            10.957926750183105,
+            184.623291015625,
+            478.2355041503906,
+            451.0
+          ],
+          "score": 0.5933877229690552,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            286.1427917480469,
+            62.310855865478516,
+            588.3660888671875,
+            339.5694580078125
+          ],
+          "score": 0.4556868076324463,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            63.880821228027344,
+            0.0,
+            640.0,
+            249.24191284179688
+          ],
+          "score": 0.3733428120613098,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            188.05181884765625,
+            181.48631286621094,
+            639.7096557617188,
+            451.0
+          ],
+          "score": 0.3651082515716553,
+          "label": 65,
+          "category": "bed"
+        },
+        {
+          "box_xyxy": [
+            478.1878967285156,
+            8.164074897766113,
+            637.0532836914062,
+            195.79705810546875
+          ],
+          "score": 0.2962438464164734,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            145.142822265625,
+            143.30706787109375,
+            452.1216735839844,
+            349.05340576171875
+          ],
+          "score": 0.26380208134651184,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            127.88294982910156,
+            103.6422119140625,
+            293.06982421875,
+            255.20819091796875
+          ],
+          "score": 0.2621980905532837,
+          "label": 88,
+          "category": "teddy bear"
+        },
+        {
+          "box_xyxy": [
+            516.927001953125,
+            23.306896209716797,
+            640.0,
+            334.0498962402344
+          ],
+          "score": 0.21893469989299774,
+          "label": 62,
+          "category": "chair"
+        },
+        {
+          "box_xyxy": [
+            10.953932762145996,
+            67.64501953125,
+            356.9803161621094,
+            415.21435546875
+          ],
+          "score": 0.2172909379005432,
+          "label": 88,
+          "category": "teddy bear"
+        }
+      ],
+      "raw_detection_count": 36,
+      "detections_above_project_score": 15,
+      "valid_regions": 12,
+      "region_fallback": false,
+      "selection": {
+        "detector_score_threshold": 0.05,
+        "detector_class_nms_iou": 0.5,
+        "detector_max_detections": 100,
+        "project_score_threshold": 0.2,
+        "project_class_agnostic_nms_iou": 0.5,
+        "max_regions": 36,
+        "feature_source": "Re-pooled selected final boxes, ROI head output of dimension1024"
+      },
+      "precision": {
+        "resnet": "CUDA autocast float16",
+        "detector": "float32",
+        "grid_and_regions": "float16 storage rounding, returned as float32"
+      },
+      "device": "cuda:0",
+      "cnn_frozen": true,
+      "training_performed": false
+    }
+  ],
+  "notes": [
+    "Selected detection boxes are not a ground-truth object count. Duplicate or missing boxes are possible.",
+    "The 448-pixel ResNet input is pooled from 14x14 back to the trained 7x7 memory grid.",
+    "One curated example cannot establish a general improvement. Compare modes on validation.",
+    "Times include feature extraction and beam decoding, exclude model loading, and are not repeated benchmarks."
+  ]
+}

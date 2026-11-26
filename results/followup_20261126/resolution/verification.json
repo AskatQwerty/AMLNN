@@ -1,0 +1,32 @@
+{
+  "image_path": "C:\\Users\\askat\\Downloads\\MSCOCO\\coco2017\\val2017\\000000113403.jpg",
+  "baseline_bitwise_equal": {
+    "grid": {
+      "equal": true,
+      "max_difference": 0.0
+    },
+    "global_features": {
+      "equal": true,
+      "max_difference": 0.0
+    },
+    "regions": {
+      "equal": true,
+      "max_difference": 0.0
+    },
+    "region_mask": {
+      "equal": true,
+      "max_difference": 0.0
+    },
+    "region_boxes": {
+      "equal": true,
+      "max_difference": 0.0
+    }
+  },
+  "baseline_caption_matches_saved_slide": true,
+  "detector_settings_restored": true,
+  "frozen_parameters": true,
+  "results_folder": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\high_resolution_20261126\\results\\000000113403_20261126T054516_429012Z",
+  "all_four_modes_completed": true,
+  "training_performed": false,
+  "full_validation_run": false
+}

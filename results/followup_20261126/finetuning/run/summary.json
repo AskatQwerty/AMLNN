@@ -1,0 +1,23 @@
+{
+  "phase": "train",
+  "epoch": 1,
+  "next_train_index": 22688,
+  "best_epoch": 0,
+  "best_CIDEr-D": 0.9784685306494625,
+  "best_is_initial_frozen_baseline": true,
+  "bad_epochs": 0,
+  "stop_reason": null,
+  "successful_optimizer_steps": 709,
+  "AMP_skipped_updates": 0,
+  "active_seconds": 12297.3664668,
+  "active_time": "03:24:57",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch": "2.13.0+cu126",
+  "cuda_runtime": "12.6",
+  "trainable_parameters": 72644887,
+  "peak_allocated_GiB": 4.790552139282227,
+  "test_evaluated": false,
+  "timing_note": "Active time includes validation and saving; excludes model loading and pauses. Resume can omit the last checkpoint's own write duration.",
+  "loss_note": "Loss is averaged over non-PAD target tokens; skipped AMP updates are recorded separately."
+}

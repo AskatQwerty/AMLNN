@@ -1,0 +1,109 @@
+{
+  "tag": "followup-experiments-2026-11-26",
+  "release_url": "https://github.com/AskatQwerty/AMLNN/releases/tag/followup-experiments-2026-11-26",
+  "purpose": "Partial joint fine-tuning resume and exact prepared captions; original final model unchanged",
+  "assets": [
+    {
+      "name": "prepared_caption_data.zip",
+      "bytes": 17134792,
+      "sha256": "574cf2202147282411247463817ee6d3f2ee98edf4aac83606e42ead76b15a91",
+      "download_url": "https://github.com/AskatQwerty/AMLNN/releases/download/followup-experiments-2026-11-26/prepared_caption_data.zip",
+      "files": [
+        {
+          "path": "cache/prepared.pkl",
+          "bytes": 47689117,
+          "sha256": "eb24d7d0c4e36a0139867cb937e86312d58cc8f642f24f74d3b7612f9e8aaf8d"
+        },
+        {
+          "path": "cache/splits.json",
+          "bytes": 1826977,
+          "sha256": "fc60cb5fc0f55422cf3aa7d76a97ecc149c04dd286bdaa6a26a9692e8a850770"
+        },
+        {
+          "path": "cache/vocab.json",
+          "bytes": 370870,
+          "sha256": "2cf42401bcd0074ab8fc431d323788de78baf0f616e66639edcdc542b15f2c55"
+        },
+        {
+          "path": "cache/text_report.json",
+          "bytes": 48975,
+          "sha256": "a2d7241f727373a126caafe670d24f95eee488834c5e3dcfded4aebe1e58d1d8"
+        },
+        {
+          "path": "cache/image_audit.json",
+          "bytes": 6232,
+          "sha256": "16ccd0bab9e597fadbfe6a6d9a38e728c920a43e2c398e5016885bd030ef2112"
+        },
+        {
+          "path": "cache/test_captions.json",
+          "bytes": 5165303,
+          "sha256": "09148eed15f332e5d6b8ed3e1441ebaf56fcaeec8538797bfdc4bf88834f1063"
+        },
+        {
+          "path": "cache/holdout_validation.json",
+          "bytes": 1869,
+          "sha256": "196169692e3a51150f0574b60e05856190e92f19dcef359d82b42f5401126346"
+        },
+        {
+          "path": "cache/training_config.json",
+          "bytes": 1076,
+          "sha256": "2827a95c8891ca4a3cc5eda1b4c8ccc81851f8a22a9453f4148d5b8fd1bf22c5"
+        }
+      ]
+    },
+    {
+      "name": "partial_finetune_resume.zip",
+      "bytes": 1192157318,
+      "sha256": "f73d5bdfd697a3fe34615eb95d3b26f8eb4f4fcd72086093917bb8db9fb7f596",
+      "download_url": "https://github.com/AskatQwerty/AMLNN/releases/download/followup-experiments-2026-11-26/partial_finetune_resume.zip",
+      "files": [
+        {
+          "path": "experiments/final_joint_finetune_v1/resnet50_fasterrcnn_transformer_layer4_seed42/last.pt",
+          "bytes": 945301440,
+          "sha256": "e0f5db37afa2a19349fa59dc3cb6dfb54918a8f12d7de7fcef52b452032a6f8d"
+        },
+        {
+          "path": "experiments/final_joint_finetune_v1/resnet50_fasterrcnn_transformer_layer4_seed42/best.pt",
+          "bytes": 364042773,
+          "sha256": "a2962be1119738f70faa5fbc4995ebefac54146053c45ab04a24f2a86a7d828f"
+        },
+        {
+          "path": "experiments/final_joint_finetune_v1/resnet50_fasterrcnn_transformer_layer4_seed42/config.json",
+          "bytes": 2886,
+          "sha256": "2aed3905c10b75e8ca38e6df3f7bf7c4b451ac6e49564227458a9a6d5bddfc1c"
+        },
+        {
+          "path": "experiments/final_joint_finetune_v1/resnet50_fasterrcnn_transformer_layer4_seed42/history.csv",
+          "bytes": 232,
+          "sha256": "1c4f41ca4acf0af23a1d4d01251168204e5819f762d1fb4cd3474c63decf1c9d"
+        },
+        {
+          "path": "experiments/final_joint_finetune_v1/resnet50_fasterrcnn_transformer_layer4_seed42/history.json",
+          "bytes": 337,
+          "sha256": "3de69a66914c4698c43accca0a175730f43b311377e1bb141866566d87a98fdf"
+        },
+        {
+          "path": "experiments/final_joint_finetune_v1/resnet50_fasterrcnn_transformer_layer4_seed42/summary.json",
+          "bytes": 849,
+          "sha256": "b3bc963a4925626e3fea1f6b36bfef81b8e5a0f66cbb65c47e5ab871298eb505"
+        },
+        {
+          "path": "experiments/final_joint_finetune_v1/resnet50_fasterrcnn_transformer_layer4_seed42/vocabulary.json",
+          "bytes": 370462,
+          "sha256": "3efebfa69b7a4f391d39180612133bd30730817831f5166ce593d7bccefee18b"
+        },
+        {
+          "path": "experiments/final_joint_finetune_v1/resnet50_fasterrcnn_transformer_layer4_seed42/validation_predictions_epoch00.json",
+          "bytes": 2222681,
+          "sha256": "a46570af75d4e7d1c50029cefdee4a80d5720bc2170874245ca5b0ee3a5b86b3"
+        }
+      ]
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 188,
+      "sha256": "5dd3e1a32c80a3e5437a3364e16845e1dfe5caf947a2814fdfe015fb1db81bd7",
+      "download_url": "https://github.com/AskatQwerty/AMLNN/releases/download/followup-experiments-2026-11-26/SHA256SUMS.txt"
+    }
+  ]
+}

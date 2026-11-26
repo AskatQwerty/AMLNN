@@ -1,0 +1,5 @@
+Mode,ResNet input,Detector H x W,Selected regions,Selected teddy boxes,Selected bear boxes,Caption,Seconds,Peak GPU GiB
+baseline,224,800 x 1135,7,4,0,two teddy bears are laying on a bed .,1.14,0.76
+detector_1200,224,1200 x 1702,12,7,0,a teddy bear laying on top of a bed .,0.95,1.28
+resnet_448,448,800 x 1135,7,4,0,two stuffed animals are laying on a bed .,1.02,0.77
+both_larger,448,1200 x 1702,12,7,0,a teddy bear laying on top of a bed .,0.96,1.29

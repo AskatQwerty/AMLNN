@@ -1,0 +1,14 @@
+[
+  {
+    "epoch": 0,
+    "train_loss": null,
+    "val_loss": 1.9893602087885907,
+    "CIDEr-D": 0.9784685306494625,
+    "BLEU-1": 0.7416910881515014,
+    "BLEU-4": 0.3161017622467633,
+    "validation_seconds": 2487.7434991,
+    "training_seconds": 0.0,
+    "active_seconds": 2487.7621138,
+    "AMP_skipped_updates": 0
+  }
+]

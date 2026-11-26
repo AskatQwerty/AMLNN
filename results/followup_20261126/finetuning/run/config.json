@@ -1,0 +1,65 @@
+{
+  "seed": 42,
+  "micro_batch_size": 4,
+  "accumulation_steps": 8,
+  "val_batch_size": 4,
+  "max_epochs": 100,
+  "patience": 3,
+  "decoder_lr": 5e-05,
+  "resnet_lr": 1e-05,
+  "detector_lr": 1e-05,
+  "clip_norm": 5.0,
+  "amp": true,
+  "checkpoint_minutes": 5,
+  "generation_beam_size": 5,
+  "max_steps": 33,
+  "unfreeze": "ResNet50 layer4; detector layer4 + FPN + ROI box head; all fusion/decoder",
+  "batchnorm": "Fixed running statistics and frozen affine parameters",
+  "region_selection": "Frozen RPN/predictor; detached NMS boxes; differentiable re-pooling",
+  "detector_transform": "FP32, min_size=800, max_size=1333",
+  "augmentation": "None; preserve the selected model's image preprocessing",
+  "train_image_count": 113287,
+  "validation_image_count": 5000,
+  "provenance": {
+    "source_id": "ebc5c99a1d4cb77eaf6d1d46b16f3f83db1ca698d663307fd77a87a2290e0a9d",
+    "split_id": "8e2ac80c42ddee7b32a319cb01444c8b8831af2cd1a6c881e2d41cd8e5c5e1a2",
+    "prepared_sha256": "eb24d7d0c4e36a0139867cb937e86312d58cc8f642f24f74d3b7612f9e8aaf8d",
+    "vocab_sha256": "2cf42401bcd0074ab8fc431d323788de78baf0f616e66639edcdc542b15f2c55",
+    "splits_sha256": "fc60cb5fc0f55422cf3aa7d76a97ecc149c04dd286bdaa6a26a9692e8a850770",
+    "annotations_sha256": {
+      "train2017": "4b62086319480e0739ef390d04084515defb9c213ff13605a036061e33314317",
+      "val2017": "afe3b30e403dd7f228e2373023abbd60042a6e10ec6874d3652df034d289ebb9"
+    }
+  },
+  "selected_model_sha256": "f97a57d7adbbbe6b3a6d77589ab2a785520e9a2c7b8a99c573dd9d13c44f7b6f",
+  "metrics": {
+    "package": "pycocoevalcap",
+    "version": "1.2",
+    "bleu": {
+      "implementation": "Bleu(4)",
+      "aggregation": "corpus",
+      "scale": "0..1; no multiplication by 100"
+    },
+    "cider_d": {
+      "implementation": "Cider(n=4,sigma=6.0)",
+      "ngrams": 4,
+      "sigma": 6.0,
+      "scale": "native score, including the implementation's factor 10; no extra multiplication",
+      "document_frequency": "all reference sets in the evaluated split"
+    },
+    "tokenization": {
+      "name": "project_regex_v1",
+      "normalization": "NFKC,lowercase,smart quotes,whitespace",
+      "token_pattern": "[^\\W_]+(?:'[^\\W_]+)*|[^\\w\\s]",
+      "reference_vocabulary_mapping": false,
+      "note": "Same tokenizer for predictions and raw references; not COCO leaderboard PTB tokenization."
+    },
+    "source_sha256": {
+      "bleu": "05b74a92b32e071eacfb954ef34328137cfd1b82c563572648633087def23776",
+      "bleu_scorer": "413ccfef71b88c5f11d25d05fdcf08625a1559338ffbb7c2787e800116eaecdd",
+      "cider": "268b71cb096ccd10cf4a7cd49a9a72072001922f1876f4e88833e1eb4649cfcb",
+      "cider_scorer": "299037838373391c3335e066c867ba2d6dd8617d2c8fb2c4193f32620a774adc"
+    }
+  },
+  "implementation_sha256": "0b7d0f1b845d1f3d577b05fd5d62c62f54bd858dc3b60823136b69f9c5d324d5"
+}

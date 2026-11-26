@@ -6,3 +6,5 @@ matplotlib==3.11.2
 ipykernel==7.3.0
 nbformat==5.11.1
 pycocoevalcap==1.2
+pandas==3.1.0
+jupyterlab==4.6.4

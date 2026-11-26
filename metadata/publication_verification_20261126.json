@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-11-26T10:20:29.853425+00:00",
+  "training_performed": false,
+  "notebooks": {
+    "AML_Final_Submission.ipynb": {
+      "cells": 55,
+      "code_cells_compiled": 38
+    },
+    "Final_Model_Photo.ipynb": {
+      "cells": 2,
+      "code_cells_compiled": 1
+    },
+    "FinalFusion_FineTune.ipynb": {
+      "cells": 34,
+      "code_cells_compiled": 24
+    },
+    "FinalFusion_Resolution.ipynb": {
+      "cells": 17,
+      "code_cells_compiled": 9
+    },
+    "Data_Visual_Examples.ipynb": {
+      "cells": 4,
+      "code_cells_compiled": 3
+    }
+  },
+  "local_markdown_links": "passed",
+  "finetuning_model_data_training_resume_definitions": "byte-identical to source notebook",
+  "restored_prepared_data_and_current_config_match_checkpoint": true,
+  "checkpoint_state": {
+    "epoch": 1,
+    "phase": "train",
+    "next_index": 22688,
+    "successful_steps": 709
+  },
+  "split_counts": {
+    "train": 113287,
+    "val": 5000,
+    "test": 5000
+  },
+  "evidence_files_sha256_checked": 33,
+  "prediction_files_raw_references_checked": 10,
+  "metric_recomputation": {
+    "script": "tools/recompute_followup_metrics.py",
+    "completed": true,
+    "comparisons": 10,
+    "absolute_tolerance": 1e-10,
+    "requires_weights_or_gpu": false
+  },
+  "not_performed": [
+    "Fresh Python environment installation",
+    "Full training or resumed optimizer updates",
+    "New inference for all validation images",
+    "Any test evaluation"
+  ],
+  "cpu_single_image_inference": {
+    "completed": true,
+    "image_id": 113403,
+    "matches_saved_caption": true,
+    "report": "metadata/cpu_photo_smoke_20261126.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "folder": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\work\\high_resolution_20261126\\results\\validation_100_seed42_20261126T055059_752763Z",
+  "images": 100,
+  "seed": 42,
+  "results": [
+    {
+      "mode": "baseline",
+      "images": 100,
+      "bleu1": 0.7293307086606995,
+      "bleu4": 0.3144994601339384,
+      "cider_d": 0.9980558585910444,
+      "seconds": 78.54234739999993
+    },
+    {
+      "mode": "detector_1200",
+      "images": 100,
+      "bleu1": 0.7349762272256292,
+      "bleu4": 0.325348998671621,
+      "cider_d": 0.9982134396182305,
+      "seconds": 91.99846539999999
+    },
+    {
+      "mode": "resnet_448",
+      "images": 100,
+      "bleu1": 0.7293532338301201,
+      "bleu4": 0.304645108759459,
+      "cider_d": 1.0116017618043065,
+      "seconds": 81.75071660000003
+    },
+    {
+      "mode": "both_larger",
+      "images": 100,
+      "bleu1": 0.7362086258768945,
+      "bleu4": 0.30827387615910584,
+      "cider_d": 1.021394326975372,
+      "seconds": 93.34026649999987
+    }
+  ],
+  "full_validation": false,
+  "test_used": false,
+  "training_performed": false
+}
