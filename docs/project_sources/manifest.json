@@ -1,0 +1,41 @@
+{
+  "purpose": "Original small project sources preserved before authorized local cleanup",
+  "files": [
+    {
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\AML_Final_Project.pdf",
+      "path": "docs/project_sources/course_requirements.pdf",
+      "bytes": 79988,
+      "sha256": "9816485f103cd5acdcde0f6f531e9817cbbb7163345da3471a4a66107ed283a2"
+    },
+    {
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\Machine Learning Algorithms_ Final Project Proposal.docx",
+      "path": "docs/project_sources/Final_Project_Proposal.docx",
+      "bytes": 12154,
+      "sha256": "76dc713641650ab524c1282aacd3d9e09ce1bb027d6a69df207884dfd2c992f9"
+    },
+    {
+      "source": "C:\\Users\\askat\\Study\\3.1\\AML Applied Machine Learning\\Final\\PicToText_Proposal.docx",
+      "path": "docs/project_sources/PicToText_Proposal.docx",
+      "bytes": 10513,
+      "sha256": "e6c003ea28c064ed23655dd5108698b6fd8c51c70542cdc200027a4fe25404f8"
+    },
+    {
+      "source": "C:\\Users\\askat\\Downloads\\Image Captioning \u2014 AML Final Project.pptx",
+      "path": "docs/project_sources/downloaded_presentation.pptx",
+      "bytes": 1215592,
+      "sha256": "cba941895c76ddfca6ee67515cac07c70bf59d75eaf007301a7caf203d1265a2"
+    },
+    {
+      "source": "C:\\Users\\askat\\Downloads\\\u041a\u0410\u041a_\u0421\u041a\u041b\u0415\u0418\u0422\u042c.txt",
+      "path": "docs/project_sources/original_archive_join_instructions.txt",
+      "bytes": 999,
+      "sha256": "2d6aa472289469142795b321db115080855842de37cd50d2974ae6ce318e4552"
+    },
+    {
+      "source": "C:\\Users\\askat\\Downloads\\results_B_validation.csv",
+      "path": "docs/project_sources/results_B_validation.csv",
+      "bytes": 2833,
+      "sha256": "320fbfd1134454d6f2b429f5f3aee72c3f9dd9661211efdb30148fc9e6f332d4"
+    }
+  ]
+}

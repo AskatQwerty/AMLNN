@@ -1,0 +1,185 @@
+{
+  "candidate": "C:\\Users\\askat\\Documents\\Codex\\2026-11-12\\new-chat\\cleanup_20261128\\AML_Final_Submission.ipynb",
+  "bytes": 18109232,
+  "sha256": "7a129d4be7faddb7dddbc55e9eb93e40ab0b24e9d93a9aa3eb5e2e51594b989f",
+  "cells": 113,
+  "code_cells_compiled": 75,
+  "embedded_image_output_mime_items": 13,
+  "image_attachment_mime_items": 1,
+  "unresolved_local_image_display_references": [],
+  "all_original_submission_code_cells_unchanged": true,
+  "all_original_submission_outputs_unchanged": true,
+  "saved_error_outputs": [
+    {
+      "cell": 80,
+      "type": "KeyboardInterrupt",
+      "value": ""
+    }
+  ],
+  "duplicate_figure_outputs_removed": [
+    {
+      "source": "FinalFusion_Resolution.ipynb",
+      "cell": 11,
+      "image_sha256": "65d56d69a4e91dc792db1b28eec303261d3e3c4998747cd9468260cb4b552f2e"
+    },
+    {
+      "source": "FinalFusion_Resolution.ipynb",
+      "cell": 11,
+      "image_sha256": "ad4dfe4c4b8c800415659a2514012bccb88bfb545b7aebae4453a8316adcd7a8"
+    },
+    {
+      "source": "FinalFusion_Resolution.ipynb",
+      "cell": 11,
+      "image_sha256": "79cde29d2fbf26f42e945c33a89a854d5a48e404e4fa7a38ad80196dde1ef07b"
+    },
+    {
+      "source": "FinalFusion_Resolution.ipynb",
+      "cell": 11,
+      "image_sha256": "2a10c62cea278d79b44b7e18993a0858eb127135a30c4172ebef2c70d011bf79"
+    }
+  ],
+  "rewritten_local_navigation_links": 7,
+  "source_notebooks": [
+    {
+      "file": "AML_Final_Submission.ipynb",
+      "sha256": "004afae20cd52b13412d101284b15d492a2447970fc09619fae4e8a9b54f58af",
+      "cells": 55
+    },
+    {
+      "file": "FinalFusion_FineTune.ipynb",
+      "sha256": "951d46ac8c28912b4a54b11e8eefc6054ac0a71c397358e250a69a867dcc0e12",
+      "cells": 34
+    },
+    {
+      "file": "FinalFusion_Resolution.ipynb",
+      "sha256": "50ee4bd6d70f86847464111e3e7a989f547e3ceb9eba51827dd99de9bc4e050d",
+      "cells": 17
+    },
+    {
+      "file": "Data_Visual_Examples.ipynb",
+      "sha256": "3f0b8932a21a87ff95314edfb2733622bc58c791cd09ef47f90a5e59705261a5",
+      "cells": 4
+    },
+    {
+      "file": "Final_Model_Photo.ipynb",
+      "sha256": "df54a94ca03b56516bba770c08cf740d2437fb09b3cd9a6061a6fc2e01c570bc",
+      "cells": 2
+    }
+  ],
+  "training_or_evaluation_executed": false,
+  "original_project_or_repo_modified": false,
+  "embedded_images_decoded_and_verified": [
+    {
+      "cell": 7,
+      "mime": "image/png",
+      "size": [
+        1590,
+        1279
+      ]
+    },
+    {
+      "cell": 7,
+      "mime": "image/png",
+      "size": [
+        1162,
+        789
+      ]
+    },
+    {
+      "cell": 33,
+      "mime": "image/png",
+      "size": [
+        1488,
+        490
+      ]
+    },
+    {
+      "cell": 41,
+      "mime": "image/png",
+      "size": [
+        1690,
+        1475
+      ]
+    },
+    {
+      "cell": 46,
+      "mime": "image/png",
+      "size": [
+        1690,
+        1083
+      ]
+    },
+    {
+      "cell": 54,
+      "mime": "image/png",
+      "size": [
+        2872,
+        916
+      ]
+    },
+    {
+      "cell": 64,
+      "mime": "image/jpeg",
+      "size": [
+        640,
+        496
+      ]
+    },
+    {
+      "cell": 64,
+      "mime": "image/png",
+      "size": [
+        640,
+        496
+      ]
+    },
+    {
+      "cell": 100,
+      "mime": "image/png",
+      "size": [
+        1282,
+        495
+      ]
+    },
+    {
+      "cell": 100,
+      "mime": "image/png",
+      "size": [
+        1282,
+        495
+      ]
+    },
+    {
+      "cell": 100,
+      "mime": "image/png",
+      "size": [
+        1282,
+        495
+      ]
+    },
+    {
+      "cell": 100,
+      "mime": "image/png",
+      "size": [
+        1282,
+        495
+      ]
+    },
+    {
+      "cell": 108,
+      "mime": "image/png",
+      "size": [
+        1187,
+        441
+      ]
+    },
+    {
+      "cell": 109,
+      "mime": "image/png",
+      "size": [
+        1140,
+        885
+      ]
+    }
+  ]
+}

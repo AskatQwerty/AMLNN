@@ -44,6 +44,10 @@ cd AMLNN
 
 For a notebook with the photo, caption and timer, run `python -m jupyterlab`, open [Final_Model_Photo.ipynb](Final_Model_Photo.ipynb), set the image path and run its cells. Your own photograph needs no COCO download, prepared captions or full-dataset feature extraction. See the [inference guide](inference/README.md) for CPU fallback and verification limits.
 
+## Complete offline project record
+
+[AML_Project_Journey.ipynb](AML_Project_Journey.ipynb) combines the original submission with the later CNN fine-tuning and resolution experiments, visual examples and photo workflow. Its recorded figures and results are embedded, so they remain readable after deleting local datasets and weights. The chapters preserve separate historical runs; this is not a new end-to-end training run. Restoring the files described in the notebook is necessary before rerunning experiments. The original submission and PDFs remain unchanged.
+
 ## Choose an entry point
 
 | Goal | File or folder |

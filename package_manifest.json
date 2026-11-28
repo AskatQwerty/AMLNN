@@ -1,13 +1,13 @@
 {
-  "created_utc": "2026-11-26T10:36:51.125609+00:00",
+  "created_utc": "2026-11-28T12:24:40.504849+00:00",
   "purpose": "Lightweight final project Git archive",
   "excludes": [
     "package_manifest.json",
     ".git/",
     "Git-ignored datasets, numeric features, weights and archives"
   ],
-  "file_count": 568,
-  "bytes": 84052321,
+  "file_count": 578,
+  "bytes": 103490676,
   "files": [
     {
       "path": ".gitattributes",
@@ -23,6 +23,11 @@
       "path": "AML_Final_Submission.ipynb",
       "bytes": 7537934,
       "sha256": "004afae20cd52b13412d101284b15d492a2447970fc09619fae4e8a9b54f58af"
+    },
+    {
+      "path": "AML_Project_Journey.ipynb",
+      "bytes": 18109232,
+      "sha256": "7a129d4be7faddb7dddbc55e9eb93e40ab0b24e9d93a9aa3eb5e2e51594b989f"
     },
     {
       "path": "Data_Visual_Examples.ipynb",
@@ -56,8 +61,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 12260,
-      "sha256": "fd34bd8c0acb84f50996ad90936af0b5e68ff396d2fe582b5bc9c698966fcef5"
+      "bytes": 12829,
+      "sha256": "04f00338481f44c1161fa56ca3bdb72715a6eee643d613e61bf1ec1614625d6d"
     },
     {
       "path": "SpatialAttention.ipynb",
@@ -123,6 +128,46 @@
       "path": "docs/assets/data_examples/resize_padding.png",
       "bytes": 1168673,
       "sha256": "d8406b3a724ab6d46b56a379a4840d0833d95c860cd19292df7bfc16fae2ac4d"
+    },
+    {
+      "path": "docs/project_sources/Final_Project_Proposal.docx",
+      "bytes": 12154,
+      "sha256": "76dc713641650ab524c1282aacd3d9e09ce1bb027d6a69df207884dfd2c992f9"
+    },
+    {
+      "path": "docs/project_sources/PicToText_Proposal.docx",
+      "bytes": 10513,
+      "sha256": "e6c003ea28c064ed23655dd5108698b6fd8c51c70542cdc200027a4fe25404f8"
+    },
+    {
+      "path": "docs/project_sources/README.md",
+      "bytes": 541,
+      "sha256": "f9f5ce2a8726f4b6d49e84491189c2d68a2d292e5df81ed794fe40b64f81edfe"
+    },
+    {
+      "path": "docs/project_sources/course_requirements.pdf",
+      "bytes": 79988,
+      "sha256": "9816485f103cd5acdcde0f6f531e9817cbbb7163345da3471a4a66107ed283a2"
+    },
+    {
+      "path": "docs/project_sources/downloaded_presentation.pptx",
+      "bytes": 1215592,
+      "sha256": "cba941895c76ddfca6ee67515cac07c70bf59d75eaf007301a7caf203d1265a2"
+    },
+    {
+      "path": "docs/project_sources/manifest.json",
+      "bytes": 1895,
+      "sha256": "071036a62211807d158e302c7553813049199bd303b756f0316ed1bc5b79f453"
+    },
+    {
+      "path": "docs/project_sources/original_archive_join_instructions.txt",
+      "bytes": 999,
+      "sha256": "2d6aa472289469142795b321db115080855842de37cd50d2974ae6ce318e4552"
+    },
+    {
+      "path": "docs/project_sources/results_B_validation.csv",
+      "bytes": 2833,
+      "sha256": "320fbfd1134454d6f2b429f5f3aee72c3f9dd9661211efdb30148fc9e6f332d4"
     },
     {
       "path": "docs/submission_manifest.json",
@@ -248,6 +293,11 @@
       "path": "metadata/preparation/vocab.json",
       "bytes": 370870,
       "sha256": "2cf42401bcd0074ab8fc431d323788de78baf0f616e66639edcdc542b15f2c55"
+    },
+    {
+      "path": "metadata/project_journey_verification_20261128.json",
+      "bytes": 4039,
+      "sha256": "766e6447c15d17ebe693e8f77fb73c7c35c2328bbfdbee05dde76b2a7bc4a8b5"
     },
     {
       "path": "metadata/publication_verification_20261126.json",

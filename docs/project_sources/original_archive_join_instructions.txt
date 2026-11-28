@@ -1,0 +1,14 @@
+caption_results_B.zip разрезан на 5 частей (.001 ... .005), потому что Telegram пропускает файлы до 2 ГБ.
+Скачай все 5 частей в одну папку и склей:
+
+Windows (cmd, в папке с частями):
+copy /b caption_results_B.zip.001+caption_results_B.zip.002+caption_results_B.zip.003+caption_results_B.zip.004+caption_results_B.zip.005 caption_results_B.zip
+
+Windows с 7-Zip: правой кнопкой по caption_results_B.zip.001 -> 7-Zip -> Combine files.
+
+Mac / Linux:
+cat caption_results_B.zip.00* > caption_results_B.zip
+
+Должен получиться caption_results_B.zip размером ровно 8 981 649 642 байт (8.98 GB).
+НЕ распаковывай его: положи в transfer/ рядом с FinalAML.ipynb,
+в разделе C поставь IMPORT_RESULTS=True и запусти ячейку. Импорт сам проверит контрольные суммы всех файлов.
